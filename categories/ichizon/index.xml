@@ -3,7 +3,7 @@
   <channel>
       <title>Ichizon on mc-inside </title>
       <generator uri="https://hugo.spf13.com">Hugo</generator>
-    <link>http://localhost:1313/categories/ichizon/index.xml/</link>
+    <link>/categories/ichizon/index.xml/</link>
     
     
     
@@ -11,10 +11,10 @@
     
     <item>
       <title>mcfog的一己之见 新年第一期</title>
-      <link>http://localhost:1313/2015/01/ichizon-1/</link>
+      <link>/2015/01/ichizon-1/</link>
       <pubDate>Fri, 02 Jan 2015 16:18:14 CST</pubDate>
       
-      <guid>http://localhost:1313/2015/01/ichizon-1/</guid>
+      <guid>/2015/01/ichizon-1/</guid>
       <description>
 
 &lt;!--================================!--&gt;

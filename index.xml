@@ -3,7 +3,7 @@
   <channel>
       <title>Recent Content on mc-inside </title>
       <generator uri="https://hugo.spf13.com">Hugo</generator>
-    <link>http://localhost:1313/index.xml/</link>
+    <link>/index.xml/</link>
     
     
     
@@ -11,10 +11,10 @@
     
     <item>
       <title>mcfog的一己之见 新年第一期</title>
-      <link>http://localhost:1313/2015/01/ichizon-1/</link>
+      <link>/2015/01/ichizon-1/</link>
       <pubDate>Fri, 02 Jan 2015 16:18:14 CST</pubDate>
       
-      <guid>http://localhost:1313/2015/01/ichizon-1/</guid>
+      <guid>/2015/01/ichizon-1/</guid>
       <description>
 
 &lt;!--================================!--&gt;
@@ -114,10 +114,10 @@ b)方法/流程是随时都可以优化而且应该不断优化的&lt;/p&gt;
     
     <item>
       <title>Zero</title>
-      <link>http://localhost:1313/2014/03/zero/</link>
+      <link>/2014/03/zero/</link>
       <pubDate>Sat, 29 Mar 2014 04:50:00 CST</pubDate>
       
-      <guid>http://localhost:1313/2014/03/zero/</guid>
+      <guid>/2014/03/zero/</guid>
       <description>&lt;p&gt;这是第一篇文章，我是mcfog，一个怀揣小小文艺梦想的技术宅。我的技术不是很好，技术博客有写一些，但说句大话，效果一般(-_-)。个人博客曾经有写过，但没个主题也没人关注，缺乏更新的动力。朋友圈偶尔骚一把，但篇幅受限，还混在日常吐槽之中，还没有缺乏历史积累。于是穷途末路之下突然想起还有公共帐号这么个神奇的似乎介于上述种种地方之间的地方，故而来这么尝试一把。&lt;/p&gt;
 
 &lt;p&gt;据说程序员当中擅长写字的不多，我也是个语文不用几乎，就是不及格的差学生。但好歹有朋友给我“文艺”的评价，于是我觉得可以花一些时间来为赋新词强说愁一把。这里的定位呢大概算是科技人文，或者说程序员人文吧。我以为在茫茫程序员之中，我还属于幸福指数比较高的一半，也希望能将我小小的幸福分享给大家，提升一下大家的幸福指数。&lt;/p&gt;
@@ -159,10 +159,10 @@ b)方法/流程是随时都可以优化而且应该不断优化的&lt;/p&gt;
     
     <item>
       <title>About</title>
-      <link>http://localhost:1313/about/</link>
+      <link>/about/</link>
       <pubDate>Tue, 01 Jan 2008 00:00:00 UTC</pubDate>
       
-      <guid>http://localhost:1313/about/</guid>
+      <guid>/about/</guid>
       <description>&lt;p&gt;我的公众帐号文章&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&#34;/img/2014-q1/qrcode.jpg&#34; alt=&#34;qrcode&#34; /&gt;

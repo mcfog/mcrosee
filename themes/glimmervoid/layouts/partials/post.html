@@ -1,0 +1,28 @@
+{{ if eq .Section "post"}}
+<div class="title">
+    <h3>
+        <a href="{{ .Permalink }}">
+            {{ .Title }}
+        </a>
+    </h3>
+    <span class="meta">
+        {{ range .Params.categories }}
+        <a href="/categories/{{.}}">/{{.}}</a>
+        {{ else }}
+        unknown
+        {{ end }}
+        at {{ .Date.Format "2006-01-02" }}
+    </span>
+</div>
+{{ end }}
+
+<div class="content markdown-body">{{ .Content }}</div>
+
+{{ if .Params.tags }}
+<p class="tags">
+{{ range .Params.tags }}
+<a href="/tags/{{.}}">#{{.}}</a>
+{{ end }}
+</p>
+{{ end }}
+

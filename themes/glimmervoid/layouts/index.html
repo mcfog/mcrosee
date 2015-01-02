@@ -1,0 +1,14 @@
+{{ partial "header.html" . }}
+
+{{ partial "sidebar.html" . }}
+
+<div class="main">
+    {{ range where .Data.Pages "Section" "post" }}
+    <div class="post">
+        {{ partial "post.html" . }}
+    </div>
+    {{ end }}
+</div>
+
+
+{{ partial "footer.html" . }}

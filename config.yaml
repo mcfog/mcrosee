@@ -1,0 +1,14 @@
+---
+title: mc-inside
+MetaDataFormat: yaml
+
+permalinks:
+  post: "/:year/:month/:filename/"
+
+taxonomies:
+  category: "categories"
+
+params:
+  Description: ""
+  Copyright: "©mcfog All rights reserved."
+---

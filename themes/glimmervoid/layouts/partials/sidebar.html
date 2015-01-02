@@ -1,0 +1,20 @@
+
+<div class="sidebar">
+  <div class="container bottom">
+    <h1>
+      <a href="/">{{ .Site.Title }}</a>
+    </h1>
+    <p class="desc">
+      {{ with .Site.Params.Description }}
+        {{.}}
+      {{end}}
+    </p>
+    <ul class="u-cf">
+      <li><a href="/">Home</a> </li>
+      {{ range .Site.Menus.main }}
+      <li><a href="{{.Url}}"> {{ .Name }} </a></li>
+      {{end}}
+    </ul>
+  </div>
+
+</div>

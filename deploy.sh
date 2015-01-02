@@ -67,9 +67,7 @@ commit_hash=`git log -n 1 --format="%H" HEAD`
 previous_branch=`git rev-parse --abbrev-ref HEAD`
 
 if [ $setup ]; then
-	rm -rf $deploy_directory
 	mkdir -p $deploy_directory
-	hugo -t glimmervoid
 	git --work-tree $deploy_directory checkout --orphan $deploy_branch
 	git --work-tree $deploy_directory rm -r "*"
 	git --work-tree $deploy_directory add --all
@@ -83,6 +81,9 @@ if ! git diff --exit-code --quiet --cached; then
 	echo Aborting due to uncommitted changes in the index >&2
 	exit 1
 fi
+
+rm -rf $deploy_directory
+hugo -t glimmervoid
 
 disable_expanded_output
 git fetch --force $repo $deploy_branch:$deploy_branch

@@ -67,6 +67,7 @@ commit_hash=`git log -n 1 --format="%H" HEAD`
 previous_branch=`git rev-parse --abbrev-ref HEAD`
 
 if [ $setup ]; then
+	rm -rf $deploy_directory
 	mkdir -p $deploy_directory
 	hugo -t glimmervoid
 	git --work-tree $deploy_directory checkout --orphan $deploy_branch

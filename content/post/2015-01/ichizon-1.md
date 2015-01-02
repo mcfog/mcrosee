@@ -1,6 +1,5 @@
 ---
 date: 2015-01-02T16:18:14+08:00
-draft: true
 title: mcfog的一己之见 新年第一期
 categories:
 - ichizon
@@ -92,6 +91,6 @@ b)方法/流程是随时都可以优化而且应该不断优化的
 
 这是我在 [SegmentFault](http://segmentfault.com/) 上的问题回答选编，遵循[CC BY-SA 3.0 CN](http://creativecommons.org/licenses/by-sa/3.0/cn/) 分享
 
-尾图：万智【鄙视】
+题图：万智【鄙视】
 
 ![](/img/2015-q1/ktk69.jpg)

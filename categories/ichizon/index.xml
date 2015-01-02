@@ -3,7 +3,7 @@
   <channel>
       <title>Ichizon on mc-inside </title>
       <generator uri="https://hugo.spf13.com">Hugo</generator>
-    <link>/categories/ichizon/index.xml/</link>
+    <link>http://inside.mcfog.wang/categories/ichizon/index.xml/</link>
     
     
     
@@ -11,15 +11,15 @@
     
     <item>
       <title>mcfog的一己之见 新年第一期</title>
-      <link>/2015/01/ichizon-1/</link>
+      <link>http://inside.mcfog.wang/2015/01/ichizon-1/</link>
       <pubDate>Fri, 02 Jan 2015 16:18:14 CST</pubDate>
       
-      <guid>/2015/01/ichizon-1/</guid>
+      <guid>http://inside.mcfog.wang/2015/01/ichizon-1/</guid>
       <description>
 
 &lt;!--================================!--&gt;
 
-&lt;h2 id=&#34;toc_0&#34;&gt;该不该从事更多项目？&lt;/h2&gt;
+&lt;h2 id=&#34;toc_0&#34;&gt;&lt;strong&gt;该不该从事更多项目？&lt;/strong&gt;&lt;/h2&gt;
 
 &lt;p&gt;&lt;a href=&#34;http://segmentfault.com/q/1010000002439221/a-1020000002439395&#34;&gt;问题&lt;/a&gt; by &lt;a href=&#34;http://segmentfault.com/u/guotong1988&#34;&gt;郭同jet&lt;/a&gt;&lt;/p&gt;
 
@@ -51,9 +51,11 @@
 
 &lt;p&gt;C能学到东西，A.B学不到是假象。C如果和公司无关，那么就只能在把AB搞漂亮之外的时间来搞，这是基本职业素养，时间自己找。 千万不要觉得只有C才能学到东西就好。我的建议是公司如果压力大的话不妨先抛开C，投入精力在改善AB两个项目，优化架构，或者是和老板沟通增加AB的资源（放慢研发周期或者加人），略微卸掉压力以后再找时间来玩C&lt;/p&gt;
 
+&lt;hr /&gt;
+
 &lt;!--================================!--&gt;
 
-&lt;h2 id=&#34;toc_5&#34;&gt;为什么国内有不少PHP程序员不喜欢THINKPHP，甚至鄙视THINKPHP？&lt;/h2&gt;
+&lt;h2 id=&#34;toc_5&#34;&gt;&lt;strong&gt;为什么国内有不少PHP程序员不喜欢THINKPHP，甚至鄙视THINKPHP？&lt;/strong&gt;&lt;/h2&gt;
 
 &lt;p&gt;&lt;a href=&#34;http://segmentfault.com/q/1010000002443290&#34;&gt;问题&lt;/a&gt; by &lt;a href=&#34;http://segmentfault.com/u/xiaohuaer&#34;&gt;123456&lt;/a&gt;&lt;/p&gt;
 
@@ -77,9 +79,11 @@
 
 &lt;p&gt;说回thinkphp的话，我最近否决thinkPHP的理由和否决Laravel的大致理由是一样的：我不需要全功能的框架&lt;/p&gt;
 
+&lt;hr /&gt;
+
 &lt;!--================================!--&gt;
 
-&lt;h2 id=&#34;toc_7&#34;&gt;如何看待敏捷开发？&lt;/h2&gt;
+&lt;h2 id=&#34;toc_7&#34;&gt;&lt;strong&gt;如何看待敏捷开发？&lt;/strong&gt;&lt;/h2&gt;
 
 &lt;p&gt;&lt;a href=&#34;http://segmentfault.com/q/1010000000487553&#34;&gt;问题&lt;/a&gt; by &lt;a href=&#34;http://segmentfault.com/u/edagarli&#34;&gt;edagarli&lt;/a&gt;&lt;/p&gt;
 

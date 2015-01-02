@@ -1,14 +1,13 @@
 ---
 categories:
-tags: []
+tags:
 title: About
 menu: main
-weight: 65535
 ---
 
 我的公众帐号文章
 
-![qrcode](http://mcfog.github.io/rosemc/qrcode.jpg)
+![qrcode](/img/2014-q1/qrcode.jpg)
 
 技术博客
 

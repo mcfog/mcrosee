@@ -82,7 +82,8 @@ a {
 .post {
   margin-bottom: 3em;
   .title {
-    border-left: 5px solid #AAA;
+    border: 0 solid #DDD;
+    border-left-width: 5px;
     padding-left: 0.5em;
     margin-bottom: 2em;
     h3 {
@@ -98,6 +99,16 @@ a {
     border-radius: 5px;
     padding: 0.5em;
     margin: 1em 0;
+    
+    a {
+      margin-right: 1em;
+    }
+  }
+
+  &.single {
+    .title {
+      border-color: #AAA;
+    }
   }
 }
 

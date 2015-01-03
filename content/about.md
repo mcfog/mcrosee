@@ -12,3 +12,14 @@ menu: main
 技术博客
 
 <http://press.mcfog.wang/>
+
+关于本站
+
++ 代码托管于 [mcfog/mcrosee](https://github.com/mcfog/mcrosee)
++ 生成器 [spf13/hugo](https://github.com/spf13/hugo)
++ 原创主题glimmervoid （尚未整理）
++ Javascript-free
++ Less样式
+
+	+ [Skeleton](http://getskeleton.com/)
+	+ [sindresorhus/github-markdown-css](http://sindresorhus.com/github-markdown-css/)

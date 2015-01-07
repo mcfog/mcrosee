@@ -7,6 +7,8 @@ menu: main
 
 我的公众帐号文章
 
+[点击关注](/goto/follow)
+
 ![qrcode](/img/2014-q1/qrcode.jpg)
 
 技术博客

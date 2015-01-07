@@ -8,6 +8,7 @@ permalinks:
 
 taxonomies:
   category: "categories"
+  tag: "tags"
 
 params:
   Description: ""

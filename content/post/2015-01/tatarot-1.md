@@ -2,7 +2,6 @@
 categories:
 - tarot
 date: 2015-01-05T12:30:58+08:00
-draft: true
 tags:
 - tarot_m14
 - tarot_m05
@@ -14,7 +13,7 @@ title: "[乱谈塔罗]牌阵解读:坚持写博客"
 
 嗯，计划中的每周三会有一篇关于塔罗的文章，那么来一发关于“坚持写博客”这事儿本身的牌阵自然是个好的开始
 
-这是一个缩减到5张的简略版celtic cross
+牌阵方面选择了一个缩减到5张的简略版celtic cross
 
 ![](/img/2015-q1/spread1.jpg)
 

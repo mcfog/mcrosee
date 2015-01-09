@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+  <title> [新姿势]我用过的静态站点生成器们 &middot; mc-inside </title>
+  <link rel="stylesheet" href="http://inside.mcfog.wang/css/glimmervoid.css" />
+  <link rel="alternate" type="application/atom+xml" href="/index.xml"/>
+</head>
+<body>
+
+<div class="wrapper">
+
+
+
+<div class="sidebar">
+  <div class="container bottom">
+    <h1>
+      <a href="/">mc-inside</a>
+    </h1>
+    <p class="desc">
+      
+    </p>
+    <ul class="u-cf">
+      <li><a href="/">Home</a> </li>
+      
+      <li><a href="http://inside.mcfog.wang/about/"> About </a></li>
+      
+      <li><a href="http://inside.mcfog.wang/goto/follow/"> 公众帐号 </a></li>
+      
+    </ul>
+  </div>
+
+</div>
+
+<div class="main">
+    <div class="post single">
+        
+<div class="title">
+    <h3>
+        <a href="http://inside.mcfog.wang/2015/01/tech4fun-1/">
+            [新姿势]我用过的静态站点生成器们
+        </a>
+    </h3>
+    <span class="meta">
+        
+        <a href="/categories/tech4fun">/tech4fun</a>
+        
+        at 2015-01-09
+    </span>
+</div>
+
+
+<div class="content markdown-body">
+
+<p>随着诸如github pages的静态托管服务，静态站点生成器在近年有了极大的发展，静态生成+托管对托管环境要求低、维护简单、可配合版本控制，但又灵活多变，在程序员和geek群体中大有超越WordPress等动态博客程序的势头</p>
+
+<p>近年来个人也好项目也好，我也经常要用到静态生成器，这里把我玩过的静态生成器挨个做个简评</p>
+
+<p><em>才、才不是什么玩博客程序的时间超过了写博客的时间呢</em></p>
+
+<h3 id="toc_0">Jekyll / OctoPress</h3>
+
+<p><a href="http://jekyllrb.com/">Jekyll</a>和<a href="http://octopress.org/">OctoPress</a>是最流行的静态博客系统。OctoPress是基于Jekyll的扩展，进一步方便了写作。</p>
+
+<p>在主题、插件数量上和wordpress一样对竞争对手有压倒性优势。上手简单，周边工具丰富。</p>
+
+<p>推荐给想更多把时间花在写字而不是折腾博客的人。</p>
+
+<p>缺点主要是文章量大的时候生成速度慢。</p>
+
+<h3 id="toc_1">Hexo</h3>
+
+<p><a href="http://hexo.io/">Hexo</a>是NodeJS编写的静态博客系统，其生成速度快，主题数量相对也比较丰富。是OctoPress的优秀替代者。</p>
+
+<p>另外由于Node社区丰富的“方言”，写主题时天然有Jade/Stylus/Less等各种方言支持。</p>
+
+<p>推荐给希望生成速度快，主要写博客的人</p>
+
+<p>我用Hexo来写我的技术博客 <a href="http://press.mcfog.wang/">http://press.mcfog.wang/</a></p>
+
+<h3 id="toc_2">Sculpin</h3>
+
+<p><a href="https://sculpin.io/">Sculpin</a>是PHP的静态站点系统。Hexo和Octopress专注于博客，而有时候我们的需求不仅仅是博客，而是有类似CMS的页面生成需求。Sculpin是一个泛用途的静态站点生成系统，在支持博客常见的分页、分类tag等同时，也能较好地支持非博客的一般页面生成。
+但Sculpin没有主题功能，没有严格分离内容和模版，第三方提供的现成模版也很少。</p>
+
+<p>推荐给没有主题需求，希望自己写页面，且需要博客之外的页面内容的人</p>
+
+<p>缺点是生成速度一般，第三方扩展少</p>
+
+<h3 id="toc_3">Hugo</h3>
+
+<p><a href="http://gohugo.io/">Hugo</a>是GO语言编写的静态站点系统。其生成速度快，且在较好支持博客和非博客内容的同时提供了比较完备的主题系统。无论是自己写主题还是套用别人的主题都比较顺手。</p>
+
+<p>推荐给重视生成速度且希望具备一定的灵活性的人</p>
+
+<p>缺点是至今分页功能还没官方发布（还在下个release，有非官方的方案）</p>
+
+<p>这是本站<a href="http://inside.mcfog.wang/">http://inside.mcfog.wang/</a>的生成器</p>
+
+<h2 id="toc_4">总结</h2>
+
+<table>
+<thead>
+<tr>
+<th></th>
+<th>语言</th>
+<th>活跃度</th>
+<th>开箱即用</th>
+<th>主题数量</th>
+<th>主题系统</th>
+<th>生成速度</th>
+<th>博客适应性</th>
+<th>非博客适应性</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>Jekyll</td>
+<td>Ruby</td>
+<td>S</td>
+<td>B</td>
+<td>A</td>
+<td>A</td>
+<td>C</td>
+<td>A</td>
+<td>C</td>
+</tr>
+
+<tr>
+<td>OctoPress</td>
+<td>Ruby</td>
+<td>C</td>
+<td>A</td>
+<td>S</td>
+<td>A</td>
+<td>C</td>
+<td>A</td>
+<td>C</td>
+</tr>
+
+<tr>
+<td>Hexo</td>
+<td>NodeJS</td>
+<td>B</td>
+<td>A</td>
+<td>A</td>
+<td>B</td>
+<td>A</td>
+<td>A</td>
+<td>B</td>
+</tr>
+
+<tr>
+<td>Sculpin</td>
+<td>PHP</td>
+<td>C</td>
+<td>B</td>
+<td>C</td>
+<td>C</td>
+<td>B</td>
+<td>B</td>
+<td>A</td>
+</tr>
+
+<tr>
+<td>Hugo</td>
+<td>GO</td>
+<td>B</td>
+<td>B</td>
+<td>B</td>
+<td>A</td>
+<td>S</td>
+<td>B</td>
+<td>A</td>
+</tr>
+</tbody>
+</table>
+
+<p>最后推荐一个静态站点生成器的统计列表 <a href="https://staticsitegenerators.net">https://staticsitegenerators.net</a>，有机会准备玩玩<a href="http://metalsmith.io">http://metalsmith.io</a></p>
+
+<hr />
+
+<p>题图：万智《Generator Servant》电机仆役</p>
+
+<p><img src="/img/2015-q1/m15-143.jpg" alt="" />
+</p>
+</div>
+
+
+
+
+    </div>
+</div>
+
+
+
+<p class="copy">©mcfog All rights reserved.</p>
+
+</div>
+</body>
+</html>

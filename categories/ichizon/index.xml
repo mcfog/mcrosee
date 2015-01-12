@@ -7,7 +7,202 @@
     
     
     
-    <updated>Fri, 02 Jan 2015 16:18:14 CST</updated>
+    <updated>Sun, 11 Jan 2015 14:05:12 CST</updated>
+    
+    <item>
+      <title>mcfog的一己之见2</title>
+      <link>http://inside.mcfog.wang/2015/01/ichizon-2/</link>
+      <pubDate>Sun, 11 Jan 2015 14:05:12 CST</pubDate>
+      
+      <guid>http://inside.mcfog.wang/2015/01/ichizon-2/</guid>
+      <description>
+
+&lt;!--================================!--&gt;
+
+&lt;h2 id=&#34;toc_0&#34;&gt;问英语在编程当中的重要程度&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://segmentfault.com/q/1010000000698980&#34;&gt;问题&lt;/a&gt; by &lt;a href=&#34;http://segmentfault.com/u/gtg&#34;&gt;光头哥&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;在与同事群友交流当中发现英文讲不出几个，但是却经常逛英文的社区，分享国外的博客和资讯。
+但是我英文不会几个 好像感觉问题也不大。。。&lt;/p&gt;
+
+&lt;p&gt;所以我不禁想问了，挖掘机技术。。。。。&lt;/p&gt;
+
+&lt;p&gt;不对  - -&lt;/p&gt;
+
+&lt;p&gt;是学习英语在IT行业和编程当中分别到底有多重要，你们会经常逛国外的技术网站之类的吗&lt;/p&gt;
+
+&lt;p&gt;能举例说明最好&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;toc_1&#34;&gt;我的看法&lt;/h2&gt;
+
+&lt;p&gt;差不多的意思我就不重复了，我想说的是两点&lt;/p&gt;
+
+&lt;h3 id=&#34;toc_2&#34;&gt;关于口语&lt;/h3&gt;
+
+&lt;p&gt;口语也非常重要！或者说，对自己的口语水平或者至少提升口语水平的决心有信心非常重要&lt;/p&gt;
+
+&lt;p&gt;工作三年多来，我发现不少同事的共同特点就是英文口语不好或对自己的口语不好没有信心，在他们工作生活里的场景大概是这样的&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;XXX，那个计算&lt;del&gt;挖掘机技术哪家强&lt;/del&gt;的方法在哪里定义的？ &lt;code&gt;@＃＊&amp;amp;&lt;/code&gt;  （？咦？听不懂）啥？&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;那个@＃&amp;amp;¥＊方法的参数应该传什么?&lt;/code&gt; 哪个方法？ &lt;code&gt;就是@＃＊&amp;amp;¥类的@＃&amp;amp;¥＊方法啊&lt;/code&gt;  嗯？&lt;/li&gt;
+&lt;li&gt;慢慢的这种交流不畅开始反馈到他们的代码中，牛头不对马嘴的命名、拼音命名、abcxyz命名开始出现……&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;其实这都赶不上“英语口语”的程度，不过就是念方法名变量名和几个术语的发音标准而已罢了，但我觉得这非常影响到程序员能力的提升： &lt;strong&gt;如切如磋，如琢如磨&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;toc_3&#34;&gt;关于中文文档&lt;/h3&gt;
+
+&lt;p&gt;我个人的体会是：越是中文资料多的技术领域，英文，或者说坚定地找英文资料越重要。总结下来中文文{档，章}的问题有&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;准确程度成疑问，翻译不是万能的，甚至有时一些暧昧的表达可能都无法翻译（关于架构、编程思想的文章中可能多一些）&lt;/li&gt;
+&lt;li&gt;及时性成疑问，在迭代快速的iOS、Android、NodeJS、Ruby等领域，中文译者根本跟不上技术发展的速度&lt;/li&gt;
+&lt;li&gt;数量被碾轧，还难以搜索。中文的特点是表达方式多样，对搜索引擎的挑战很大，很多时候一件事情有多种非常不同的表达方式，搜索引擎无法很好的处理这些场景。&lt;/li&gt;
+&lt;li&gt;中文天生逻辑性或者说和代码的相似性远远不及英文，英文的解决方案基本上缩写一下可能就是伪代码，整理一下就是实际代码，而中文描述到代码之间差距巨大&lt;/li&gt;
+&lt;li&gt;英文这种不需要编译解释，不会报语法错误或是segmentation fault的语言你都掌握不了，那你凭什么能掌握好别的编程语言呢？ treat english as another programming language&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;口碑好一些的翻译技术书籍可能还好，平时上网搜索问题或者查文档什么的&lt;strong&gt;千万不要看中文的东西&lt;/strong&gt;，多花在英文学习、理解上的每一秒，都会对你的技术成长带来莫大的好处；偷懒看中文资料的每一次，都会在将来默默地坑你一百遍啊一百遍&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;!--================================!--&gt;
+
+&lt;h2 id=&#34;toc_4&#34;&gt;编程基础_迭代和遍历各是什么概念？二者区别和联系是什么？&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://segmentfault.com/q/1010000002434267&#34;&gt;问题&lt;/a&gt; by &lt;a href=&#34;http://segmentfault.com/u/yanwushu&#34;&gt;yanwushu&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;笔者编程水平还处于初级阶段，平时使用列表的时候经常用到遍历
+比如：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;    //java
+    for(int i = 0 ; i &amp;lt; 100 ; i ++){
+        System.out.println(i);
+    }
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;也用到过迭代
+比如：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;    //java
+    List&amp;lt;String&amp;gt; list = new List&amp;lt;String&amp;gt;(){&amp;quot;a&amp;quot; , &amp;quot;b&amp;quot;, &amp;quot;c&amp;quot;};
+    for(String str : list){
+        System.out.println(str);
+    }
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;但是一直对迭代和遍历这两个概念理解很模糊，没有一个明确的概念。
+烦请了解此问题的同志们&lt;/p&gt;
+
+&lt;p&gt;1.对迭代和遍历下一个比较明确的定义，定义中应该包含他们各自的特性。
+2.比较下他们的关系、区别（当然，如果定义足够明确，二者的差异也就自己出来了）。&lt;/p&gt;
+
+&lt;p&gt;感激不尽&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;toc_5&#34;&gt;我的看法&lt;/h2&gt;
+
+&lt;p&gt;抠字眼的时候请多用英文&lt;/p&gt;
+
+&lt;p&gt;遍历 ~ Traverse 访问一个集合(广义)的每个元素
+迭代 ~ Iterate 反复调用同一个过程最终达成目的，这个过程如果是一个函数，那就是递归，如果是一个循环体，那就是狭义上的迭代。递归和迭代之间的关系、转换、优化等等又是另一个故事了。&lt;/p&gt;
+
+&lt;p&gt;总之遍历是&lt;strong&gt;目的&lt;/strong&gt;，迭代是&lt;strong&gt;手段&lt;/strong&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;!--================================!--&gt;
+
+&lt;h2 id=&#34;toc_6&#34;&gt;谈谈你对各种编程语言的看法&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://segmentfault.com/q/1010000000727790&#34;&gt;问题&lt;/a&gt; by &lt;a href=&#34;http://segmentfault.com/u/yanwushu&#34;&gt;yanwushu&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;笔者只用过java和C#，js只是看了点皮毛。对于ruby，python，go，lisp等网络上常见的语言一窍不通。并且，限制于个人能力，对java和C#的认识也并没有很深刻。&lt;/p&gt;
+
+&lt;p&gt;想请对编程比较有功底的同志说说自己对各种语言的理解，包括他们的优劣。发表观点时，请尽量具体。&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;toc_7&#34;&gt;我的看法&lt;/h2&gt;
+
+&lt;h3 id=&#34;toc_8&#34;&gt;Lisp（系）&lt;/h3&gt;
+
+&lt;p&gt;各种思想的老祖宗。据说越像lisp的语言越牛逼（误）
+学术价值宇宙第一，实用价值较低，不明觉厉&lt;/p&gt;
+
+&lt;h3 id=&#34;toc_9&#34;&gt;C&lt;/h3&gt;
+
+&lt;p&gt;可以做任何用处，但最大的用处还是写写操作系统和编译器之类的，一般人用起来只能添乱。重剑无锋，大巧不工&lt;/p&gt;
+
+&lt;p&gt;工程性0，lisp度0，底层亲和型100%&lt;/p&gt;
+
+&lt;p&gt;宇宙主流语言中年纪最大的语言&lt;/p&gt;
+
+&lt;h3 id=&#34;toc_10&#34;&gt;C++&lt;/h3&gt;
+
+&lt;p&gt;为了让一般人也有饭吃，从C衍生的变种。写C需要一群高手，但C++只要一个高手把架子搭稳，一般市民也能写代码啦。写代码能谈得上是“工程”了
+问题是搭架子的人如果水平不够，或者一般市民不听那个人的，那也是一场灾难。&lt;/p&gt;
+
+&lt;p&gt;宇宙中特性最多的语言&lt;/p&gt;
+
+&lt;h3 id=&#34;toc_11&#34;&gt;Java&lt;/h3&gt;
+
+&lt;p&gt;为了让半瓶水也能搭出能用的架子，工程性点到满还有些溢出，派生出了邪教“设计模式真理教”“OO拯救世界教”“全家都是接口党”等
+由于邪教干扰，老东家不利索，新东家坑爹等等天灾人祸，原本应当更伟大的全领域语言在桌面GUI方面只有IDE方面所向披靡，服务端方面只有企业应用半壁江山。所幸天无绝人之路，老乡的谷哥把认他为义子，放进了安卓中，顿时前景又光明了起来&lt;/p&gt;
+
+&lt;p&gt;宇宙中最适合煮咖啡的语言&lt;/p&gt;
+
+&lt;h3 id=&#34;toc_12&#34;&gt;ObjC&lt;/h3&gt;
+
+&lt;p&gt;不怎么了解，展示了肾教淫威的语言
+但从语言角度来说，完全躺在一个干爹怀里是很不好的征兆&lt;/p&gt;
+
+&lt;p&gt;宇宙中开发环境最贵的语言&lt;/p&gt;
+
+&lt;h3 id=&#34;toc_13&#34;&gt;Python&lt;/h3&gt;
+
+&lt;p&gt;大法好。独树一帜的语法，巧妙的设计，文武双全。小可以随手作脚本，大可以承载大型工程。漂亮的数据结构和模块系统。
+可惜版本分裂得厉害，进入3以后就没有以后了&lt;/p&gt;
+
+&lt;p&gt;宇宙中最关心空格的语言&lt;/p&gt;
+
+&lt;h3 id=&#34;toc_14&#34;&gt;Ruby&lt;/h3&gt;
+
+&lt;p&gt;小清新。独树另一帜的语法，另一种巧妙的设计。据说实现需求速度飞快。
+magic就是那种看上去无比优雅风骚性感，实际工业开发的时候发现千人千面，难以查错难以维护的风格，ruby以此为荣，所以我觉得始终摆脱不了玩具语言
+不得不提到的是gem体系引领了第一波github的狂欢&lt;/p&gt;
+
+&lt;p&gt;宇宙中名字最高贵的语言&lt;/p&gt;
+
+&lt;h3 id=&#34;toc_15&#34;&gt;Javascript&lt;/h3&gt;
+
+&lt;p&gt;平淡无奇的语法中蕴含了不亚于ruby的“Lisp度”或者说元编程能力，但没人能想到真正使Javascript爆发的是原因来自于他non-block的天性。这个为异步而生的语言被Node选中，成为了完美的异步服务端脚本语言。
+没有namespace的JS通过“每个库把自己的依赖库重复装在自己目录里”的方式，暴力解决了依赖冲突的千古问题。然后又恰逢HTML5迎面而来，于是天时地利人和，顺势成为社区最火的语言，github trending保持占领一半位置
+不过没逃过“灵活”的语言的通病：难以调试、维护、查错。需要lead programmer严格把控整体风格。&lt;/p&gt;
+
+&lt;p&gt;宇宙中“我会JS”涵义最丰富的语言&lt;/p&gt;
+
+&lt;h3 id=&#34;toc_16&#34;&gt;PHP&lt;/h3&gt;
+
+&lt;p&gt;&lt;strong&gt;全宇宙最好的语言&lt;/strong&gt;
+主流语言中唯一主动聚焦于单个场景的语言。“克制”是PHP语言设计的不二法门，早年主要参照C和Perl，有限地借鉴perl的特性，没有让整个语言都“动态掉”，5.0后开始注重工程性，大致借鉴Java，也是一步一个脚印，慢慢地借鉴，抄一行，停下来改自己三行，融会贯通以后再继续抄。
+于是现在的PHP恰好站在一个非常平衡的位置，同时兼具一定的动态能力和较高的工程性，动如Laravel让人感叹RoR再世，静如Symfony、ZF让人以为回到了Java的世界。&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;这是我在 &lt;a href=&#34;http://segmentfault.com/&#34;&gt;SegmentFault&lt;/a&gt; 上的问题回答选编，遵循&lt;a href=&#34;http://creativecommons.org/licenses/by-sa/3.0/cn/&#34;&gt;CC BY-SA 3.0 CN&lt;/a&gt; 分享&lt;/p&gt;
+
+&lt;p&gt;题图：万智【封口】&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;/img/2015-q1/m14-35.jpg&#34; alt=&#34;&#34; /&gt;
+&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>mcfog的一己之见 新年第一期</title>

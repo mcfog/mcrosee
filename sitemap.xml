@@ -3,8 +3,13 @@
   
   <url>
     <loc>http://inside.mcfog.wang/</loc>
-    <lastmod>2015-01-11T14:05:12+08:00</lastmod>
+    <lastmod>2015-01-14T11:30:00+08:00</lastmod>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://inside.mcfog.wang/2015/01/tatarot-2/</loc>
+    <lastmod>2015-01-14T11:30:00+08:00</lastmod>
   </url>
   
   <url>
@@ -33,12 +38,12 @@
   </url>
   
   <url>
-    <loc>http://inside.mcfog.wang/goto/follow/</loc>
+    <loc>http://inside.mcfog.wang/about/</loc>
     <lastmod>2008-01-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://inside.mcfog.wang/about/</loc>
+    <loc>http://inside.mcfog.wang/goto/follow/</loc>
     <lastmod>2008-01-01T00:00:00+00:00</lastmod>
   </url>
   

@@ -3,6 +3,7 @@ date: 2015-01-21T14:18:31+08:00
 tags:
 - tarot_card_desc
 - tarot_m02
+title: 'The High Priestess "女祭司"'
 ---
 
 ## **The High Priestess "女祭司"**

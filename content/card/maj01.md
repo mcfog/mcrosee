@@ -3,6 +3,7 @@ date: 2015-01-21T14:16:04+08:00
 tags: 
 - tarot_card_desc
 - tarot_m01
+title: 'The Magician "魔术师"'
 ---
 
 

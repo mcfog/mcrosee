@@ -3,6 +3,7 @@ date: 2015-01-21T14:05:14+08:00
 tags: 
 - tarot_card_desc
 - tarot_m00
+title: 'The Fool "愚者"'
 ---
 
 ## **The Fool "愚者"**

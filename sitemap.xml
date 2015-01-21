@@ -3,8 +3,28 @@
   
   <url>
     <loc>http://inside.mcfog.wang/</loc>
-    <lastmod>2015-01-19T12:37:15+08:00</lastmod>
+    <lastmod>2015-01-21T14:18:31+08:00</lastmod>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://inside.mcfog.wang/card/maj02/</loc>
+    <lastmod>2015-01-21T14:18:31+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://inside.mcfog.wang/card/maj01/</loc>
+    <lastmod>2015-01-21T14:16:04+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://inside.mcfog.wang/card/maj00/</loc>
+    <lastmod>2015-01-21T14:05:14+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://inside.mcfog.wang/2015/01/tatarot-3/</loc>
+    <lastmod>2015-01-19T13:25:59+08:00</lastmod>
   </url>
   
   <url>
@@ -48,12 +68,12 @@
   </url>
   
   <url>
-    <loc>http://inside.mcfog.wang/about/</loc>
+    <loc>http://inside.mcfog.wang/goto/follow/</loc>
     <lastmod>2008-01-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://inside.mcfog.wang/goto/follow/</loc>
+    <loc>http://inside.mcfog.wang/about/</loc>
     <lastmod>2008-01-01T00:00:00+00:00</lastmod>
   </url>
   

@@ -18,7 +18,7 @@
       <description>&lt;!--more--&gt;
 
 &lt;style&gt;
-  .coupon-list:empty {
+  .coupon-list:empty:before {
     content: &#39;Loading...&#39;;
   }
   .coupon {
@@ -60,9 +60,7 @@
 
 &lt;/style&gt;
 
-&lt;coupon-list&gt;
-Loading...
-&lt;/coupon-list&gt;
+&lt;coupon-list class=&#34;coupon-list&#34;&gt;&lt;/coupon-list&gt;
 
 &lt;script src=&#34;/js/riot.min.js&#34;&gt;&lt;/script&gt;
 &lt;script src=&#34;/js/kfcoupon/all.js&#34;&gt;&lt;/script&gt;
@@ -71,7 +69,6 @@ Loading...
     riot.mount(&#39;*&#39;, data);
   }
 &lt;/script&gt;
-
 &lt;script src=&#34;http://kfcoupon-mcfog.c9.io/coupon?callback=main&#34;&gt;&lt;/script&gt;</description>
     </item>
     

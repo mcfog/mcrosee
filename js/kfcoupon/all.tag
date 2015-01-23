@@ -24,13 +24,15 @@
     </h4>
 
     <ul>
-    	<li each={items}>{__item}</li>
+      <li each={items}>{name}</li>
     </ul>
 
     <img src="http://youhui.kfc.com.cn/{coupon.SmallPic}" />
   </div>
 
   this.coupon = opts.coupon
-  this.items = this.coupon.CouponTitle.replace(/^\w+ /, '').split('+');
+  this.items = this.coupon.CouponTitle.replace(/^\w+ /, '').split('+').map(function(a) {
+    return {name: a};
+  });
 </coupon>
 

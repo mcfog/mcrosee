@@ -1,5 +1,19 @@
 <coupon-list>
-  <coupon each={opts.data} coupon={this} />
+  <coupon each={coupons} coupon={this} />
+
+  this.coupons = opts.data.sort(function(a, b) {
+  	return mark(b) - mark(a);
+  });
+
+  function mark(coupon) {
+  	var mark = 0;
+  	if(coupon.CouponTitle.indexOf('粥') !== -1 || coupon.CouponTitle.indexOf('豆浆') !== -1) {
+  		mark -= 1000;
+  	}
+  	mark += parseFloat(coupon.CouponPrice);
+
+  	return mark;
+  }
 </coupon-list>
 
 <coupon>

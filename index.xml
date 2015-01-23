@@ -114,8 +114,8 @@
 		font-size: 0;
 	}
 	.coupon img {
-		height: 128px;
-		width: 160px;
+		height: 112px;
+		width: 140px;
 	}
 	.coupon h4 {
 		position: absolute;

@@ -18,39 +18,58 @@
       <description>&lt;!--more--&gt;
 
 &lt;style&gt;
-	.coupon {
-		float: left;
-		margin: 5px;
-		position: relative;
-		background: #F7F7F7;
-		font-size: 0;
-	}
-	.coupon img {
-		height: 112px;
-		width: 140px;
-	}
-	.coupon h4 {
-		position: absolute;
-		background: rgba(255, 255, 255, 0.8);
-		margin: 0;
-		font-size: 2rem;
-		left: 0;
-		bottom: -1px;
-		border-top-right-radius: 5px;
-		padding: 2px 5px;
-		display: block;
-	}
+  .coupon-list:empty {
+    content: &#39;Loading...&#39;;
+  }
+  .coupon {
+    float: left;
+    margin: 5px;
+    position: relative;
+    background: #F7F7F7;
+    font-size: 0;
+  }
+  .coupon img {
+    height: 112px;
+    width: 140px;
+    opacity: 0.9;
+  }
+  .coupon h4 {
+    position: absolute;
+    margin: 0;
+    font-size: 2rem;
+    left: 0;
+    bottom: -1px;
+    border-top-right-radius: 5px;
+    padding: 2px 5px;
+    display: block;
+    z-index: 100;
+    text-shadow: white 0px 0 10px,white 0 0 7px,white 0 0 5px,white 0 0 5px,white 0 0 5px,white 0 0 3px;
+  }
+
+  .coupon ul {
+    position: absolute;
+    font-size: 1rem;
+    z-index: 80;
+    text-shadow: white 0px 0 10px,white 0 0 7px,white 0 0 5px,white 0 0 5px,white 0 0 5px,white 0 0 3px;
+    padding: 0;
+  }
+  .coupon li {
+    list-style: none;
+    margin: 0;
+  }
 
 &lt;/style&gt;
 
-&lt;coupon-list /&gt;
+&lt;coupon-list&gt;
+Loading...
+&lt;/coupon-list&gt;
 
 &lt;script src=&#34;/js/riot.min.js&#34;&gt;&lt;/script&gt;
 &lt;script src=&#34;/js/kfcoupon/all.js&#34;&gt;&lt;/script&gt;
 &lt;script&gt;
-	function main(data) {
-		riot.mount(&#39;*&#39;, data);
-	}
+  function main(data) {
+    riot.mount(&#39;*&#39;, data);
+  }
 &lt;/script&gt;
 
 &lt;script src=&#34;http://kfcoupon-mcfog.c9.io/coupon?callback=main&#34;&gt;&lt;/script&gt;</description>

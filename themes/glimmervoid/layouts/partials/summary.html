@@ -1,4 +1,3 @@
-{{ if eq .Section "post"}}
 <div class="title">
     <h3>
         <a href="{{ .Permalink }}">
@@ -14,7 +13,6 @@
         at {{ .Date.Format "2006-01-02" }}
     </span>
 </div>
-{{ end }}
 
 <div class="content markdown-body">{{ .Summary }}</div>
 

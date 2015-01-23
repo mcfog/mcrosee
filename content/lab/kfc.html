@@ -1,0 +1,46 @@
+---
+categories:
+date: 2015-01-23T13:47:38+08:00
+draft: true
+tags: []
+title: kfc
+---
+
+<!--more-->
+
+<style>
+	.coupon {
+		float: left;
+		margin: 5px;
+		position: relative;
+		background: #F7F7F7;
+		font-size: 0;
+	}
+	.coupon img {
+		height: 140px;
+	}
+	.coupon h4 {
+		position: absolute;
+		background: rgba(255, 255, 255, 0.8);
+		margin: 0;
+		font-size: 2rem;
+		left: 0;
+		bottom: -1px;
+		border-top-right-radius: 5px;
+		padding: 2px 5px;
+		display: block;
+	}
+
+</style>
+
+<coupon-list />
+
+<script src="/js/riot.min.js"></script>
+<script src="/js/kfcoupon/all.js"></script>
+<script>
+	function main(data) {
+		riot.mount('*', data);
+	}
+</script>
+
+<script src="http://kfcoupon-mcfog.c9.io/coupon?callback=main"></script>

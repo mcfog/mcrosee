@@ -6,7 +6,7 @@ title: kfc
 <!--more-->
 
 <style>
-  .coupon-list:empty {
+  .coupon-list:empty:before {
     content: 'Loading...';
   }
   .coupon {
@@ -48,9 +48,7 @@ title: kfc
 
 </style>
 
-<coupon-list>
-Loading...
-</coupon-list>
+<coupon-list class="coupon-list"></coupon-list>
 
 <script src="/js/riot.min.js"></script>
 <script src="/js/kfcoupon/all.js"></script>
@@ -59,5 +57,4 @@ Loading...
     riot.mount('*', data);
   }
 </script>
-
 <script src="http://kfcoupon-mcfog.c9.io/coupon?callback=main"></script>

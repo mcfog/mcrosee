@@ -23,9 +23,14 @@
       ¥{coupon.CouponPrice}
     </h4>
 
+    <ul>
+    	<li each={items}>{__item}</li>
+    </ul>
+
     <img src="http://youhui.kfc.com.cn/{coupon.SmallPic}" />
   </div>
 
   this.coupon = opts.coupon
+  this.items = this.coupon.CouponTitle.replace(/^\w+ /, '').split('+');
 </coupon>
 

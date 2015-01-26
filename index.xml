@@ -7,7 +7,222 @@
     
     
     
-    <updated>Fri, 23 Jan 2015 15:43:42 CST</updated>
+    <updated>Sun, 25 Jan 2015 22:01:29 CST</updated>
+    
+    <item>
+      <title>mcfog的一己之见4th</title>
+      <link>http://inside.mcfog.wang/2015/01/ichizon-4/</link>
+      <pubDate>Sun, 25 Jan 2015 22:01:29 CST</pubDate>
+      
+      <guid>http://inside.mcfog.wang/2015/01/ichizon-4/</guid>
+      <description>
+
+&lt;!--================================!--&gt;
+
+&lt;h2 id=&#34;toc_0&#34;&gt;一个优秀的前端工程师应该具备什么样的技能？&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://segmentfault.com/q/1010000002504410?_ea=121396&#34;&gt;问题&lt;/a&gt; by &lt;a href=&#34;http://segmentfault.com/u/houxiaoqiang&#34;&gt;侯志强&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;一个优秀的前端工程师应该具备什么样的技能，应该从哪些方面来提高自己的专业技能还有软实力？&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;toc_1&#34;&gt;我的看法&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;学力&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;迅速了解新技术，判断适用场景&lt;/li&gt;
+&lt;li&gt;在合适的时机把玩新技术，迅速熟悉&lt;/li&gt;
+&lt;li&gt;在合适的时机引入新技术，提高生产效率&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;解决问题&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;google&lt;/li&gt;
+&lt;li&gt;寻找和选择合适的解决方案&lt;/li&gt;
+&lt;li&gt;判断解决方案靠谱程度&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;沟通&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;说服队友放弃不靠谱方案&lt;/li&gt;
+&lt;li&gt;对产品暴击&lt;/li&gt;
+&lt;li&gt;对设计协商&lt;/li&gt;
+&lt;li&gt;对后台撒娇&lt;/li&gt;
+&lt;li&gt;带小朋友提高&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;个人效率&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;效率工具的发现与精通&lt;/li&gt;
+&lt;li&gt;自己实现小工具小脚本&lt;/li&gt;
+&lt;li&gt;时间管理&lt;/li&gt;
+&lt;li&gt;个人知识管理&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;说穿了任何技术岗位不都一样么！&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;!--================================!--&gt;
+
+&lt;h2 id=&#34;toc_2&#34;&gt;高效的js，jquery语句写法&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://segmentfault.com/q/1010000000633373&#34;&gt;问题&lt;/a&gt; by &lt;a href=&#34;http://segmentfault.com/u/zzzddd&#34;&gt;zzzddd&lt;/a&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$(&amp;quot;#check_order&amp;quot;).on(&amp;quot;click&amp;quot;, function() {
+    $(&amp;quot;.merchant_page&amp;quot;).hide();
+    $(&amp;quot;.cart_page&amp;quot;).show();
+});
+
+$(&amp;quot;.continue&amp;quot;).on(&amp;quot;click&amp;quot;, function() {
+    $(&amp;quot;.merchant_page&amp;quot;).show();
+    $(&amp;quot;.cart_page&amp;quot;).hide();
+});
+
+$(&amp;quot;.close&amp;quot;).on(&amp;quot;click&amp;quot;, function() {
+    $(&amp;quot;#shade&amp;quot;).hide();
+});
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;我现在的代码像这样一坨大便一样。。。&lt;/p&gt;
+
+&lt;p&gt;请问各位如何写成比如像jquery插件那样的一些写法，比如像这样的 &lt;code&gt;function(id){$(&amp;quot;#&amp;quot;+id).on(&amp;quot;click&amp;quot;,function(){.....})}&lt;/code&gt; 等等，有什么教程或者有什么书关于这种的嘛？&lt;/p&gt;
+
+&lt;p&gt;谢谢各位了&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;toc_3&#34;&gt;我的看法&lt;/h2&gt;
+
+&lt;p&gt;美刀是个很重的函数，尽量其缓存结果&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;var $merchantPage = $(&amp;quot;.merchant_page&amp;quot;);
+var $cartPage = $(&amp;quot;.cart_page&amp;quot;);
+var $shade = $(&amp;quot;#shade&amp;quot;);
+$(&amp;quot;#check_order&amp;quot;).on(&amp;quot;click&amp;quot;, function() {
+    $merchantPage.hide();
+    $cartPage.show();
+});
+
+$(&amp;quot;.continue&amp;quot;).on(&amp;quot;click&amp;quot;, function() {
+    $merchantPage.show();
+    $cartPage.hide();
+});
+
+$(&amp;quot;.close&amp;quot;).on(&amp;quot;click&amp;quot;, function() {
+    $shade.hide();
+});
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;代码要有语义，比如很明显例子里有类似切换页面的逻辑，有个名字会让代码可读性提高很多&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;var $merchantPage = $(&amp;quot;.merchant_page&amp;quot;);
+var $cartPage = $(&amp;quot;.cart_page&amp;quot;);
+var $shade = $(&amp;quot;#shade&amp;quot;);
+$(&amp;quot;#check_order&amp;quot;).on(&amp;quot;click&amp;quot;, showCart);
+
+$(&amp;quot;.continue&amp;quot;).on(&amp;quot;click&amp;quot;, showMerchant);
+
+$(&amp;quot;.close&amp;quot;).on(&amp;quot;click&amp;quot;, closePage);
+
+function closePage() {
+    $shade.hide();
+}
+function showCart() {
+    $merchantPage.hide();
+    $cartPage.show();
+}
+function showMerchant() {
+    $merchantPage.show();
+    $cartPage.hide();
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;最后dom有个范围，有个闭包，有个chain，再加一行点睛的注释，代码就非常漂亮，主次分明了&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;//商品购买模块
+(function($view) {
+	var $merchantPage = $view.find(&amp;quot;.merchant_page&amp;quot;);
+	var $cartPage = $view.find(&amp;quot;.cart_page&amp;quot;);
+	var $shade = $view.find(&amp;quot;#shade&amp;quot;);
+
+	$view
+		.on(&amp;quot;click&amp;quot;, &amp;quot;#check_order&amp;quot;, showCart)
+		.on(&amp;quot;click&amp;quot;, &amp;quot;.continue&amp;quot;, showMerchant)
+		.on(&amp;quot;click&amp;quot;, &amp;quot;.close&amp;quot;, closePage)
+	;
+
+	function closePage() {
+	    $shade.hide();
+	}
+
+	function showCart() {
+	    $merchantPage.hide();
+	    $cartPage.show();
+	}
+
+	function showMerchant() {
+	    $merchantPage.show();
+	    $cartPage.hide();
+	}
+
+})($(document.body))
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;!--================================!--&gt;
+
+&lt;h2 id=&#34;toc_4&#34;&gt;Javascript是否需要私有变量？&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://segmentfault.com/q/1010000000525835&#34;&gt;问题&lt;/a&gt; by &lt;a href=&#34;http://segmentfault.com/u/jerryzou&#34;&gt;JerryZou&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;总所周知的是，&lt;code&gt;js&lt;/code&gt;在目前流行的标准中还不支持私有变量。我在阅读一篇讲**&lt;code&gt;js&lt;/code&gt;模块化**很不错的文章《&lt;a href=&#34;http://www.adequatelygood.com/JavaScript-Module-Pattern-In-Depth.html&#34;&gt;JavaScript Module Pattern: In-Depth&lt;/a&gt;》时，看到一则谴责作者所说的模块化以及大量运用私有变量违反&lt;code&gt;js&lt;/code&gt;设计初衷的留言，留言如下：&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Comment by &lt;strong&gt;steida&lt;/strong&gt; — March 15, 2010
+Module pattern is useless JavaScript mannerism junk. It’s simple product of &lt;strong&gt;misunderstanding of JavaScript&lt;/strong&gt;. Hiding properties and methods in anonymous function does not make sense, except two reasons:&lt;br /&gt;
+1). I need another variable, and no scope pollution. It’s useful for jQuery- (function($) {})(jQuery), for instance.&lt;br /&gt;
+2). micro optimization, rarely useful, and only just because Internet Explorer.&lt;br /&gt;
+Anybody who thinks “private in JavaScript is nice” suffer from &lt;strong&gt;false illusion of “safe code”&lt;/strong&gt;. There is no such thing in dynamic language which JavaScript really is.&lt;br /&gt;
+If you want method or property as “private”, just mark it in documentation, or use underscore prefix (google closure uses it even as suffix). It’s enough to tell our code readers: “Do not call or use this, and do not except that this “private” property will work forever.&lt;br /&gt;
+From: &lt;a href=&#34;http://ajaxian.com/archives/a-deep-dive-and-analysis-of-the-javascript-module-pattern&#34;&gt;http://ajaxian.com&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;其实我目前的想法跟这位评论者&lt;strong&gt;steida&lt;/strong&gt;有些相似，因为我觉得&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;那些可能对安全性有要求的操作就不应该放在前端做。&lt;/li&gt;
+&lt;li&gt;私有变量的确可以提供有效的抽象层次，像&lt;code&gt;js&lt;/code&gt;中一直有私有成员用的变量名用下划线开头。我认为这样足够了，而不需要用闭包来专门做出真的私有变量。&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;各位对&lt;code&gt;js&lt;/code&gt;在中实现私有变量有什么看法？&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;toc_5&#34;&gt;我的看法&lt;/h2&gt;
+
+&lt;p&gt;我是下划线／POJO党。闭包私有变量不仅如题主所说无法提供所谓的安全，在断点调试的时候更是噩梦。&lt;/p&gt;
+
+&lt;p&gt;很多编程pattern的问题是：先假设别的程序员都是傻子或者恶棍，然后试图写出针对性的防御性代码。这是病，得治。防御性代码应当是“如果事情变糟糕了，那么就崩溃”，而不是“禁止你买菜刀，防止你砍人”&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;这是我在 &lt;a href=&#34;http://segmentfault.com/&#34;&gt;SegmentFault&lt;/a&gt; 上的问题回答选编，遵循&lt;a href=&#34;http://creativecommons.org/licenses/by-sa/3.0/cn/&#34;&gt;CC BY-SA 3.0 CN&lt;/a&gt; 分享&lt;/p&gt;
+
+&lt;p&gt;题图：万智【洁斯凯学僧】&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;/img/2015-q1/ktk14.jpg&#34; alt=&#34;&#34; /&gt;
+&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>The Empress &#34;皇后&#34;</title>
@@ -1319,51 +1534,6 @@ b)方法/流程是随时都可以优化而且应该不断优化的&lt;/p&gt;
 &lt;p&gt;题图：万智【鄙视】&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&#34;/img/2015-q1/ktk69.jpg&#34; alt=&#34;&#34; /&gt;
-&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Zero</title>
-      <link>http://inside.mcfog.wang/2014/03/zero/</link>
-      <pubDate>Sat, 29 Mar 2014 04:50:00 CST</pubDate>
-      
-      <guid>http://inside.mcfog.wang/2014/03/zero/</guid>
-      <description>&lt;p&gt;这是第一篇文章，我是mcfog，一个怀揣小小文艺梦想的技术宅。我的技术不是很好，技术博客有写一些，但说句大话，效果一般(-_-)。个人博客曾经有写过，但没个主题也没人关注，缺乏更新的动力。朋友圈偶尔骚一把，但篇幅受限，还混在日常吐槽之中，还没有缺乏历史积累。于是穷途末路之下突然想起还有公共帐号这么个神奇的似乎介于上述种种地方之间的地方，故而来这么尝试一把。&lt;/p&gt;
-
-&lt;p&gt;据说程序员当中擅长写字的不多，我也是个语文不用几乎，就是不及格的差学生。但好歹有朋友给我“文艺”的评价，于是我觉得可以花一些时间来为赋新词强说愁一把。这里的定位呢大概算是科技人文，或者说程序员人文吧。我以为在茫茫程序员之中，我还属于幸福指数比较高的一半，也希望能将我小小的幸福分享给大家，提升一下大家的幸福指数。&lt;/p&gt;
-
-&lt;p&gt;帐号的名字『M薇C信』，是去年还是前年的时候，随便点点的时候起的，起因大概是原来想起类似MC的微信什么之类的名字。等想把公众帐号注册起来的时候，发现名字竟是完全不让改的。&lt;/p&gt;
-
-&lt;p&gt;第一篇文章往往是About类型的比较好，我也已经About了好久了，那么顺着名字这个话题谈谈今天的主题吧。我一直相信“名字”这个东西是蕴含力量的。&lt;/p&gt;
-
-&lt;p&gt;由于肚子没什么干货，掠过各类佐证和考察，大致提纲有&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;姓和氏，祖先崇拜，贵族身份（矮人把族谱全写在名字里很带感吧）&lt;/li&gt;
-&lt;li&gt;辈份（●●●●IV世 一下子很带感吧）&lt;/li&gt;
-&lt;li&gt;父母(命名者)的期许（1949年有多少个●建国出生呢）&lt;/li&gt;
-&lt;li&gt;社会对你的认知（人在社会中的存在，名字是第一象征）&lt;/li&gt;
-&lt;li&gt;心理暗示（以上的因素夹杂在一起，结合自己的心理暗示，最终变成为名字的力量）&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;或许是由于中二迟迟不能痊愈，我总是倾向于将我的名字作“避世”“隐者”解，以此来解释我社交技能的蹩脚（&lt;del&gt;当然本质只是现实逃避&lt;/del&gt;）。后来在高中，又给自己起了一个ID=mcfog，由『感觉很神秘又很空虚的fog』和『加在名字前不明觉历的mc』组成，这个ID随我至今。慢慢的，我渐渐从我的名字中感受到一些力量，慢慢意识到姓名承载了我在现实社会之中的存在，ID承载了我在互联网上的存在。&lt;/p&gt;
-
-&lt;p&gt;所谓“有名人”的名字固然有着强大的力量，但普通人的名字同样是蕴含自己的力量的：想象一下突然有一天你改了个名字，其实这根本做不到对不对，认识你的人仍然会用原来的名字称呼你，你的新名字没有任何力量。你必须向几乎所有你认识的人，向整个社会解释你改名了，让他们用新名字称呼你，让信用卡换一张带新名字的卡片，换身份证等等。然后再经过时间的洗刷，渐渐的你的老名字的力量才会转移到新名字之中，当中一般还有损耗。同时你的老名字的力量也绝不会消失，他会待在你的“曾用名”之中，已经失去联系的旧识还以老名字来识别你，你的最亲近的父母爱人也对你的老名字有反应。&lt;/p&gt;
-
-&lt;p&gt;程序员十之八九有“起名障碍”，恐怕就是因为我们最清楚名字的力量，这种被称为标识符的东西，甚至直接决定了一大段代码的品味&lt;del&gt;、逼格&lt;/del&gt;。人类历史上从来没有任何一种创造者会需要像程序员这样频繁的来起名字：诗人不会为自己写的每一个诗句起一个名字；画家不会为自己画作的每一部分起一个名字；建筑师不会为建筑每根柱子起一个名字；工程师也最多只是给图纸上的柱子分配一个编号……只有程序员，只有计算机程序，作为创作品，其&lt;strong&gt;内部&lt;/strong&gt;需要如此之多的名字，以至于命名风格可以成为程序风格的重要部分，命名规范可以成为专业程序员必须协商且遵循的守则。&lt;/p&gt;
-
-&lt;p&gt;如果需要让一段程序不可读，很多时候只要拿掉所有的名字就够了。从这个角度上来说，可以说程序员对程序的认知是完全通过其中的名字来进行的，不遵守语法编译器会报错，但程序员照样能看懂（还能矫正），但去掉了名字，即使语法上无错可以编译运行，程序员却是再也无法理解了。名字是程序员认知一个程序元素的最重要的乃至几乎唯一的手段，所以程序员才会对起名感到畏惧：他们清楚一堆好名字甚至能让程序琅琅上口，而一个烂名字是怎样的万丈深渊，坑人于无形之间。&lt;/p&gt;
-
-&lt;p&gt;结论：&lt;del&gt;把变量叫data把方法叫call的人赶紧去死一死&lt;/del&gt; 珍惜自己的姓名、网名、游戏名，想想名字带给你的力量，对你的影响如何。如果有机会起名字，多花点时间，多花点心思。&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;题图：塔罗牌【0 愚者】&lt;/p&gt;
-
-&lt;p&gt;尾图：万智 【无名倒错】&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;/img/2014-q1/lw128.jpg&#34; alt=&#34;&#34; /&gt;
 &lt;/p&gt;
 </description>
     </item>

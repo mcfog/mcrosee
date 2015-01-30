@@ -11,6 +11,8 @@ title: "[新姿势]重构癞皮狗之洋葱皮重构法"
 
 拯救了这样的我的一款开发神器就是[AlloyDesigner](http://alloyteam.github.io/AlloyDesigner/)的洋葱皮功能。
 
+<!--more-->
+
 洋葱皮是当年flash的一个经典功能，可以让你看穿时间轴，看到前后几桢的半透明的样子。AlloyDesigner可以将重构稿导入之后，半透明覆盖在当前网页上，调整位置锁定之后，便可以愉快地进行重构了，嗯，配合chrome的开发工具，焦点在css属性上的时候可以上下直接调整数值，妈妈再也不担心我调整位置尺寸耗时费力了！
 
 AlloyDesigner有脚本部署版本，书签版本和chrome扩展版本。扩展使用方便，但会发送GA统计，敏感人群可以选用火狐扩展[PixelPerfect](https://addons.mozilla.org/en-US/firefox/addon/pixel-perfect/)，似乎也有chrome移植版。

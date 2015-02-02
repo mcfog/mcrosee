@@ -7,7 +7,139 @@
     
     
     
-    <updated>Thu, 29 Jan 2015 19:33:28 CST</updated>
+    <updated>Mon, 02 Feb 2015 10:50:02 CST</updated>
+    
+    <item>
+      <title>mcfog的一己之见 第五期</title>
+      <link>http://inside.mcfog.wang/2015/02/ichizon-5/</link>
+      <pubDate>Mon, 02 Feb 2015 10:50:02 CST</pubDate>
+      
+      <guid>http://inside.mcfog.wang/2015/02/ichizon-5/</guid>
+      <description>
+
+&lt;!--================================!--&gt;
+
+&lt;h2 id=&#34;toc_0&#34;&gt;学习PHP该走什么样的路线&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://segmentfault.com/q/1010000000484344&#34;&gt;问题&lt;/a&gt; by &lt;a href=&#34;http://segmentfault.com/u/ixiqin_com&#34;&gt;西秦公子&lt;/a&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;是应该看传统代码还是应该看MVC框架代码？&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;是应该先看手册还是应该看成品项目？&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;本人情况:
+了解PHP的基本语法，研究过typecho的主题，了解过MVC构架。
+希望可以有大神帮忙量身定制一条路线。&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;toc_1&#34;&gt;我的看法&lt;/h2&gt;
+
+&lt;ol&gt;
+&lt;li&gt;不管什么风格都要看，而且别停留在看上，动手hack一下试试模仿/修改一些功能。不知道非架构代码是啥样的情况下是不容易用好/设计好架构的&lt;/li&gt;
+&lt;li&gt;你学英文(这个人又来拿英文比喻了)的时候是先看字典还是先看课文？无论怎样我觉得都不可能是&lt;strong&gt;我看完了一大本课文没翻字典查单词&lt;/strong&gt;，或者是&lt;strong&gt;我看完了牛津字典但没看半篇文章&lt;/strong&gt;。看起来好像后者还合理一点，套到编程上来也是一样的。&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;对字典(文档)，可以先按照常用三千词的程度简单翻一遍(还存在你没经验不知道什么是常用的问题)，但主要还是靠一边看成品项目一边翻文档，最好还能一边请项目作者请教，大致讲解一下。（等价于一边看课文一边查字典，然后同时老师讲解） 开源项目的话，找不到作者可以找各种博客文章&lt;/p&gt;
+
+&lt;p&gt;技能树方面其实不管什么语言应该都是一样的：&lt;/p&gt;
+
+&lt;p&gt;LV0 只会语法&lt;br /&gt;
+LV1 明白怎么运作，能查Bug(不太复杂的)&lt;br /&gt;
+LV2 有一些思路，能添加简单功能&lt;br /&gt;
+LV3 能发现问题，优化局部的结构/性能，能搞定较复杂问题&lt;br /&gt;
+LV4a 对架构有心得，把握宏观架构，把握整个项目的技术体系&lt;br /&gt;
+LV4b 对指挥有心得，能指挥LV2 LV3的人，合理分配任务，规避技术风险&lt;br /&gt;
+LV4c 对资源有心得，能从公司内/外争取LV2 LV3的人需要的各种资源&lt;br /&gt;
+LV4d 对外交有心得，能搞定其他部门的人一起合作&lt;br /&gt;
+LV4e 对教学有心得，能指引各种人升级加点&lt;br /&gt;
+LV5 掌握若干LV4技能的基础上，知道怎么招聘和摆平其他LV4的能人&lt;/p&gt;
+
+&lt;p&gt;看出来了吧，我就是来点LV4e这个技能的熟练度的哈哈&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;!--================================!--&gt;
+
+&lt;h2 id=&#34;toc_2&#34;&gt;如何理解IoC（Inversion of Control）？&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://segmentfault.com/q/1010000000755828&#34;&gt;问题&lt;/a&gt; by &lt;a href=&#34;http://segmentfault.com/u/wangshuo&#34;&gt;WS&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;RT，如何理解IoC（Inversion of Control）？如果能写个demo解释最好了。&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;toc_3&#34;&gt;我的看法&lt;/h2&gt;
+
+&lt;p&gt;我试着搜了一下，中文资料基本都把IoC（控制翻转）和DI（依赖注入）混为一谈，就连&lt;a href=&#34;http://stackoverflow.com/questions/3058/what-is-inversion-of-control&#34;&gt;StackOverflow上的第一位答案&lt;/a&gt;也犯了同样的问题（幸好下面有高票的反对评论，否则我的世界观都快坏掉了）&lt;/p&gt;
+
+&lt;p&gt;控制翻转是代码复用的一种模式（注意不是设计模式）&lt;/p&gt;
+
+&lt;p&gt;一般（非IoC）的复用，通常是用户代码调用组件（任意形式的被复用的代码，本答案中统称为组件）。也就是用户代码解决“Why it works, What to do”，组件解决“How to do”，逻辑的入口是用户代码，&lt;/p&gt;
+
+&lt;p&gt;而控制翻转则是组件来调用用户代码，也就是组件解决“Why it works, When to do”，用户代码解决“What to do”，逻辑的入口是组件&lt;/p&gt;
+
+&lt;p&gt;下面是除了DI之外的控制翻转的例子&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;接口／虚函数  组件调用接口／虚函数，具体由用户代码实现&lt;/li&gt;
+&lt;li&gt;发布订阅（事件）模式  组件触发事件，用户代码订阅事件&lt;/li&gt;
+&lt;li&gt;回调  用户代码写回调，组件来调用&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;几乎所有能被称之为框架的东西&lt;/strong&gt;  用户代码在规定的地方实现具体业务逻辑，剩下的框架负责&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;!--================================!--&gt;
+
+&lt;h2 id=&#34;toc_4&#34;&gt;能简单解释一下MVC吗？越简单越好&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://segmentfault.com/q/1010000002456846&#34;&gt;问题&lt;/a&gt; by &lt;a href=&#34;http://segmentfault.com/u/dwqs&#34;&gt;不写代码的码农&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;最近打算学习PHP框架，才发现我以前对MVC的认识很肤浅。但是看Laravel的文档，对MVC又是云里雾里的&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;toc_5&#34;&gt;我的看法&lt;/h2&gt;
+
+&lt;p&gt;概念大家都说了，其实MVC的涵义一直在潜移默化地变化，原本CS软件的MVC和如今php ruby python讲的MVC已经有不小的区别了。甚至很可能概念早就变成MVP，只是大家习惯了MVC，指鹿为马了&lt;/p&gt;
+
+&lt;p&gt;我觉得已实际项目来说，作3个思想实验就能大致理解MVC的本质和目标，具体三层怎么分，是三层还是四层还是两层，其实都是为了达成灵活性和可维护性的手段而已&lt;/p&gt;
+
+&lt;h3 id=&#34;toc_6&#34;&gt;更换数据库选择&lt;/h3&gt;
+
+&lt;p&gt;数据结构不变，把数据库从mysql迁移到pgsql乃至mongodb，你的项目需要多大的变化？
+理想的MVC架构应该无需修改任何业务代码(包括Model)，只需要修改配置文件，最多写个新的DBAL driver
+实际情况下不同DB的能力有微妙的区别，那也应该微调Model就能解决。&lt;/p&gt;
+
+&lt;p&gt;如果你的答案是两眼一黑：和重写一遍差不多，那么你的M层还不够独立，该写在Model的代码分散到别处了&lt;/p&gt;
+
+&lt;h3 id=&#34;toc_7&#34;&gt;手机HTML5版本&lt;/h3&gt;
+
+&lt;p&gt;假设保持所有功能不变（都有合理自然的移动版交互），给你的站点增加手机版，你的项目需要多大的变化？
+答案应该是重写一套View，然后Controller改一行&lt;code&gt;if(isMobile) use(MobileView);&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;如果你发现Controller要改大量逻辑，甚至Model都被牵连，那你的V层不够独立&lt;/p&gt;
+
+&lt;h3 id=&#34;toc_8&#34;&gt;增加API&lt;/h3&gt;
+
+&lt;p&gt;假设所有功能不变，给你的站点增加开放API（给第三方或移动应用使用），你的项目需要多大的变化？
+答案应该是一套新的Controller 包含新的授权、和数据格式以及校验等逻辑，和一个简单的View（只输出json或xml）&lt;/p&gt;
+
+&lt;p&gt;如果你发现Model要改，原来View里的一些东西要挪动，或者是原来写在老的Controller里的部分代码要copy一遍，那么你的C层不够独立&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;这是我在 &lt;a href=&#34;http://segmentfault.com/&#34;&gt;SegmentFault&lt;/a&gt; 上的问题回答选编，遵循&lt;a href=&#34;http://creativecommons.org/licenses/by-sa/3.0/cn/&#34;&gt;CC BY-SA 3.0 CN&lt;/a&gt; 分享&lt;/p&gt;
+
+&lt;p&gt;题图：万智【精研战技】&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;/img/2015-q1/m15-4.jpg&#34; alt=&#34;&#34; /&gt;
+&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>[新姿势]重构癞皮狗之洋葱皮重构法</title>
@@ -1384,150 +1516,6 @@ magic就是那种看上去无比优雅风骚性感，实际工业开发的时候
 &lt;p&gt;题图：万智【封口】&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&#34;/img/2015-q1/m14-35.jpg&#34; alt=&#34;&#34; /&gt;
-&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>[新姿势]我用过的静态站点生成器们</title>
-      <link>http://inside.mcfog.wang/2015/01/tech4fun-1/</link>
-      <pubDate>Fri, 09 Jan 2015 13:26:52 CST</pubDate>
-      
-      <guid>http://inside.mcfog.wang/2015/01/tech4fun-1/</guid>
-      <description>
-
-&lt;p&gt;随着诸如github pages的静态托管服务，静态站点生成器在近年有了极大的发展，静态生成+托管对托管环境要求低、维护简单、可配合版本控制，但又灵活多变，在程序员和geek群体中大有超越WordPress等动态博客程序的势头&lt;/p&gt;
-
-&lt;p&gt;近年来个人也好项目也好，我也经常要用到静态生成器，这里把我玩过的静态生成器挨个做个简评&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;才、才不是什么玩博客程序的时间超过了写博客的时间呢&lt;/em&gt;&lt;/p&gt;
-
-&lt;h3 id=&#34;toc_0&#34;&gt;Jekyll / OctoPress&lt;/h3&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://jekyllrb.com/&#34;&gt;Jekyll&lt;/a&gt;和&lt;a href=&#34;http://octopress.org/&#34;&gt;OctoPress&lt;/a&gt;是最流行的静态博客系统。OctoPress是基于Jekyll的扩展，进一步方便了写作。&lt;/p&gt;
-
-&lt;p&gt;在主题、插件数量上和wordpress一样对竞争对手有压倒性优势。上手简单，周边工具丰富。&lt;/p&gt;
-
-&lt;p&gt;推荐给想更多把时间花在写字而不是折腾博客的人。&lt;/p&gt;
-
-&lt;p&gt;缺点主要是文章量大的时候生成速度慢。&lt;/p&gt;
-
-&lt;h3 id=&#34;toc_1&#34;&gt;Hexo&lt;/h3&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://hexo.io/&#34;&gt;Hexo&lt;/a&gt;是NodeJS编写的静态博客系统，其生成速度快，主题数量相对也比较丰富。是OctoPress的优秀替代者。&lt;/p&gt;
-
-&lt;p&gt;另外由于Node社区丰富的“方言”，写主题时天然有Jade/Stylus/Less等各种方言支持。&lt;/p&gt;
-
-&lt;p&gt;推荐给希望生成速度快，主要写博客的人&lt;/p&gt;
-
-&lt;p&gt;我用Hexo来写我的技术博客 &lt;a href=&#34;http://press.mcfog.wang/&#34;&gt;http://press.mcfog.wang/&lt;/a&gt;&lt;/p&gt;
-
-&lt;h3 id=&#34;toc_2&#34;&gt;Sculpin&lt;/h3&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://sculpin.io/&#34;&gt;Sculpin&lt;/a&gt;是PHP的静态站点系统。Hexo和Octopress专注于博客，而有时候我们的需求不仅仅是博客，而是有类似CMS的页面生成需求。Sculpin是一个泛用途的静态站点生成系统，在支持博客常见的分页、分类tag等同时，也能较好地支持非博客的一般页面生成。
-但Sculpin没有主题功能，没有严格分离内容和模版，第三方提供的现成模版也很少。&lt;/p&gt;
-
-&lt;p&gt;推荐给没有主题需求，希望自己写页面，且需要博客之外的页面内容的人&lt;/p&gt;
-
-&lt;p&gt;缺点是生成速度一般，第三方扩展少&lt;/p&gt;
-
-&lt;h3 id=&#34;toc_3&#34;&gt;Hugo&lt;/h3&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://gohugo.io/&#34;&gt;Hugo&lt;/a&gt;是GO语言编写的静态站点系统。其生成速度快，且在较好支持博客和非博客内容的同时提供了比较完备的主题系统。无论是自己写主题还是套用别人的主题都比较顺手。&lt;/p&gt;
-
-&lt;p&gt;推荐给重视生成速度且希望具备一定的灵活性的人&lt;/p&gt;
-
-&lt;p&gt;缺点是至今分页功能还没官方发布（还在下个release，有非官方的方案）&lt;/p&gt;
-
-&lt;p&gt;这是本站&lt;a href=&#34;http://inside.mcfog.wang/&#34;&gt;http://inside.mcfog.wang/&lt;/a&gt;的生成器&lt;/p&gt;
-
-&lt;h2 id=&#34;toc_4&#34;&gt;总结&lt;/h2&gt;
-
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;&lt;/th&gt;
-&lt;th&gt;语言&lt;/th&gt;
-&lt;th&gt;活跃度&lt;/th&gt;
-&lt;th&gt;开箱即用&lt;/th&gt;
-&lt;th&gt;主题数量&lt;/th&gt;
-&lt;th&gt;主题系统&lt;/th&gt;
-&lt;th&gt;生成速度&lt;/th&gt;
-&lt;th&gt;博客适应性&lt;/th&gt;
-&lt;th&gt;非博客适应性&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;Jekyll&lt;/td&gt;
-&lt;td&gt;Ruby&lt;/td&gt;
-&lt;td&gt;S&lt;/td&gt;
-&lt;td&gt;B&lt;/td&gt;
-&lt;td&gt;A&lt;/td&gt;
-&lt;td&gt;A&lt;/td&gt;
-&lt;td&gt;C&lt;/td&gt;
-&lt;td&gt;A&lt;/td&gt;
-&lt;td&gt;C&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;OctoPress&lt;/td&gt;
-&lt;td&gt;Ruby&lt;/td&gt;
-&lt;td&gt;C&lt;/td&gt;
-&lt;td&gt;A&lt;/td&gt;
-&lt;td&gt;S&lt;/td&gt;
-&lt;td&gt;A&lt;/td&gt;
-&lt;td&gt;C&lt;/td&gt;
-&lt;td&gt;A&lt;/td&gt;
-&lt;td&gt;C&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;Hexo&lt;/td&gt;
-&lt;td&gt;NodeJS&lt;/td&gt;
-&lt;td&gt;B&lt;/td&gt;
-&lt;td&gt;A&lt;/td&gt;
-&lt;td&gt;A&lt;/td&gt;
-&lt;td&gt;B&lt;/td&gt;
-&lt;td&gt;A&lt;/td&gt;
-&lt;td&gt;A&lt;/td&gt;
-&lt;td&gt;B&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;Sculpin&lt;/td&gt;
-&lt;td&gt;PHP&lt;/td&gt;
-&lt;td&gt;C&lt;/td&gt;
-&lt;td&gt;B&lt;/td&gt;
-&lt;td&gt;C&lt;/td&gt;
-&lt;td&gt;C&lt;/td&gt;
-&lt;td&gt;B&lt;/td&gt;
-&lt;td&gt;B&lt;/td&gt;
-&lt;td&gt;A&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;Hugo&lt;/td&gt;
-&lt;td&gt;GO&lt;/td&gt;
-&lt;td&gt;B&lt;/td&gt;
-&lt;td&gt;B&lt;/td&gt;
-&lt;td&gt;B&lt;/td&gt;
-&lt;td&gt;A&lt;/td&gt;
-&lt;td&gt;S&lt;/td&gt;
-&lt;td&gt;B&lt;/td&gt;
-&lt;td&gt;A&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;p&gt;最后推荐一个静态站点生成器的统计列表 &lt;a href=&#34;https://staticsitegenerators.net&#34;&gt;https://staticsitegenerators.net&lt;/a&gt;，有机会准备玩玩&lt;a href=&#34;http://metalsmith.io&#34;&gt;http://metalsmith.io&lt;/a&gt;&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;题图：万智《Generator Servant》电机仆役&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;/img/2015-q1/m15-143.jpg&#34; alt=&#34;&#34; /&gt;
 &lt;/p&gt;
 </description>
     </item>

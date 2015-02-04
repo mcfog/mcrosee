@@ -1,7 +1,6 @@
 ---
 categories:
 date: 2015-01-26T12:12:58+08:00
-draft: true
 tags:
 title: "愚者的旅程"
 ---

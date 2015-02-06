@@ -10,6 +10,8 @@ eclipse又慢又笨？用惯WinSCP换了Mac不知所措？被Dash惯坏了想要
 
 http://alternativeto.net/
 
+<!--more-->
+
 alternative to XXX 正如其名的这个网站，基于用户推荐整理各种软件的替代关系，支持按平台按收费与否等等各种条件过滤，妈妈再也不担心我找不到顺手的软件啦
 
 ![](/img/2015-q1/alternativeto.png)

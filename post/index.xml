@@ -7,7 +7,182 @@
     
     
     
-    <updated>Thu, 05 Feb 2015 17:39:37 CST</updated>
+    <updated>Mon, 09 Feb 2015 18:28:43 CST</updated>
+    
+    <item>
+      <title>mcfog的一己之见 VI</title>
+      <link>http://inside.mcfog.wang/2015/02/ichizon-6/</link>
+      <pubDate>Mon, 09 Feb 2015 18:28:43 CST</pubDate>
+      
+      <guid>http://inside.mcfog.wang/2015/02/ichizon-6/</guid>
+      <description>
+
+&lt;!--================================!--&gt;
+
+&lt;h2 id=&#34;toc_0&#34;&gt;【Perl】字符串匹配：如何正确匹配出’aaaa&amp;rsquo;中的3个‘aa&amp;rsquo;模式？&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://segmentfault.com/q/1010000002541924&#34;&gt;问题&lt;/a&gt; by &lt;a href=&#34;http://segmentfault.com/u/zair&#34;&gt;Zair&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;一段Perl的代码，输出结果为2。然而显然在字符串&amp;rsquo;aaaa&amp;rsquo;中含有3个&amp;rsquo;aa&amp;rsquo;模式。请问如何做到3次匹配？&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;#!/usr/bin/perl
+$a = &#39;aaaa&#39;;
+$i ++ while $a =~ /aa/g;
+print $i;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;toc_1&#34;&gt;我的看法&lt;/h2&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-perl&#34;&gt;#!/usr/bin/perl
+$a = &#39;aaaa&#39;;
+$i ++ while $a =~ /a(?=a)/g;
+print $i;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;正则本质是状态机一个个consume字符扭转状态，捕获成功第一个aa以后相当于前两个字符都被consume掉从第三个a开始匹配了，所以原来的结果是2，这里用&lt;strong&gt;零宽断言&lt;/strong&gt;让正则去look ahead匹配模式里第二个a而不将其consume掉，从而得到3&lt;/p&gt;
+
+&lt;p&gt;编译原理学得不好，解释得有点乱……&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;图形的力量，感觉比字清楚多了&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://segmentfault.com/img/bVkPsx&#34; alt=&#34;图片描述&#34; /&gt;
+&lt;/p&gt;
+
+&lt;!--================================!--&gt;
+
+&lt;h2 id=&#34;toc_2&#34;&gt;软件工程中的耦合性和解耦合性是什么意思?&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://segmentfault.com/q/1010000002421856&#34;&gt;问题&lt;/a&gt; by &lt;a href=&#34;http://segmentfault.com/u/iamzhoug37&#34;&gt;iamzhoug37&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;看《thinking in java》和《head first 设计模式》中，两本书好多次提到了“耦合性”和“解耦合性”这两个词。一直以来都是模棱两可的，搜了一下，维基百科中的解释太专业化了，我没有看懂，通俗的讲这两个词是什么意思？&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;谢谢大家的回答. 通过大家的回答, 我对于这两个概念有了初步的了解, 但是估计是我的层次不够吧, 看这两本书还是有难度,而且在实际自己编写代码的时候还是不能很好的运用设计模式的精髓, 不过我会努力的,谢谢大家&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;toc_3&#34;&gt;我的看法&lt;/h2&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;你正乘坐直升机游览科罗拉多大峡谷，驾驶员——他显然犯了一个错误，在吃鱼，他的午餐——突然呻吟起来，晕了过去。幸运的是，他把你留在了离地面100英尺的地方。你推断，升降杆控制总升力，所以轻轻将其压低可以让直升机平缓降向地面。然而，当你这样做时，却发现生活并非那么简单。直升机的鼻子向下，开始向左盘旋下降。突然间你发现，你驾驶的这个系统，所有的控制输入都有次级效应。压低左手的操作杆，你需要补偿性地向后移动右手柄，并踩右踏板。但这些改变中的每一项都会再次影响所有其他的控制。突然间，你在用一个让人难以置信的复杂系统玩杂耍，其中每一项改变都会影响所有其他的输入。你的工作负担异常巨大：你的手脚在不停地移动，试图平衡所有交互影响的力量。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;——《程序员的修炼之道》 我认为所有程序员都应该看，而且每年都应该重新看一遍的书&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;!--================================!--&gt;
+
+&lt;h2 id=&#34;toc_4&#34;&gt;php两种封装类的优缺点？&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://segmentfault.com/q/1010000002544103&#34;&gt;问题&lt;/a&gt; by &lt;a href=&#34;http://segmentfault.com/u/tiyee&#34;&gt;tiyee&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;php很多内置的类或扩展类比较粗糙，需要人为的封装一遍，于是有了两种封装方式，
+1直接继承
+2内部实例化&lt;/p&gt;
+
+&lt;p&gt;如redis类，
+可以&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;namespace lib
+class redis extends \Redis {}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;也可以&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;namespace lib
+class redis {
+    private $_redis = null;
+    public function __construct() {
+        $this-&amp;gt;_redis = new \Redis()
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;第一种方法的优点是方便，无须把所有的方法重写一遍，但是不太好统一捕捉异常，
+第二种就是麻烦些，需要重写一遍所有的方法，（虽然可以用魔术方法），捕捉异常方便些。
+大家用的哪种？为什么呢？&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;toc_5&#34;&gt;我的看法&lt;/h2&gt;
+
+&lt;h3 id=&#34;toc_6&#34;&gt;继承&lt;/h3&gt;
+
+&lt;p&gt;继承的特点有&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;✔实现成本低&lt;/li&gt;
+&lt;li&gt;✔调用者可以沿用原有的接口使用，学习成本低&lt;/li&gt;
+&lt;li&gt;✔原有的功能无需任何代码如常工作&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;✘无法隐藏或改变原有的功能&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;其实你_可以_这么做，就好像你确实_可以_用铁丝去捅插座眼一样&lt;/li&gt;
+&lt;li&gt;改变输入、改变输出、改变行为都属于改变功能，比如原来抛的异常现在不抛了，原来return false现在变异常了，原来输入的是青椒现在变牛肉了等等&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;✘正交性弱，没有做到屏蔽父类的依赖，需要更换父类的时候显得脆弱&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;常见的合适的应用有&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;增加日志记录等不影响原有逻辑的“旁路逻辑”&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;增加一些方法，比如原有的某一些方法a()b()c()总是连续一起调用，增加一个doABC()方法&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;仅限简单的少量的方法，如果要加复杂的功能或者大量的方法，还是建议用组合&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;增加一些静态／工厂方法，比如&lt;code&gt;new Redis(ip, port)&lt;/code&gt; =&amp;gt; &lt;code&gt;OurRedis::getInstance()&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;一句话说就是原有行为不变，&lt;strong&gt;is-a&lt;/strong&gt;的场景用继承。&lt;/p&gt;
+
+&lt;h3 id=&#34;toc_7&#34;&gt;组合&lt;/h3&gt;
+
+&lt;p&gt;组合的特点有&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;✘实现成本略高，创建对象的过程可能会变复杂&lt;/li&gt;
+&lt;li&gt;✘调用者需要理解新的接口&lt;/li&gt;
+&lt;li&gt;✘需要转发才能让原有的功能工作&lt;/li&gt;
+&lt;li&gt;✔很容易隐藏／屏蔽原有的部分功能&lt;/li&gt;
+&lt;li&gt;✔正交性强，可以通过更换内部的对象适配不同的情况而保持外部接口不变&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;常见的合适的应用有&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;一切涉及改变行为的需求&lt;/li&gt;
+&lt;li&gt;未来依赖会变的场景，比如redis会变成memcache，或者mysql会变mariadb之类&lt;/li&gt;
+&lt;li&gt;需要屏蔽细节的场景，比如Session Cache等需求确实用到redis，但对外肯定要屏蔽“这是个redis实现的session”。否则恐龙会出现在你背后把你脑袋咬掉&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;一句话就是某个功能依赖另一个功能，&lt;strong&gt;use-a&lt;/strong&gt;或&lt;strong&gt;has-a&lt;/strong&gt;的场景用组合&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;偏题，predis用起来还不错，可以一试&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;这是我在 &lt;a href=&#34;http://segmentfault.com/&#34;&gt;SegmentFault&lt;/a&gt; 上的问题回答选编，遵循&lt;a href=&#34;http://creativecommons.org/licenses/by-sa/3.0/cn/&#34;&gt;CC BY-SA 3.0 CN&lt;/a&gt; 分享&lt;/p&gt;
+
+&lt;p&gt;题图：万智【接踵而至】&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;/img/2015-q1/rav51.jpg&#34; alt=&#34;&#34; /&gt;
+&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>[新姿势]授人以渔：如何迅速找到靠谱的工具软件</title>
@@ -1444,113 +1619,6 @@ magic就是那种看上去无比优雅风骚性感，实际工业开发的时候
 &lt;hr /&gt;
 
 &lt;p&gt;总体看来这是一个保守看好的牌阵，在&lt;strong&gt;创作的热情&lt;/strong&gt;和&lt;strong&gt;低调的坚持&lt;/strong&gt;中寻求&lt;strong&gt;平衡&lt;/strong&gt;，&lt;strong&gt;传播学识&lt;/strong&gt;并找到&lt;strong&gt;集体认同&lt;/strong&gt;，提防&lt;strong&gt;骄傲自满&lt;/strong&gt;的同时享受&lt;strong&gt;赞美&lt;/strong&gt;，塔罗牌似乎这么诉说着&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>mcfog的一己之见 新年第一期</title>
-      <link>http://inside.mcfog.wang/2015/01/ichizon-1/</link>
-      <pubDate>Fri, 02 Jan 2015 16:18:14 CST</pubDate>
-      
-      <guid>http://inside.mcfog.wang/2015/01/ichizon-1/</guid>
-      <description>
-
-&lt;!--================================!--&gt;
-
-&lt;h2 id=&#34;toc_0&#34;&gt;&lt;strong&gt;该不该从事更多项目？&lt;/strong&gt;&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://segmentfault.com/q/1010000002439221/a-1020000002439395&#34;&gt;问题&lt;/a&gt; by &lt;a href=&#34;http://segmentfault.com/u/guotong1988&#34;&gt;郭同jet&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;公司有公司的项目，虽然主要分配给我的工作A比较无聊，但也偷偷接触了一些公司的核心项目B，
-没有时间搞B，这时候又有github上的项目C诱惑，&lt;/p&gt;
-
-&lt;p&gt;好好搞B的话，也许能提高收入，但C上能学到东西。&lt;/p&gt;
-
-&lt;p&gt;又希望早日结束A，而公司目前缺人，不让俺全职搞B。
-有点想把C砍掉的意思。。C回报慢周期长&lt;/p&gt;
-
-&lt;p&gt;“andrew ng语重心长的说，每次专心做一件事情就好了，因为你做的最大的事情远远大于次大的，例如乔布斯的苹果和皮克斯。”&lt;/p&gt;
-
-&lt;p&gt;做一件事 one at a time，据说这句话最近很流行，纠结。&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;h2 id=&#34;toc_1&#34;&gt;我的看法&lt;/h2&gt;
-
-&lt;h3 id=&#34;toc_2&#34;&gt;A.&lt;/h3&gt;
-
-&lt;p&gt;无聊项目变有趣的方法可以是流程自动化 文档化 或者重构。这些同时还为你能抽身创造客观条件&lt;/p&gt;
-
-&lt;h3 id=&#34;toc_3&#34;&gt;B.&lt;/h3&gt;
-
-&lt;p&gt;你不可能没有时间搞B，没有时间100%只是借口，在我看来可能的原因有 你懒／老板不让你搞／或者是你本职的A没搞好等等，A没搞好的话参见上一条，创造你能抽身的条件；懒的话自己想办法解决；老板不让你搞的话，在解决了其他问题以后，找老板谈，告诉他你已经把A项目撸圆，不需要很多精力维护，B项目你已经了解了觉得很有趣，你对B项目的看法规划等等&lt;/p&gt;
-
-&lt;h3 id=&#34;toc_4&#34;&gt;C.&lt;/h3&gt;
-
-&lt;p&gt;C能学到东西，A.B学不到是假象。C如果和公司无关，那么就只能在把AB搞漂亮之外的时间来搞，这是基本职业素养，时间自己找。 千万不要觉得只有C才能学到东西就好。我的建议是公司如果压力大的话不妨先抛开C，投入精力在改善AB两个项目，优化架构，或者是和老板沟通增加AB的资源（放慢研发周期或者加人），略微卸掉压力以后再找时间来玩C&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;!--================================!--&gt;
-
-&lt;h2 id=&#34;toc_5&#34;&gt;&lt;strong&gt;为什么国内有不少PHP程序员不喜欢THINKPHP，甚至鄙视THINKPHP？&lt;/strong&gt;&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://segmentfault.com/q/1010000002443290&#34;&gt;问题&lt;/a&gt; by &lt;a href=&#34;http://segmentfault.com/u/xiaohuaer&#34;&gt;123456&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;为什么国内有不少PHP程序员不喜欢THINKPHP，甚至鄙视THINKPHP？&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;h2 id=&#34;toc_6&#34;&gt;我的看法&lt;/h2&gt;
-
-&lt;p&gt;自古文人相轻，程序员更甚，所谓的鄙视不是简单的链条或循环，而是密密麻麻的有向图，什么技术都有人鄙视&lt;/p&gt;
-
-&lt;p&gt;我的看法是技术是有&lt;strong&gt;适用场景&lt;/strong&gt;的，什么样的业务，什么样的硬件，包括公司已有什么样的开发人员，什么样的开发人员市场上容易招聘等等各种因素都会影响到技术选择&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;就比如说“世界上最好的语言”，其古怪程度确实罄竹难书，有篇知名博文用两头都是起子的锤子来描述并不为过，但只需要“人好召，环境好配，运维简便，性能过硬” 两头都是起子的锤子也至少能在市场占有方面完爆很多竞争对手。市场是不会说谎的，用的人多的技术一定有它的优点&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;作为负责技术选型的lead programmer，必须综合考虑所有的因素来选择对公司最合适的技术，而非争个人喜好或是仅靠单纯的某个方面做出选择&lt;/p&gt;
-
-&lt;p&gt;而一旦某个项目技术选型确定，或者是你加入的是已经成熟的项目，那么吐槽已定的技术栈就没什么建设性了。这时候适应已有的思维带着镣铐跳舞才是正道，当然如果能够融合其他技术栈的思想来弥补现有技术栈的一些缺陷就更好了。&lt;/p&gt;
-
-&lt;p&gt;说回thinkphp的话，我最近否决thinkPHP的理由和否决Laravel的大致理由是一样的：我不需要全功能的框架&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;!--================================!--&gt;
-
-&lt;h2 id=&#34;toc_7&#34;&gt;&lt;strong&gt;如何看待敏捷开发？&lt;/strong&gt;&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://segmentfault.com/q/1010000000487553&#34;&gt;问题&lt;/a&gt; by &lt;a href=&#34;http://segmentfault.com/u/edagarli&#34;&gt;edagarli&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;能否根据你用敏捷开发的经验简要的说下敏捷开发。&lt;/p&gt;
-
-&lt;p&gt;谈谈你自己的理解即可。几句话，几段话，都可。&lt;/p&gt;
-
-&lt;p&gt;我知道这不是编程语言，我只是想了解大家在项目中用到敏捷开发时候，对其的理解。&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;h2 id=&#34;toc_8&#34;&gt;我的看法&lt;/h2&gt;
-
-&lt;p&gt;有人说这是某种思想，有人说这是某名字和古董OS一样的实践，又有人说这是另一些实践&lt;/p&gt;
-
-&lt;p&gt;我讨厌这种暧昧不清的词&lt;/p&gt;
-
-&lt;p&gt;我只认为并相信&lt;br /&gt;
-a)高效的团队开发有必要遵循某种方法/流程&lt;br /&gt;
-b)方法/流程是随时都可以优化而且应该不断优化的&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;这是我在 &lt;a href=&#34;http://segmentfault.com/&#34;&gt;SegmentFault&lt;/a&gt; 上的问题回答选编，遵循&lt;a href=&#34;http://creativecommons.org/licenses/by-sa/3.0/cn/&#34;&gt;CC BY-SA 3.0 CN&lt;/a&gt; 分享&lt;/p&gt;
-
-&lt;p&gt;题图：万智【鄙视】&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;/img/2015-q1/ktk69.jpg&#34; alt=&#34;&#34; /&gt;
-&lt;/p&gt;
 </description>
     </item>
     

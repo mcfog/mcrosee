@@ -7,7 +7,182 @@
     
     
     
-    <updated>Thu, 05 Feb 2015 17:39:37 CST</updated>
+    <updated>Mon, 09 Feb 2015 18:28:43 CST</updated>
+    
+    <item>
+      <title>mcfog的一己之见 VI</title>
+      <link>http://inside.mcfog.wang/2015/02/ichizon-6/</link>
+      <pubDate>Mon, 09 Feb 2015 18:28:43 CST</pubDate>
+      
+      <guid>http://inside.mcfog.wang/2015/02/ichizon-6/</guid>
+      <description>
+
+&lt;!--================================!--&gt;
+
+&lt;h2 id=&#34;toc_0&#34;&gt;【Perl】字符串匹配：如何正确匹配出’aaaa&amp;rsquo;中的3个‘aa&amp;rsquo;模式？&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://segmentfault.com/q/1010000002541924&#34;&gt;问题&lt;/a&gt; by &lt;a href=&#34;http://segmentfault.com/u/zair&#34;&gt;Zair&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;一段Perl的代码，输出结果为2。然而显然在字符串&amp;rsquo;aaaa&amp;rsquo;中含有3个&amp;rsquo;aa&amp;rsquo;模式。请问如何做到3次匹配？&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;#!/usr/bin/perl
+$a = &#39;aaaa&#39;;
+$i ++ while $a =~ /aa/g;
+print $i;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;toc_1&#34;&gt;我的看法&lt;/h2&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-perl&#34;&gt;#!/usr/bin/perl
+$a = &#39;aaaa&#39;;
+$i ++ while $a =~ /a(?=a)/g;
+print $i;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;正则本质是状态机一个个consume字符扭转状态，捕获成功第一个aa以后相当于前两个字符都被consume掉从第三个a开始匹配了，所以原来的结果是2，这里用&lt;strong&gt;零宽断言&lt;/strong&gt;让正则去look ahead匹配模式里第二个a而不将其consume掉，从而得到3&lt;/p&gt;
+
+&lt;p&gt;编译原理学得不好，解释得有点乱……&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;图形的力量，感觉比字清楚多了&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://segmentfault.com/img/bVkPsx&#34; alt=&#34;图片描述&#34; /&gt;
+&lt;/p&gt;
+
+&lt;!--================================!--&gt;
+
+&lt;h2 id=&#34;toc_2&#34;&gt;软件工程中的耦合性和解耦合性是什么意思?&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://segmentfault.com/q/1010000002421856&#34;&gt;问题&lt;/a&gt; by &lt;a href=&#34;http://segmentfault.com/u/iamzhoug37&#34;&gt;iamzhoug37&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;看《thinking in java》和《head first 设计模式》中，两本书好多次提到了“耦合性”和“解耦合性”这两个词。一直以来都是模棱两可的，搜了一下，维基百科中的解释太专业化了，我没有看懂，通俗的讲这两个词是什么意思？&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;谢谢大家的回答. 通过大家的回答, 我对于这两个概念有了初步的了解, 但是估计是我的层次不够吧, 看这两本书还是有难度,而且在实际自己编写代码的时候还是不能很好的运用设计模式的精髓, 不过我会努力的,谢谢大家&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;toc_3&#34;&gt;我的看法&lt;/h2&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;你正乘坐直升机游览科罗拉多大峡谷，驾驶员——他显然犯了一个错误，在吃鱼，他的午餐——突然呻吟起来，晕了过去。幸运的是，他把你留在了离地面100英尺的地方。你推断，升降杆控制总升力，所以轻轻将其压低可以让直升机平缓降向地面。然而，当你这样做时，却发现生活并非那么简单。直升机的鼻子向下，开始向左盘旋下降。突然间你发现，你驾驶的这个系统，所有的控制输入都有次级效应。压低左手的操作杆，你需要补偿性地向后移动右手柄，并踩右踏板。但这些改变中的每一项都会再次影响所有其他的控制。突然间，你在用一个让人难以置信的复杂系统玩杂耍，其中每一项改变都会影响所有其他的输入。你的工作负担异常巨大：你的手脚在不停地移动，试图平衡所有交互影响的力量。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;——《程序员的修炼之道》 我认为所有程序员都应该看，而且每年都应该重新看一遍的书&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;!--================================!--&gt;
+
+&lt;h2 id=&#34;toc_4&#34;&gt;php两种封装类的优缺点？&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://segmentfault.com/q/1010000002544103&#34;&gt;问题&lt;/a&gt; by &lt;a href=&#34;http://segmentfault.com/u/tiyee&#34;&gt;tiyee&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;php很多内置的类或扩展类比较粗糙，需要人为的封装一遍，于是有了两种封装方式，
+1直接继承
+2内部实例化&lt;/p&gt;
+
+&lt;p&gt;如redis类，
+可以&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;namespace lib
+class redis extends \Redis {}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;也可以&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;namespace lib
+class redis {
+    private $_redis = null;
+    public function __construct() {
+        $this-&amp;gt;_redis = new \Redis()
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;第一种方法的优点是方便，无须把所有的方法重写一遍，但是不太好统一捕捉异常，
+第二种就是麻烦些，需要重写一遍所有的方法，（虽然可以用魔术方法），捕捉异常方便些。
+大家用的哪种？为什么呢？&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;toc_5&#34;&gt;我的看法&lt;/h2&gt;
+
+&lt;h3 id=&#34;toc_6&#34;&gt;继承&lt;/h3&gt;
+
+&lt;p&gt;继承的特点有&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;✔实现成本低&lt;/li&gt;
+&lt;li&gt;✔调用者可以沿用原有的接口使用，学习成本低&lt;/li&gt;
+&lt;li&gt;✔原有的功能无需任何代码如常工作&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;✘无法隐藏或改变原有的功能&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;其实你_可以_这么做，就好像你确实_可以_用铁丝去捅插座眼一样&lt;/li&gt;
+&lt;li&gt;改变输入、改变输出、改变行为都属于改变功能，比如原来抛的异常现在不抛了，原来return false现在变异常了，原来输入的是青椒现在变牛肉了等等&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;✘正交性弱，没有做到屏蔽父类的依赖，需要更换父类的时候显得脆弱&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;常见的合适的应用有&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;增加日志记录等不影响原有逻辑的“旁路逻辑”&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;增加一些方法，比如原有的某一些方法a()b()c()总是连续一起调用，增加一个doABC()方法&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;仅限简单的少量的方法，如果要加复杂的功能或者大量的方法，还是建议用组合&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;增加一些静态／工厂方法，比如&lt;code&gt;new Redis(ip, port)&lt;/code&gt; =&amp;gt; &lt;code&gt;OurRedis::getInstance()&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;一句话说就是原有行为不变，&lt;strong&gt;is-a&lt;/strong&gt;的场景用继承。&lt;/p&gt;
+
+&lt;h3 id=&#34;toc_7&#34;&gt;组合&lt;/h3&gt;
+
+&lt;p&gt;组合的特点有&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;✘实现成本略高，创建对象的过程可能会变复杂&lt;/li&gt;
+&lt;li&gt;✘调用者需要理解新的接口&lt;/li&gt;
+&lt;li&gt;✘需要转发才能让原有的功能工作&lt;/li&gt;
+&lt;li&gt;✔很容易隐藏／屏蔽原有的部分功能&lt;/li&gt;
+&lt;li&gt;✔正交性强，可以通过更换内部的对象适配不同的情况而保持外部接口不变&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;常见的合适的应用有&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;一切涉及改变行为的需求&lt;/li&gt;
+&lt;li&gt;未来依赖会变的场景，比如redis会变成memcache，或者mysql会变mariadb之类&lt;/li&gt;
+&lt;li&gt;需要屏蔽细节的场景，比如Session Cache等需求确实用到redis，但对外肯定要屏蔽“这是个redis实现的session”。否则恐龙会出现在你背后把你脑袋咬掉&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;一句话就是某个功能依赖另一个功能，&lt;strong&gt;use-a&lt;/strong&gt;或&lt;strong&gt;has-a&lt;/strong&gt;的场景用组合&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;偏题，predis用起来还不错，可以一试&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;这是我在 &lt;a href=&#34;http://segmentfault.com/&#34;&gt;SegmentFault&lt;/a&gt; 上的问题回答选编，遵循&lt;a href=&#34;http://creativecommons.org/licenses/by-sa/3.0/cn/&#34;&gt;CC BY-SA 3.0 CN&lt;/a&gt; 分享&lt;/p&gt;
+
+&lt;p&gt;题图：万智【接踵而至】&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;/img/2015-q1/rav51.jpg&#34; alt=&#34;&#34; /&gt;
+&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>[新姿势]授人以渔：如何迅速找到靠谱的工具软件</title>
@@ -1418,151 +1593,6 @@ From: &lt;a href=&#34;http://ajaxian.com/archives/a-deep-dive-and-analysis-of-th
 &lt;p&gt;题图：万智【清理书本】&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&#34;/img/2015-q1/m14-75.jpg&#34; alt=&#34;&#34; /&gt;
-&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>一己之见第三季 - 神奇的代码问题及其他</title>
-      <link>http://inside.mcfog.wang/2015/01/ichizon-3/</link>
-      <pubDate>Mon, 19 Jan 2015 12:37:15 CST</pubDate>
-      
-      <guid>http://inside.mcfog.wang/2015/01/ichizon-3/</guid>
-      <description>
-
-&lt;!--================================!--&gt;
-
-&lt;h2 id=&#34;toc_0&#34;&gt;大家写代码的时候，是不是大部分时间都费在了各种神奇的问题上&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://segmentfault.com/q/1010000001664019&#34;&gt;问题&lt;/a&gt; by &lt;a href=&#34;http://segmentfault.com/u/zhimengren&#34;&gt;xxx织梦者&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;各种突然&lt;br /&gt;
-各种抽风&lt;br /&gt;
-各种莫名其妙&lt;br /&gt;
-各种小错误&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;h2 id=&#34;toc_1&#34;&gt;我的看法&lt;/h2&gt;
-
-&lt;p&gt;刚入门的时候非常正常，但如果已经在某个领域做了一段时间还一直维持这种状态那就有问题了。这很可能是&lt;a href=&#34;http://coolshell.cn/articles/2058.html&#34;&gt;所谓的撞大运／散弹枪编程&lt;/a&gt;的兆头。每次摆平某种抽风以后，务必总结问题和教训，做到下次从根本上防止再出现，能把你的代码写到让同事碰不到同样的问题更好（抽象、断言式编程／早崩溃、lint等等各种手段）&lt;/p&gt;
-
-&lt;p&gt;反正我现在更多时间都花在吐槽同事的代码上，有机会面对全新领域的时候才有机会遇到所谓的抽风，莫名其妙，遇到的时候我也只有兴奋，没有无奈&lt;/p&gt;
-
-&lt;!--================================!--&gt;
-
-&lt;h2 id=&#34;toc_2&#34;&gt;做服务器端开发需要具备什么样的基础知识？&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://segmentfault.com/q/1010000001589389&#34;&gt;问题&lt;/a&gt; by &lt;a href=&#34;http://segmentfault.com/u/ken_1&#34;&gt;ken&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;最近转服务端开发了，但是对知识的补充还是有些茫然，我个人列出一些需要补充和学习的知识，如下：&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;基本的网络知识（TCP/IP , UDP , Socket等等）&lt;/li&gt;
-&lt;li&gt;网络操作系统 Linux，有时候需要配置运行环境&lt;/li&gt;
-&lt;li&gt;开发技术：php , python , 破儿（perl）, java（公司需要）, nodejs&lt;/li&gt;
-&lt;li&gt;相关技术的积累：memcache , redis , mongodb&lt;/li&gt;
-&lt;li&gt;数据库..&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;我列举的可能有的是多余的，也有遗漏的，请问各位有何看法？
-还有网络的基础知识是否需要更佳深入的学习，比如七层模型，子网掩码的分配计算等等&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;h2 id=&#34;toc_3&#34;&gt;我的看法&lt;/h2&gt;
-
-&lt;p&gt;我觉得软件开发这个行当是&lt;strong&gt;工程性&lt;/strong&gt;很强的一个行当，这类行当的学习路径和&lt;strong&gt;学术研究性&lt;/strong&gt;的几乎相反：不是先学了一堆“基础知识” “背景知识” 之类的东西再深入研究，而是先从最高级最方便的quick&amp;amp;dirty way开始，向底层细化。&lt;/p&gt;
-
-&lt;p&gt;按我说就先挑一门语言，然后选这门语言的前三流行的框架或开源应用中任意一款，先撸个hello world，再撸个博客出来，博客做完发布做评论，做完评论做用户，做完用户再看看你以前写的代码删光从头写起。当然把博客换成其他需求也行，只要自己需要用的都行&lt;/p&gt;
-
-&lt;p&gt;至于需要的知识，压力大了自然要缓存，模块复杂了自然要解耦，上线次数多了自然要部署要自动化，一切知识都是以解决问题为导向的。没遇到问题就空学所谓基础知识，在我看来事倍功半。就好比题主提的“服务端开发”，其中也有很多细分，做业务逻辑的，高并发的，事务的，更别说做数挖的dba的devop的等等，又或是小业务的一条龙包干，都是相当不同的技能要求。&lt;/p&gt;
-
-&lt;!--================================!--&gt;
-
-&lt;h2 id=&#34;toc_4&#34;&gt;Backbone model设计&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://segmentfault.com/q/1010000002492467&#34;&gt;问题&lt;/a&gt; by &lt;a href=&#34;http://segmentfault.com/u/gitbug&#34;&gt;gitbug&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;正在做一个对model增删改查的简单demo以学习backbone，现在的问题是model的表单不固定，需要根据model的类型动态变化。&lt;/p&gt;
-
-&lt;p&gt;比如，添加一个人员，普通属性如 名称 邮箱 地址 都是通用的，但是当用户选择了行业（医疗、教育）等，表单需要根据这个类型进行调整。&lt;/p&gt;
-
-&lt;p&gt;这种情况最简单的办法创建一个Person Model，把所有类型涉及到的attributes都塞到这里面，一个PersonFormView，绑定这个model，但select（行业）选择变化的时候，更新这个PersonFormView，这样的问题是：&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;Person放了太多不该放东西&lt;/li&gt;
-&lt;li&gt;view的render方法需要大量的if else逻辑用来判断类型&lt;/li&gt;
-&lt;li&gt;如果行业选择增多比如10个以上就egg pain了&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;按照普通的设计思路，普通用户Person应该作为基类，医疗用户，教育用户作为子类继承Person，View也类似，不同的子类负责不同的渲染。&lt;/p&gt;
-
-&lt;p&gt;但是感觉这样子渲染的时候没思路，怎么破？&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;h2 id=&#34;toc_5&#34;&gt;我的看法&lt;/h2&gt;
-
-&lt;p&gt;首先整理问题，其实有两个问题：Model复杂（乃至嵌套）和View复杂（乃至嵌套）&lt;/p&gt;
-
-&lt;p&gt;分开探讨&lt;/p&gt;
-
-&lt;h3 id=&#34;toc_6&#34;&gt;Model问题&lt;/h3&gt;
-
-&lt;p&gt;“对象部分字段结构随某个类型字段变化而变化”是个常见的需求，这种情况下，问题很可能已经超出backbone的范围，需要和后端程序、以及DB存储结构共通考虑。通常同步后端的设计思路设计Model是比较安全简便的方法。&lt;/p&gt;
-
-&lt;p&gt;一般而言常见的解决方案有&lt;/p&gt;
-
-&lt;h5 id=&#34;toc_7&#34;&gt;A. 单表，字段包涵每个类型可能的全部所需字段，当类型不需要某个字段时该字段留空值&lt;/h5&gt;
-
-&lt;p&gt;这是最快最简单的方法，风险题主也提到了，类型增多，又或者是差异变大时比较痛苦，另外“不同类型的不同字段验证逻辑不同”也会造成痛苦&lt;/p&gt;
-
-&lt;p&gt;如果类型不多，类型间字段差异不大时，可以选择这种方案，此时Backbone这层的Model不需要额外技术，照做即可&lt;/p&gt;
-
-&lt;h5 id=&#34;toc_8&#34;&gt;B. 拆表，主表含共通字段和类型，类型相关的字段放在子表／扩展表中，每个类型一张不同的扩展表&lt;/h5&gt;
-
-&lt;p&gt;这是扩展性最强的方法，和前一个方法恰好相反，类型少，差异不大的时候比较痛苦，而做类似“不同类型字段验证逻辑不通”之类的事情水到渠成。&lt;/p&gt;
-
-&lt;p&gt;此时最应该有所谓的sub-model机制来对应后台的数据结构，在&lt;code&gt;parse&lt;/code&gt;或者&lt;code&gt;initialize&lt;/code&gt;的时候动手脚都应该可以实现，我没有具体实践过，建议搜索 &lt;code&gt;backbone nested model&lt;/code&gt;看看别人的做法&lt;/p&gt;
-
-&lt;h5 id=&#34;toc_9&#34;&gt;C. 单表，一个“扩展字段”用类似JSON字符串的形式摆放所有的类型相关的数据，又或者是MongoDB类的文档数据库，直接一个字段搞定&lt;/h5&gt;
-
-&lt;p&gt;这是前面两者的中间方案，也是最安全最不容易出大问题的，也是“罪孽”最深重的——复合字段，扩展字段是魔鬼！随着项目的迭代，它们理论上应该渐渐被修改为前两种方案，而实际上往往成了垃圾场，所有人都把东西往这儿一扔，更糟糕的是你还经常需要里面的东西，甚至对里面的内容筛选搜索&lt;/p&gt;
-
-&lt;p&gt;但如果上述糟糕的事情没有发生，那么扩展字段是最有弹力的做法，此时backbone的model里面可以同样使扩展字段是复合值，复刻后台的数据结构，也可以用sub-model来描述扩展字段，加强结构性&lt;/p&gt;
-
-&lt;h3 id=&#34;toc_10&#34;&gt;View的问题&lt;/h3&gt;
-
-&lt;p&gt;实现的方式大致还是划分成拆不拆子View&lt;/p&gt;
-
-&lt;h5 id=&#34;toc_11&#34;&gt;A. 拆子View（注意不是继承）&lt;/h5&gt;
-
-&lt;p&gt;子View的实现有很多 backbone.layoutmanager基本专门做这个，其他几乎所有基于Backbone的框架都会涉及这一块，本质就是父View管理子View的创建、销毁，子View通过某种形式和父View通信（建议向上用事件冒泡，向下用方法调用）&lt;/p&gt;
-
-&lt;p&gt;此时，每个类型特殊的字段对应一个子View，父View根据不同类型创建不同的子View插入合适位置，在类型变换的时候销毁原有的子View重新创建&lt;/p&gt;
-
-&lt;h5 id=&#34;toc_12&#34;&gt;B. 不拆子View&lt;/h5&gt;
-
-&lt;p&gt;不拆子View的最大问题就是渲染复杂，其次是数据收集复杂，这里建议用模版渲染来解决这个问题，关于这个方案建议参考我之前写的&lt;a href=&#34;http://press.mcfog.wang/2013/06/dsl-style-javascript/&#34;&gt;组织大表单应用中javascript代码的一种方法&lt;/a&gt; 后半部分，这里贴一下示意图&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://segmentfault.com/img/bVkCLx&#34; alt=&#34;templated-field.jpg&#34; /&gt;
-&lt;/p&gt;
-
-&lt;p&gt;无论如何，大量if确实是需要避免的，核心思路就是根据不同类型选择不同的｛子View，子模版｝&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;最后，不建议选择类型作为子类继承父类，详细请搜索“组合优于继承”，这里不同行业的人从领域模型的角度来说或许是“医生” is-a &amp;ldquo;人&amp;rdquo;，但实现的时候用继承会很糟糕，比如再来个需要根据不同户口类型填不同的信息之类，直接傻眼。
-更合适的拆分是“人” has-a “行业信息”，“医疗行业信息” is-a “行业信息”&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;这是我在 &lt;a href=&#34;http://segmentfault.com/&#34;&gt;SegmentFault&lt;/a&gt; 上的问题回答选编，遵循&lt;a href=&#34;http://creativecommons.org/licenses/by-sa/3.0/cn/&#34;&gt;CC BY-SA 3.0 CN&lt;/a&gt; 分享&lt;/p&gt;
-
-&lt;p&gt;题图：万智【霰散弹】&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;/img/2015-q1/ts160.jpg&#34; alt=&#34;&#34; /&gt;
 &lt;/p&gt;
 </description>
     </item>

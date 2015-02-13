@@ -7,7 +7,48 @@
     
     
     
-    <updated>Tue, 10 Feb 2015 11:18:13 CST</updated>
+    <updated>Fri, 13 Feb 2015 13:04:32 CST</updated>
+    
+    <item>
+      <title>推荐个手机浏览器Yandex</title>
+      <link>http://inside.mcfog.wang/2015/02/tech4fun-6/</link>
+      <pubDate>Fri, 13 Feb 2015 13:04:32 CST</pubDate>
+      
+      <guid>http://inside.mcfog.wang/2015/02/tech4fun-6/</guid>
+      <description>&lt;p&gt;我对手机浏览器的应用主要是&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;一些APP的外置webview，比如微信“在浏览器中打开”之类&lt;/li&gt;
+&lt;li&gt;刷一些内容站点打发时间&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;两块，我不需要网址导航，应用市场，小游戏合集等等“功能”，而只想要一个浏览器。&lt;/p&gt;
+
+&lt;p&gt;近来从Opera国际版切换到Yandex，感觉良好，特此推荐。Yandex是俄罗斯本土第一搜索引擎，号称俄罗斯谷歌。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;/img/2015-q1/yandex1.png&#34; alt=&#34;&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;新标签页／快速拨号页，Yandex浏览器的特色之一是会自动分析网站的“主色调”，配合网站favicon，即耐看又一目了然。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;/img/2015-q1/yandex2.png&#34; alt=&#34;&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;标签切换页，主色调起到了非常棒的区分效果。流畅度，动画，手势等各方面也均属上乘。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;/img/2015-q1/yandex3.png&#34; alt=&#34;&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;置底的导航栏。另外Yandex虽然默认具备来自Opera的涡轮加速能力，还自动检测网络情况确定是否开启，却非常克制地仅仅在进度条颜色上体现（网络较差时进度条为蓝色表示启用涡轮加速）&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;/img/2015-q1/yandex4.png&#34; alt=&#34;&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;非活跃情况下导航栏收起成最矮的一行。保证常驻屏幕（以方便操作和展示网页标题）的同时，将内容区域的面积最大化。&lt;/p&gt;
+
+&lt;p&gt;安卓IOS各大市场均有下载。&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>[乱弹塔罗][翻译]第二课 主牌</title>
@@ -1479,150 +1520,6 @@ magic就是那种看上去无比优雅风骚性感，实际工业开发的时候
 &lt;p&gt;题图：万智【封口】&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&#34;/img/2015-q1/m14-35.jpg&#34; alt=&#34;&#34; /&gt;
-&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>[新姿势]我用过的静态站点生成器们</title>
-      <link>http://inside.mcfog.wang/2015/01/tech4fun-1/</link>
-      <pubDate>Fri, 09 Jan 2015 13:26:52 CST</pubDate>
-      
-      <guid>http://inside.mcfog.wang/2015/01/tech4fun-1/</guid>
-      <description>
-
-&lt;p&gt;随着诸如github pages的静态托管服务，静态站点生成器在近年有了极大的发展，静态生成+托管对托管环境要求低、维护简单、可配合版本控制，但又灵活多变，在程序员和geek群体中大有超越WordPress等动态博客程序的势头&lt;/p&gt;
-
-&lt;p&gt;近年来个人也好项目也好，我也经常要用到静态生成器，这里把我玩过的静态生成器挨个做个简评&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;才、才不是什么玩博客程序的时间超过了写博客的时间呢&lt;/em&gt;&lt;/p&gt;
-
-&lt;h3 id=&#34;toc_0&#34;&gt;Jekyll / OctoPress&lt;/h3&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://jekyllrb.com/&#34;&gt;Jekyll&lt;/a&gt;和&lt;a href=&#34;http://octopress.org/&#34;&gt;OctoPress&lt;/a&gt;是最流行的静态博客系统。OctoPress是基于Jekyll的扩展，进一步方便了写作。&lt;/p&gt;
-
-&lt;p&gt;在主题、插件数量上和wordpress一样对竞争对手有压倒性优势。上手简单，周边工具丰富。&lt;/p&gt;
-
-&lt;p&gt;推荐给想更多把时间花在写字而不是折腾博客的人。&lt;/p&gt;
-
-&lt;p&gt;缺点主要是文章量大的时候生成速度慢。&lt;/p&gt;
-
-&lt;h3 id=&#34;toc_1&#34;&gt;Hexo&lt;/h3&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://hexo.io/&#34;&gt;Hexo&lt;/a&gt;是NodeJS编写的静态博客系统，其生成速度快，主题数量相对也比较丰富。是OctoPress的优秀替代者。&lt;/p&gt;
-
-&lt;p&gt;另外由于Node社区丰富的“方言”，写主题时天然有Jade/Stylus/Less等各种方言支持。&lt;/p&gt;
-
-&lt;p&gt;推荐给希望生成速度快，主要写博客的人&lt;/p&gt;
-
-&lt;p&gt;我用Hexo来写我的技术博客 &lt;a href=&#34;http://press.mcfog.wang/&#34;&gt;http://press.mcfog.wang/&lt;/a&gt;&lt;/p&gt;
-
-&lt;h3 id=&#34;toc_2&#34;&gt;Sculpin&lt;/h3&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://sculpin.io/&#34;&gt;Sculpin&lt;/a&gt;是PHP的静态站点系统。Hexo和Octopress专注于博客，而有时候我们的需求不仅仅是博客，而是有类似CMS的页面生成需求。Sculpin是一个泛用途的静态站点生成系统，在支持博客常见的分页、分类tag等同时，也能较好地支持非博客的一般页面生成。
-但Sculpin没有主题功能，没有严格分离内容和模版，第三方提供的现成模版也很少。&lt;/p&gt;
-
-&lt;p&gt;推荐给没有主题需求，希望自己写页面，且需要博客之外的页面内容的人&lt;/p&gt;
-
-&lt;p&gt;缺点是生成速度一般，第三方扩展少&lt;/p&gt;
-
-&lt;h3 id=&#34;toc_3&#34;&gt;Hugo&lt;/h3&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://gohugo.io/&#34;&gt;Hugo&lt;/a&gt;是GO语言编写的静态站点系统。其生成速度快，且在较好支持博客和非博客内容的同时提供了比较完备的主题系统。无论是自己写主题还是套用别人的主题都比较顺手。&lt;/p&gt;
-
-&lt;p&gt;推荐给重视生成速度且希望具备一定的灵活性的人&lt;/p&gt;
-
-&lt;p&gt;缺点是至今分页功能还没官方发布（还在下个release，有非官方的方案）&lt;/p&gt;
-
-&lt;p&gt;这是本站&lt;a href=&#34;http://inside.mcfog.wang/&#34;&gt;http://inside.mcfog.wang/&lt;/a&gt;的生成器&lt;/p&gt;
-
-&lt;h2 id=&#34;toc_4&#34;&gt;总结&lt;/h2&gt;
-
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;&lt;/th&gt;
-&lt;th&gt;语言&lt;/th&gt;
-&lt;th&gt;活跃度&lt;/th&gt;
-&lt;th&gt;开箱即用&lt;/th&gt;
-&lt;th&gt;主题数量&lt;/th&gt;
-&lt;th&gt;主题系统&lt;/th&gt;
-&lt;th&gt;生成速度&lt;/th&gt;
-&lt;th&gt;博客适应性&lt;/th&gt;
-&lt;th&gt;非博客适应性&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;Jekyll&lt;/td&gt;
-&lt;td&gt;Ruby&lt;/td&gt;
-&lt;td&gt;S&lt;/td&gt;
-&lt;td&gt;B&lt;/td&gt;
-&lt;td&gt;A&lt;/td&gt;
-&lt;td&gt;A&lt;/td&gt;
-&lt;td&gt;C&lt;/td&gt;
-&lt;td&gt;A&lt;/td&gt;
-&lt;td&gt;C&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;OctoPress&lt;/td&gt;
-&lt;td&gt;Ruby&lt;/td&gt;
-&lt;td&gt;C&lt;/td&gt;
-&lt;td&gt;A&lt;/td&gt;
-&lt;td&gt;S&lt;/td&gt;
-&lt;td&gt;A&lt;/td&gt;
-&lt;td&gt;C&lt;/td&gt;
-&lt;td&gt;A&lt;/td&gt;
-&lt;td&gt;C&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;Hexo&lt;/td&gt;
-&lt;td&gt;NodeJS&lt;/td&gt;
-&lt;td&gt;B&lt;/td&gt;
-&lt;td&gt;A&lt;/td&gt;
-&lt;td&gt;A&lt;/td&gt;
-&lt;td&gt;B&lt;/td&gt;
-&lt;td&gt;A&lt;/td&gt;
-&lt;td&gt;A&lt;/td&gt;
-&lt;td&gt;B&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;Sculpin&lt;/td&gt;
-&lt;td&gt;PHP&lt;/td&gt;
-&lt;td&gt;C&lt;/td&gt;
-&lt;td&gt;B&lt;/td&gt;
-&lt;td&gt;C&lt;/td&gt;
-&lt;td&gt;C&lt;/td&gt;
-&lt;td&gt;B&lt;/td&gt;
-&lt;td&gt;B&lt;/td&gt;
-&lt;td&gt;A&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;Hugo&lt;/td&gt;
-&lt;td&gt;GO&lt;/td&gt;
-&lt;td&gt;B&lt;/td&gt;
-&lt;td&gt;B&lt;/td&gt;
-&lt;td&gt;B&lt;/td&gt;
-&lt;td&gt;A&lt;/td&gt;
-&lt;td&gt;S&lt;/td&gt;
-&lt;td&gt;B&lt;/td&gt;
-&lt;td&gt;A&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;p&gt;最后推荐一个静态站点生成器的统计列表 &lt;a href=&#34;https://staticsitegenerators.net&#34;&gt;https://staticsitegenerators.net&lt;/a&gt;，有机会准备玩玩&lt;a href=&#34;http://metalsmith.io&#34;&gt;http://metalsmith.io&lt;/a&gt;&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;题图：万智《Generator Servant》电机仆役&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;/img/2015-q1/m15-143.jpg&#34; alt=&#34;&#34; /&gt;
 &lt;/p&gt;
 </description>
     </item>

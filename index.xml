@@ -7,7 +7,87 @@
     
     
     
-    <updated>Fri, 13 Feb 2015 13:04:32 CST</updated>
+    <updated>Mon, 16 Feb 2015 17:25:58 CST</updated>
+    
+    <item>
+      <title>mcfog的一己之见 VII</title>
+      <link>http://inside.mcfog.wang/2015/02/ichizon-7/</link>
+      <pubDate>Mon, 16 Feb 2015 17:25:58 CST</pubDate>
+      
+      <guid>http://inside.mcfog.wang/2015/02/ichizon-7/</guid>
+      <description>
+
+&lt;!--================================!--&gt;
+
+&lt;h2 id=&#34;toc_0&#34;&gt;怎么衡量前端达到了什么水平&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://segmentfault.com/q/1010000002556431&#34;&gt;问题&lt;/a&gt; by &lt;a href=&#34;http://segmentfault.com/u/futureplayer&#34;&gt;futurePlayer&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;　　刚刚步入前端届，属于新人，对自身的评判和衡量都还处于一个很初级的阶段，现在也是面临自己的一个分水岭，不知道自己现在到底是个什么样的水平，就拿自己最近做的一个网站给前辈们看看吧，&lt;a href=&#34;http://www.vrone.me/&#34;&gt;http://www.vrone.me/&lt;/a&gt;，网站只做了PC端的样式，功能很简单，移动端还是想自己做样式，不想依赖于bootstrap之内的东西，所以如果在移动端有视觉塌陷就难为大家了，而且网站有时候会有点慢，当然网站也是经过部分的优化，没有采用云加速等的优势（目前还不想用在用在网站中，就拿百度来说吧，新版经常出现一些问题，不过速度会提升很多这毋庸置疑），服务器端的带宽也是问题，可以ping一下就知道了，所以这也是程序和服务两方面的事情。&lt;/p&gt;
+
+&lt;p&gt;　　简要说一下自己吧，做前端没多久，对html,css,js原生比较熟，h5,css3就欠缺一些了，能够熟练运用jquery，研究过其过源码，也针对一些问题写过部分插件，比如选择器，事件队列，js设置样式等兼容问题（如隐藏元素及可视元素样式的获取和设定等等），具体github上有，对MVC和MVVM等框架有过认识，如angular、react、ember，用nodejs开发过网站（上面链接网站就是express开发的），也写过一些小玩意，如留言板，聊天室，能用grunt等自动化工具来构建网站，网站优化懂一些（如打包合并，减少http请求，DNS预加载，缓存等），并能用到项目中去，liunx命令一般，后台php还是大二的时候写过，现在都没碰，比较生疏了，数据库可以用mysql进行一般项目的开发。想问问这样能定位到什么水平，能找到什么样的工作？&lt;/p&gt;
+
+&lt;p&gt;　　大概就是这样，能提的或者没提到的综合起来也差不多了，希望前辈能从自己的经验出发，分享一些自己的看法，可以黑，但是要基于事实的前提，如果有什么意见和建议都是我很宝贵的财富，前端路上希望能够走的更远。&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;toc_1&#34;&gt;我的看法&lt;/h2&gt;
+
+&lt;p&gt;站本身没啥致命的槽点，但说“工程师的能力”很多时候也是一个这样的站体现不出来的，如果题主是应届或工作一两年的话，能力本身没有任何问题。我就谈谈我觉得对我的成长最重要的几点吧&lt;/p&gt;
+
+&lt;h3 id=&#34;toc_2&#34;&gt;匠心&lt;/h3&gt;
+
+&lt;p&gt;匠心分成几点，首先是作为一个&lt;strong&gt;手艺人&lt;/strong&gt;，要爱自己的手艺，爱自己的作品。看到漂亮的作品要两眼发光扑上去研究，看到烂代码(不管是谁写的)要认真反思(其实看走眼的情况也意外地多)。对自己的作品要自豪，不要马虎眼。有时业务紧压力大时，我们会被逼用一些dirty way来做事，要清楚那是dirty way，保持愧疚感。&lt;/p&gt;
+
+&lt;p&gt;其次，能工巧匠必有其&lt;strong&gt;利器&lt;/strong&gt;，玩转你手边的工具，经常更新你的工具箱，永远寻找更趁手的另一种工具，适时自己操刀搞一些工具。编码是我们&lt;strong&gt;最不重要&lt;/strong&gt;的工作，思考，归纳，演绎才是我辈本职。写代码的时候大脑在“写代码”进程分配CPU越少，花在“思考”进程分配CPU越多，效率越高。emmet coding一个tab可能确实只能省一两秒时间，但这少打断的一两秒很多时候就是决定性的差距。看看心流(flow)理论，你的工具箱越顺手，工作时就越能集中思考，心流状态就越频繁越长。&lt;/p&gt;
+
+&lt;p&gt;最后，要有“独具匠心”的&lt;strong&gt;创新精神&lt;/strong&gt;和&lt;strong&gt;思考能力&lt;/strong&gt;，完成任务只是原地踏步，唯有反思和自我批判能改进你的缺点，唯有创新和不断试错能增加你的优点。&lt;/p&gt;
+
+&lt;h3 id=&#34;toc_3&#34;&gt;教学相长&lt;/h3&gt;
+
+&lt;p&gt;在鹅厂，T3.x的晋升的一个指标就是要授课，但我在还只有的T1的时候就已经第一次做团队内部技术分享了，做完以后我突然发现，技术分享对我的帮助比对小伙伴的帮助还大。这固然是因为我水平不够，没达到传道解惑的境界，但更是因为教学相长。你有个很酷的主意，实现它对工程师来说经常没太大难度，但要讲清前因后果，理清脉络，整理成技术分享的过程，比你想象中要难很多，一旦整理出来以后你会发现自己的理解一下达到一个新的高度。然后做技术分享的过程中，不仅锻炼你自己的自信，还能从小伙伴的反应，疑惑，问题中再学到很多。是谓教学相长也。&lt;/p&gt;
+
+&lt;p&gt;类似的还有作教程，写文章等等。这里我特别想谈谈“文章”和“笔记”的区别，前者是你表达一个观点，描述一种思想的，“一身功力的结晶”，而后者只是某些知识点的整理记录。从学生时代起，我就从不做笔记，对笔记抱有个人偏见。我见过太多程序员的博客充满了笔记，乏味而无趣，没有新东西，没有营养。程序员写博客确实是好事，但博客本应是写文章的地方，不是笔记小抄，我不反对做笔记，但那应该在自己的evernote里，而不是写在博客里。好学生以记笔记的过程熟悉知识，复习的时候以笔记为媒介回忆当时的思考和理解，看别人的笔记则没有什么实际帮助，更糟糕的是如果无脑照抄别人的笔记，失去了自己的思考，丢了匠心，实在得不偿失。在博客里记笔记，远远达不到写文章的“教学相长”效果，只记录google结果，考试答案，没有自己的独立思考。
+所以我独立出技术博客快两年了才刚刚翻页，不是不爱写，实在是水平不够，写不出那么多的文章。&lt;/p&gt;
+
+&lt;h3 id=&#34;toc_4&#34;&gt;《The Pragmatic Programmer》&lt;/h3&gt;
+
+&lt;p&gt;译名《程序员修炼之道》。这本书每个工程师都应该看，每个工程师每年都应该重新看至少一次。我最近买了原版收藏。这本书我看了大概有5年了，常看常新，每次看都有收获都有感悟。&lt;/p&gt;
+
+&lt;p&gt;这样说吧，可以说差不多每次你写代码的时候觉得“被坑”了，这本书里基本都有对应的谆谆教导。&lt;/p&gt;
+
+&lt;p&gt;我心里把这本书称为《乌托邦里的程序员》，描述了乌托邦里永远不被坑的程序员是如何工作的。&lt;/p&gt;
+
+&lt;h3 id=&#34;toc_5&#34;&gt;沟通和情商&lt;/h3&gt;
+
+&lt;p&gt;无论你是否希望成为管理者，沟通能力和情商都是非常重要的。&lt;/p&gt;
+
+&lt;p&gt;有点写不动了，这也是我不怎么行的一点，没啥能吹的，我在&lt;a href=&#34;http://segmentfault.com/q/1010000002536565&#34;&gt;《一个优秀工程师的衡量标准是什么？》&lt;/a&gt;的回答里有一些简单的point可以参考参考。&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;和前端相关的一些建议&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;掌握一门css预处理语言&lt;/li&gt;
+&lt;li&gt;看看bootstrap源代码(less)&lt;/li&gt;
+&lt;li&gt;自适应，移动端&lt;/li&gt;
+&lt;li&gt;javascript异步，promise，异步并发／串行，异步递归等&lt;/li&gt;
+&lt;li&gt;模块化，amd cmd 稍早的requirejs/seajs，现代的webpack/browserify（均推荐前者）。另一条路线是包管理／依赖管理，有bower component duo等等&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;这是我在 &lt;a href=&#34;http://segmentfault.com/&#34;&gt;SegmentFault&lt;/a&gt; 上的问题回答选编，遵循&lt;a href=&#34;http://creativecommons.org/licenses/by-sa/3.0/cn/&#34;&gt;CC BY-SA 3.0 CN&lt;/a&gt; 分享&lt;/p&gt;
+
+&lt;p&gt;今天这个歪题的回答鸡精浓度过高，于是只放着一篇了&lt;/p&gt;
+
+&lt;p&gt;题图：万智【变巨术】&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;/img/2015-q1/m14-174.jpg&#34; alt=&#34;&#34; /&gt;
+&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>推荐个手机浏览器Yandex</title>
@@ -1427,95 +1507,6 @@ From: &lt;a href=&#34;http://ajaxian.com/archives/a-deep-dive-and-analysis-of-th
 &lt;p&gt;女祭司代表了阴性的力量，和魔术师所代表的阳性力量相对。阴性的原型在塔罗中被划分到女祭司和皇后两张牌上，女祭司体现了女性中神秘的未知的一面，尤其是在确凿和已知为主的文化之中。而皇后则更多代表在生活的历练中女性的角色。&lt;/p&gt;
 
 &lt;p&gt;在解读中，女祭司要求你发现更深层次的东西，看穿表面现象，已知的事实，从而发现隐藏的，被淹没的东西。她也希望你回忆起你的广阔潜力，自身中蕴含的无限可能。有时女祭司意味着需要一时的等待，允许情况发展。并非只有行动才能让你达成你的心愿，有时，静静地等待和充分的时间才能让期待开花结果。&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>The Magician &#34;魔术师&#34;</title>
-      <link>http://inside.mcfog.wang/card/maj01/</link>
-      <pubDate>Wed, 21 Jan 2015 14:16:04 CST</pubDate>
-      
-      <guid>http://inside.mcfog.wang/card/maj01/</guid>
-      <description>
-
-&lt;h2 id=&#34;toc_0&#34;&gt;&lt;strong&gt;The Magician &amp;ldquo;魔术师&amp;rdquo;&lt;/strong&gt;&lt;/h2&gt;
-
-&lt;p&gt;&lt;img src=&#34;/img/tarot/big/maj01.jpg&#34; alt=&#34;&#34; /&gt;
-&lt;/p&gt;
-
-&lt;h3 id=&#34;toc_1&#34;&gt;关键词&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;主动&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;做应当完成的事&lt;/li&gt;
-&lt;li&gt;发挥自己的潜力&lt;/li&gt;
-&lt;li&gt;实现某种构想&lt;/li&gt;
-&lt;li&gt;实践自己宣扬的&lt;/li&gt;
-&lt;li&gt;实施计划&lt;/li&gt;
-&lt;li&gt;产生神奇的结果&lt;/li&gt;
-&lt;li&gt;发挥自己的才干&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;有意识地行动&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;知道自己的行为及其原因&lt;/li&gt;
-&lt;li&gt;发现自己的动机&lt;/li&gt;
-&lt;li&gt;理解自己的意图&lt;/li&gt;
-&lt;li&gt;调查已知的情况&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;集中&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;－ 有专一的目的
-  － 全力投入
-  － 使用自己意志的力量
-  － 感到自信
-  － 不理睬干扰
-  － 专注于一个目标&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;体验力量&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;给人留下深刻的影响&lt;/li&gt;
-&lt;li&gt;具备生命力&lt;/li&gt;
-&lt;li&gt;创造奇迹&lt;/li&gt;
-&lt;li&gt;精力充沛&lt;/li&gt;
-&lt;li&gt;活力十足&lt;/li&gt;
-&lt;li&gt;充满创造性&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;toc_2&#34;&gt;部分相反的牌&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;The High Priestess &amp;ldquo;女祭司&amp;rdquo;&lt;/strong&gt; - 非行为的，直觉，潜意识&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;The Hanged Man &amp;ldquo;倒吊男&amp;rdquo;&lt;/strong&gt; - 延迟，不作为&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Seven of Cups &amp;ldquo;圣杯七&amp;rdquo;&lt;/strong&gt; - 缺乏专注&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Four of Swords &amp;ldquo;宝剑四&amp;rdquo;&lt;/strong&gt; - 休息，积蓄力量&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Eight of Swords &amp;ldquo;宝剑八&amp;rdquo;&lt;/strong&gt; - 困惑，无力，不确定&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;toc_3&#34;&gt;部分呼应的牌&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;The Chariot &amp;ldquo;战车&amp;rdquo;&lt;/strong&gt; - 专注，集中，力量&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Two of Wands &amp;ldquo;权杖二&amp;rdquo;&lt;/strong&gt; - 个人能量，行使强硬的力量&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Eight of Wands &amp;ldquo;权杖八&amp;rdquo;&lt;/strong&gt; - 快速反应，行动&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Eight of Pentacles &amp;ldquo;钱币八&amp;rdquo;&lt;/strong&gt; - 专注，集中&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;toc_4&#34;&gt;说明&lt;/h3&gt;
-
-&lt;p&gt;魔术师是终极的成功者，主动、阳性力量的原型。他象征着开发世界的力量并将其应用于创造性的目的——因此而生的能量。注意他在图中的姿势——他像避雷针一般矗立着，一手高指向天，代表其无限灵感，另一手则指向大地以开发其无限潜能。他的意志帮助他完成各种奇迹，因而他的力量总是显得无比神奇。&lt;/p&gt;
-
-&lt;p&gt;魔术师的强大力量源自何处？首先，他不害怕行动，他相信自己并愿意为此而冒险。同时，他了解自己的意图及其缘由。他准确地理解自己的情况，因而从不犹豫。他总能专注在单一的决心之中，只要还记得这种力量的本源，魔术师就永远能够实现奇迹。&lt;/p&gt;
-
-&lt;p&gt;在解读中，魔术师暗示只要你信任自己的能量，主动并集中地行动，那么创造性的力量便会伴你左右。这张牌示意只要你理解你的意图和目标，那么就应当立刻行动起来。&lt;/p&gt;
 </description>
     </item>
     

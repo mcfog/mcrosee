@@ -70,7 +70,7 @@ title: "mcfog的一己之见 VII"
 
 这是我在 [SegmentFault](http://segmentfault.com/) 上的问题回答选编，遵循[CC BY-SA 3.0 CN](http://creativecommons.org/licenses/by-sa/3.0/cn/) 分享
 
-今天这个歪题的回答鸡精浓度过高，于是只放着一篇了
+今天这个歪题的回答鸡精浓度过高，于是只放这一篇了
 
 题图：万智【变巨术】
 

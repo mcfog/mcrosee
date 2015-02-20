@@ -7,7 +7,31 @@
     
     
     
-    <updated>Fri, 13 Feb 2015 13:04:32 CST</updated>
+    <updated>Fri, 20 Feb 2015 13:14:36 CST</updated>
+    
+    <item>
+      <title>浏览器特性速查 － caniuse</title>
+      <link>http://inside.mcfog.wang/2015/02/tech4fun-7/</link>
+      <pubDate>Fri, 20 Feb 2015 13:14:36 CST</pubDate>
+      
+      <guid>http://inside.mcfog.wang/2015/02/tech4fun-7/</guid>
+      <description>&lt;p&gt;随着IE6，IE7的远去，移动端webkit一统江湖，web开发的好日子总算是慢慢到来了。但主浏览器的数量其实并没有减少，用一些比较新的特性的时候还是需要检查一下兼容性，考虑一下是否需要polyfill或degradation。 MDN，MSDN等固然权威，但有时我们只是要查兼容性而已。&lt;/p&gt;
+
+&lt;p&gt;于是这里推荐的是这个神站 &lt;a href=&#34;http://caniuse.com/&#34;&gt;http://caniuse.com/&lt;/a&gt;。直接输入特性名字，兼容性，已知问题等等一览无余。就是这样。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;/img/2015-q1/caniuse.png&#34; alt=&#34;&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;PS: 无需访问首页，可以直接加上搜索关键词&lt;code&gt;caniuse.com/svg&lt;/code&gt;，直达目标。 类似的站还有&lt;code&gt;php.net/strtotime&lt;/code&gt;和&lt;code&gt;api.jquery.com/val&lt;/code&gt;等等，很多地方都是支持的。&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;题图：万智 【壮绝实验】&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;/img/2015-q1/rtr159.jpg&#34; alt=&#34;&#34; /&gt;
+&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>推荐个手机浏览器Yandex</title>

@@ -7,7 +7,108 @@
     
     
     
-    <updated>Mon, 16 Feb 2015 17:25:58 CST</updated>
+    <updated>Mon, 23 Feb 2015 00:09:31 CST</updated>
+    
+    <item>
+      <title>mcfog的一己之见 VIII</title>
+      <link>http://inside.mcfog.wang/2015/02/ichizon-8/</link>
+      <pubDate>Mon, 23 Feb 2015 00:09:31 CST</pubDate>
+      
+      <guid>http://inside.mcfog.wang/2015/02/ichizon-8/</guid>
+      <description>
+
+&lt;!--================================!--&gt;
+
+&lt;h2 id=&#34;toc_0&#34;&gt;编写js效果的时候, 大家一般是怎么去构思的?&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://segmentfault.com/q/1010000002555492&#34;&gt;问题&lt;/a&gt; by &lt;a href=&#34;http://segmentfault.com/u/doudoudragon&#34;&gt;douDouDragon&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;很好奇, 大家平时去写一个效果的时候,是怎么从构思到编写代码的?比如写一个无限循环的轮播插件.&lt;/p&gt;
+
+&lt;p&gt;一般是直接抄上键盘开干, 还是有什么更好的思考构造方法? 更成熟的工作习惯呢?&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;toc_1&#34;&gt;我的看法&lt;/h2&gt;
+
+&lt;p&gt;轮播这种普遍的效果一般不会生造轮子……&lt;/p&gt;
+
+&lt;p&gt;真要自己撸的话，我&lt;strong&gt;一开始基本不会考虑复用&lt;/strong&gt;，因为真的自己撸一定是“找不到合适的轮子”，那基本上代表了业务场景很难复用。而且，真的发现可以复用的时候，再重构代码来提公用部分反而比较高效。因为为了业务写的代码，基本没有时间仔细梳理文档，当初留的扩展性过了三个月很容易就变成坑了。“没有思路的时候不谈复用，只求最简实现”&lt;/p&gt;
+
+&lt;p&gt;但是，假设我做了N遍轮播，找了M个轮子都觉得不顺手，同时业务又不紧或者下班有时间的时候，我就会以冲动开始造轮子了，这时候我会参考M个轮子各自的优缺点，决定自己的这个轮子究竟如何在扩展性和易用性上取到平衡点，到这时你一定对M个轮子各种吐槽，集合你N遍轮播碰到的各种情况，顺势而为，呼啦啦一个晚上就能轻松撸出自己的轮子，然后哼着歌套到项目里试试，效果好，你学到了，效果不好，你也学到了。如果你还能试着拉你的小伙伴一起来用，听听他的评价，那你能学到更多。慢慢的，你碰到没做几次的效果甚至第一次做的效果，心里也还是有数，嗯，这里留个配置，哪里暴露个接口，以后会爽。&lt;/p&gt;
+
+&lt;p&gt;当然，你可能会从地上的坑里飞出来，掉到天上的坑里去：你开始_过度设计_，做什么都插件，模块，复用，然后你发现你花了很多时间写的这些插件，模块，复用让其他同事无法理解你的代码，让你的代码和小伙伴的代码格格不入，当初留的扩展性很少用上，更糟糕的是小伙伴来写的时候他根本不理解你预留的扩展性，他会再自己写一套他的……&lt;/p&gt;
+
+&lt;p&gt;最后，你看到一个需求，低头掐指一算时间多充裕，小伙伴多信你，外面的轮子靠谱不，自己造轮子能达到好效果不，不造轮子直接强撸又怎样，双眼猛地一亮抄起键盘啪啪啪&lt;/p&gt;
+
+&lt;p&gt;到此神功大成，可喜可贺&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;!--================================!--&gt;
+
+&lt;h2 id=&#34;toc_2&#34;&gt;如何追踪页面前端特效是由哪个JS执行的？&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://segmentfault.com/q/1010000002505622&#34;&gt;问题&lt;/a&gt; by &lt;a href=&#34;http://segmentfault.com/u/mysic&#34;&gt;Mysic&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;一个页面中一般会引入很多独立的JS文件。如何去定位某个特效是由哪个JS执行的呢？谢谢&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;toc_3&#34;&gt;我的看法&lt;/h2&gt;
+
+&lt;p&gt;chrome可以针对元素被改变打断断点&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://sfault-image.b0.upaiyun.com/148/870/1488709004-54c0b3da4f2f8_articlex&#34; alt=&#34;图片描述&#34; /&gt;
+&lt;/p&gt;
+
+&lt;!--================================!--&gt;
+
+&lt;h2 id=&#34;toc_4&#34;&gt;如何阻止&amp;rdquo;rm -rf /&amp;rdquo;&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://segmentfault.com/q/1010000002457343&#34;&gt;问题&lt;/a&gt; by &lt;a href=&#34;http://segmentfault.com/u/liangyi&#34;&gt;两仪&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;前天  敲命令的时候  敲的玩我  一部小心敲了 sudo rm -rf / 并且按了回车  过了几秒才反映过来  不过已经玩了   mac上一些运用已经被删除了   没做备份   只好花了一天时间重新安装。&lt;/p&gt;
+
+&lt;p&gt;那么问题来了，如何禁止执行 上面的命令  或者给个提示也行&lt;/p&gt;
+
+&lt;p&gt;然后在问个问题，TimeMachine做备份  是不是要整个移动硬盘 做备份。我运行它的时候  老报没有Airport找不到   。&lt;/p&gt;
+
+&lt;p&gt;各位看管 有什么经验？&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;toc_5&#34;&gt;我的看法&lt;/h2&gt;
+
+&lt;p&gt;1、 不要用rm，mac的话&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;brew install rmtrash&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;然后用rmtrash替代rm（移动到废纸篓）&lt;/p&gt;
+
+&lt;p&gt;少数必须要用rm的情况，再三检查你的命令&lt;/p&gt;
+
+&lt;p&gt;2、 不要用sudo或root用户，必须要用的时候，再三检查你的命令&lt;/p&gt;
+
+&lt;p&gt;3、 sudo而且rm的时候，打完命令，检查完以后，去上个厕所回来再检查一遍再执行&lt;/p&gt;
+
+&lt;p&gt;4、 千万不要用alias或任何手段来改变rm命令的行为，&lt;strong&gt;千万不要用alias或任何手段来改变rm命令的行为&lt;/strong&gt;。这很重要，因为用命令行就是为了习惯和了解服务器维护的知识经验，服务器上是不会有同样的alias的。养成慎用rm 慎用sudo 检查命令的好习惯才是正道。否则剧本就是你先&lt;code&gt;rm rf /&lt;/code&gt;了自己，苦恼了半小时找了个alias或别的脚本之类的，几个月以后，登到生产环境欢乐地&lt;code&gt;rm rf /&lt;/code&gt;了服务器，或者是&lt;code&gt;rm rf /usr /local/xxx&lt;/code&gt;
+日常使用的话参考前面，用rmtrash之类的替代命令就好&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;最后关于TimeMachine，我用的是老台式机的整块旧硬盘，不方便的话，给硬盘单独一个分区也可以，自己google怎么做&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;这是我在 &lt;a href=&#34;http://segmentfault.com/&#34;&gt;SegmentFault&lt;/a&gt; 上的问题回答选编，遵循&lt;a href=&#34;http://creativecommons.org/licenses/by-sa/3.0/cn/&#34;&gt;CC BY-SA 3.0 CN&lt;/a&gt; 分享&lt;/p&gt;
+
+&lt;p&gt;题图：万智【净化时空】 rm -rf&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;/img/2015-q1/m14-29.jpg&#34; alt=&#34;&#34; /&gt;
+&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>mcfog的一己之见 VII</title>

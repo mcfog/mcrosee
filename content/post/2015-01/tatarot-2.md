@@ -1,6 +1,6 @@
 ---
 categories:
-- tarot
+- tatarot
 date: 2015-01-14T11:30:00+08:00
 tags:
 - tarot_m13

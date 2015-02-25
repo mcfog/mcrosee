@@ -1,6 +1,6 @@
 ---
 categories:
-- tarot
+- tatarot
 date: 2015-01-05T12:30:58+08:00
 tags:
 - tarot_m14

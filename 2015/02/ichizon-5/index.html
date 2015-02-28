@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
   <title> mcfog的一己之见 第五期 &middot; mc-inside </title>
-  <link rel="stylesheet" href="http://inside.mcfog.wang/css/glimmervoid.css" />
+  <link rel="stylesheet" href="http://inside.mcfog.wang//css/glimmervoid.css" />
   <link rel="stylesheet" href="//cdn.jsdelivr.net/highlight.js/8.4/styles/github.min.css">
   <link rel="alternate" type="application/atom+xml" href="/index.xml"/>
 </head>
@@ -25,9 +25,9 @@
     <ul class="u-cf">
       <li><a href="/">Home</a> </li>
       
-      <li><a href="http://inside.mcfog.wang/about/"> About </a></li>
+      <li><a href="/about/"> About </a></li>
       
-      <li><a href="http://inside.mcfog.wang/goto/follow/"> 公众帐号 </a></li>
+      <li><a href="/goto/follow/"> 公众帐号 </a></li>
       
     </ul>
   </div>
@@ -56,7 +56,7 @@
 
 <!--================================!-->
 
-<h2 id="toc_0">学习PHP该走什么样的路线</h2>
+<h2 id="学习php该走什么样的路线:8a9b66dd0d98af6f3fa5d4fe14029894">学习PHP该走什么样的路线</h2>
 
 <p><a href="http://segmentfault.com/q/1010000000484344">问题</a> by <a href="http://segmentfault.com/u/ixiqin_com">西秦公子</a></p>
 
@@ -72,7 +72,7 @@
 
 <hr />
 
-<h2 id="toc_1">我的看法</h2>
+<h2 id="我的看法:8a9b66dd0d98af6f3fa5d4fe14029894">我的看法</h2>
 
 <ol>
 <li>不管什么风格都要看，而且别停留在看上，动手hack一下试试模仿/修改一些功能。不知道非架构代码是啥样的情况下是不容易用好/设计好架构的</li>
@@ -100,7 +100,7 @@ LV5 掌握若干LV4技能的基础上，知道怎么招聘和摆平其他LV4的�
 
 <!--================================!-->
 
-<h2 id="toc_2">如何理解IoC（Inversion of Control）？</h2>
+<h2 id="如何理解ioc-inversion-of-control:8a9b66dd0d98af6f3fa5d4fe14029894">如何理解IoC（Inversion of Control）？</h2>
 
 <p><a href="http://segmentfault.com/q/1010000000755828">问题</a> by <a href="http://segmentfault.com/u/wangshuo">WS</a></p>
 
@@ -108,7 +108,7 @@ LV5 掌握若干LV4技能的基础上，知道怎么招聘和摆平其他LV4的�
 
 <hr />
 
-<h2 id="toc_3">我的看法</h2>
+<h2 id="我的看法-1:8a9b66dd0d98af6f3fa5d4fe14029894">我的看法</h2>
 
 <p>我试着搜了一下，中文资料基本都把IoC（控制翻转）和DI（依赖注入）混为一谈，就连<a href="http://stackoverflow.com/questions/3058/what-is-inversion-of-control">StackOverflow上的第一位答案</a>也犯了同样的问题（幸好下面有高票的反对评论，否则我的世界观都快坏掉了）</p>
 
@@ -131,7 +131,7 @@ LV5 掌握若干LV4技能的基础上，知道怎么招聘和摆平其他LV4的�
 
 <!--================================!-->
 
-<h2 id="toc_4">能简单解释一下MVC吗？越简单越好</h2>
+<h2 id="能简单解释一下mvc吗-越简单越好:8a9b66dd0d98af6f3fa5d4fe14029894">能简单解释一下MVC吗？越简单越好</h2>
 
 <p><a href="http://segmentfault.com/q/1010000002456846">问题</a> by <a href="http://segmentfault.com/u/dwqs">不写代码的码农</a></p>
 
@@ -139,13 +139,13 @@ LV5 掌握若干LV4技能的基础上，知道怎么招聘和摆平其他LV4的�
 
 <hr />
 
-<h2 id="toc_5">我的看法</h2>
+<h2 id="我的看法-2:8a9b66dd0d98af6f3fa5d4fe14029894">我的看法</h2>
 
 <p>概念大家都说了，其实MVC的涵义一直在潜移默化地变化，原本CS软件的MVC和如今php ruby python讲的MVC已经有不小的区别了。甚至很可能概念早就变成MVP，只是大家习惯了MVC，指鹿为马了</p>
 
 <p>我觉得已实际项目来说，作3个思想实验就能大致理解MVC的本质和目标，具体三层怎么分，是三层还是四层还是两层，其实都是为了达成灵活性和可维护性的手段而已</p>
 
-<h3 id="toc_6">更换数据库选择</h3>
+<h3 id="更换数据库选择:8a9b66dd0d98af6f3fa5d4fe14029894">更换数据库选择</h3>
 
 <p>数据结构不变，把数据库从mysql迁移到pgsql乃至mongodb，你的项目需要多大的变化？
 理想的MVC架构应该无需修改任何业务代码(包括Model)，只需要修改配置文件，最多写个新的DBAL driver
@@ -153,14 +153,14 @@ LV5 掌握若干LV4技能的基础上，知道怎么招聘和摆平其他LV4的�
 
 <p>如果你的答案是两眼一黑：和重写一遍差不多，那么你的M层还不够独立，该写在Model的代码分散到别处了</p>
 
-<h3 id="toc_7">手机HTML5版本</h3>
+<h3 id="手机html5版本:8a9b66dd0d98af6f3fa5d4fe14029894">手机HTML5版本</h3>
 
 <p>假设保持所有功能不变（都有合理自然的移动版交互），给你的站点增加手机版，你的项目需要多大的变化？
 答案应该是重写一套View，然后Controller改一行<code>if(isMobile) use(MobileView);</code></p>
 
 <p>如果你发现Controller要改大量逻辑，甚至Model都被牵连，那你的V层不够独立</p>
 
-<h3 id="toc_8">增加API</h3>
+<h3 id="增加api:8a9b66dd0d98af6f3fa5d4fe14029894">增加API</h3>
 
 <p>假设所有功能不变，给你的站点增加开放API（给第三方或移动应用使用），你的项目需要多大的变化？
 答案应该是一套新的Controller 包含新的授权、和数据格式以及校验等逻辑，和一个简单的View（只输出json或xml）</p>

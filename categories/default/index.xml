@@ -1,18 +1,17 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-      <title>Default on mc-inside </title>
-      <generator uri="https://hugo.spf13.com">Hugo</generator>
-    <link>http://inside.mcfog.wang/categories/default/index.xml/</link>
-    
-    
-    
-    <updated>Sat, 29 Mar 2014 04:50:00 CST</updated>
+    <title>Default on mc-inside</title>
+    <link>http://inside.mcfog.wang/categories/default/</link>
+    <description>Recent content in Default on mc-inside</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Sat, 29 Mar 2014 04:50:00 +0800</lastBuildDate>
+    <atom:link href="http://inside.mcfog.wang/categories/default/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Zero</title>
       <link>http://inside.mcfog.wang/2014/03/zero/</link>
-      <pubDate>Sat, 29 Mar 2014 04:50:00 CST</pubDate>
+      <pubDate>Sat, 29 Mar 2014 04:50:00 +0800</pubDate>
       
       <guid>http://inside.mcfog.wang/2014/03/zero/</guid>
       <description>&lt;p&gt;这是第一篇文章，我是mcfog，一个怀揣小小文艺梦想的技术宅。我的技术不是很好，技术博客有写一些，但说句大话，效果一般(-_-)。个人博客曾经有写过，但没个主题也没人关注，缺乏更新的动力。朋友圈偶尔骚一把，但篇幅受限，还混在日常吐槽之中，还没有缺乏历史积累。于是穷途末路之下突然想起还有公共帐号这么个神奇的似乎介于上述种种地方之间的地方，故而来这么尝试一把。&lt;/p&gt;
@@ -49,7 +48,7 @@
 
 &lt;p&gt;尾图：万智 【无名倒错】&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;/img/2014-q1/lw128.jpg&#34; alt=&#34;&#34; /&gt;
+&lt;p&gt;&lt;img src=&#34;http://inside.mcfog.wang/img/2014-q1/lw128.jpg&#34; alt=&#34;&#34; /&gt;
 &lt;/p&gt;
 </description>
     </item>

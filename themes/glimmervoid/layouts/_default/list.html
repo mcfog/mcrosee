@@ -3,11 +3,13 @@
 {{ partial "sidebar.html" . }}
 
 <div class="main">
-    {{ range .Data.Pages }}
+    {{ range .Paginator.Pages }}
     <div class="post">
         {{ partial "summary.html" . }}
     </div>
     {{ end }}
+
+    {{ partial "paginator.html" . }}
 </div>
 
 

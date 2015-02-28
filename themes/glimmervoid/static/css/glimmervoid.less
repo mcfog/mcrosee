@@ -1,5 +1,5 @@
 @import (inline) "normalize.css";
-@import (inline) "skeleton.css";
+@import (less) "skeleton.css";
 @import (inline) "github-markdown.css";
 
 @screen-pc: 960px;
@@ -119,5 +119,46 @@ a {
   @media (min-width: @screen-pc) {
     text-align: left;
     margin-left: 4rem;
+  }
+}
+
+.pagination {
+  &:after {
+    &:extend(.u-cf);
+  }
+
+  li {
+    float: left;
+
+    list-style: none;
+
+    a {
+      display: inline-block;
+      border-radius: 5px;
+      background: #EEE;
+      padding: 2px 1em;
+      margin: 0 3px;
+    }
+
+    &.disabled {
+      opacity: 0.5;
+      pointer-events: none;
+      a {
+        cursor: default;
+      }
+    }
+
+    &.active {
+      pointer-events: none;
+      a {
+        cursor: default;
+        background: #AAA;
+        color: white;
+      }
+    }
+
+    &:first-child, &:last-child {
+      display: none;
+    }
   }
 }

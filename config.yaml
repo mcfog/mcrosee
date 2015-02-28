@@ -3,6 +3,8 @@ title: mc-inside
 baseurl: http://inside.mcfog.wang/
 MetaDataFormat: yaml
 
+Paginate: 20
+
 permalinks:
   post: "/:year/:month/:filename/"
 

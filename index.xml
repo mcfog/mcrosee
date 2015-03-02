@@ -5,8 +5,120 @@
     <link>http://inside.mcfog.wang/</link>
     <description>Recent content on mc-inside</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sat, 28 Feb 2015 12:14:18 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 02 Mar 2015 11:35:42 +0800</lastBuildDate>
     <atom:link href="http://inside.mcfog.wang/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>mcfog的一己之见 IX</title>
+      <link>http://inside.mcfog.wang/2015/03/ichizon-9/</link>
+      <pubDate>Mon, 02 Mar 2015 11:35:42 +0800</pubDate>
+      
+      <guid>http://inside.mcfog.wang/2015/03/ichizon-9/</guid>
+      <description>
+
+&lt;!--================================!--&gt;
+
+&lt;h2 id=&#34;學習好一門編程語言要關注哪些地方:a16965cf5369f3d2be6b8e3f99ac42f6&#34;&gt;學習好一門編程語言要關注哪些地方？&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://segmentfault.com/q/1010000002427856&#34;&gt;问题&lt;/a&gt; by &lt;a href=&#34;http://segmentfault.com/u/mexiqq&#34;&gt;MexiQQ&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;如題所示，咋樣才算是學習好了一門編程語言？就比如拿 swift 來說吧&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;我的看法:a16965cf5369f3d2be6b8e3f99ac42f6&#34;&gt;我的看法&lt;/h2&gt;
+
+&lt;p&gt;标题和内容是两个问题啊喂……&lt;/p&gt;
+
+&lt;p&gt;掌握（实用的）编程语言往往分为两大块，语言本身和周边类库／框架，这两块相辅相成缺一不可&lt;/p&gt;
+
+&lt;p&gt;就语言本身来说，最重要的是理解这门语言的抽象机制／编程范式：早期的语言可能相对单纯，纯过程式，纯面向对象，而多数现代通用语言往往是多范式的，往往即支持面向对象又支持面向过程，还有或多或少的函数式，这种混合的比例和风格决定了整门语言的风格。有的语言会有一些“核心概念”，拿掉以后会直接洞穿整个根基的重要概念／机制（比如JS的原型，Java的接口，C的指针），那么抓住这些核心概念突破是个好主意；而另一些语言可能没有这样明显的核心，这类语言往往混合多种其他语言的特色，那么可以通过他借鉴了哪些特性，做了哪些调整，又没有借鉴哪些特性来入手。重要的是“味道”，写Java就要有Java味道（而不是试图用Java实现一个动态语言的子集），写JS就要有JS的味道（而不是试图搞接口，封装之类）。而有一些味道是所有语言共通追求的比如可读可维护（恕我排除了brainfuck……），这也可以成为突破口（比如这门语言的哪些特性增强了可读性？）&lt;/p&gt;
+
+&lt;p&gt;另外一块就是周边类库包括工具集了，我经常用学英文打比方，前面那块可能对应语法，而类库就相当于词汇了，这门语言的主要应用场景在哪里，在这些场景下有哪些内置或开源的类库可以用，不同类库之间的优缺点如何，怎么选择合适的类库，怎么让几个不同的类库在一起融洽地工作。什么样的代码适合抽离成类库，自己写类库的时候要注意什么。这门语言有哪些常见的辅助工具。&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;我觉得学好一门语言的主要标志就是它从你的思考中消失了，你发现你考虑如何写代码的时候的思维过程和这门具体的语言没有关系，“怎么用XX实现YY”之类的问题从来没有出现，更没有打断你的思路&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;!--================================!--&gt;
+
+&lt;h2 id=&#34;如何将bootstrap的默认字体改为微软雅黑:a16965cf5369f3d2be6b8e3f99ac42f6&#34;&gt;如何将bootstrap的默认字体改为微软雅黑？&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://segmentfault.com/q/1010000002422024&#34;&gt;问题&lt;/a&gt; by &lt;a href=&#34;http://segmentfault.com/u/zengdamo&#34;&gt;zengdamo&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;如题，我正在用joomla搭建网站，引用了bootstrap作为css样式。
+但是目前默认的字体是宋体，这是不能忍受的。
+我在网上找到了如下的解决办法 ：&lt;a href=&#34;http://www.imooc.com/wenda/detail/214057&#34;&gt;http://www.imooc.com/wenda/detail/214057&lt;/a&gt; 或者 &lt;a href=&#34;http://www.igooda.cn/jzjl/20130914360.html&#34;&gt;http://www.igooda.cn/jzjl/20130914360.html&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;但是照做之后没有改变，网站的字体还是宋体。
+请问有什么办法能将默认字体改为微软雅黑吗？&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;我的看法-1:a16965cf5369f3d2be6b8e3f99ac42f6&#34;&gt;我的看法&lt;/h2&gt;
+
+&lt;p&gt;直接改就行 &lt;a href=&#34;https://github.com/twbs/bootstrap/blob/v3.3.1/less/variables.less#L45&#34;&gt;https://github.com/twbs/bootstrap/blob/v3.3.1/less/variables.less#L45&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;有时候我真觉得bootstrap最大的败笔就是直接提供css下载&lt;/em&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;!--================================!--&gt;
+
+&lt;h2 id=&#34;phper-进阶困惑:a16965cf5369f3d2be6b8e3f99ac42f6&#34;&gt;phper  进阶困惑&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://segmentfault.com/q/1010000000461429&#34;&gt;问题&lt;/a&gt; by &lt;a href=&#34;http://segmentfault.com/u/ptao&#34;&gt;葡了个萄&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;经朋友推荐来到SF 感觉很不错&amp;hellip;
+回到正题,作为一名phper快一年的时间,这是指开发时间不包括自学时间..
+但是慢慢的发现自己处于一个瓶颈中无法走出,提高很慢&amp;hellip;
+自己目前也能独立使用各种框架进行项目的开发,但这些好像都是属于PHP初级知识范围内的吧??(自己划分的).对于其他的知识 譬如 PHP的cli模式  线程问题.还有一些其他的PHP知识想去深入的了解自己也gg过很多资料,但是还无从下手的感觉,希望SF的大大能够给予解惑 万分感谢&lt;br /&gt;
+PS 本人非计算机专业 PHP是大学偶然中接触之后有兴趣开始学习的..求各位大大给予建议和帮助.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;我的看法-2:a16965cf5369f3d2be6b8e3f99ac42f6&#34;&gt;我的看法&lt;/h2&gt;
+
+&lt;p&gt;我觉得这是典型的舒适区问题……你能很好的满足工作需求了，更牛逼的cli，线程，zend之类的工作上项目上用不到（多数项目确实用不到），没有需求/老板之类的外界来push你，于是你感觉很难提高&lt;/p&gt;
+
+&lt;p&gt;我的建议有三条，我都各自用过这些方法来冲出舒适区，仅供参考&lt;/p&gt;
+
+&lt;h3 id=&#34;nightjob:a16965cf5369f3d2be6b8e3f99ac42f6&#34;&gt;NightJob&lt;/h3&gt;
+
+&lt;p&gt;不知道你有没读过《黑客与画家》，这里说的NightJob就是你在工作之余，下班，周末来作的项目。无需考虑盈利，只需要做你最想做的事情，你自己是产品经理负责规划，自己是老板负责挤出工作之余的时间，自己是开发负责找最cool的技术来实现。&lt;/p&gt;
+
+&lt;p&gt;我个人的NightJob有很多很多，绝大多数最后都是0用户，自己写不下去了，但每一次从发现灵感，尝试去做，最后做了个半成品，渐渐遇到困难，克服了一些困难的过程都对自己的成长有很大帮助。每次反思“啊那个项目怎么最后就做不下去了”也都很有收获。&lt;/p&gt;
+
+&lt;h3 id=&#34;overjob:a16965cf5369f3d2be6b8e3f99ac42f6&#34;&gt;OverJob&lt;/h3&gt;
+
+&lt;p&gt;顺势给第二条建议起了个这么个名字，就是工作之余，想想有啥可以额外做的小工具，mini项目，做出来可以略微提高一点工作效率的。比如我做的事情是&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;我司内部有一个MySQL缓存中间件，负责在web机器和DB之间做cache，一直没有图形界面的，我花了一些时间（嗯，包括一次周五额外加班通宵），日了一个网页版的图形界面出来，开发的时候不需要搞那些命令，直接开网页，就像PMA那样就可以控制里面的内容了&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;这样的事情和老板说，他肯定不会批时间给你做，但实际上做出来以后确实是对开发效率有一定提升的。和NightJob一样，因为是你主动自发做的，所以你可以尽情发挥，用擦上边的各种你想熟悉的技术。比起NightJob来说虽然可能选题范围稍微窄一些，事情本身的有趣程度也略逊，但好在做出来以后可以shock到你的老板，可以让你的同事对你刮目相看。&lt;/p&gt;
+
+&lt;h3 id=&#34;成为水泥:a16965cf5369f3d2be6b8e3f99ac42f6&#34;&gt;成为水泥&lt;/h3&gt;
+
+&lt;p&gt;最后，这条建议就是完全关于正经工作的。既然你现在感觉有余力，可以比较好的完成你的份内工作，可以把你的眼光投向四周：你的同事有什么工作是摆不平的，或者做的不够好的？如果这件事你能做的很好，那么找机会花时间去教他，提高他的水平。如果这件事你也不那么擅长，那就去学，变得擅长，可以考虑和他聊聊然后和你的老板聊聊，告诉他们：这事儿我比较能干，把这份事情搞过来自己做，把自己做惯的“简单”一些的任务丢掉一部分（以夯实你学习的成果）&lt;/p&gt;
+
+&lt;p&gt;水泥的意思就是首先能填充到缝隙之中，还能慢慢变硬，让大楼让整个团队坚硬无比，也让自己能适应任何需求。&lt;/p&gt;
+
+&lt;p&gt;后者对自己的提升比较明显：你丢掉了一些做惯的不有趣的事儿，拿到了新的有挑战的事儿，学到了新的技能，但其实我更喜欢前者，也就是提高同事的水平的机会。这不仅能收获他的好感度，老板的好感度，还能让你自己的基础更扎实（别人学习过程中提出的问题很多时候能正中自己的软肋），一石二鸟，一般人我不告诉他的。&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;这是我在 &lt;a href=&#34;http://segmentfault.com/&#34;&gt;SegmentFault&lt;/a&gt; 上的问题回答选编，遵循&lt;a href=&#34;http://creativecommons.org/licenses/by-sa/3.0/cn/&#34;&gt;CC BY-SA 3.0 CN&lt;/a&gt; 分享&lt;/p&gt;
+
+&lt;p&gt;题图：万智【丰足成长】&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://inside.mcfog.wang/img/2015-q1/avr167.jpg&#34; alt=&#34;&#34; /&gt;
+&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>微型JS库速查microjs.com</title>
@@ -1131,128 +1243,6 @@ LV5 掌握若干LV4技能的基础上，知道怎么招聘和摆平其他LV4的�
 &lt;p&gt;题图：万智 【实相光闪】&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&#34;http://inside.mcfog.wang/img/2015-q1/fut-43.jpg&#34; alt=&#34;&#34; /&gt;
-&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>[乱弹塔罗]愚者的旅程（上）</title>
-      <link>http://inside.mcfog.wang/2015/01/tatarot-4/</link>
-      <pubDate>Wed, 28 Jan 2015 12:35:45 +0800</pubDate>
-      
-      <guid>http://inside.mcfog.wang/2015/01/tatarot-4/</guid>
-      <description>
-
-&lt;blockquote&gt;
-&lt;p&gt;愚者的旅程是对人生旅程的某种隐喻。每张主牌代表了旅程中的某个阶段，也就是一个人在达成圆满的过程中必须接纳的体验。这22个描述都是基于每张主牌的关键词，关键词以加粗格式展示，对应卡牌的数字则在括号中。&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h3 id=&#34;the-fool-愚者:5d71d8c39d8933a4c7c2ca727206fb36&#34;&gt;&lt;strong&gt;The Fool &amp;ldquo;愚者&amp;rdquo;&lt;/strong&gt;&lt;/h3&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://inside.mcfog.wang/img/tarot/s/maj00s.gif&#34; alt=&#34;&#34; /&gt;
-&lt;/p&gt;
-
-&lt;p&gt;我们从愚者(0)开始，一张代表&lt;strong&gt;开始&lt;/strong&gt;的卡牌。愚者代表我们每个人人生旅程的开端。只有像他这样的一个单纯的灵魂才具备天真的&lt;strong&gt;信心&lt;/strong&gt;，才能承担这漫长而痛苦的旅程。&lt;/p&gt;
-
-&lt;p&gt;在旅程的开端，愚者像一个新生儿一样稚嫩、开放而依&lt;strong&gt;本能&lt;/strong&gt;行事。愚者牌中的人物张开他的双臂，高抬着头，他准备好迎接他路上的任何东西，但他并未察觉前方的悬崖。自从出发踏上了解世界的冒险旅途，愚者注定会面对各种困难，而他对此毫不知情。&lt;/p&gt;
-
-&lt;p&gt;愚者某种意义上脱离其他主牌之外，0是个特殊的数字，坐落于整个数字体系的中间。自诞生之时，愚者被至于他个人领域的正中央，他是一种奇怪的空白状态（正如0那样），但他充满了前进和学习的冲动。这使他看上去显得&lt;strong&gt;愚蠢&lt;/strong&gt;，是么？&lt;/p&gt;
-
-&lt;h3 id=&#34;the-magician-魔术师-和-the-high-priestess-女祭司:5d71d8c39d8933a4c7c2ca727206fb36&#34;&gt;&lt;strong&gt;The Magician &amp;ldquo;魔术师&amp;rdquo;&lt;/strong&gt; 和 &lt;strong&gt;The High Priestess &amp;ldquo;女祭司&amp;rdquo;&lt;/strong&gt;&lt;/h3&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://inside.mcfog.wang/img/tarot/s/maj01s.gif&#34; alt=&#34;&#34; /&gt;
-
-&lt;img src=&#34;http://inside.mcfog.wang/img/tarot/s/maj02s.gif&#34; alt=&#34;&#34; /&gt;
-&lt;/p&gt;
-
-&lt;p&gt;出发后，愚者立刻遇见了魔术师(1)和女祭司(2)——构成被知觉世界的两股互相平衡的力量。这是物质世界的特质，每当列出经验的某个方面，我们自然会想起其反面。&lt;/p&gt;
-
-&lt;p&gt;魔术师是正向的一侧。他代表了&lt;strong&gt;主动&lt;/strong&gt;，阳性的力量，创造力，以及我们&lt;strong&gt;有意识的知觉&lt;/strong&gt;。魔术师让我们通过&lt;strong&gt;集中&lt;/strong&gt;个人的意志和&lt;strong&gt;能量&lt;/strong&gt;来影响世界。
-女祭司是负向的一侧。她代表了&lt;strong&gt;神秘的潜意识&lt;/strong&gt;，提供了灵感的源泉。女祭司是我们未曾察觉的&lt;strong&gt;潜力&lt;/strong&gt;，等待被发掘而表现出力量。&lt;/p&gt;
-
-&lt;p&gt;这里的“正向”或“负向”并不意味着“好”或“坏”，类似的人为区分并不适用于塔罗。魔术师和女祭司在价值和重要性方面完全相等，都是不可或缺而需要平衡的。或许我们可以把负向视为我们的影子，但没有暗影我们就无法看见光明，没有潜力的沃土，我们就无法创造。&lt;/p&gt;
-
-&lt;h3 id=&#34;the-empress-皇后:5d71d8c39d8933a4c7c2ca727206fb36&#34;&gt;&lt;strong&gt;The Empress &amp;ldquo;皇后&amp;rdquo;&lt;/strong&gt;&lt;/h3&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://inside.mcfog.wang/img/tarot/s/maj03s.gif&#34; alt=&#34;&#34; /&gt;
-&lt;/p&gt;
-
-&lt;p&gt;愚者渐渐成长，他渐渐开始对周围有了认知。正如多数婴儿一样，他首先意识到的是他的&lt;strong&gt;母亲&lt;/strong&gt;——那个温暖的，爱护并养育着他的女人。他也开始了解我们的大地母亲，从更广阔的意义上哺育着他。&lt;/p&gt;
-
-&lt;p&gt;皇后代表了世界的&lt;strong&gt;自然&lt;/strong&gt;和&lt;strong&gt;感官&lt;/strong&gt;。婴儿总是乐于探索一切他接触、品尝或嗅到的东西。他的视野和听觉总是不足以满足他的感官。大地母亲环绕着他、支持着他，给予他&lt;strong&gt;富足&lt;/strong&gt;的营养，难怪他沉醉于其中。&lt;/p&gt;
-
-&lt;h3 id=&#34;the-emperor-皇帝:5d71d8c39d8933a4c7c2ca727206fb36&#34;&gt;&lt;strong&gt;The Emperor &amp;ldquo;皇帝&amp;rdquo;&lt;/strong&gt;&lt;/h3&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://inside.mcfog.wang/img/tarot/s/maj04s.gif&#34; alt=&#34;&#34; /&gt;
-&lt;/p&gt;
-
-&lt;p&gt;愚者遇见的下一位人物是皇帝(4)牌中刻画的&lt;strong&gt;父亲&lt;/strong&gt;。他是&lt;strong&gt;结构&lt;/strong&gt;和&lt;strong&gt;权威&lt;/strong&gt;的代表。婴儿从母亲的怀抱中离开后，他了解到世界是有模式的。对象以一种可以预测的行为来回应自己，这种模式可以被探索，婴儿沉醉在发现和了解秩序之中。&lt;/p&gt;
-
-&lt;p&gt;愚者同时接触到了&lt;strong&gt;规则&lt;/strong&gt;。他发现他的意志并不总是最高的。遵守一些必要的行为准则才能给他安宁，一些权威人士总在强调这些准则。这些限制有些令人沮丧，但通过父亲耐心的指引，他慢慢理解了他们的目的。&lt;/p&gt;
-
-&lt;h3 id=&#34;the-hierophant-教皇:5d71d8c39d8933a4c7c2ca727206fb36&#34;&gt;&lt;strong&gt;The Hierophant &amp;ldquo;教皇&amp;rdquo;&lt;/strong&gt;&lt;/h3&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://inside.mcfog.wang/img/tarot/s/maj05s.gif&#34; alt=&#34;&#34; /&gt;
-&lt;/p&gt;
-
-&lt;p&gt;终于，愚者离开他的家庭，进入更广阔的世界继续他的冒险。他发现文化中的信仰和传统，并开始接受正规的&lt;strong&gt;教育&lt;/strong&gt;。教皇(5)代表了有组织的&lt;strong&gt;信仰体系&lt;/strong&gt;，它开始围绕并影响着成长中的孩子。&lt;/p&gt;
-
-&lt;p&gt;教皇是解读神秘学识的人。在这第5张牌上，我们看到一个宗教人物正在祈神保佑两个追随者，或许他在征兆他们入教。虽然图像本身是宗教性质的，但教皇启示代表了任何种类的启蒙。&lt;/p&gt;
-
-&lt;p&gt;孩子开始接受社会的锻炼，慢慢成为某种文化和世界图景的一部分。他开始意识到&lt;strong&gt;群体&lt;/strong&gt;并感受到归属感。他开始享受学习社会的风俗，并表现出良好的&lt;strong&gt;服从&lt;/strong&gt;。&lt;/p&gt;
-
-&lt;h3 id=&#34;the-lovers-恋人:5d71d8c39d8933a4c7c2ca727206fb36&#34;&gt;&lt;strong&gt;The Lovers &amp;ldquo;恋人&amp;rdquo;&lt;/strong&gt;&lt;/h3&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://inside.mcfog.wang/img/tarot/s/maj06s.gif&#34; alt=&#34;&#34; /&gt;
-&lt;/p&gt;
-
-&lt;p&gt;渐渐的，愚者面临着两个新的挑战：他体验到强烈的冲动驱使他和某人尝试&lt;strong&gt;性&lt;/strong&gt;的结合。在此之前，他总是以自我为中心，而此刻他感觉到需要达成平衡，正如恋人(6)中刻画的，发现并成为爱情伴侣的另一半，他渴望着&lt;strong&gt;关系&lt;/strong&gt;。&lt;/p&gt;
-
-&lt;p&gt;同时，愚者需要决定他的&lt;strong&gt;个人信仰&lt;/strong&gt;。他在学习和成长的过程中已经表现了足够多的服从，但有些时候，他必须坚定自己的&lt;strong&gt;价值观&lt;/strong&gt;，对自己负责。他必须开始质疑既有的观点。&lt;/p&gt;
-
-&lt;h3 id=&#34;the-chariot-战车:5d71d8c39d8933a4c7c2ca727206fb36&#34;&gt;&lt;strong&gt;The Chariot &amp;ldquo;战车&amp;rdquo;&lt;/strong&gt;&lt;/h3&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://inside.mcfog.wang/img/tarot/s/maj07s.gif&#34; alt=&#34;&#34; /&gt;
-&lt;/p&gt;
-
-&lt;p&gt;愚者渐渐长大成人，他拥有强烈的个性和对自己的确实掌握。通过纪律和&lt;strong&gt;意志&lt;/strong&gt;，他养成了足以让他征服环境的自我控制力。&lt;/p&gt;
-
-&lt;p&gt;战车(7)代表了这种强力的自我意识，来自于愚者至今争取到的种种成就。在第7张牌上，我们看到一个骄傲的，发号施令的人正在&lt;strong&gt;胜利&lt;/strong&gt;地乘车而过。他对他自己以及他所见的一切具有&lt;strong&gt;明显的控制&lt;/strong&gt;，此时，愚者只想&lt;strong&gt;坚定&lt;/strong&gt;地成功下去，他感到明确的自我满足，年轻人特有的强烈自信。&lt;/p&gt;
-
-&lt;h3 id=&#34;strength-力量:5d71d8c39d8933a4c7c2ca727206fb36&#34;&gt;&lt;strong&gt;Strength &amp;ldquo;力量&amp;rdquo;&lt;/strong&gt;&lt;/h3&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://inside.mcfog.wang/img/tarot/s/maj08s.gif&#34; alt=&#34;&#34; /&gt;
-&lt;/p&gt;
-
-&lt;p&gt;生活开始带给愚者新的挑战，其中有些让他有些痛苦和幻灭。他有多次机会利用&lt;strong&gt;力量&lt;/strong&gt;(8)的品质克服难关，他培养他的勇气和决心，试图找到在挫折和困难之中继续前进的内心。&lt;/p&gt;
-
-&lt;p&gt;愚者同时发现了&lt;strong&gt;耐心&lt;/strong&gt;和&lt;strong&gt;忍耐&lt;/strong&gt;等沉默的品质。他意识到来自战车的意志掌控有时需要和善以及委婉处事的&lt;strong&gt;软控制&lt;/strong&gt;来缓和。渐渐的，强烈的热情重新显现，愚者觉得他掌控了包括自己在内的所有事情。&lt;/p&gt;
-
-&lt;h3 id=&#34;the-hermit-隐者:5d71d8c39d8933a4c7c2ca727206fb36&#34;&gt;&lt;strong&gt;The Hermit &amp;ldquo;隐者&amp;rdquo;&lt;/strong&gt;&lt;/h3&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://inside.mcfog.wang/img/tarot/s/maj09s.gif&#34; alt=&#34;&#34; /&gt;
-&lt;/p&gt;
-
-&lt;p&gt;迟早有一天，愚者扪心自问：“为什么？”，他开始投入到对这古老问题的答案的&lt;strong&gt;搜寻&lt;/strong&gt;之中。并非出于单纯的好奇，而是深深地感到需要找到原因：为何明明必将经受磨难并最终死去，人们却依然活着。隐者(9)代表了这种探寻深层真实的需求。&lt;/p&gt;
-
-&lt;p&gt;愚者开始&lt;strong&gt;反省自身&lt;/strong&gt;，尝试找到他的感受和动机。可感知的世界对他失去了吸引力，他开始避开令人烦躁的社交活动，寻求&lt;strong&gt;独处&lt;/strong&gt;的时刻。他可能还找一个老师或&lt;strong&gt;向导&lt;/strong&gt;来给予他建议和指引。&lt;/p&gt;
-
-&lt;h3 id=&#34;wheel-of-fortune-命运之轮:5d71d8c39d8933a4c7c2ca727206fb36&#34;&gt;&lt;strong&gt;Wheel of Fortune &amp;ldquo;命运之轮&amp;rdquo;&lt;/strong&gt;&lt;/h3&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://inside.mcfog.wang/img/tarot/s/maj10s.gif&#34; alt=&#34;&#34; /&gt;
-&lt;/p&gt;
-
-&lt;p&gt;在内心搜寻许久之后，愚者开始察觉到万物是如何互相关联，他对这个世界的神奇的设计，错综复杂的模式和循环有了&lt;strong&gt;洞察&lt;/strong&gt;。命运之轮(10)标志着神秘的宇宙，其各个部分和谐统一地循环往复。当愚者窥见这世界的美丽和条理，他觉得他已经窥见了他正追求着的答案的一角。&lt;/p&gt;
-
-&lt;p&gt;有时愚者的体验像是命中注定，一个偶遇或奇迹般发生的机会推动了改变的过程。愚者认为在一连串的事件之中，是&lt;strong&gt;命运&lt;/strong&gt;引领他来到了这个&lt;strong&gt;转折点&lt;/strong&gt;。静静独处过后，他觉得是时间开始&lt;strong&gt;移动&lt;/strong&gt;，再次出发。他的视野比以前更加宽广，将自己视为某种宏伟计划中的一部分。他的使命感恢复了。&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://inside.mcfog.wang/tarot/journey/&#34;&gt;愚者的旅程完整版&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;题图：万智【探索大地】&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://inside.mcfog.wang/img/2015-q1/wwk99.jpg&#34; alt=&#34;&#34; /&gt;
 &lt;/p&gt;
 </description>
     </item>

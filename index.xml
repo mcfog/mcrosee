@@ -5,8 +5,94 @@
     <link>http://inside.mcfog.wang/</link>
     <description>Recent content on mc-inside</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 04 Mar 2015 11:45:53 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 09 Mar 2015 12:04:02 +0800</lastBuildDate>
     <atom:link href="http://inside.mcfog.wang/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>mcfog的一己之见 X</title>
+      <link>http://inside.mcfog.wang/2015/03/ichizon-a/</link>
+      <pubDate>Mon, 09 Mar 2015 12:04:02 +0800</pubDate>
+      
+      <guid>http://inside.mcfog.wang/2015/03/ichizon-a/</guid>
+      <description>
+
+&lt;!--================================!--&gt;
+
+&lt;h2 id=&#34;类似淘宝用php做前端-java做后端的架构是怎样的:156241fca14a6dbd9a801918f99835b7&#34;&gt;类似淘宝用php做前端，java做后端的架构是怎样的？&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://segmentfault.com/q/1010000002581056&#34;&gt;问题&lt;/a&gt; by &lt;a href=&#34;http://segmentfault.com/u/ziav&#34;&gt;Ziav&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;RT&amp;hellip;..顺便问一下，像类似淘宝这样的大型网站，为什么会使用php来做前端呢？php本身不是偏后端的语言吗？而且对于前端而言，不是可以用js来处理后端的数据吗？&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;我的看法:156241fca14a6dbd9a801918f99835b7&#34;&gt;我的看法&lt;/h2&gt;
+
+&lt;p&gt;本质上前端后端的区分是以“到用户的距离”划分的&lt;/p&gt;
+
+&lt;p&gt;比较通行的划分是在浏览器/客户端到服务器之间，以用户的http请求为准划线，js css dom flash ios android这些算前，后端负责业务和数据存储。因为通行的开源方案，rdbms配合缓存，队列，开源搜索引擎等等足以支持，于是这个直接的划分比较有效。客户端有十种，服务器也就不到百台，大家的责任任务比较平衡。&lt;/p&gt;
+
+&lt;p&gt;当厂子的量级大到一定程度，简单的开源方案很难盖的住大量的用户，水平扩容，立体的灾备等等问题。这时客户端还是10种，可服务器却一下子百台千台，一个机房一个机房来算了。此时，上述的普通划分就没有意义了。此时划分线便自然向后移动到业务和存储/支持之间，有了题主描述的“java后，php+js前”或是“cpp后，php+js前”之类的划分。
+并不是php的角色变化了，而是原来insert into就写完的下单变得需要大量开发负责各种server运维告警负载均衡读写分离等等等等事情。
+换种说法，10个开发的业务可能5个写jscss，5个写php，但100个开发的业务，可能就是10个jscss，10个安卓ios，35个写php，30个写c/java给php调用，还要有10个运维，5个组长&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;!--================================!--&gt;
+
+&lt;h2 id=&#34;将html转为markdown格式的难点在哪-有什么解决思路:156241fca14a6dbd9a801918f99835b7&#34;&gt;将html转为markdown格式的难点在哪，有什么解决思路？&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://segmentfault.com/q/1010000002541921&#34;&gt;问题&lt;/a&gt; by &lt;a href=&#34;http://segmentfault.com/u/wtser&#34;&gt;王铁手&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;试过 github 上的很多开源项目，结果都很类似。对简单的 DOM 结构转的还能接受，但是页面稍稍复杂，嵌套了其他标签如 &lt;code&gt;&amp;lt;span&amp;gt;&lt;/code&gt; &lt;code&gt;&amp;lt;table&amp;gt;&lt;/code&gt; 这种，就很难转换好，不知道有什么方法或转换策略能缓解这种情况。&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;我的看法-1:156241fca14a6dbd9a801918f99835b7&#34;&gt;我的看法&lt;/h2&gt;
+
+&lt;p&gt;span和table没有对应的markdown语法（table有变种markdown语法）&lt;/p&gt;
+
+&lt;p&gt;包括html的属性 class等等也没有markdown对应&lt;/p&gt;
+
+&lt;p&gt;所以转换的时候通常只能舍弃或者直接保留html（因为markdown支持直接内嵌html）&lt;/p&gt;
+
+&lt;p&gt;作为通用解决方案，我觉得很难找到更好的方法了，但聚焦到独立的场景，打比方说希望&lt;code&gt;&amp;lt;span class=&amp;quot;strong&amp;gt;word&amp;lt;/span&amp;gt;&lt;/code&gt; =&amp;gt; &lt;code&gt;**word**&lt;/code&gt; 的话还是很容易实施的，可以用&lt;code&gt;cheerio&lt;/code&gt;之类的dom工具预处理，抓&lt;code&gt;span.class&lt;/code&gt;先转换成&lt;code&gt;strong&lt;/code&gt;标签然后再送到开源的通用html2md实现里即可&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;!--================================!--&gt;
+
+&lt;h2 id=&#34;有哪些知名的网站是通过建站程序或建站程序二次开发搭建的:156241fca14a6dbd9a801918f99835b7&#34;&gt;有哪些知名的网站是通过建站程序或建站程序二次开发搭建的？&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://segmentfault.com/q/1010000002503122&#34;&gt;问题&lt;/a&gt; by &lt;a href=&#34;http://segmentfault.com/u/llq&#34;&gt;路西llq&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;我想建一个兴趣站，类似创业邦，时光网，铁血网这样的网站能通过建站程序做到吗？我目前有学过建站，仍感觉无从下手，想知道建站程序能不能胜任，或者又只能等团队组建好了再开始做？&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;我的看法-2:156241fca14a6dbd9a801918f99835b7&#34;&gt;我的看法&lt;/h2&gt;
+
+&lt;p&gt;题主已经问过多次此类问题了&lt;/p&gt;
+
+&lt;p&gt;我想说无论你问多久，问什么，你的站都不会突然就建起来了&lt;/p&gt;
+
+&lt;p&gt;如果你打算自己搞定技术方面，那么就赶紧去学技术
+如果你打算找人搞定技术方面，那么就赶紧去找技术合伙人&lt;/p&gt;
+
+&lt;p&gt;如果你拿不定主意，我建议找人搞定。&lt;/p&gt;
+
+&lt;p&gt;至于到底用开源合适还是自己写合适，这完全看你的预算和规划，虽然可能95%的情况都是开源合适&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;这是我在 &lt;a href=&#34;http://segmentfault.com/&#34;&gt;SegmentFault&lt;/a&gt; 上的问题回答选编，遵循&lt;a href=&#34;http://creativecommons.org/licenses/by-sa/3.0/cn/&#34;&gt;CC BY-SA 3.0 CN&lt;/a&gt; 分享&lt;/p&gt;
+
+&lt;p&gt;题图：万智【召集战团】&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://inside.mcfog.wang/img/2015-q1/gtc142.jpg&#34; alt=&#34;&#34; /&gt;
+&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>[乱弹塔罗][翻译]第四课 牌阵</title>
@@ -1142,138 +1228,6 @@ class redis {
 &lt;p&gt;题图：万智【世间锤炼】&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&#34;http://inside.mcfog.wang/img/2015-q1/m10-319.jpg&#34; alt=&#34;&#34; /&gt;
-&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>mcfog的一己之见 第五期</title>
-      <link>http://inside.mcfog.wang/2015/02/ichizon-5/</link>
-      <pubDate>Mon, 02 Feb 2015 10:50:02 +0800</pubDate>
-      
-      <guid>http://inside.mcfog.wang/2015/02/ichizon-5/</guid>
-      <description>
-
-&lt;!--================================!--&gt;
-
-&lt;h2 id=&#34;学习php该走什么样的路线:8a9b66dd0d98af6f3fa5d4fe14029894&#34;&gt;学习PHP该走什么样的路线&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://segmentfault.com/q/1010000000484344&#34;&gt;问题&lt;/a&gt; by &lt;a href=&#34;http://segmentfault.com/u/ixiqin_com&#34;&gt;西秦公子&lt;/a&gt;&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;&lt;p&gt;是应该看传统代码还是应该看MVC框架代码？&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;是应该先看手册还是应该看成品项目？&lt;/p&gt;&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;本人情况:
-了解PHP的基本语法，研究过typecho的主题，了解过MVC构架。
-希望可以有大神帮忙量身定制一条路线。&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;h2 id=&#34;我的看法:8a9b66dd0d98af6f3fa5d4fe14029894&#34;&gt;我的看法&lt;/h2&gt;
-
-&lt;ol&gt;
-&lt;li&gt;不管什么风格都要看，而且别停留在看上，动手hack一下试试模仿/修改一些功能。不知道非架构代码是啥样的情况下是不容易用好/设计好架构的&lt;/li&gt;
-&lt;li&gt;你学英文(这个人又来拿英文比喻了)的时候是先看字典还是先看课文？无论怎样我觉得都不可能是&lt;strong&gt;我看完了一大本课文没翻字典查单词&lt;/strong&gt;，或者是&lt;strong&gt;我看完了牛津字典但没看半篇文章&lt;/strong&gt;。看起来好像后者还合理一点，套到编程上来也是一样的。&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;对字典(文档)，可以先按照常用三千词的程度简单翻一遍(还存在你没经验不知道什么是常用的问题)，但主要还是靠一边看成品项目一边翻文档，最好还能一边请项目作者请教，大致讲解一下。（等价于一边看课文一边查字典，然后同时老师讲解） 开源项目的话，找不到作者可以找各种博客文章&lt;/p&gt;
-
-&lt;p&gt;技能树方面其实不管什么语言应该都是一样的：&lt;/p&gt;
-
-&lt;p&gt;LV0 只会语法&lt;br /&gt;
-LV1 明白怎么运作，能查Bug(不太复杂的)&lt;br /&gt;
-LV2 有一些思路，能添加简单功能&lt;br /&gt;
-LV3 能发现问题，优化局部的结构/性能，能搞定较复杂问题&lt;br /&gt;
-LV4a 对架构有心得，把握宏观架构，把握整个项目的技术体系&lt;br /&gt;
-LV4b 对指挥有心得，能指挥LV2 LV3的人，合理分配任务，规避技术风险&lt;br /&gt;
-LV4c 对资源有心得，能从公司内/外争取LV2 LV3的人需要的各种资源&lt;br /&gt;
-LV4d 对外交有心得，能搞定其他部门的人一起合作&lt;br /&gt;
-LV4e 对教学有心得，能指引各种人升级加点&lt;br /&gt;
-LV5 掌握若干LV4技能的基础上，知道怎么招聘和摆平其他LV4的能人&lt;/p&gt;
-
-&lt;p&gt;看出来了吧，我就是来点LV4e这个技能的熟练度的哈哈&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;!--================================!--&gt;
-
-&lt;h2 id=&#34;如何理解ioc-inversion-of-control:8a9b66dd0d98af6f3fa5d4fe14029894&#34;&gt;如何理解IoC（Inversion of Control）？&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://segmentfault.com/q/1010000000755828&#34;&gt;问题&lt;/a&gt; by &lt;a href=&#34;http://segmentfault.com/u/wangshuo&#34;&gt;WS&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;RT，如何理解IoC（Inversion of Control）？如果能写个demo解释最好了。&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;h2 id=&#34;我的看法-1:8a9b66dd0d98af6f3fa5d4fe14029894&#34;&gt;我的看法&lt;/h2&gt;
-
-&lt;p&gt;我试着搜了一下，中文资料基本都把IoC（控制翻转）和DI（依赖注入）混为一谈，就连&lt;a href=&#34;http://stackoverflow.com/questions/3058/what-is-inversion-of-control&#34;&gt;StackOverflow上的第一位答案&lt;/a&gt;也犯了同样的问题（幸好下面有高票的反对评论，否则我的世界观都快坏掉了）&lt;/p&gt;
-
-&lt;p&gt;控制翻转是代码复用的一种模式（注意不是设计模式）&lt;/p&gt;
-
-&lt;p&gt;一般（非IoC）的复用，通常是用户代码调用组件（任意形式的被复用的代码，本答案中统称为组件）。也就是用户代码解决“Why it works, What to do”，组件解决“How to do”，逻辑的入口是用户代码，&lt;/p&gt;
-
-&lt;p&gt;而控制翻转则是组件来调用用户代码，也就是组件解决“Why it works, When to do”，用户代码解决“What to do”，逻辑的入口是组件&lt;/p&gt;
-
-&lt;p&gt;下面是除了DI之外的控制翻转的例子&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;接口／虚函数  组件调用接口／虚函数，具体由用户代码实现&lt;/li&gt;
-&lt;li&gt;发布订阅（事件）模式  组件触发事件，用户代码订阅事件&lt;/li&gt;
-&lt;li&gt;回调  用户代码写回调，组件来调用&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;几乎所有能被称之为框架的东西&lt;/strong&gt;  用户代码在规定的地方实现具体业务逻辑，剩下的框架负责&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;hr /&gt;
-
-&lt;!--================================!--&gt;
-
-&lt;h2 id=&#34;能简单解释一下mvc吗-越简单越好:8a9b66dd0d98af6f3fa5d4fe14029894&#34;&gt;能简单解释一下MVC吗？越简单越好&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://segmentfault.com/q/1010000002456846&#34;&gt;问题&lt;/a&gt; by &lt;a href=&#34;http://segmentfault.com/u/dwqs&#34;&gt;不写代码的码农&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;最近打算学习PHP框架，才发现我以前对MVC的认识很肤浅。但是看Laravel的文档，对MVC又是云里雾里的&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;h2 id=&#34;我的看法-2:8a9b66dd0d98af6f3fa5d4fe14029894&#34;&gt;我的看法&lt;/h2&gt;
-
-&lt;p&gt;概念大家都说了，其实MVC的涵义一直在潜移默化地变化，原本CS软件的MVC和如今php ruby python讲的MVC已经有不小的区别了。甚至很可能概念早就变成MVP，只是大家习惯了MVC，指鹿为马了&lt;/p&gt;
-
-&lt;p&gt;我觉得已实际项目来说，作3个思想实验就能大致理解MVC的本质和目标，具体三层怎么分，是三层还是四层还是两层，其实都是为了达成灵活性和可维护性的手段而已&lt;/p&gt;
-
-&lt;h3 id=&#34;更换数据库选择:8a9b66dd0d98af6f3fa5d4fe14029894&#34;&gt;更换数据库选择&lt;/h3&gt;
-
-&lt;p&gt;数据结构不变，把数据库从mysql迁移到pgsql乃至mongodb，你的项目需要多大的变化？
-理想的MVC架构应该无需修改任何业务代码(包括Model)，只需要修改配置文件，最多写个新的DBAL driver
-实际情况下不同DB的能力有微妙的区别，那也应该微调Model就能解决。&lt;/p&gt;
-
-&lt;p&gt;如果你的答案是两眼一黑：和重写一遍差不多，那么你的M层还不够独立，该写在Model的代码分散到别处了&lt;/p&gt;
-
-&lt;h3 id=&#34;手机html5版本:8a9b66dd0d98af6f3fa5d4fe14029894&#34;&gt;手机HTML5版本&lt;/h3&gt;
-
-&lt;p&gt;假设保持所有功能不变（都有合理自然的移动版交互），给你的站点增加手机版，你的项目需要多大的变化？
-答案应该是重写一套View，然后Controller改一行&lt;code&gt;if(isMobile) use(MobileView);&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;如果你发现Controller要改大量逻辑，甚至Model都被牵连，那你的V层不够独立&lt;/p&gt;
-
-&lt;h3 id=&#34;增加api:8a9b66dd0d98af6f3fa5d4fe14029894&#34;&gt;增加API&lt;/h3&gt;
-
-&lt;p&gt;假设所有功能不变，给你的站点增加开放API（给第三方或移动应用使用），你的项目需要多大的变化？
-答案应该是一套新的Controller 包含新的授权、和数据格式以及校验等逻辑，和一个简单的View（只输出json或xml）&lt;/p&gt;
-
-&lt;p&gt;如果你发现Model要改，原来View里的一些东西要挪动，或者是原来写在老的Controller里的部分代码要copy一遍，那么你的C层不够独立&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;这是我在 &lt;a href=&#34;http://segmentfault.com/&#34;&gt;SegmentFault&lt;/a&gt; 上的问题回答选编，遵循&lt;a href=&#34;http://creativecommons.org/licenses/by-sa/3.0/cn/&#34;&gt;CC BY-SA 3.0 CN&lt;/a&gt; 分享&lt;/p&gt;
-
-&lt;p&gt;题图：万智【精研战技】&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://inside.mcfog.wang/img/2015-q1/m15-4.jpg&#34; alt=&#34;&#34; /&gt;
 &lt;/p&gt;
 </description>
     </item>

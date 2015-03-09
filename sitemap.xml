@@ -3,8 +3,13 @@
   
   <url>
     <loc>http://inside.mcfog.wang/</loc>
-    <lastmod>2015-03-04T11:45:53+08:00</lastmod>
+    <lastmod>2015-03-09T12:04:02+08:00</lastmod>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://inside.mcfog.wang/2015/03/ichizon-a/</loc>
+    <lastmod>2015-03-09T12:04:02+08:00</lastmod>
   </url>
   
   <url>
@@ -182,11 +187,11 @@
   </url>
   
   <url>
-    <loc>http://inside.mcfog.wang/lab/markdown/</loc>
+    <loc>http://inside.mcfog.wang/goto/follow/</loc>
   </url>
   
   <url>
-    <loc>http://inside.mcfog.wang/goto/follow/</loc>
+    <loc>http://inside.mcfog.wang/lab/markdown/</loc>
   </url>
   
 </urlset>

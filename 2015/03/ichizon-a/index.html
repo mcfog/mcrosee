@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+  <title> mcfog的一己之见 X &middot; mc-inside </title>
+  <link rel="stylesheet" href="http://inside.mcfog.wang//css/glimmervoid.css" />
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/highlight.js/8.4/styles/github.min.css">
+  <link rel="alternate" type="application/atom+xml" href="/index.xml"/>
+</head>
+<body>
+
+<div class="wrapper">
+
+
+
+<div class="sidebar">
+  <div class="container bottom">
+    <h1>
+      <a href="/">mc-inside</a>
+    </h1>
+    <p class="desc">
+      
+    </p>
+    <ul class="u-cf">
+      <li><a href="/">Home</a> </li>
+      
+      <li><a href="/about/"> About </a></li>
+      
+      <li><a href="/goto/follow/"> 公众帐号 </a></li>
+      
+    </ul>
+  </div>
+
+</div>
+
+<div class="main">
+    <div class="post single">
+        
+<div class="title">
+    <h3>
+        <a href="http://inside.mcfog.wang/2015/03/ichizon-a/">
+            mcfog的一己之见 X
+        </a>
+    </h3>
+    <span class="meta">
+        
+        <a href="/categories/ichizon">/ichizon</a>
+        
+        at 2015-03-09
+    </span>
+</div>
+
+
+<div class="content markdown-body">
+
+<!--================================!-->
+
+<h2 id="类似淘宝用php做前端-java做后端的架构是怎样的:156241fca14a6dbd9a801918f99835b7">类似淘宝用php做前端，java做后端的架构是怎样的？</h2>
+
+<p><a href="http://segmentfault.com/q/1010000002581056">问题</a> by <a href="http://segmentfault.com/u/ziav">Ziav</a></p>
+
+<p>RT&hellip;..顺便问一下，像类似淘宝这样的大型网站，为什么会使用php来做前端呢？php本身不是偏后端的语言吗？而且对于前端而言，不是可以用js来处理后端的数据吗？</p>
+
+<hr />
+
+<h2 id="我的看法:156241fca14a6dbd9a801918f99835b7">我的看法</h2>
+
+<p>本质上前端后端的区分是以“到用户的距离”划分的</p>
+
+<p>比较通行的划分是在浏览器/客户端到服务器之间，以用户的http请求为准划线，js css dom flash ios android这些算前，后端负责业务和数据存储。因为通行的开源方案，rdbms配合缓存，队列，开源搜索引擎等等足以支持，于是这个直接的划分比较有效。客户端有十种，服务器也就不到百台，大家的责任任务比较平衡。</p>
+
+<p>当厂子的量级大到一定程度，简单的开源方案很难盖的住大量的用户，水平扩容，立体的灾备等等问题。这时客户端还是10种，可服务器却一下子百台千台，一个机房一个机房来算了。此时，上述的普通划分就没有意义了。此时划分线便自然向后移动到业务和存储/支持之间，有了题主描述的“java后，php+js前”或是“cpp后，php+js前”之类的划分。
+并不是php的角色变化了，而是原来insert into就写完的下单变得需要大量开发负责各种server运维告警负载均衡读写分离等等等等事情。
+换种说法，10个开发的业务可能5个写jscss，5个写php，但100个开发的业务，可能就是10个jscss，10个安卓ios，35个写php，30个写c/java给php调用，还要有10个运维，5个组长</p>
+
+<hr />
+
+<!--================================!-->
+
+<h2 id="将html转为markdown格式的难点在哪-有什么解决思路:156241fca14a6dbd9a801918f99835b7">将html转为markdown格式的难点在哪，有什么解决思路？</h2>
+
+<p><a href="http://segmentfault.com/q/1010000002541921">问题</a> by <a href="http://segmentfault.com/u/wtser">王铁手</a></p>
+
+<p>试过 github 上的很多开源项目，结果都很类似。对简单的 DOM 结构转的还能接受，但是页面稍稍复杂，嵌套了其他标签如 <code>&lt;span&gt;</code> <code>&lt;table&gt;</code> 这种，就很难转换好，不知道有什么方法或转换策略能缓解这种情况。</p>
+
+<hr />
+
+<h2 id="我的看法-1:156241fca14a6dbd9a801918f99835b7">我的看法</h2>
+
+<p>span和table没有对应的markdown语法（table有变种markdown语法）</p>
+
+<p>包括html的属性 class等等也没有markdown对应</p>
+
+<p>所以转换的时候通常只能舍弃或者直接保留html（因为markdown支持直接内嵌html）</p>
+
+<p>作为通用解决方案，我觉得很难找到更好的方法了，但聚焦到独立的场景，打比方说希望<code>&lt;span class=&quot;strong&gt;word&lt;/span&gt;</code> =&gt; <code>**word**</code> 的话还是很容易实施的，可以用<code>cheerio</code>之类的dom工具预处理，抓<code>span.class</code>先转换成<code>strong</code>标签然后再送到开源的通用html2md实现里即可</p>
+
+<hr />
+
+<!--================================!-->
+
+<h2 id="有哪些知名的网站是通过建站程序或建站程序二次开发搭建的:156241fca14a6dbd9a801918f99835b7">有哪些知名的网站是通过建站程序或建站程序二次开发搭建的？</h2>
+
+<p><a href="http://segmentfault.com/q/1010000002503122">问题</a> by <a href="http://segmentfault.com/u/llq">路西llq</a></p>
+
+<p>我想建一个兴趣站，类似创业邦，时光网，铁血网这样的网站能通过建站程序做到吗？我目前有学过建站，仍感觉无从下手，想知道建站程序能不能胜任，或者又只能等团队组建好了再开始做？</p>
+
+<hr />
+
+<h2 id="我的看法-2:156241fca14a6dbd9a801918f99835b7">我的看法</h2>
+
+<p>题主已经问过多次此类问题了</p>
+
+<p>我想说无论你问多久，问什么，你的站都不会突然就建起来了</p>
+
+<p>如果你打算自己搞定技术方面，那么就赶紧去学技术
+如果你打算找人搞定技术方面，那么就赶紧去找技术合伙人</p>
+
+<p>如果你拿不定主意，我建议找人搞定。</p>
+
+<p>至于到底用开源合适还是自己写合适，这完全看你的预算和规划，虽然可能95%的情况都是开源合适</p>
+
+<hr />
+
+<p>这是我在 <a href="http://segmentfault.com/">SegmentFault</a> 上的问题回答选编，遵循<a href="http://creativecommons.org/licenses/by-sa/3.0/cn/">CC BY-SA 3.0 CN</a> 分享</p>
+
+<p>题图：万智【召集战团】</p>
+
+<p><img src="/img/2015-q1/gtc142.jpg" alt="" />
+</p>
+</div>
+
+
+
+
+    </div>
+</div>
+
+
+
+<p class="copy">©mcfog All rights reserved.</p>
+
+</div>
+<script src="//cdn.jsdelivr.net/highlight.js/8.4/highlight.min.js"></script>
+<script>
+	hljs.initHighlightingOnLoad();
+</script>
+</body>
+</html>

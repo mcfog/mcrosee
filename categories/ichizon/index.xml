@@ -5,8 +5,94 @@
     <link>http://inside.mcfog.wang/categories/ichizon/</link>
     <description>Recent content in Ichizon on mc-inside</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 02 Mar 2015 11:35:42 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 09 Mar 2015 12:04:02 +0800</lastBuildDate>
     <atom:link href="http://inside.mcfog.wang/categories/ichizon/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>mcfog的一己之见 X</title>
+      <link>http://inside.mcfog.wang/2015/03/ichizon-a/</link>
+      <pubDate>Mon, 09 Mar 2015 12:04:02 +0800</pubDate>
+      
+      <guid>http://inside.mcfog.wang/2015/03/ichizon-a/</guid>
+      <description>
+
+&lt;!--================================!--&gt;
+
+&lt;h2 id=&#34;类似淘宝用php做前端-java做后端的架构是怎样的:156241fca14a6dbd9a801918f99835b7&#34;&gt;类似淘宝用php做前端，java做后端的架构是怎样的？&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://segmentfault.com/q/1010000002581056&#34;&gt;问题&lt;/a&gt; by &lt;a href=&#34;http://segmentfault.com/u/ziav&#34;&gt;Ziav&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;RT&amp;hellip;..顺便问一下，像类似淘宝这样的大型网站，为什么会使用php来做前端呢？php本身不是偏后端的语言吗？而且对于前端而言，不是可以用js来处理后端的数据吗？&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;我的看法:156241fca14a6dbd9a801918f99835b7&#34;&gt;我的看法&lt;/h2&gt;
+
+&lt;p&gt;本质上前端后端的区分是以“到用户的距离”划分的&lt;/p&gt;
+
+&lt;p&gt;比较通行的划分是在浏览器/客户端到服务器之间，以用户的http请求为准划线，js css dom flash ios android这些算前，后端负责业务和数据存储。因为通行的开源方案，rdbms配合缓存，队列，开源搜索引擎等等足以支持，于是这个直接的划分比较有效。客户端有十种，服务器也就不到百台，大家的责任任务比较平衡。&lt;/p&gt;
+
+&lt;p&gt;当厂子的量级大到一定程度，简单的开源方案很难盖的住大量的用户，水平扩容，立体的灾备等等问题。这时客户端还是10种，可服务器却一下子百台千台，一个机房一个机房来算了。此时，上述的普通划分就没有意义了。此时划分线便自然向后移动到业务和存储/支持之间，有了题主描述的“java后，php+js前”或是“cpp后，php+js前”之类的划分。
+并不是php的角色变化了，而是原来insert into就写完的下单变得需要大量开发负责各种server运维告警负载均衡读写分离等等等等事情。
+换种说法，10个开发的业务可能5个写jscss，5个写php，但100个开发的业务，可能就是10个jscss，10个安卓ios，35个写php，30个写c/java给php调用，还要有10个运维，5个组长&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;!--================================!--&gt;
+
+&lt;h2 id=&#34;将html转为markdown格式的难点在哪-有什么解决思路:156241fca14a6dbd9a801918f99835b7&#34;&gt;将html转为markdown格式的难点在哪，有什么解决思路？&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://segmentfault.com/q/1010000002541921&#34;&gt;问题&lt;/a&gt; by &lt;a href=&#34;http://segmentfault.com/u/wtser&#34;&gt;王铁手&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;试过 github 上的很多开源项目，结果都很类似。对简单的 DOM 结构转的还能接受，但是页面稍稍复杂，嵌套了其他标签如 &lt;code&gt;&amp;lt;span&amp;gt;&lt;/code&gt; &lt;code&gt;&amp;lt;table&amp;gt;&lt;/code&gt; 这种，就很难转换好，不知道有什么方法或转换策略能缓解这种情况。&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;我的看法-1:156241fca14a6dbd9a801918f99835b7&#34;&gt;我的看法&lt;/h2&gt;
+
+&lt;p&gt;span和table没有对应的markdown语法（table有变种markdown语法）&lt;/p&gt;
+
+&lt;p&gt;包括html的属性 class等等也没有markdown对应&lt;/p&gt;
+
+&lt;p&gt;所以转换的时候通常只能舍弃或者直接保留html（因为markdown支持直接内嵌html）&lt;/p&gt;
+
+&lt;p&gt;作为通用解决方案，我觉得很难找到更好的方法了，但聚焦到独立的场景，打比方说希望&lt;code&gt;&amp;lt;span class=&amp;quot;strong&amp;gt;word&amp;lt;/span&amp;gt;&lt;/code&gt; =&amp;gt; &lt;code&gt;**word**&lt;/code&gt; 的话还是很容易实施的，可以用&lt;code&gt;cheerio&lt;/code&gt;之类的dom工具预处理，抓&lt;code&gt;span.class&lt;/code&gt;先转换成&lt;code&gt;strong&lt;/code&gt;标签然后再送到开源的通用html2md实现里即可&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;!--================================!--&gt;
+
+&lt;h2 id=&#34;有哪些知名的网站是通过建站程序或建站程序二次开发搭建的:156241fca14a6dbd9a801918f99835b7&#34;&gt;有哪些知名的网站是通过建站程序或建站程序二次开发搭建的？&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://segmentfault.com/q/1010000002503122&#34;&gt;问题&lt;/a&gt; by &lt;a href=&#34;http://segmentfault.com/u/llq&#34;&gt;路西llq&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;我想建一个兴趣站，类似创业邦，时光网，铁血网这样的网站能通过建站程序做到吗？我目前有学过建站，仍感觉无从下手，想知道建站程序能不能胜任，或者又只能等团队组建好了再开始做？&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;我的看法-2:156241fca14a6dbd9a801918f99835b7&#34;&gt;我的看法&lt;/h2&gt;
+
+&lt;p&gt;题主已经问过多次此类问题了&lt;/p&gt;
+
+&lt;p&gt;我想说无论你问多久，问什么，你的站都不会突然就建起来了&lt;/p&gt;
+
+&lt;p&gt;如果你打算自己搞定技术方面，那么就赶紧去学技术
+如果你打算找人搞定技术方面，那么就赶紧去找技术合伙人&lt;/p&gt;
+
+&lt;p&gt;如果你拿不定主意，我建议找人搞定。&lt;/p&gt;
+
+&lt;p&gt;至于到底用开源合适还是自己写合适，这完全看你的预算和规划，虽然可能95%的情况都是开源合适&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;这是我在 &lt;a href=&#34;http://segmentfault.com/&#34;&gt;SegmentFault&lt;/a&gt; 上的问题回答选编，遵循&lt;a href=&#34;http://creativecommons.org/licenses/by-sa/3.0/cn/&#34;&gt;CC BY-SA 3.0 CN&lt;/a&gt; 分享&lt;/p&gt;
+
+&lt;p&gt;题图：万智【召集战团】&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://inside.mcfog.wang/img/2015-q1/gtc142.jpg&#34; alt=&#34;&#34; /&gt;
+&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>mcfog的一己之见 IX</title>

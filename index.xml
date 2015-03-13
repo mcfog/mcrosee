@@ -5,8 +5,29 @@
     <link>http://inside.mcfog.wang/</link>
     <description>Recent content on mc-inside</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 10 Mar 2015 18:24:03 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 13 Mar 2015 20:48:51 +0800</lastBuildDate>
     <atom:link href="http://inside.mcfog.wang/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>[真相回响]What Color is Your Function?</title>
+      <link>http://inside.mcfog.wang/2015/03/echoing-truth-a/</link>
+      <pubDate>Fri, 13 Mar 2015 20:48:51 +0800</pubDate>
+      
+      <guid>http://inside.mcfog.wang/2015/03/echoing-truth-a/</guid>
+      <description>&lt;p&gt;上周五不小心翘掉了说好的文章，痛定思痛，我决定新开这个更(neng)有(tou)意(lan)义的分类，来介绍看到的一些值得反复品味好文章。&lt;/p&gt;
+
+&lt;p&gt;今天这篇《What Color is Your Function?》以一种独特的视角描述了编程中常见的某种分裂问题X。这种分裂感其实在编程过程中的各个方面都会出现，而不仅仅限于文章中提到的那个范畴X。我一直觉得能把问题清晰地扯到哲学范畴（胡搅蛮缠可不算）基本上就算满级通关了。这便是一篇通向满级的攻略。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://journal.stuffwithstuff.com/2015/02/01/what-color-is-your-function/&#34;&gt;http://journal.stuffwithstuff.com/2015/02/01/what-color-is-your-function/&lt;/a&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;题图：万智【真相回响】&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://inside.mcfog.wang/img/2015-q1/mma40.jpg&#34; alt=&#34;&#34; /&gt;
+&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>[乱弹塔罗][翻译]第五课 每日解读</title>
@@ -1159,30 +1180,6 @@ class redis {
 &lt;p&gt;题图：万智【接踵而至】&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&#34;http://inside.mcfog.wang/img/2015-q1/rav51.jpg&#34; alt=&#34;&#34; /&gt;
-&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>[新姿势]授人以渔：如何迅速找到靠谱的工具软件</title>
-      <link>http://inside.mcfog.wang/2015/02/tech4fun-5/</link>
-      <pubDate>Thu, 05 Feb 2015 17:39:37 +0800</pubDate>
-      
-      <guid>http://inside.mcfog.wang/2015/02/tech4fun-5/</guid>
-      <description>&lt;p&gt;eclipse又慢又笨？用惯WinSCP换了Mac不知所措？被Dash惯坏了想要Windows下的替代品？&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://alternativeto.net/&#34;&gt;http://alternativeto.net/&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;alternative to XXX 正如其名的这个网站，基于用户推荐整理各种软件的替代关系，支持按平台按收费与否等等各种条件过滤，妈妈再也不担心我找不到顺手的软件啦&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://inside.mcfog.wang/img/2015-q1/alternativeto.png&#34; alt=&#34;&#34; /&gt;
-&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;题图：万智 【琐物法师】&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://inside.mcfog.wang/img/2015-q1/som48.jpg&#34; alt=&#34;&#34; /&gt;
 &lt;/p&gt;
 </description>
     </item>

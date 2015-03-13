@@ -3,8 +3,13 @@
   
   <url>
     <loc>http://inside.mcfog.wang/</loc>
-    <lastmod>2015-03-10T18:24:03+08:00</lastmod>
+    <lastmod>2015-03-13T20:48:51+08:00</lastmod>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://inside.mcfog.wang/2015/03/echoing-truth-a/</loc>
+    <lastmod>2015-03-13T20:48:51+08:00</lastmod>
   </url>
   
   <url>
@@ -192,11 +197,11 @@
   </url>
   
   <url>
-    <loc>http://inside.mcfog.wang/goto/follow/</loc>
+    <loc>http://inside.mcfog.wang/lab/markdown/</loc>
   </url>
   
   <url>
-    <loc>http://inside.mcfog.wang/lab/markdown/</loc>
+    <loc>http://inside.mcfog.wang/goto/follow/</loc>
   </url>
   
 </urlset>

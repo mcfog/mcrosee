@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+  <title> mcfog的一己之见 X &middot; mc-inside </title>
+  <link rel="stylesheet" href="http://inside.mcfog.wang//css/glimmervoid.css" />
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/highlight.js/8.4/styles/github.min.css">
+  <link rel="alternate" type="application/atom+xml" href="/index.xml"/>
+</head>
+<body>
+
+<div class="wrapper">
+
+
+
+<div class="sidebar">
+  <div class="container bottom">
+    <h1>
+      <a href="/">mc-inside</a>
+    </h1>
+    <p class="desc">
+      
+    </p>
+    <ul class="u-cf">
+      <li><a href="/">Home</a> </li>
+      
+      <li><a href="/about/"> About </a></li>
+      
+      <li><a href="/goto/follow/"> 公众帐号 </a></li>
+      
+    </ul>
+  </div>
+
+</div>
+
+<div class="main">
+    <div class="post single">
+        
+<div class="title">
+    <h3>
+        <a href="http://inside.mcfog.wang/2015/03/ichizon-b/">
+            mcfog的一己之见 X
+        </a>
+    </h3>
+    <span class="meta">
+        
+        <a href="/categories/ichizon">/ichizon</a>
+        
+        at 2015-03-16
+    </span>
+</div>
+
+
+<div class="content markdown-body">
+
+<!--================================!-->
+
+<h2 id="有哪些知名的网站是通过建站程序或建站程序二次开发搭建的:15dcb96101bf5c27445d964f18e9cd9e">有哪些知名的网站是通过建站程序或建站程序二次开发搭建的？</h2>
+
+<p><a href="http://segmentfault.com/q/1010000002503122">问题</a> by <a href="http://segmentfault.com/u/llq">路西llq</a></p>
+
+<p>我想建一个兴趣站，类似创业邦，时光网，铁血网这样的网站能通过建站程序做到吗？我目前有学过建站，仍感觉无从下手，想知道建站程序能不能胜任，或者又只能等团队组建好了再开始做？</p>
+
+<hr />
+
+<h2 id="我的看法:15dcb96101bf5c27445d964f18e9cd9e">我的看法</h2>
+
+<p>题主已经问过多次此类问题了</p>
+
+<p>我想说无论你问多久，问什么，你的站都不会突然就建起来了</p>
+
+<p>如果你打算自己搞定技术方面，那么就赶紧去学技术<br />
+如果你打算找人搞定技术方面，那么就赶紧去找技术合伙人</p>
+
+<p>如果你拿不定主意，我建议找人搞定。</p>
+
+<p>至于到底用开源合适还是自己写合适，这完全看你的预算和规划，虽然可能95%的情况都是开源合适</p>
+
+<hr />
+
+<!--================================!-->
+
+<h2 id="js中如何继承实现array的子类:15dcb96101bf5c27445d964f18e9cd9e">js中如何继承实现Array的子类</h2>
+
+<p><a href="http://segmentfault.com/q/1010000002557358">问题</a> by <a href="http://segmentfault.com/u/chinesedfan">chinesedfan</a></p>
+
+<p>试想需要实现一个数组的子类ZeroArray，其构造函数接收一个长度参数n，自动初始化数组元素都为0。</p>
+
+<p>我试图继承原生的Array类型，成员变量通过apply()方法窃取，成员方法则通过原型链引用。代码如下：</p>
+
+<pre><code>function ZeroArray(n) {
+    // 构造函数窃取
+    Array.apply(this);
+
+    // 自动塞入0元素
+    for (var i = 0; i &lt; n; i++) {
+        this.push(0);
+    }
+}
+
+// 利用空函数作为过渡，ZeroArray原型的原型指向Array.prototype
+// 既建立原型链，又不影响Array.prototype本身，而且防止Array构造函数重复调用两次
+var F = function() {};
+F.prototype = Array.prototype;
+ZeroArray.prototype = new F();
+ZeroArray.prototype.constructor = ZeroArray;
+</code></pre>
+
+<p>那么问题来了：</p>
+
+<pre><code>Object.getOwnPropertyDescriptor(new Array(), &quot;length&quot;)
+// 输出：Object {value: 0, writable: true, enumerable: false, configurable: false}
+Object.getOwnPropertyDescriptor(new ZeroArray(3), &quot;length&quot;)
+// 输出：Object {value: 3, writable: true, enumerable: true, configurable: true}
+</code></pre>
+
+<p>为什么两者的length属性enumerable/configurable会不同？是不是因为Array本质上并不是Object？</p>
+
+<hr />
+
+<h2 id="我的看法-1:15dcb96101bf5c27445d964f18e9cd9e">我的看法</h2>
+
+<p>单纯的解决方案只要脚痛医脚就好 <code>Object.defineProperty(this, 'length', {enumerable: false, configurable: false, writable: true});</code></p>
+
+<p>具体原因我观察了一下Array的行为</p>
+
+<pre><code>&gt; Array.call({})
+[]
+&gt; Array.call(undefined)
+[]
+</code></pre>
+
+<p>瞧，this是啥完全不影响Array工作，Array这个constructor应该是类似</p>
+
+<pre><code>function Array() {
+  var array = [Native Code];
+  return array;
+}
+</code></pre>
+
+<p>的形式（并非修饰this的风格），所以代码里的<code>Array.apply</code>完全没有起到效果。</p>
+
+<p>祭出翻ECMA大法，很快就能找到标准里对应的行为</p>
+
+<p><a href="http://www.ecma-international.org/ecma-262/5.1/#sec-15.4.1">15.4.1 The Array Constructor Called as a Function</a></p>
+
+<p>length的行为也有<a href="http://www.ecma-international.org/ecma-262/5.1/#sec-15.4.5.2">描述</a></p>
+
+<p>关于Array究竟是不是Object，答案毫无疑问是肯定的，JS中除了原始值(null/undefined/数字/布尔/字符串)之外一切皆对象</p>
+
+<hr />
+
+<p>在我看来，题主掉到“以其他OO语言经验看JS”的大坑里了，有大量的材料会把人往这个坑里带，他们标题往往叫“JS OOP指南／入门／精通”，“JS实现继承的X种方法”等等</p>
+
+<p>实际上，如果需求只是“接收一个长度参数n，自动初始化数组元素都为0”的话，更好的实现可能是</p>
+
+<pre><code>function makeZeroArray(n) {
+  var arr = [];
+  while(n-- &gt; 0) {
+    arr[arr.length] = 0;
+  }
+
+  return arr;
+}
+</code></pre>
+
+<p>继承在JS中并非一等居民，而是普通的一个模式而已，合适用就用，不合适没必要硬套</p>
+
+<p>补充一下，JS中没有类的概念，JS中没有类的概念，JS中没有类的概念。
+JS里，对象才是一等居民，我们写的是方便地创建某种对象的构造器，而不是类</p>
+
+<hr />
+
+<!--================================!-->
+
+<h2 id="登录系统怎么样才是最安全的:15dcb96101bf5c27445d964f18e9cd9e">登录系统怎么样才是最安全的</h2>
+
+<p><a href="http://segmentfault.com/q/1010000000575911">问题</a> by <a href="http://segmentfault.com/u/woshicixide">woshicixide</a></p>
+
+<p>现在很多公司关于网站登录上都是怎么设计的，怎么样才能确保万无一失</p>
+
+<hr />
+
+<h2 id="我的看法-2:15dcb96101bf5c27445d964f18e9cd9e">我的看法</h2>
+
+<p>没有万无一失，只有见招拆招</p>
+
+<p>安全是从操作系统开始到开发人员，管理人员个人素养全方位的命题</p>
+
+<ul>
+<li>操作系统：关注业界新闻，及时打补丁。正确配置，权限最小化，强密码定期更换</li>
+<li>数据库/web server：及时打补丁。正确配置，权限最小化，强密码定期更换</li>
+<li>应用逻辑：科学的hash，收拢的鉴权服务，最小知识原则，XSS和各种协议劫持的防止，频率限制，恶意行为和异常流量监测</li>
+<li>传输协议：https、证书等</li>
+<li>开发人员：不要把密码存在文件里，更不要上传到github（别笑），不要记住密码，不要统一密码，不要把密码写在邮件里，不要把密码写在笔记服务里</li>
+<li>开发人员/管理人员：个人信息安全，不要被乱点文件，不要乱装软件。社工知识，不要相信同事在邮件和IM上和你说让你传一些敏感信息给他，或者他传东西让你点开（不用windows是个更好的选择）。如果和360没有合作关系就不要装360。</li>
+</ul>
+
+<p>还有如果公司用WIFI，不要广播SSID。不要用带着办公VPN、邮箱、IM等任何工作有关的账户的电脑连接其他免费WIFI，星巴克WIFI等WIFI热点</p>
+
+<p>好累，简直列不完，就先告一段落吧</p>
+
+<hr />
+
+<p>这是我在 <a href="http://segmentfault.com/">SegmentFault</a> 上的问题回答选编，遵循<a href="http://creativecommons.org/licenses/by-sa/3.0/cn/">CC BY-SA 3.0 CN</a> 分享</p>
+
+<p>题图：万智【拒斥恶行】</p>
+
+<p><img src="/img/2015-q1/plc12.jpg" alt="" />
+</p>
+</div>
+
+
+
+
+    </div>
+</div>
+
+
+
+<p class="copy">©mcfog All rights reserved.</p>
+
+</div>
+<script src="//cdn.jsdelivr.net/highlight.js/8.4/highlight.min.js"></script>
+<script>
+	hljs.initHighlightingOnLoad();
+</script>
+</body>
+</html>

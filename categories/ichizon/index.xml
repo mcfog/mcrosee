@@ -5,8 +5,174 @@
     <link>http://inside.mcfog.wang/categories/ichizon/</link>
     <description>Recent content in Ichizon on mc-inside</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 09 Mar 2015 12:04:02 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 16 Mar 2015 16:17:26 +0800</lastBuildDate>
     <atom:link href="http://inside.mcfog.wang/categories/ichizon/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>mcfog的一己之见 X</title>
+      <link>http://inside.mcfog.wang/2015/03/ichizon-b/</link>
+      <pubDate>Mon, 16 Mar 2015 16:17:26 +0800</pubDate>
+      
+      <guid>http://inside.mcfog.wang/2015/03/ichizon-b/</guid>
+      <description>
+
+&lt;!--================================!--&gt;
+
+&lt;h2 id=&#34;有哪些知名的网站是通过建站程序或建站程序二次开发搭建的:15dcb96101bf5c27445d964f18e9cd9e&#34;&gt;有哪些知名的网站是通过建站程序或建站程序二次开发搭建的？&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://segmentfault.com/q/1010000002503122&#34;&gt;问题&lt;/a&gt; by &lt;a href=&#34;http://segmentfault.com/u/llq&#34;&gt;路西llq&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;我想建一个兴趣站，类似创业邦，时光网，铁血网这样的网站能通过建站程序做到吗？我目前有学过建站，仍感觉无从下手，想知道建站程序能不能胜任，或者又只能等团队组建好了再开始做？&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;我的看法:15dcb96101bf5c27445d964f18e9cd9e&#34;&gt;我的看法&lt;/h2&gt;
+
+&lt;p&gt;题主已经问过多次此类问题了&lt;/p&gt;
+
+&lt;p&gt;我想说无论你问多久，问什么，你的站都不会突然就建起来了&lt;/p&gt;
+
+&lt;p&gt;如果你打算自己搞定技术方面，那么就赶紧去学技术&lt;br /&gt;
+如果你打算找人搞定技术方面，那么就赶紧去找技术合伙人&lt;/p&gt;
+
+&lt;p&gt;如果你拿不定主意，我建议找人搞定。&lt;/p&gt;
+
+&lt;p&gt;至于到底用开源合适还是自己写合适，这完全看你的预算和规划，虽然可能95%的情况都是开源合适&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;!--================================!--&gt;
+
+&lt;h2 id=&#34;js中如何继承实现array的子类:15dcb96101bf5c27445d964f18e9cd9e&#34;&gt;js中如何继承实现Array的子类&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://segmentfault.com/q/1010000002557358&#34;&gt;问题&lt;/a&gt; by &lt;a href=&#34;http://segmentfault.com/u/chinesedfan&#34;&gt;chinesedfan&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;试想需要实现一个数组的子类ZeroArray，其构造函数接收一个长度参数n，自动初始化数组元素都为0。&lt;/p&gt;
+
+&lt;p&gt;我试图继承原生的Array类型，成员变量通过apply()方法窃取，成员方法则通过原型链引用。代码如下：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;function ZeroArray(n) {
+    // 构造函数窃取
+    Array.apply(this);
+
+    // 自动塞入0元素
+    for (var i = 0; i &amp;lt; n; i++) {
+        this.push(0);
+    }
+}
+
+// 利用空函数作为过渡，ZeroArray原型的原型指向Array.prototype
+// 既建立原型链，又不影响Array.prototype本身，而且防止Array构造函数重复调用两次
+var F = function() {};
+F.prototype = Array.prototype;
+ZeroArray.prototype = new F();
+ZeroArray.prototype.constructor = ZeroArray;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;那么问题来了：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;Object.getOwnPropertyDescriptor(new Array(), &amp;quot;length&amp;quot;)
+// 输出：Object {value: 0, writable: true, enumerable: false, configurable: false}
+Object.getOwnPropertyDescriptor(new ZeroArray(3), &amp;quot;length&amp;quot;)
+// 输出：Object {value: 3, writable: true, enumerable: true, configurable: true}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;为什么两者的length属性enumerable/configurable会不同？是不是因为Array本质上并不是Object？&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;我的看法-1:15dcb96101bf5c27445d964f18e9cd9e&#34;&gt;我的看法&lt;/h2&gt;
+
+&lt;p&gt;单纯的解决方案只要脚痛医脚就好 &lt;code&gt;Object.defineProperty(this, &#39;length&#39;, {enumerable: false, configurable: false, writable: true});&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;具体原因我观察了一下Array的行为&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;gt; Array.call({})
+[]
+&amp;gt; Array.call(undefined)
+[]
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;瞧，this是啥完全不影响Array工作，Array这个constructor应该是类似&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;function Array() {
+  var array = [Native Code];
+  return array;
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;的形式（并非修饰this的风格），所以代码里的&lt;code&gt;Array.apply&lt;/code&gt;完全没有起到效果。&lt;/p&gt;
+
+&lt;p&gt;祭出翻ECMA大法，很快就能找到标准里对应的行为&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.ecma-international.org/ecma-262/5.1/#sec-15.4.1&#34;&gt;15.4.1 The Array Constructor Called as a Function&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;length的行为也有&lt;a href=&#34;http://www.ecma-international.org/ecma-262/5.1/#sec-15.4.5.2&#34;&gt;描述&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;关于Array究竟是不是Object，答案毫无疑问是肯定的，JS中除了原始值(null/undefined/数字/布尔/字符串)之外一切皆对象&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;在我看来，题主掉到“以其他OO语言经验看JS”的大坑里了，有大量的材料会把人往这个坑里带，他们标题往往叫“JS OOP指南／入门／精通”，“JS实现继承的X种方法”等等&lt;/p&gt;
+
+&lt;p&gt;实际上，如果需求只是“接收一个长度参数n，自动初始化数组元素都为0”的话，更好的实现可能是&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;function makeZeroArray(n) {
+  var arr = [];
+  while(n-- &amp;gt; 0) {
+    arr[arr.length] = 0;
+  }
+
+  return arr;
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;继承在JS中并非一等居民，而是普通的一个模式而已，合适用就用，不合适没必要硬套&lt;/p&gt;
+
+&lt;p&gt;补充一下，JS中没有类的概念，JS中没有类的概念，JS中没有类的概念。
+JS里，对象才是一等居民，我们写的是方便地创建某种对象的构造器，而不是类&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;!--================================!--&gt;
+
+&lt;h2 id=&#34;登录系统怎么样才是最安全的:15dcb96101bf5c27445d964f18e9cd9e&#34;&gt;登录系统怎么样才是最安全的&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://segmentfault.com/q/1010000000575911&#34;&gt;问题&lt;/a&gt; by &lt;a href=&#34;http://segmentfault.com/u/woshicixide&#34;&gt;woshicixide&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;现在很多公司关于网站登录上都是怎么设计的，怎么样才能确保万无一失&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;我的看法-2:15dcb96101bf5c27445d964f18e9cd9e&#34;&gt;我的看法&lt;/h2&gt;
+
+&lt;p&gt;没有万无一失，只有见招拆招&lt;/p&gt;
+
+&lt;p&gt;安全是从操作系统开始到开发人员，管理人员个人素养全方位的命题&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;操作系统：关注业界新闻，及时打补丁。正确配置，权限最小化，强密码定期更换&lt;/li&gt;
+&lt;li&gt;数据库/web server：及时打补丁。正确配置，权限最小化，强密码定期更换&lt;/li&gt;
+&lt;li&gt;应用逻辑：科学的hash，收拢的鉴权服务，最小知识原则，XSS和各种协议劫持的防止，频率限制，恶意行为和异常流量监测&lt;/li&gt;
+&lt;li&gt;传输协议：https、证书等&lt;/li&gt;
+&lt;li&gt;开发人员：不要把密码存在文件里，更不要上传到github（别笑），不要记住密码，不要统一密码，不要把密码写在邮件里，不要把密码写在笔记服务里&lt;/li&gt;
+&lt;li&gt;开发人员/管理人员：个人信息安全，不要被乱点文件，不要乱装软件。社工知识，不要相信同事在邮件和IM上和你说让你传一些敏感信息给他，或者他传东西让你点开（不用windows是个更好的选择）。如果和360没有合作关系就不要装360。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;还有如果公司用WIFI，不要广播SSID。不要用带着办公VPN、邮箱、IM等任何工作有关的账户的电脑连接其他免费WIFI，星巴克WIFI等WIFI热点&lt;/p&gt;
+
+&lt;p&gt;好累，简直列不完，就先告一段落吧&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;这是我在 &lt;a href=&#34;http://segmentfault.com/&#34;&gt;SegmentFault&lt;/a&gt; 上的问题回答选编，遵循&lt;a href=&#34;http://creativecommons.org/licenses/by-sa/3.0/cn/&#34;&gt;CC BY-SA 3.0 CN&lt;/a&gt; 分享&lt;/p&gt;
+
+&lt;p&gt;题图：万智【拒斥恶行】&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://inside.mcfog.wang/img/2015-q1/plc12.jpg&#34; alt=&#34;&#34; /&gt;
+&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>mcfog的一己之见 X</title>

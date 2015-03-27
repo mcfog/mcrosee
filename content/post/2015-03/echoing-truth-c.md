@@ -14,6 +14,8 @@ title: "[真相回响]学代码怎么这么难！"
 
 <http://www.vikingcodeschool.com/posts/why-learning-to-code-is-so-damn-hard>
 
+<!--more-->
+
 另外由于是长文多图外国博客，我准备了容易手打一些的跳转链接
 
 <http://inside.mcfog.wang/goto/et/c>

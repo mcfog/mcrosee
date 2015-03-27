@@ -222,15 +222,15 @@
   </url>
   
   <url>
-    <loc>http://inside.mcfog.wang/goto/follow/</loc>
-  </url>
-  
-  <url>
     <loc>http://inside.mcfog.wang/lab/markdown/</loc>
   </url>
   
   <url>
     <loc>http://inside.mcfog.wang/goto/et/c/</loc>
+  </url>
+  
+  <url>
+    <loc>http://inside.mcfog.wang/goto/follow/</loc>
   </url>
   
 </urlset>

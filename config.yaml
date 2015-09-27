@@ -2,6 +2,7 @@
 title: mc-inside
 baseurl: http://inside.mcfog.wang/
 MetaDataFormat: yaml
+theme: glimmervoid
 
 Paginate: 20
 

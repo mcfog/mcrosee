@@ -2,7 +2,6 @@
 categories:
 - ichizon
 date: 2015-09-25T19:09:33+08:00
-draft: true
 tags: []
 title: "[一己之见]如何挑选PHP框架？"
 ---

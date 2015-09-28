@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+  <title> [一己之见]如何挑选PHP框架？ &middot; mc-inside </title>
+  <link rel="stylesheet" href="http://inside.mcfog.wang//css/glimmervoid.css" />
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/highlight.js/8.4/styles/github.min.css">
+  <link rel="alternate" type="application/atom+xml" href="/index.xml"/>
+</head>
+<body>
+
+<div class="wrapper">
+
+
+
+<div class="sidebar">
+  <div class="container bottom">
+    <h1>
+      <a href="/">mc-inside</a>
+    </h1>
+    <p class="desc">
+      
+    </p>
+    <ul class="u-cf">
+      <li><a href="/">Home</a> </li>
+      
+      <li><a href="/about/"> About </a></li>
+      
+      <li><a href="/goto/follow/"> 公众帐号 </a></li>
+      
+    </ul>
+  </div>
+
+</div>
+
+<div class="main">
+    <div class="post single">
+        
+<div class="title">
+    <h3>
+        <a href="http://inside.mcfog.wang/2015/09/ichizon-d/">
+            [一己之见]如何挑选PHP框架？
+        </a>
+    </h3>
+    <span class="meta">
+        
+        <a href="/categories/ichizon">/ichizon</a>
+        
+        at 2015-09-25
+    </span>
+</div>
+
+
+<div class="content markdown-body">
+
+<h2 id="如何挑选php框架:c487f4db3cef43481c7ce6af0b03aee9">如何挑选PHP框架？</h2>
+
+<p>这个问题是我面试的常用起手问题，所以在SF看到<a href="http://segmentfault.com/q/1010000003465862">这个提问</a>的时候，就抽时间回答了一下。这里做一些整理和补充。</p>
+
+<p>很多时候，讨论问题从抠概念出发是个好想法。框架是<strong>团队</strong>在<strong>项目</strong>初期选定的开发框架，或者在长期开发过程中提炼的公共逻辑等。所以无论是初期挑选框架、是中途重构更换框架、还是需要抽离团队内部自己的框架，都应当以下面三个角度综合考虑</p>
+
+<ul>
+<li>团队</li>
+<li>项目</li>
+<li>框架本身</li>
+</ul>
+
+<h3 id="团队成员情况-未来团队成员情况-所在地职业市场情况:c487f4db3cef43481c7ce6af0b03aee9">团队成员情况 &amp; 未来团队成员情况 &amp; 所在地职业市场情况</h3>
+
+<p>如果团队现在和未来都只有你一个人（比如自己的toy project），那选自己最想用的就好。但只要不是这个情况，你最好先得了解市面上常见的各种框架，然后忘记自己的个人偏好。</p>
+
+<p>了解你的团队成员的现在情况，考虑你的团队未来的发展速度，未来可能加入的团队成员的情况，以及你所在地职业市场情况。打比方说，Laravel经常是个不错的选择，但如果你在产业不发达的小城市，团队又必须高速发展大量招人，选择Laravel可能很快会让你陷进“composer和现代PHP技能培训班”的窘境，而一些更“接地气”的框架则能让你的团队迅速扩张，快速满足业务发展的需求</p>
+
+<h3 id="项目生命周期-未来演变方向:c487f4db3cef43481c7ce6af0b03aee9">项目生命周期 &amp; 未来演变方向</h3>
+
+<p>有的项目，作为贵司的主营业务是需要长期维护，持续迭代的。而另一些项目可能作为一些边角、过渡的项目，可能做完以后不会再有什么后续的需求。最后还有一些外包／类外包的项目，交付以后就没有需求／后续需求可以当另一个项目。</p>
+
+<p>再大的项目，需求再多，如果是第三种，无需考虑未来演变的，那么框架的扩展性就能够被牺牲（从而换取开发速度或其他好处），打比方说基于一些成品二次开发的选择就可以被考虑。再小的项目，如果是贵司的主营业务，持续迭代的，那么就算工作量再小，也必须慎重考虑框架的扩展性。</p>
+
+<p>那么，什么是框架的扩展性呢？ CI是扩展性很好的框架吗？ZendFramework1/2是扩展性很好的框架吗？</p>
+
+<p>答案是，看未来演变方向。有的项目未来的压力在访问流量大，有的压力在数据量大检索频繁，也有项目压力在需求迭代快，变动频繁而周期短。项目面临的问题越是普遍，那么预设各种解决方案的框架可能越能减少重复造轮子，反之项目面临的问题越是极端，那么轻量化的那些框架可能更适合让你的团队自己研究解决方案对接到框架中。另外，项目维护的时间越长，变动越难预测，采用预设各种解决方案的框架的风险就会越大（那些预设的解决方案恰好能解决你的每个问题的概率越来越小）</p>
+
+<h3 id="框架本身的基本素质:c487f4db3cef43481c7ce6af0b03aee9">框架本身的基本素质</h3>
+
+<p>性能和跑分。除了phalcon和Yaf两个C实现的框架，其他框架请认为一样快。另外除非你在主持类似新浪微博更换PHP框架这样的事，或者说除非你管理的项目web机器超过100台，请忽略PHP框架的性能因素</p>
+
+<p>psr和composer亲和性。这是双刃剑，前面已经聊过怎么看待这个特质了。</p>
+
+<p>安全性。某些框架甚至本身自己有安全漏洞不多说。另外如果框架层面提供了一些安全方面的东西，建议还是要简单看一遍代码，有时那可能反而不如自己写。</p>
+
+<p>功能性。也就是预设的解决方案的数量和质量，前面有提过。</p>
+
+<p>模块化程度。框架内的各个部分是否能够自定义，自定义的代价多高。另一个角度是框架的各个部分是否能脱离框架运行。</p>
+
+<p>表达能力（业务功能需要多少代码量来实现），这三个特性（表达能力、功能性、模块化程度）互相冲突，无法达到三者兼得。功能丰富，模块化程度又高可以随意定制、替换的框架，往往普通的业务代码也要写一堆。一句话能写出一大堆功能的框架，往往模块化程度不理想，不容易自定义。 模块化程度高，而业务代码不啰嗦的框架，则往往没有丰富的预设功能。</p>
+
+<p>周边生态和活跃程度以及兼容性。活跃的框架就还有成长和改进的空间，但相应过于活跃有时会导致应用无法兼容。另一个指标是周边的生态，有没有其他人基于这个框架开发一些周边的模块／插件之类的东西，以及文档的丰富程度、出问题后能是否容易找到的解决方案等。</p>
+
+<h2 id="无招胜有招:c487f4db3cef43481c7ce6af0b03aee9">“无招胜有招”</h2>
+
+<h4 id="谈composer和psr-7和我心目中未来十年的php框架:c487f4db3cef43481c7ce6af0b03aee9">&ndash; 谈composer和psr-7和我心目中未来十年的PHP框架</h4>
+
+<p>（本节内容仅仅是我个人的判断，另外基于中国国情，这个未来可能也还是老外先享受到）</p>
+
+<p>PHP是个相对古老的语言，PHP框架也是个相当古老的概念了。我认为隔壁的NodeJS社区很好的为我们示范了真正“web框架”应有的形态。以依赖解决方案npm为核心，<code>connect</code>到<code>express</code>为代表的中间件架构为骨架，周围围绕着星罗密布的数不胜数的中间件。中间件架构设定了web请求和响应的标准接口，周围的其他项目以这些接口为基础开发各种功能。工程师要做的就是找到合适的中间件安插到项目中，或者自己写合适自己情况的中间件（当然最好是开源出来回报社区咯）。于是你会发现相当于“PHP框架”概念的那些项目基本行不通（sails已经是做的最好的了？）</p>
+
+<p>这也是我对未来PHP框架的判断。大而全的“PHP框架”时代已经过去了。不用composer的，或者假装自己用composer的那些框架没有未来。基于composer的，模块化组件化的项目，未来在强势的输入输出标准统一下，会爆发出惊人的生产力。<code>symfony/http-foundation</code>本来是个不错的选择，社区也有对应的<a href="http://stackphp.com/">中间件化的努力</a>。但目前看来，怀胎已久的<a href="http://www.php-fig.org/psr/psr-7/">PSR-7</a>更可能成为未来的赢家。有强力的标准和解构化的中间件生态，社区才有充分的竞争，开发者才有充分的选择权，A2框架 视图层巨烂但路由很漂亮，B2框架 路由好用但视图糟糕？下一代A3和B3都一样支持PSR-7，拿回家自己拼接就好！</p>
+
+<blockquote>
+<p>广告时间： 基于这样的判断，<a href="https://github.com/zendframework/zend-stratigility">connect的PHP移植</a>又没有很多star的情况下，我花了一些时间撸了自己的中间件架构<a href="https://github.com/mcfog/nimo">mcfog/nimo</a>，欢迎围观和star</p>
+</blockquote>
+
+<hr />
+
+<p>这是我在 <a href="http://segmentfault.com/">SegmentFault</a> 上的问题回答选编，遵循<a href="http://creativecommons.org/licenses/by-sa/3.0/cn/">CC BY-SA 3.0 CN</a> 分享</p>
+
+<p>题图：万智【结构坍塌】</p>
+
+<p><img src="/img/2015-q3/gtc107.jpg" alt="" />
+</p>
+</div>
+
+
+
+
+    </div>
+</div>
+
+
+
+<p class="copy">©mcfog All rights reserved.</p>
+
+</div>
+<script src="//cdn.jsdelivr.net/highlight.js/8.4/highlight.min.js"></script>
+<script>
+	hljs.initHighlightingOnLoad();
+</script>
+</body>
+</html>

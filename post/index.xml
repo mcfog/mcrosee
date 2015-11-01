@@ -5,8 +5,32 @@
     <link>http://inside.mcfog.wang/post/</link>
     <description>Recent content in Posts on mc-inside</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 25 Sep 2015 19:09:33 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 02 Nov 2015 01:33:03 +0800</lastBuildDate>
     <atom:link href="http://inside.mcfog.wang/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>自用alfred workflow：双向时间戳转换</title>
+      <link>http://inside.mcfog.wang/2015/11/tech4fun-e/</link>
+      <pubDate>Mon, 02 Nov 2015 01:33:03 +0800</pubDate>
+      
+      <guid>http://inside.mcfog.wang/2015/11/tech4fun-e/</guid>
+      <description>&lt;p&gt;厌倦了进浏览器开发者工具，厌倦了进node之类的repl环境转换，忙里偷闲撸了个双向时间戳转换的workflow，默默贴一下&lt;/p&gt;
+
+&lt;p&gt;支持强大的日期字符串解析（&lt;a href=&#34;http://php.net/strtotime&#34;&gt;php/strtotime&lt;/a&gt;）&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://inside.mcfog.wang/img/2015-q4/workflow-timestamp-1.png&#34; alt=&#34;&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;默认读取剪贴板&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://inside.mcfog.wang/img/2015-q4/workflow-timestamp-2.png&#34; alt=&#34;&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://7xnyyw.dl1.z0.glb.clouddn.com/timestamp-helper.alfredworkflow&#34;&gt;下载链接&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;就酱。&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>[一己之见]如何挑选PHP框架？</title>
@@ -1257,30 +1281,6 @@ PS 本人非计算机专业 PHP是大学偶然中接触之后有兴趣开始学�
 &lt;p&gt;题图：万智【净化时空】 rm -rf&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&#34;http://inside.mcfog.wang/img/2015-q1/m14-29.jpg&#34; alt=&#34;&#34; /&gt;
-&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>浏览器特性速查 － caniuse</title>
-      <link>http://inside.mcfog.wang/2015/02/tech4fun-7/</link>
-      <pubDate>Fri, 20 Feb 2015 13:14:36 +0800</pubDate>
-      
-      <guid>http://inside.mcfog.wang/2015/02/tech4fun-7/</guid>
-      <description>&lt;p&gt;随着IE6，IE7的远去，移动端webkit一统江湖，web开发的好日子总算是慢慢到来了。但主浏览器的数量其实并没有减少，用一些比较新的特性的时候还是需要检查一下兼容性，考虑一下是否需要polyfill或degradation。 MDN，MSDN等固然权威，但有时我们只是要查兼容性而已。&lt;/p&gt;
-
-&lt;p&gt;于是这里推荐的是这个神站 &lt;a href=&#34;http://caniuse.com/&#34;&gt;http://caniuse.com/&lt;/a&gt;。直接输入特性名字，兼容性，已知问题等等一览无余。就是这样。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://inside.mcfog.wang/img/2015-q1/caniuse.png&#34; alt=&#34;&#34; /&gt;
-&lt;/p&gt;
-
-&lt;p&gt;PS: 无需访问首页，可以直接加上搜索关键词&lt;code&gt;caniuse.com/svg&lt;/code&gt;，直达目标。 类似的站还有&lt;code&gt;php.net/strtotime&lt;/code&gt;和&lt;code&gt;api.jquery.com/val&lt;/code&gt;等等，很多地方都是支持的。&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;题图：万智 【壮绝实验】&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://inside.mcfog.wang/img/2015-q1/rtr159.jpg&#34; alt=&#34;&#34; /&gt;
 &lt;/p&gt;
 </description>
     </item>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Nano Project on mc-inside</title>
+    <link>http://inside.mcfog.wang/tags/nano-project/</link>
+    <description>Recent content in Nano Project on mc-inside</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Mon, 02 Nov 2015 01:33:03 +0800</lastBuildDate>
+    <atom:link href="http://inside.mcfog.wang/tags/nano-project/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>自用alfred workflow：双向时间戳转换</title>
+      <link>http://inside.mcfog.wang/2015/11/tech4fun-e/</link>
+      <pubDate>Mon, 02 Nov 2015 01:33:03 +0800</pubDate>
+      
+      <guid>http://inside.mcfog.wang/2015/11/tech4fun-e/</guid>
+      <description>&lt;p&gt;厌倦了进浏览器开发者工具，厌倦了进node之类的repl环境转换，忙里偷闲撸了个双向时间戳转换的workflow，默默贴一下&lt;/p&gt;
+
+&lt;p&gt;支持强大的日期字符串解析（&lt;a href=&#34;http://php.net/strtotime&#34;&gt;php/strtotime&lt;/a&gt;）&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://inside.mcfog.wang/img/2015-q4/workflow-timestamp-1.png&#34; alt=&#34;&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;默认读取剪贴板&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://inside.mcfog.wang/img/2015-q4/workflow-timestamp-2.png&#34; alt=&#34;&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://7xnyyw.dl1.z0.glb.clouddn.com/timestamp-helper.alfredworkflow&#34;&gt;下载链接&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;就酱。&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

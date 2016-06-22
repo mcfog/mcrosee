@@ -2,29 +2,27 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>mc-inside</title>
-    <link>http://inside.mcfog.wang/</link>
+    <link>https://inside.mcfog.wang/</link>
     <description>Recent content on mc-inside</description>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Mon, 02 Nov 2015 01:33:03 +0800</lastBuildDate>
-    <atom:link href="http://inside.mcfog.wang/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://inside.mcfog.wang/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>自用alfred workflow：双向时间戳转换</title>
-      <link>http://inside.mcfog.wang/2015/11/tech4fun-e/</link>
+      <link>https://inside.mcfog.wang/2015/11/tech4fun-e/</link>
       <pubDate>Mon, 02 Nov 2015 01:33:03 +0800</pubDate>
       
-      <guid>http://inside.mcfog.wang/2015/11/tech4fun-e/</guid>
+      <guid>https://inside.mcfog.wang/2015/11/tech4fun-e/</guid>
       <description>&lt;p&gt;厌倦了进浏览器开发者工具，厌倦了进node之类的repl环境转换，忙里偷闲撸了个双向时间戳转换的workflow，默默贴一下&lt;/p&gt;
 
 &lt;p&gt;支持强大的日期字符串解析（&lt;a href=&#34;http://php.net/strtotime&#34;&gt;php/strtotime&lt;/a&gt;）&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://inside.mcfog.wang/img/2015-q4/workflow-timestamp-1.png&#34; alt=&#34;&#34; /&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://inside.mcfog.wang/img/2015-q4/workflow-timestamp-1.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;默认读取剪贴板&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://inside.mcfog.wang/img/2015-q4/workflow-timestamp-2.png&#34; alt=&#34;&#34; /&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://inside.mcfog.wang/img/2015-q4/workflow-timestamp-2.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&#34;http://7xnyyw.dl1.z0.glb.clouddn.com/timestamp-helper.alfredworkflow&#34;&gt;下载链接&lt;/a&gt;&lt;/p&gt;
 
@@ -34,10 +32,10 @@
     
     <item>
       <title>[一己之见]如何挑选PHP框架？</title>
-      <link>http://inside.mcfog.wang/2015/09/ichizon-d/</link>
+      <link>https://inside.mcfog.wang/2015/09/ichizon-d/</link>
       <pubDate>Fri, 25 Sep 2015 19:09:33 +0800</pubDate>
       
-      <guid>http://inside.mcfog.wang/2015/09/ichizon-d/</guid>
+      <guid>https://inside.mcfog.wang/2015/09/ichizon-d/</guid>
       <description>
 
 &lt;h2 id=&#34;如何挑选php框架:c487f4db3cef43481c7ce6af0b03aee9&#34;&gt;如何挑选PHP框架？&lt;/h2&gt;
@@ -104,17 +102,16 @@
 
 &lt;p&gt;题图：万智【结构坍塌】&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://inside.mcfog.wang/img/2015-q3/gtc107.jpg&#34; alt=&#34;&#34; /&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://inside.mcfog.wang/img/2015-q3/gtc107.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>[真相回响]学代码怎么这么难！</title>
-      <link>http://inside.mcfog.wang/2015/03/echoing-truth-c/</link>
+      <link>https://inside.mcfog.wang/2015/03/echoing-truth-c/</link>
       <pubDate>Fri, 27 Mar 2015 21:50:44 +0800</pubDate>
       
-      <guid>http://inside.mcfog.wang/2015/03/echoing-truth-c/</guid>
+      <guid>https://inside.mcfog.wang/2015/03/echoing-truth-c/</guid>
       <description>&lt;p&gt;一直想推荐这篇文章，差点找不到了，原来是手机上看的，电脑里没有记录…&lt;/p&gt;
 
 &lt;p&gt;作者通过他与大量程序员的交流，总结了学习编程过程中的4个不同阶段，并通过分析每个阶段的资源密度、知识范围来刻画和分析每个阶段程序员的状态，最后给出了每个阶段对应的建议。&lt;/p&gt;
@@ -131,17 +128,16 @@
 
 &lt;p&gt;题图：万智【艰苦旅程】&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://inside.mcfog.wang/img/2015-q1/dka67.jpg&#34; alt=&#34;&#34; /&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://inside.mcfog.wang/img/2015-q1/dka67.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>[乱弹塔罗][翻译]第七课 编写问题</title>
-      <link>http://inside.mcfog.wang/2015/03/tarot-c/</link>
+      <link>https://inside.mcfog.wang/2015/03/tarot-c/</link>
       <pubDate>Wed, 25 Mar 2015 16:49:15 +0800</pubDate>
       
-      <guid>http://inside.mcfog.wang/2015/03/tarot-c/</guid>
+      <guid>https://inside.mcfog.wang/2015/03/tarot-c/</guid>
       <description>
 
 &lt;p&gt;多数时候，你是因为面临某个问题或挑战而想要咨询塔罗牌。你生活中的一些事情让你费心，你希望理解为什么它会发生，希望知道你能够做些什么。最适合这种情况的塔罗解读就是问题解读。你写下一个问题，你通过解读卡片来接受你的答案。问题帮助你将你收到的指引和你的情况联系起来。在这一课中，我会介绍当你为自己进行解读的时候，如何编写问题。&lt;/p&gt;
@@ -313,17 +309,16 @@
 
 &lt;p&gt;题图：万智【静默凝思】&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://inside.mcfog.wang/img/2015-q1/ts52.jpg&#34; alt=&#34;&#34; /&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://inside.mcfog.wang/img/2015-q1/ts52.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>mcfog的一己之见 XII</title>
-      <link>http://inside.mcfog.wang/2015/03/ichizon-c/</link>
+      <link>https://inside.mcfog.wang/2015/03/ichizon-c/</link>
       <pubDate>Mon, 23 Mar 2015 12:19:23 +0800</pubDate>
       
-      <guid>http://inside.mcfog.wang/2015/03/ichizon-c/</guid>
+      <guid>https://inside.mcfog.wang/2015/03/ichizon-c/</guid>
       <description>
 
 &lt;!--================================!--&gt;
@@ -443,17 +438,16 @@ print(scheduleRequest(73, 36))
 
 &lt;p&gt;题图：万智【精研时序】&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://inside.mcfog.wang/img/2015-q1/avr81.jpg&#34; alt=&#34;&#34; /&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://inside.mcfog.wang/img/2015-q1/avr81.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>[乱弹塔罗][翻译]第六课 环境</title>
-      <link>http://inside.mcfog.wang/2015/03/tarot-b/</link>
+      <link>https://inside.mcfog.wang/2015/03/tarot-b/</link>
       <pubDate>Wed, 18 Mar 2015 12:21:45 +0800</pubDate>
       
-      <guid>http://inside.mcfog.wang/2015/03/tarot-b/</guid>
+      <guid>https://inside.mcfog.wang/2015/03/tarot-b/</guid>
       <description>
 
 &lt;p&gt;塔罗解读的环境涉及物理环境和你自身的内部状态。下面五个内部特质对解读有帮助，它们是：&lt;/p&gt;
@@ -520,17 +514,16 @@ print(scheduleRequest(73, 36))
 
 &lt;p&gt;题图：万智【静默凝思】&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://inside.mcfog.wang/img/2015-q1/ktk50.jpg&#34; alt=&#34;&#34; /&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://inside.mcfog.wang/img/2015-q1/ktk50.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>mcfog的一己之见 XI</title>
-      <link>http://inside.mcfog.wang/2015/03/ichizon-b/</link>
+      <link>https://inside.mcfog.wang/2015/03/ichizon-b/</link>
       <pubDate>Mon, 16 Mar 2015 16:17:26 +0800</pubDate>
       
-      <guid>http://inside.mcfog.wang/2015/03/ichizon-b/</guid>
+      <guid>https://inside.mcfog.wang/2015/03/ichizon-b/</guid>
       <description>
 
 &lt;!--================================!--&gt;
@@ -686,17 +679,16 @@ JS里，对象才是一等居民，我们写的是方便地创建某种对象的
 
 &lt;p&gt;题图：万智【拒斥恶行】&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://inside.mcfog.wang/img/2015-q1/plc12.jpg&#34; alt=&#34;&#34; /&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://inside.mcfog.wang/img/2015-q1/plc12.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>[真相回响]What Color is Your Function?</title>
-      <link>http://inside.mcfog.wang/2015/03/echoing-truth-a/</link>
+      <link>https://inside.mcfog.wang/2015/03/echoing-truth-a/</link>
       <pubDate>Fri, 13 Mar 2015 20:48:51 +0800</pubDate>
       
-      <guid>http://inside.mcfog.wang/2015/03/echoing-truth-a/</guid>
+      <guid>https://inside.mcfog.wang/2015/03/echoing-truth-a/</guid>
       <description>&lt;p&gt;上周五不小心翘掉了说好的文章，痛定思痛，我决定新开这个更(neng)有(tou)意(lan)义的分类，来介绍看到的一些值得反复品味好文章。&lt;/p&gt;
 
 &lt;p&gt;今天这篇《What Color is Your Function?》以一种独特的视角描述了编程中常见的某种分裂问题X。这种分裂感其实在编程过程中的各个方面都会出现，而不仅仅限于文章中提到的那个范畴X。我一直觉得能把问题清晰地扯到哲学范畴（胡搅蛮缠可不算）基本上就算满级通关了。这便是一篇通向满级的攻略。&lt;/p&gt;
@@ -707,23 +699,21 @@ JS里，对象才是一等居民，我们写的是方便地创建某种对象的
 
 &lt;p&gt;题图：万智【真相回响】&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://inside.mcfog.wang/img/2015-q1/mma40.jpg&#34; alt=&#34;&#34; /&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://inside.mcfog.wang/img/2015-q1/mma40.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>[乱弹塔罗][翻译]第五课 每日解读</title>
-      <link>http://inside.mcfog.wang/2015/03/tarot-a/</link>
+      <link>https://inside.mcfog.wang/2015/03/tarot-a/</link>
       <pubDate>Tue, 10 Mar 2015 18:24:03 +0800</pubDate>
       
-      <guid>http://inside.mcfog.wang/2015/03/tarot-a/</guid>
+      <guid>https://inside.mcfog.wang/2015/03/tarot-a/</guid>
       <description>
 
 &lt;p&gt;现在你有充足的准备试试将你的塔罗知识投入使用了。第五课描述每日解读，在这种解读中，你选择一张牌作为你一天的主题，其目的是在24小时的时间段内，提高你对特定生活方式的认知。它同时帮助你以没有压力又不单调乏味的方式来进一步熟悉塔罗牌。&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://inside.mcfog.wang/img/2015-q1/c2s.gif&#34; alt=&#34;&#34; /&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://inside.mcfog.wang/img/2015-q1/c2s.gif&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;比如你在每日解读之中抽到了这张&lt;strong&gt;Two of Cups &amp;ldquo;圣杯二&amp;rdquo;&lt;/strong&gt;。在当天，你需要观察表现出这张牌的独特能量的标志。圣杯二的关键词是联系、停战和吸引。早晨，你注意到一个曾对你抱有敌意的同时走进你的办公室谈话，你感到了“停战”，很好地利用了这一点。下午，当你处理一个问题的时候，你寻找两种方案之间的“联系”，寻找到你自己的解决方案。后来在一个聚会中，你向一个“吸引”着你的人打招呼。在每个场景中，你d都感受到来自圣杯二的能量、并让它引导你的选择。&lt;/p&gt;
 
@@ -788,17 +778,16 @@ JS里，对象才是一等居民，我们写的是方便地创建某种对象的
 
 &lt;p&gt;题图：万智【卜卦】&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://inside.mcfog.wang/img/2015-q1/m14-52.jpg&#34; alt=&#34;&#34; /&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://inside.mcfog.wang/img/2015-q1/m14-52.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>mcfog的一己之见 X</title>
-      <link>http://inside.mcfog.wang/2015/03/ichizon-a/</link>
+      <link>https://inside.mcfog.wang/2015/03/ichizon-a/</link>
       <pubDate>Mon, 09 Mar 2015 12:04:02 +0800</pubDate>
       
-      <guid>http://inside.mcfog.wang/2015/03/ichizon-a/</guid>
+      <guid>https://inside.mcfog.wang/2015/03/ichizon-a/</guid>
       <description>
 
 &lt;!--================================!--&gt;
@@ -874,23 +863,21 @@ JS里，对象才是一等居民，我们写的是方便地创建某种对象的
 
 &lt;p&gt;题图：万智【召集战团】&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://inside.mcfog.wang/img/2015-q1/gtc142.jpg&#34; alt=&#34;&#34; /&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://inside.mcfog.wang/img/2015-q1/gtc142.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>[乱弹塔罗][翻译]第四课 牌阵</title>
-      <link>http://inside.mcfog.wang/2015/03/tarot-9/</link>
+      <link>https://inside.mcfog.wang/2015/03/tarot-9/</link>
       <pubDate>Wed, 04 Mar 2015 11:45:53 +0800</pubDate>
       
-      <guid>http://inside.mcfog.wang/2015/03/tarot-9/</guid>
+      <guid>https://inside.mcfog.wang/2015/03/tarot-9/</guid>
       <description>
 
 &lt;p&gt;牌阵是放置塔罗牌的预设模式。它定义了总共使用多少牌，每张放在什么位置，及其各自的含义。作为塔罗牌的排布模版，牌阵针对某个给定的主题，让塔罗牌得以发挥其力量。正因为在牌阵的模版之中，才使塔罗牌的含义能够漂亮地组合起来，照亮我们的内心。&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://inside.mcfog.wang/img/2015-q1/p4s.gif&#34; alt=&#34;Four of Pentacles&#34; /&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://inside.mcfog.wang/img/2015-q1/p4s.gif&#34; alt=&#34;Four of Pentacles&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;牌阵的最重要的特性在于每个位置都有独立的含义，为解读放在这个位置上的任何一张牌渲染独特的色彩。比如&lt;strong&gt;Four of Pentacles &amp;ldquo;钱币四&amp;rdquo;&lt;/strong&gt;代表占有、控制和阻止变化。如果这张牌出现在凯尔特十字阵的4号位置（“过去”），你需要考虑这样的品质如何远离你的生活；而如果出现在6号位置（“未来”），你就需要把这些品质视为即将走进你的生活 —— 明显这将导致截然不同的解读。&lt;/p&gt;
 
@@ -919,13 +906,11 @@ JS里，对象才是一等居民，我们写的是方便地创建某种对象的
 &lt;li&gt;为每个位置写下一些简短的短语来说明这个位置的含义&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://inside.mcfog.wang/img/2015-q1/exer41.gif&#34; alt=&#34;&#34; /&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://inside.mcfog.wang/img/2015-q1/exer41.gif&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;这是一个基本的关注时间的牌阵。&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://inside.mcfog.wang/img/2015-q1/exer42.gif&#34; alt=&#34;&#34; /&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://inside.mcfog.wang/img/2015-q1/exer42.gif&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;这是一个当你属于一个三人团队的时候，试图了解每个成员包括自己的期望的时候可能使用的牌阵。这个倒置的Y字图案暗示思想的交汇。&lt;/p&gt;
 
@@ -935,17 +920,16 @@ JS里，对象才是一等居民，我们写的是方便地创建某种对象的
 
 &lt;p&gt;题图：万智【探险地图】&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://inside.mcfog.wang/img/2015-q1/zen201.jpg&#34; alt=&#34;&#34; /&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://inside.mcfog.wang/img/2015-q1/zen201.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>mcfog的一己之见 IX</title>
-      <link>http://inside.mcfog.wang/2015/03/ichizon-9/</link>
+      <link>https://inside.mcfog.wang/2015/03/ichizon-9/</link>
       <pubDate>Mon, 02 Mar 2015 11:35:42 +0800</pubDate>
       
-      <guid>http://inside.mcfog.wang/2015/03/ichizon-9/</guid>
+      <guid>https://inside.mcfog.wang/2015/03/ichizon-9/</guid>
       <description>
 
 &lt;!--================================!--&gt;
@@ -1047,23 +1031,21 @@ PS 本人非计算机专业 PHP是大学偶然中接触之后有兴趣开始学�
 
 &lt;p&gt;题图：万智【丰足成长】&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://inside.mcfog.wang/img/2015-q1/avr167.jpg&#34; alt=&#34;&#34; /&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://inside.mcfog.wang/img/2015-q1/avr167.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>微型JS库速查microjs.com</title>
-      <link>http://inside.mcfog.wang/2015/02/tech4fun-8/</link>
+      <link>https://inside.mcfog.wang/2015/02/tech4fun-8/</link>
       <pubDate>Sat, 28 Feb 2015 12:14:18 +0800</pubDate>
       
-      <guid>http://inside.mcfog.wang/2015/02/tech4fun-8/</guid>
+      <guid>https://inside.mcfog.wang/2015/02/tech4fun-8/</guid>
       <description>&lt;p&gt;随着IE6后略&lt;/p&gt;
 
 &lt;p&gt;移动端的兴起和原生JS，DOM能力的改善促使一大批微型js库出现，它们的体积（min+gzip）不足5KB，但在各自的领域内都有非常好的表现。今天介绍的又一个直达网站便是索引了这些微型的js库，更赞的是维护了友好的关键字，所以如图“I need xxx” 答案就出来啦&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://inside.mcfog.wang/img/2015-q1/microjs.png&#34; alt=&#34;&#34; /&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://inside.mcfog.wang/img/2015-q1/microjs.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&#34;http://microjs.com/&#34;&gt;http://microjs.com/&lt;/a&gt;&lt;/p&gt;
 
@@ -1071,17 +1053,16 @@ PS 本人非计算机专业 PHP是大学偶然中接触之后有兴趣开始学�
 
 &lt;p&gt;题图：万智 【缩小】&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://inside.mcfog.wang/img/2015-q1/m11-52.jpg&#34; alt=&#34;&#34; /&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://inside.mcfog.wang/img/2015-q1/m11-52.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>练习三 参考建议</title>
-      <link>http://inside.mcfog.wang/tarot/exercise/suggest3/</link>
+      <link>https://inside.mcfog.wang/tarot/exercise/suggest3/</link>
       <pubDate>Wed, 25 Feb 2015 14:40:50 +0800</pubDate>
       
-      <guid>http://inside.mcfog.wang/tarot/exercise/suggest3/</guid>
+      <guid>https://inside.mcfog.wang/tarot/exercise/suggest3/</guid>
       <description>
 
 &lt;h2 id=&#34;练习三-参考建议:ebe20bce2b41075c77c004e7c1600e86&#34;&gt;练习三 参考建议&lt;/h2&gt;
@@ -1219,10 +1200,10 @@ PS 本人非计算机专业 PHP是大学偶然中接触之后有兴趣开始学�
     
     <item>
       <title>[乱弹塔罗][翻译]练习三 副牌</title>
-      <link>http://inside.mcfog.wang/2015/02/tarot-8/</link>
+      <link>https://inside.mcfog.wang/2015/02/tarot-8/</link>
       <pubDate>Wed, 25 Feb 2015 13:22:34 +0800</pubDate>
       
-      <guid>http://inside.mcfog.wang/2015/02/tarot-8/</guid>
+      <guid>https://inside.mcfog.wang/2015/02/tarot-8/</guid>
       <description>
 
 &lt;h2 id=&#34;练习三:2be4c0c4f78aa255ac4225a4c98bb614&#34;&gt;练习三&lt;/h2&gt;
@@ -1231,7 +1212,7 @@ PS 本人非计算机专业 PHP是大学偶然中接触之后有兴趣开始学�
 
 &lt;h3 id=&#34;3-1-熟悉属性特质:2be4c0c4f78aa255ac4225a4c98bb614&#34;&gt;3.1 熟悉属性特质&lt;/h3&gt;
 
-&lt;p&gt;看看&lt;a href=&#34;http://www.learntarot.com/lists.htm&#34;&gt;属性特质列表&lt;/a&gt;。它们描述了每个属性牌组的一些正面和负面的表述。不必试图背诵这些，它们只是设计用来给每个属性牌组的独特能量一个第一印象。当你觉得可以以后，检查下面的词语列表。为其中的每一项设定一个你认为合适的属性和表述的正负。例如“可靠、细致”你可以说它是“钱币 － 正面”。如果你愿意，可以看看&lt;a href=&#34;http://inside.mcfog.wang/tarot/exercise/suggest3/&#34;&gt;我的建议&lt;/a&gt;，如果你的选择和我的有所不同，想想为什么。通过这个练习，你将开始对每个属性提炼出自己的理解。也可以让你的朋友随意选择新的词汇组合来做小测试。&lt;/p&gt;
+&lt;p&gt;看看&lt;a href=&#34;http://www.learntarot.com/lists.htm&#34;&gt;属性特质列表&lt;/a&gt;。它们描述了每个属性牌组的一些正面和负面的表述。不必试图背诵这些，它们只是设计用来给每个属性牌组的独特能量一个第一印象。当你觉得可以以后，检查下面的词语列表。为其中的每一项设定一个你认为合适的属性和表述的正负。例如“可靠、细致”你可以说它是“钱币 － 正面”。如果你愿意，可以看看&lt;a href=&#34;https://inside.mcfog.wang/tarot/exercise/suggest3/&#34;&gt;我的建议&lt;/a&gt;，如果你的选择和我的有所不同，想想为什么。通过这个练习，你将开始对每个属性提炼出自己的理解。也可以让你的朋友随意选择新的词汇组合来做小测试。&lt;/p&gt;
 
 &lt;ol&gt;
 &lt;li&gt;阴沉、懒惰&lt;/li&gt;
@@ -1262,7 +1243,7 @@ PS 本人非计算机专业 PHP是大学偶然中接触之后有兴趣开始学�
 
 &lt;h3 id=&#34;3-2-辨析属性特质:2be4c0c4f78aa255ac4225a4c98bb614&#34;&gt;3.2 辨析属性特质&lt;/h3&gt;
 
-&lt;p&gt;很多日常生活的方面具体反映了某一个属性牌组，对下面的每个场景，选择一个你认为最合适的属性和对应的正负，列出一些你认为支持你的选择的特质。比如去特技跳伞也许是“权杖－正面”因为你必须“勇敢、精力充沛、充满自信”（也可能是权杖－负面：鲁莽，乱来！）如果你愿意，可以看看&lt;a href=&#34;http://inside.mcfog.wang/tarot/exercise/suggest3/&#34;&gt;我的建议&lt;/a&gt;。&lt;/p&gt;
+&lt;p&gt;很多日常生活的方面具体反映了某一个属性牌组，对下面的每个场景，选择一个你认为最合适的属性和对应的正负，列出一些你认为支持你的选择的特质。比如去特技跳伞也许是“权杖－正面”因为你必须“勇敢、精力充沛、充满自信”（也可能是权杖－负面：鲁莽，乱来！）如果你愿意，可以看看&lt;a href=&#34;https://inside.mcfog.wang/tarot/exercise/suggest3/&#34;&gt;我的建议&lt;/a&gt;。&lt;/p&gt;
 
 &lt;ol&gt;
 &lt;li&gt;总把每件事做到正好的程度&lt;/li&gt;
@@ -1320,8 +1301,7 @@ PS 本人非计算机专业 PHP是大学偶然中接触之后有兴趣开始学�
 
 &lt;p&gt;题图：万智【塔萨的试炼】&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://inside.mcfog.wang/img/2015-q1/ths58.jpg&#34; alt=&#34;&#34; /&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://inside.mcfog.wang/img/2015-q1/ths58.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 </description>
     </item>
     

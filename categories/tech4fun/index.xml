@@ -2,29 +2,27 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tech4fun on mc-inside</title>
-    <link>http://inside.mcfog.wang/categories/tech4fun/</link>
+    <link>https://inside.mcfog.wang/categories/tech4fun/</link>
     <description>Recent content in Tech4fun on mc-inside</description>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Mon, 02 Nov 2015 01:33:03 +0800</lastBuildDate>
-    <atom:link href="http://inside.mcfog.wang/categories/tech4fun/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://inside.mcfog.wang/categories/tech4fun/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>自用alfred workflow：双向时间戳转换</title>
-      <link>http://inside.mcfog.wang/2015/11/tech4fun-e/</link>
+      <link>https://inside.mcfog.wang/2015/11/tech4fun-e/</link>
       <pubDate>Mon, 02 Nov 2015 01:33:03 +0800</pubDate>
       
-      <guid>http://inside.mcfog.wang/2015/11/tech4fun-e/</guid>
+      <guid>https://inside.mcfog.wang/2015/11/tech4fun-e/</guid>
       <description>&lt;p&gt;厌倦了进浏览器开发者工具，厌倦了进node之类的repl环境转换，忙里偷闲撸了个双向时间戳转换的workflow，默默贴一下&lt;/p&gt;
 
 &lt;p&gt;支持强大的日期字符串解析（&lt;a href=&#34;http://php.net/strtotime&#34;&gt;php/strtotime&lt;/a&gt;）&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://inside.mcfog.wang/img/2015-q4/workflow-timestamp-1.png&#34; alt=&#34;&#34; /&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://inside.mcfog.wang/img/2015-q4/workflow-timestamp-1.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;默认读取剪贴板&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://inside.mcfog.wang/img/2015-q4/workflow-timestamp-2.png&#34; alt=&#34;&#34; /&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://inside.mcfog.wang/img/2015-q4/workflow-timestamp-2.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&#34;http://7xnyyw.dl1.z0.glb.clouddn.com/timestamp-helper.alfredworkflow&#34;&gt;下载链接&lt;/a&gt;&lt;/p&gt;
 
@@ -34,16 +32,15 @@
     
     <item>
       <title>微型JS库速查microjs.com</title>
-      <link>http://inside.mcfog.wang/2015/02/tech4fun-8/</link>
+      <link>https://inside.mcfog.wang/2015/02/tech4fun-8/</link>
       <pubDate>Sat, 28 Feb 2015 12:14:18 +0800</pubDate>
       
-      <guid>http://inside.mcfog.wang/2015/02/tech4fun-8/</guid>
+      <guid>https://inside.mcfog.wang/2015/02/tech4fun-8/</guid>
       <description>&lt;p&gt;随着IE6后略&lt;/p&gt;
 
 &lt;p&gt;移动端的兴起和原生JS，DOM能力的改善促使一大批微型js库出现，它们的体积（min+gzip）不足5KB，但在各自的领域内都有非常好的表现。今天介绍的又一个直达网站便是索引了这些微型的js库，更赞的是维护了友好的关键字，所以如图“I need xxx” 答案就出来啦&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://inside.mcfog.wang/img/2015-q1/microjs.png&#34; alt=&#34;&#34; /&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://inside.mcfog.wang/img/2015-q1/microjs.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&#34;http://microjs.com/&#34;&gt;http://microjs.com/&lt;/a&gt;&lt;/p&gt;
 
@@ -51,23 +48,21 @@
 
 &lt;p&gt;题图：万智 【缩小】&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://inside.mcfog.wang/img/2015-q1/m11-52.jpg&#34; alt=&#34;&#34; /&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://inside.mcfog.wang/img/2015-q1/m11-52.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>浏览器特性速查 － caniuse</title>
-      <link>http://inside.mcfog.wang/2015/02/tech4fun-7/</link>
+      <link>https://inside.mcfog.wang/2015/02/tech4fun-7/</link>
       <pubDate>Fri, 20 Feb 2015 13:14:36 +0800</pubDate>
       
-      <guid>http://inside.mcfog.wang/2015/02/tech4fun-7/</guid>
+      <guid>https://inside.mcfog.wang/2015/02/tech4fun-7/</guid>
       <description>&lt;p&gt;随着IE6，IE7的远去，移动端webkit一统江湖，web开发的好日子总算是慢慢到来了。但主浏览器的数量其实并没有减少，用一些比较新的特性的时候还是需要检查一下兼容性，考虑一下是否需要polyfill或degradation。 MDN，MSDN等固然权威，但有时我们只是要查兼容性而已。&lt;/p&gt;
 
 &lt;p&gt;于是这里推荐的是这个神站 &lt;a href=&#34;http://caniuse.com/&#34;&gt;http://caniuse.com/&lt;/a&gt;。直接输入特性名字，兼容性，已知问题等等一览无余。就是这样。&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://inside.mcfog.wang/img/2015-q1/caniuse.png&#34; alt=&#34;&#34; /&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://inside.mcfog.wang/img/2015-q1/caniuse.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;PS: 无需访问首页，可以直接加上搜索关键词&lt;code&gt;caniuse.com/svg&lt;/code&gt;，直达目标。 类似的站还有&lt;code&gt;php.net/strtotime&lt;/code&gt;和&lt;code&gt;api.jquery.com/val&lt;/code&gt;等等，很多地方都是支持的。&lt;/p&gt;
 
@@ -75,17 +70,16 @@
 
 &lt;p&gt;题图：万智 【壮绝实验】&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://inside.mcfog.wang/img/2015-q1/rtr159.jpg&#34; alt=&#34;&#34; /&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://inside.mcfog.wang/img/2015-q1/rtr159.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>推荐个手机浏览器Yandex</title>
-      <link>http://inside.mcfog.wang/2015/02/tech4fun-6/</link>
+      <link>https://inside.mcfog.wang/2015/02/tech4fun-6/</link>
       <pubDate>Fri, 13 Feb 2015 13:04:32 +0800</pubDate>
       
-      <guid>http://inside.mcfog.wang/2015/02/tech4fun-6/</guid>
+      <guid>https://inside.mcfog.wang/2015/02/tech4fun-6/</guid>
       <description>&lt;p&gt;我对手机浏览器的应用主要是&lt;/p&gt;
 
 &lt;ol&gt;
@@ -97,23 +91,19 @@
 
 &lt;p&gt;近来从Opera国际版切换到Yandex，感觉良好，特此推荐。Yandex是俄罗斯本土第一搜索引擎，号称俄罗斯谷歌。&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://inside.mcfog.wang/img/2015-q1/yandex1.png&#34; alt=&#34;&#34; /&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://inside.mcfog.wang/img/2015-q1/yandex1.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;新标签页／快速拨号页，Yandex浏览器的特色之一是会自动分析网站的“主色调”，配合网站favicon，即耐看又一目了然。&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://inside.mcfog.wang/img/2015-q1/yandex2.png&#34; alt=&#34;&#34; /&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://inside.mcfog.wang/img/2015-q1/yandex2.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;标签切换页，主色调起到了非常棒的区分效果。流畅度，动画，手势等各方面也均属上乘。&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://inside.mcfog.wang/img/2015-q1/yandex3.png&#34; alt=&#34;&#34; /&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://inside.mcfog.wang/img/2015-q1/yandex3.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;置底的导航栏。另外Yandex虽然默认具备来自Opera的涡轮加速能力，还自动检测网络情况确定是否开启，却非常克制地仅仅在进度条颜色上体现（网络较差时进度条为蓝色表示启用涡轮加速）&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://inside.mcfog.wang/img/2015-q1/yandex4.png&#34; alt=&#34;&#34; /&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://inside.mcfog.wang/img/2015-q1/yandex4.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;非活跃情况下导航栏收起成最矮的一行。保证常驻屏幕（以方便操作和展示网页标题）的同时，将内容区域的面积最大化。&lt;/p&gt;
 
@@ -123,34 +113,32 @@
     
     <item>
       <title>[新姿势]授人以渔：如何迅速找到靠谱的工具软件</title>
-      <link>http://inside.mcfog.wang/2015/02/tech4fun-5/</link>
+      <link>https://inside.mcfog.wang/2015/02/tech4fun-5/</link>
       <pubDate>Thu, 05 Feb 2015 17:39:37 +0800</pubDate>
       
-      <guid>http://inside.mcfog.wang/2015/02/tech4fun-5/</guid>
+      <guid>https://inside.mcfog.wang/2015/02/tech4fun-5/</guid>
       <description>&lt;p&gt;eclipse又慢又笨？用惯WinSCP换了Mac不知所措？被Dash惯坏了想要Windows下的替代品？&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&#34;http://alternativeto.net/&#34;&gt;http://alternativeto.net/&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;alternative to XXX 正如其名的这个网站，基于用户推荐整理各种软件的替代关系，支持按平台按收费与否等等各种条件过滤，妈妈再也不担心我找不到顺手的软件啦&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://inside.mcfog.wang/img/2015-q1/alternativeto.png&#34; alt=&#34;&#34; /&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://inside.mcfog.wang/img/2015-q1/alternativeto.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
 &lt;hr /&gt;
 
 &lt;p&gt;题图：万智 【琐物法师】&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://inside.mcfog.wang/img/2015-q1/som48.jpg&#34; alt=&#34;&#34; /&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://inside.mcfog.wang/img/2015-q1/som48.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>[新姿势]重构癞皮狗之洋葱皮重构法</title>
-      <link>http://inside.mcfog.wang/2015/01/tech4fun-4/</link>
+      <link>https://inside.mcfog.wang/2015/01/tech4fun-4/</link>
       <pubDate>Thu, 29 Jan 2015 19:33:28 +0800</pubDate>
       
-      <guid>http://inside.mcfog.wang/2015/01/tech4fun-4/</guid>
+      <guid>https://inside.mcfog.wang/2015/01/tech4fun-4/</guid>
       <description>&lt;p&gt;作为一只伪前端开发癞皮狗重构的mc，向来写CSS都是用“穷举法”写的。嗯，就是『标题太靠左？老板来10px margin』这样的感觉。&lt;/p&gt;
 
 &lt;p&gt;拯救了这样的我的一款开发神器就是&lt;a href=&#34;http://alloyteam.github.io/AlloyDesigner/&#34;&gt;AlloyDesigner&lt;/a&gt;的洋葱皮功能。&lt;/p&gt;
@@ -159,8 +147,7 @@
 
 &lt;p&gt;AlloyDesigner有脚本部署版本，书签版本和chrome扩展版本。扩展使用方便，但会发送GA统计，敏感人群可以选用火狐扩展&lt;a href=&#34;https://addons.mozilla.org/en-US/firefox/addon/pixel-perfect/&#34;&gt;PixelPerfect&lt;/a&gt;，似乎也有chrome移植版。&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://inside.mcfog.wang/img/2015-q1/pxperfect.png&#34; alt=&#34;&#34; /&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://inside.mcfog.wang/img/2015-q1/pxperfect.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;从此mc过上了幸福的撞大运重构生活，完。&lt;/p&gt;
 
@@ -170,17 +157,16 @@
 
 &lt;p&gt;题图：万智 【实相光闪】&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://inside.mcfog.wang/img/2015-q1/fut-43.jpg&#34; alt=&#34;&#34; /&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://inside.mcfog.wang/img/2015-q1/fut-43.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>[新姿势]开源去中心密码生成器PasswordMaker</title>
-      <link>http://inside.mcfog.wang/2015/01/tech4fun-3/</link>
+      <link>https://inside.mcfog.wang/2015/01/tech4fun-3/</link>
       <pubDate>Thu, 22 Jan 2015 14:38:32 +0800</pubDate>
       
-      <guid>http://inside.mcfog.wang/2015/01/tech4fun-3/</guid>
+      <guid>https://inside.mcfog.wang/2015/01/tech4fun-3/</guid>
       <description>&lt;p&gt;在统一密码的方便但不设防和每个站独立密码的麻烦之中，各种密码管理解决方案出现了。关于这个小众需求，我个人无法接受这个密码生成方案是有“中心”的，无论这个中心是商业公司还是某个加密的数据文件。前者我要信赖他的生存能力，国外的不被墙能力和国内的哔—能力；而后者我要小心保护这个数据文件，用一个强密码乃至多层加密来保护它的同时，还要把它同步在不同的电脑和手机之间，这依然是方便和安全之间的悖论。&lt;/p&gt;
 
 &lt;p&gt;今天我要推荐的&lt;a href=&#34;http://passwordmaker.org/&#34;&gt;PasswordMaker.org&lt;/a&gt;基于这样一个并不新但有效的点子：把网站名字和自己记住的一个主密码混合起来用哈希算法计算得到真正的密码。&lt;/p&gt;
@@ -212,17 +198,16 @@
 
 &lt;p&gt;题图：万智 【心灵操控】&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://inside.mcfog.wang/img/2015-q1/m12-67.jpg&#34; alt=&#34;&#34; /&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://inside.mcfog.wang/img/2015-q1/m12-67.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>[新姿势]前端革命，革了再革：WebPack</title>
-      <link>http://inside.mcfog.wang/2015/01/tech4fun-2/</link>
+      <link>https://inside.mcfog.wang/2015/01/tech4fun-2/</link>
       <pubDate>Fri, 16 Jan 2015 11:30:42 +0800</pubDate>
       
-      <guid>http://inside.mcfog.wang/2015/01/tech4fun-2/</guid>
+      <guid>https://inside.mcfog.wang/2015/01/tech4fun-2/</guid>
       <description>&lt;p&gt;时光回溯到2009年，CommonJS规范和NodeJS都还在襁褓之中，离Bower诞生还有三年时间，Ruby还统治着github，CoffeeScript在年末提交了第一个commit……&lt;/p&gt;
 
 &lt;p&gt;备受加载顺序，依赖关系折磨的前端开发，开始站起来试图解决日益复杂的前端开发的种种问题，RequireJS降临了。如果说NodeJS吹响了JS全栈革命的号角，那么同时发生的前端模块化革命便是RequireJS的历史使命。&lt;/p&gt;
@@ -233,8 +218,7 @@
 
 &lt;p&gt;五年间，NodeJS成为了服务端以及脚本工具的一代翘楚，NPM的成功让大家意识到一个集中式的依赖／包管理体系的重要性，Bower应运而生，还有试图将CMD和NPM包带到前端领域，统一前后端包格式的Browserify等等，大量的前端工具爆发式地出现，WebPack是其中的(又)一款模块打包工具。&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://inside.mcfog.wang/img/2015-q1/webpack.png&#34; alt=&#34;&#34; /&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://inside.mcfog.wang/img/2015-q1/webpack.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;webpack的优势一言难尽，相比其他竞争者，他的好处有&lt;/p&gt;
 
@@ -257,10 +241,10 @@
     
     <item>
       <title>[新姿势]我用过的静态站点生成器们</title>
-      <link>http://inside.mcfog.wang/2015/01/tech4fun-1/</link>
+      <link>https://inside.mcfog.wang/2015/01/tech4fun-1/</link>
       <pubDate>Fri, 09 Jan 2015 13:26:52 +0800</pubDate>
       
-      <guid>http://inside.mcfog.wang/2015/01/tech4fun-1/</guid>
+      <guid>https://inside.mcfog.wang/2015/01/tech4fun-1/</guid>
       <description>
 
 &lt;p&gt;随着诸如github pages的静态托管服务，静态站点生成器在近年有了极大的发展，静态生成+托管对托管环境要求低、维护简单、可配合版本控制，但又灵活多变，在程序员和geek群体中大有超越WordPress等动态博客程序的势头&lt;/p&gt;
@@ -394,8 +378,7 @@
 
 &lt;p&gt;题图：万智《Generator Servant》电机仆役&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://inside.mcfog.wang/img/2015-q1/m15-143.jpg&#34; alt=&#34;&#34; /&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://inside.mcfog.wang/img/2015-q1/m15-143.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 </description>
     </item>
     

@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Labs on mc-inside</title>
-    <link>http://inside.mcfog.wang/lab/</link>
+    <link>https://inside.mcfog.wang/lab/</link>
     <description>Recent content in Labs on mc-inside</description>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Fri, 23 Jan 2015 13:47:38 +0800</lastBuildDate>
-    <atom:link href="http://inside.mcfog.wang/lab/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://inside.mcfog.wang/lab/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>kfc</title>
-      <link>http://inside.mcfog.wang/lab/kfc/</link>
+      <link>https://inside.mcfog.wang/lab/kfc/</link>
       <pubDate>Fri, 23 Jan 2015 13:47:38 +0800</pubDate>
       
-      <guid>http://inside.mcfog.wang/lab/kfc/</guid>
+      <guid>https://inside.mcfog.wang/lab/kfc/</guid>
       <description>&lt;!--more--&gt;
 
 &lt;style&gt;
@@ -61,8 +61,8 @@
 
 &lt;coupon-list class=&#34;coupon-list&#34;&gt;&lt;/coupon-list&gt;
 
-&lt;script src=&#34;http://inside.mcfog.wang/js/riot.min.js&#34;&gt;&lt;/script&gt;
-&lt;script src=&#34;http://inside.mcfog.wang/js/kfcoupon/all.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;https://inside.mcfog.wang/js/riot.min.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;https://inside.mcfog.wang/js/kfcoupon/all.js&#34;&gt;&lt;/script&gt;
 &lt;script&gt;
   function main(data) {
     riot.mount(&#39;*&#39;, data);
@@ -73,10 +73,10 @@
     
     <item>
       <title></title>
-      <link>http://inside.mcfog.wang/lab/markdown/</link>
+      <link>https://inside.mcfog.wang/lab/markdown/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://inside.mcfog.wang/lab/markdown/</guid>
+      <guid>https://inside.mcfog.wang/lab/markdown/</guid>
       <description>
 
 &lt;h1 id=&#34;markdown入门:d59f7b4dfecd890f0583fb0bac5a436e&#34;&gt;markdown入门&lt;/h1&gt;
@@ -166,8 +166,7 @@
 
 &lt;p&gt;&lt;a href=&#34;http://inside.mcfog.wang/&#34; title=&#34;title&#34;&gt;Inside McFog&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://inside.mcfog.wang/img/2014-q1/qrcode.jpg&#34; alt=&#34;关注&#34; /&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://inside.mcfog.wang/img/2014-q1/qrcode.jpg&#34; alt=&#34;关注&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&#34;http://inside.mcfog.wang/&#34;&gt;也可以用footnote的形式&lt;/a&gt;&lt;/p&gt;
 </description>

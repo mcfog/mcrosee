@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Ichizon on mc-inside</title>
-    <link>http://inside.mcfog.wang/categories/ichizon/</link>
+    <link>https://inside.mcfog.wang/categories/ichizon/</link>
     <description>Recent content in Ichizon on mc-inside</description>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Fri, 25 Sep 2015 19:09:33 +0800</lastBuildDate>
-    <atom:link href="http://inside.mcfog.wang/categories/ichizon/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://inside.mcfog.wang/categories/ichizon/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>[一己之见]如何挑选PHP框架？</title>
-      <link>http://inside.mcfog.wang/2015/09/ichizon-d/</link>
+      <link>https://inside.mcfog.wang/2015/09/ichizon-d/</link>
       <pubDate>Fri, 25 Sep 2015 19:09:33 +0800</pubDate>
       
-      <guid>http://inside.mcfog.wang/2015/09/ichizon-d/</guid>
+      <guid>https://inside.mcfog.wang/2015/09/ichizon-d/</guid>
       <description>
 
 &lt;h2 id=&#34;如何挑选php框架:c487f4db3cef43481c7ce6af0b03aee9&#34;&gt;如何挑选PHP框架？&lt;/h2&gt;
@@ -80,17 +80,16 @@
 
 &lt;p&gt;题图：万智【结构坍塌】&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://inside.mcfog.wang/img/2015-q3/gtc107.jpg&#34; alt=&#34;&#34; /&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://inside.mcfog.wang/img/2015-q3/gtc107.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>mcfog的一己之见 XII</title>
-      <link>http://inside.mcfog.wang/2015/03/ichizon-c/</link>
+      <link>https://inside.mcfog.wang/2015/03/ichizon-c/</link>
       <pubDate>Mon, 23 Mar 2015 12:19:23 +0800</pubDate>
       
-      <guid>http://inside.mcfog.wang/2015/03/ichizon-c/</guid>
+      <guid>https://inside.mcfog.wang/2015/03/ichizon-c/</guid>
       <description>
 
 &lt;!--================================!--&gt;
@@ -210,17 +209,16 @@ print(scheduleRequest(73, 36))
 
 &lt;p&gt;题图：万智【精研时序】&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://inside.mcfog.wang/img/2015-q1/avr81.jpg&#34; alt=&#34;&#34; /&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://inside.mcfog.wang/img/2015-q1/avr81.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>mcfog的一己之见 XI</title>
-      <link>http://inside.mcfog.wang/2015/03/ichizon-b/</link>
+      <link>https://inside.mcfog.wang/2015/03/ichizon-b/</link>
       <pubDate>Mon, 16 Mar 2015 16:17:26 +0800</pubDate>
       
-      <guid>http://inside.mcfog.wang/2015/03/ichizon-b/</guid>
+      <guid>https://inside.mcfog.wang/2015/03/ichizon-b/</guid>
       <description>
 
 &lt;!--================================!--&gt;
@@ -376,17 +374,16 @@ JS里，对象才是一等居民，我们写的是方便地创建某种对象的
 
 &lt;p&gt;题图：万智【拒斥恶行】&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://inside.mcfog.wang/img/2015-q1/plc12.jpg&#34; alt=&#34;&#34; /&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://inside.mcfog.wang/img/2015-q1/plc12.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>mcfog的一己之见 X</title>
-      <link>http://inside.mcfog.wang/2015/03/ichizon-a/</link>
+      <link>https://inside.mcfog.wang/2015/03/ichizon-a/</link>
       <pubDate>Mon, 09 Mar 2015 12:04:02 +0800</pubDate>
       
-      <guid>http://inside.mcfog.wang/2015/03/ichizon-a/</guid>
+      <guid>https://inside.mcfog.wang/2015/03/ichizon-a/</guid>
       <description>
 
 &lt;!--================================!--&gt;
@@ -462,17 +459,16 @@ JS里，对象才是一等居民，我们写的是方便地创建某种对象的
 
 &lt;p&gt;题图：万智【召集战团】&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://inside.mcfog.wang/img/2015-q1/gtc142.jpg&#34; alt=&#34;&#34; /&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://inside.mcfog.wang/img/2015-q1/gtc142.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>mcfog的一己之见 IX</title>
-      <link>http://inside.mcfog.wang/2015/03/ichizon-9/</link>
+      <link>https://inside.mcfog.wang/2015/03/ichizon-9/</link>
       <pubDate>Mon, 02 Mar 2015 11:35:42 +0800</pubDate>
       
-      <guid>http://inside.mcfog.wang/2015/03/ichizon-9/</guid>
+      <guid>https://inside.mcfog.wang/2015/03/ichizon-9/</guid>
       <description>
 
 &lt;!--================================!--&gt;
@@ -574,17 +570,16 @@ PS 本人非计算机专业 PHP是大学偶然中接触之后有兴趣开始学�
 
 &lt;p&gt;题图：万智【丰足成长】&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://inside.mcfog.wang/img/2015-q1/avr167.jpg&#34; alt=&#34;&#34; /&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://inside.mcfog.wang/img/2015-q1/avr167.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>mcfog的一己之见 VIII</title>
-      <link>http://inside.mcfog.wang/2015/02/ichizon-8/</link>
+      <link>https://inside.mcfog.wang/2015/02/ichizon-8/</link>
       <pubDate>Mon, 23 Feb 2015 00:09:31 +0800</pubDate>
       
-      <guid>http://inside.mcfog.wang/2015/02/ichizon-8/</guid>
+      <guid>https://inside.mcfog.wang/2015/02/ichizon-8/</guid>
       <description>
 
 &lt;!--================================!--&gt;
@@ -629,8 +624,7 @@ PS 本人非计算机专业 PHP是大学偶然中接触之后有兴趣开始学�
 
 &lt;p&gt;chrome可以针对元素被改变打断断点&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://sfault-image.b0.upaiyun.com/148/870/1488709004-54c0b3da4f2f8_articlex&#34; alt=&#34;图片描述&#34; /&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://sfault-image.b0.upaiyun.com/148/870/1488709004-54c0b3da4f2f8_articlex&#34; alt=&#34;图片描述&#34; /&gt;&lt;/p&gt;
 
 &lt;!--================================!--&gt;
 
@@ -675,17 +669,16 @@ PS 本人非计算机专业 PHP是大学偶然中接触之后有兴趣开始学�
 
 &lt;p&gt;题图：万智【净化时空】 rm -rf&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://inside.mcfog.wang/img/2015-q1/m14-29.jpg&#34; alt=&#34;&#34; /&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://inside.mcfog.wang/img/2015-q1/m14-29.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>mcfog的一己之见 VII</title>
-      <link>http://inside.mcfog.wang/2015/02/ichizon-7/</link>
+      <link>https://inside.mcfog.wang/2015/02/ichizon-7/</link>
       <pubDate>Mon, 16 Feb 2015 17:25:58 +0800</pubDate>
       
-      <guid>http://inside.mcfog.wang/2015/02/ichizon-7/</guid>
+      <guid>https://inside.mcfog.wang/2015/02/ichizon-7/</guid>
       <description>
 
 &lt;!--================================!--&gt;
@@ -755,17 +748,16 @@ PS 本人非计算机专业 PHP是大学偶然中接触之后有兴趣开始学�
 
 &lt;p&gt;题图：万智【变巨术】&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://inside.mcfog.wang/img/2015-q1/m14-174.jpg&#34; alt=&#34;&#34; /&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://inside.mcfog.wang/img/2015-q1/m14-174.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>mcfog的一己之见 VI</title>
-      <link>http://inside.mcfog.wang/2015/02/ichizon-6/</link>
+      <link>https://inside.mcfog.wang/2015/02/ichizon-6/</link>
       <pubDate>Mon, 09 Feb 2015 18:28:43 +0800</pubDate>
       
-      <guid>http://inside.mcfog.wang/2015/02/ichizon-6/</guid>
+      <guid>https://inside.mcfog.wang/2015/02/ichizon-6/</guid>
       <description>
 
 &lt;!--================================!--&gt;
@@ -800,8 +792,7 @@ print $i;
 
 &lt;p&gt;图形的力量，感觉比字清楚多了&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://segmentfault.com/img/bVkPsx&#34; alt=&#34;图片描述&#34; /&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://segmentfault.com/img/bVkPsx&#34; alt=&#34;图片描述&#34; /&gt;&lt;/p&gt;
 
 &lt;!--================================!--&gt;
 
@@ -930,17 +921,16 @@ class redis {
 
 &lt;p&gt;题图：万智【接踵而至】&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://inside.mcfog.wang/img/2015-q1/rav51.jpg&#34; alt=&#34;&#34; /&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://inside.mcfog.wang/img/2015-q1/rav51.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>mcfog的一己之见 第五期</title>
-      <link>http://inside.mcfog.wang/2015/02/ichizon-5/</link>
+      <link>https://inside.mcfog.wang/2015/02/ichizon-5/</link>
       <pubDate>Mon, 02 Feb 2015 10:50:02 +0800</pubDate>
       
-      <guid>http://inside.mcfog.wang/2015/02/ichizon-5/</guid>
+      <guid>https://inside.mcfog.wang/2015/02/ichizon-5/</guid>
       <description>
 
 &lt;!--================================!--&gt;
@@ -1062,17 +1052,16 @@ LV5 掌握若干LV4技能的基础上，知道怎么招聘和摆平其他LV4的�
 
 &lt;p&gt;题图：万智【精研战技】&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://inside.mcfog.wang/img/2015-q1/m15-4.jpg&#34; alt=&#34;&#34; /&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://inside.mcfog.wang/img/2015-q1/m15-4.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>mcfog的一己之见4th</title>
-      <link>http://inside.mcfog.wang/2015/01/ichizon-4/</link>
+      <link>https://inside.mcfog.wang/2015/01/ichizon-4/</link>
       <pubDate>Sun, 25 Jan 2015 22:01:29 +0800</pubDate>
       
-      <guid>http://inside.mcfog.wang/2015/01/ichizon-4/</guid>
+      <guid>https://inside.mcfog.wang/2015/01/ichizon-4/</guid>
       <description>
 
 &lt;!--================================!--&gt;
@@ -1242,7 +1231,7 @@ function showMerchant() {
 
 &lt;p&gt;&lt;a href=&#34;http://segmentfault.com/q/1010000000525835&#34;&gt;问题&lt;/a&gt; by &lt;a href=&#34;http://segmentfault.com/u/jerryzou&#34;&gt;JerryZou&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;总所周知的是，&lt;code&gt;js&lt;/code&gt;在目前流行的标准中还不支持私有变量。我在阅读一篇讲**&lt;code&gt;js&lt;/code&gt;模块化**很不错的文章《&lt;a href=&#34;http://www.adequatelygood.com/JavaScript-Module-Pattern-In-Depth.html&#34;&gt;JavaScript Module Pattern: In-Depth&lt;/a&gt;》时，看到一则谴责作者所说的模块化以及大量运用私有变量违反&lt;code&gt;js&lt;/code&gt;设计初衷的留言，留言如下：&lt;/p&gt;
+&lt;p&gt;总所周知的是，&lt;code&gt;js&lt;/code&gt;在目前流行的标准中还不支持私有变量。我在阅读一篇讲&lt;strong&gt;&lt;code&gt;js&lt;/code&gt;模块化&lt;/strong&gt;很不错的文章《&lt;a href=&#34;http://www.adequatelygood.com/JavaScript-Module-Pattern-In-Depth.html&#34;&gt;JavaScript Module Pattern: In-Depth&lt;/a&gt;》时，看到一则谴责作者所说的模块化以及大量运用私有变量违反&lt;code&gt;js&lt;/code&gt;设计初衷的留言，留言如下：&lt;/p&gt;
 
 &lt;blockquote&gt;
 &lt;p&gt;Comment by &lt;strong&gt;steida&lt;/strong&gt; — March 15, 2010
@@ -1277,17 +1266,16 @@ From: &lt;a href=&#34;http://ajaxian.com/archives/a-deep-dive-and-analysis-of-th
 
 &lt;p&gt;题图：万智【洁斯凯学僧】&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://inside.mcfog.wang/img/2015-q1/ktk14.jpg&#34; alt=&#34;&#34; /&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://inside.mcfog.wang/img/2015-q1/ktk14.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>一己之见第三季 - 神奇的代码问题及其他</title>
-      <link>http://inside.mcfog.wang/2015/01/ichizon-3/</link>
+      <link>https://inside.mcfog.wang/2015/01/ichizon-3/</link>
       <pubDate>Mon, 19 Jan 2015 12:37:15 +0800</pubDate>
       
-      <guid>http://inside.mcfog.wang/2015/01/ichizon-3/</guid>
+      <guid>https://inside.mcfog.wang/2015/01/ichizon-3/</guid>
       <description>
 
 &lt;!--================================!--&gt;
@@ -1406,8 +1394,7 @@ From: &lt;a href=&#34;http://ajaxian.com/archives/a-deep-dive-and-analysis-of-th
 
 &lt;p&gt;不拆子View的最大问题就是渲染复杂，其次是数据收集复杂，这里建议用模版渲染来解决这个问题，关于这个方案建议参考我之前写的&lt;a href=&#34;http://press.mcfog.wang/2013/06/dsl-style-javascript/&#34;&gt;组织大表单应用中javascript代码的一种方法&lt;/a&gt; 后半部分，这里贴一下示意图&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://segmentfault.com/img/bVkCLx&#34; alt=&#34;templated-field.jpg&#34; /&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://segmentfault.com/img/bVkCLx&#34; alt=&#34;templated-field.jpg&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;无论如何，大量if确实是需要避免的，核心思路就是根据不同类型选择不同的｛子View，子模版｝&lt;/p&gt;
 
@@ -1422,17 +1409,16 @@ From: &lt;a href=&#34;http://ajaxian.com/archives/a-deep-dive-and-analysis-of-th
 
 &lt;p&gt;题图：万智【霰散弹】&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://inside.mcfog.wang/img/2015-q1/ts160.jpg&#34; alt=&#34;&#34; /&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://inside.mcfog.wang/img/2015-q1/ts160.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>mcfog的一己之见2</title>
-      <link>http://inside.mcfog.wang/2015/01/ichizon-2/</link>
+      <link>https://inside.mcfog.wang/2015/01/ichizon-2/</link>
       <pubDate>Sun, 11 Jan 2015 14:05:12 +0800</pubDate>
       
-      <guid>http://inside.mcfog.wang/2015/01/ichizon-2/</guid>
+      <guid>https://inside.mcfog.wang/2015/01/ichizon-2/</guid>
       <description>
 
 &lt;!--================================!--&gt;
@@ -1617,17 +1603,16 @@ magic就是那种看上去无比优雅风骚性感，实际工业开发的时候
 
 &lt;p&gt;题图：万智【封口】&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://inside.mcfog.wang/img/2015-q1/m14-35.jpg&#34; alt=&#34;&#34; /&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://inside.mcfog.wang/img/2015-q1/m14-35.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>mcfog的一己之见 新年第一期</title>
-      <link>http://inside.mcfog.wang/2015/01/ichizon-1/</link>
+      <link>https://inside.mcfog.wang/2015/01/ichizon-1/</link>
       <pubDate>Fri, 02 Jan 2015 16:18:14 +0800</pubDate>
       
-      <guid>http://inside.mcfog.wang/2015/01/ichizon-1/</guid>
+      <guid>https://inside.mcfog.wang/2015/01/ichizon-1/</guid>
       <description>
 
 &lt;!--================================!--&gt;
@@ -1724,8 +1709,7 @@ b)方法/流程是随时都可以优化而且应该不断优化的&lt;/p&gt;
 
 &lt;p&gt;题图：万智【鄙视】&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://inside.mcfog.wang/img/2015-q1/ktk69.jpg&#34; alt=&#34;&#34; /&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://inside.mcfog.wang/img/2015-q1/ktk69.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 </description>
     </item>
     

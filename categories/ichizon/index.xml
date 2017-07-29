@@ -5,8 +5,11 @@
     <link>https://inside.mcfog.wang/categories/ichizon/</link>
     <description>Recent content in Ichizon on mc-inside</description>
     <generator>Hugo -- gohugo.io</generator>
+    <copyright>©mcfog All rights reserved.</copyright>
     <lastBuildDate>Fri, 25 Sep 2015 19:09:33 +0800</lastBuildDate>
-    <atom:link href="https://inside.mcfog.wang/categories/ichizon/index.xml" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="https://inside.mcfog.wang/categories/ichizon/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>[一己之见]如何挑选PHP框架？</title>
@@ -14,9 +17,7 @@
       <pubDate>Fri, 25 Sep 2015 19:09:33 +0800</pubDate>
       
       <guid>https://inside.mcfog.wang/2015/09/ichizon-d/</guid>
-      <description>
-
-&lt;h2 id=&#34;如何挑选php框架:c487f4db3cef43481c7ce6af0b03aee9&#34;&gt;如何挑选PHP框架？&lt;/h2&gt;
+      <description>&lt;h2 id=&#34;如何挑选php框架&#34;&gt;如何挑选PHP框架？&lt;/h2&gt;
 
 &lt;p&gt;这个问题是我面试的常用起手问题，所以在SF看到&lt;a href=&#34;http://segmentfault.com/q/1010000003465862&#34;&gt;这个提问&lt;/a&gt;的时候，就抽时间回答了一下。这里做一些整理和补充。&lt;/p&gt;
 
@@ -28,60 +29,11 @@
 &lt;li&gt;框架本身&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&#34;团队成员情况-未来团队成员情况-所在地职业市场情况:c487f4db3cef43481c7ce6af0b03aee9&#34;&gt;团队成员情况 &amp;amp; 未来团队成员情况 &amp;amp; 所在地职业市场情况&lt;/h3&gt;
+&lt;h3 id=&#34;团队成员情况-未来团队成员情况-所在地职业市场情况&#34;&gt;团队成员情况 &amp;amp; 未来团队成员情况 &amp;amp; 所在地职业市场情况&lt;/h3&gt;
 
 &lt;p&gt;如果团队现在和未来都只有你一个人（比如自己的toy project），那选自己最想用的就好。但只要不是这个情况，你最好先得了解市面上常见的各种框架，然后忘记自己的个人偏好。&lt;/p&gt;
 
-&lt;p&gt;了解你的团队成员的现在情况，考虑你的团队未来的发展速度，未来可能加入的团队成员的情况，以及你所在地职业市场情况。打比方说，Laravel经常是个不错的选择，但如果你在产业不发达的小城市，团队又必须高速发展大量招人，选择Laravel可能很快会让你陷进“composer和现代PHP技能培训班”的窘境，而一些更“接地气”的框架则能让你的团队迅速扩张，快速满足业务发展的需求&lt;/p&gt;
-
-&lt;h3 id=&#34;项目生命周期-未来演变方向:c487f4db3cef43481c7ce6af0b03aee9&#34;&gt;项目生命周期 &amp;amp; 未来演变方向&lt;/h3&gt;
-
-&lt;p&gt;有的项目，作为贵司的主营业务是需要长期维护，持续迭代的。而另一些项目可能作为一些边角、过渡的项目，可能做完以后不会再有什么后续的需求。最后还有一些外包／类外包的项目，交付以后就没有需求／后续需求可以当另一个项目。&lt;/p&gt;
-
-&lt;p&gt;再大的项目，需求再多，如果是第三种，无需考虑未来演变的，那么框架的扩展性就能够被牺牲（从而换取开发速度或其他好处），打比方说基于一些成品二次开发的选择就可以被考虑。再小的项目，如果是贵司的主营业务，持续迭代的，那么就算工作量再小，也必须慎重考虑框架的扩展性。&lt;/p&gt;
-
-&lt;p&gt;那么，什么是框架的扩展性呢？ CI是扩展性很好的框架吗？ZendFramework1/2是扩展性很好的框架吗？&lt;/p&gt;
-
-&lt;p&gt;答案是，看未来演变方向。有的项目未来的压力在访问流量大，有的压力在数据量大检索频繁，也有项目压力在需求迭代快，变动频繁而周期短。项目面临的问题越是普遍，那么预设各种解决方案的框架可能越能减少重复造轮子，反之项目面临的问题越是极端，那么轻量化的那些框架可能更适合让你的团队自己研究解决方案对接到框架中。另外，项目维护的时间越长，变动越难预测，采用预设各种解决方案的框架的风险就会越大（那些预设的解决方案恰好能解决你的每个问题的概率越来越小）&lt;/p&gt;
-
-&lt;h3 id=&#34;框架本身的基本素质:c487f4db3cef43481c7ce6af0b03aee9&#34;&gt;框架本身的基本素质&lt;/h3&gt;
-
-&lt;p&gt;性能和跑分。除了phalcon和Yaf两个C实现的框架，其他框架请认为一样快。另外除非你在主持类似新浪微博更换PHP框架这样的事，或者说除非你管理的项目web机器超过100台，请忽略PHP框架的性能因素&lt;/p&gt;
-
-&lt;p&gt;psr和composer亲和性。这是双刃剑，前面已经聊过怎么看待这个特质了。&lt;/p&gt;
-
-&lt;p&gt;安全性。某些框架甚至本身自己有安全漏洞不多说。另外如果框架层面提供了一些安全方面的东西，建议还是要简单看一遍代码，有时那可能反而不如自己写。&lt;/p&gt;
-
-&lt;p&gt;功能性。也就是预设的解决方案的数量和质量，前面有提过。&lt;/p&gt;
-
-&lt;p&gt;模块化程度。框架内的各个部分是否能够自定义，自定义的代价多高。另一个角度是框架的各个部分是否能脱离框架运行。&lt;/p&gt;
-
-&lt;p&gt;表达能力（业务功能需要多少代码量来实现），这三个特性（表达能力、功能性、模块化程度）互相冲突，无法达到三者兼得。功能丰富，模块化程度又高可以随意定制、替换的框架，往往普通的业务代码也要写一堆。一句话能写出一大堆功能的框架，往往模块化程度不理想，不容易自定义。 模块化程度高，而业务代码不啰嗦的框架，则往往没有丰富的预设功能。&lt;/p&gt;
-
-&lt;p&gt;周边生态和活跃程度以及兼容性。活跃的框架就还有成长和改进的空间，但相应过于活跃有时会导致应用无法兼容。另一个指标是周边的生态，有没有其他人基于这个框架开发一些周边的模块／插件之类的东西，以及文档的丰富程度、出问题后能是否容易找到的解决方案等。&lt;/p&gt;
-
-&lt;h2 id=&#34;无招胜有招:c487f4db3cef43481c7ce6af0b03aee9&#34;&gt;“无招胜有招”&lt;/h2&gt;
-
-&lt;h4 id=&#34;谈composer和psr-7和我心目中未来十年的php框架:c487f4db3cef43481c7ce6af0b03aee9&#34;&gt;&amp;ndash; 谈composer和psr-7和我心目中未来十年的PHP框架&lt;/h4&gt;
-
-&lt;p&gt;（本节内容仅仅是我个人的判断，另外基于中国国情，这个未来可能也还是老外先享受到）&lt;/p&gt;
-
-&lt;p&gt;PHP是个相对古老的语言，PHP框架也是个相当古老的概念了。我认为隔壁的NodeJS社区很好的为我们示范了真正“web框架”应有的形态。以依赖解决方案npm为核心，&lt;code&gt;connect&lt;/code&gt;到&lt;code&gt;express&lt;/code&gt;为代表的中间件架构为骨架，周围围绕着星罗密布的数不胜数的中间件。中间件架构设定了web请求和响应的标准接口，周围的其他项目以这些接口为基础开发各种功能。工程师要做的就是找到合适的中间件安插到项目中，或者自己写合适自己情况的中间件（当然最好是开源出来回报社区咯）。于是你会发现相当于“PHP框架”概念的那些项目基本行不通（sails已经是做的最好的了？）&lt;/p&gt;
-
-&lt;p&gt;这也是我对未来PHP框架的判断。大而全的“PHP框架”时代已经过去了。不用composer的，或者假装自己用composer的那些框架没有未来。基于composer的，模块化组件化的项目，未来在强势的输入输出标准统一下，会爆发出惊人的生产力。&lt;code&gt;symfony/http-foundation&lt;/code&gt;本来是个不错的选择，社区也有对应的&lt;a href=&#34;http://stackphp.com/&#34;&gt;中间件化的努力&lt;/a&gt;。但目前看来，怀胎已久的&lt;a href=&#34;http://www.php-fig.org/psr/psr-7/&#34;&gt;PSR-7&lt;/a&gt;更可能成为未来的赢家。有强力的标准和解构化的中间件生态，社区才有充分的竞争，开发者才有充分的选择权，A2框架 视图层巨烂但路由很漂亮，B2框架 路由好用但视图糟糕？下一代A3和B3都一样支持PSR-7，拿回家自己拼接就好！&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;广告时间： 基于这样的判断，&lt;a href=&#34;https://github.com/zendframework/zend-stratigility&#34;&gt;connect的PHP移植&lt;/a&gt;又没有很多star的情况下，我花了一些时间撸了自己的中间件架构&lt;a href=&#34;https://github.com/mcfog/nimo&#34;&gt;mcfog/nimo&lt;/a&gt;，欢迎围观和star&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;这是我在 &lt;a href=&#34;http://segmentfault.com/&#34;&gt;SegmentFault&lt;/a&gt; 上的问题回答选编，遵循&lt;a href=&#34;http://creativecommons.org/licenses/by-sa/3.0/cn/&#34;&gt;CC BY-SA 3.0 CN&lt;/a&gt; 分享&lt;/p&gt;
-
-&lt;p&gt;题图：万智【结构坍塌】&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://inside.mcfog.wang/img/2015-q3/gtc107.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-</description>
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -90,11 +42,9 @@
       <pubDate>Mon, 23 Mar 2015 12:19:23 +0800</pubDate>
       
       <guid>https://inside.mcfog.wang/2015/03/ichizon-c/</guid>
-      <description>
+      <description>&lt;!--================================!--&gt;
 
-&lt;!--================================!--&gt;
-
-&lt;h2 id=&#34;如何从代码规范上避免-python-模块循环引用:2d07b415c68511e1490586b618e9288a&#34;&gt;如何从代码规范上避免 python 模块循环引用？&lt;/h2&gt;
+&lt;h2 id=&#34;如何从代码规范上避免-python-模块循环引用&#34;&gt;如何从代码规范上避免 python 模块循环引用？&lt;/h2&gt;
 
 &lt;p&gt;&lt;a href=&#34;http://segmentfault.com/q/1010000002518251&#34;&gt;问题&lt;/a&gt; by &lt;a href=&#34;http://segmentfault.com/u/v7&#34;&gt;v7&lt;/a&gt;&lt;/p&gt;
 
@@ -110,107 +60,7 @@
 
 &lt;p&gt;抛砖引玉一下，希望引出除了技巧上还有经验上的知识。&lt;/p&gt;
 
-&lt;hr /&gt;
-
-&lt;h2 id=&#34;我的看法:2d07b415c68511e1490586b618e9288a&#34;&gt;我的看法&lt;/h2&gt;
-
-&lt;p&gt;怎么说呢，如果老是觉得碰到循环引用，很可能是模块的分界线划错地方了。可能是把应该在一起的东西硬拆开了，可能是某些职责放错地方了，可能是应该抽象的东西没抽象&lt;/p&gt;
-
-&lt;p&gt;总之微观代码规范可能并不能帮到太多，重要的是更宏观的划分模块的经验技巧，推荐uml，脑图，白板等等图形化的工具先梳理清楚整个系统的总体结构和职责分工&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;!--================================!--&gt;
-
-&lt;h2 id=&#34;有哪些值得一读的优秀开源-js-代码:2d07b415c68511e1490586b618e9288a&#34;&gt;有哪些值得一读的优秀开源 JS 代码&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://segmentfault.com/q/1010000002396706&#34;&gt;问题&lt;/a&gt; by &lt;a href=&#34;http://segmentfault.com/u/bumfod&#34;&gt;bumfod&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;由这个问题启发：&lt;a href=&#34;http://segmentfault.com/q/1010000002396186&#34;&gt;如何阅读源代码？你有读过哪些源代码？晒晒你读源代码的经历……&lt;/a&gt;&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;h2 id=&#34;我的看法-1:2d07b415c68511e1490586b618e9288a&#34;&gt;我的看法&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://backbonejs.org/docs/backbone.html&#34;&gt;Backbone&lt;/a&gt;或者它的轻量版&lt;a href=&#34;https://github.com/paulmillr/exoskeleton/tree/master/lib&#34;&gt;Exoskeleton&lt;/a&gt; 它教你怎么写框架，怎么组织业务逻辑
-jQ读不动的话可以考虑读读&lt;a href=&#34;https://github.com/madrobby/zepto/tree/master/src&#34;&gt;Zepto&lt;/a&gt; 它教你怎么搞定DOM，附赠Ajax
-楼上有人提过的Underscore不错，但未来似乎是属于&lt;a href=&#34;https://github.com/lodash/lodash/blob/master/lodash.js&#34;&gt;lodash&lt;/a&gt;的  它教你怎么摆平复杂数据结构&lt;/p&gt;
-
-&lt;p&gt;最后，虽然不是一个具体的项目，但&lt;a href=&#34;https://github.com/trending?l=javascript&amp;amp;since=weekly&#34;&gt;Github Trending&lt;/a&gt;值得你关注，它告诉你最新最酷的项目是什么&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;!--================================!--&gt;
-
-&lt;h2 id=&#34;请教一个根据时间平均划分请求的计算方法:2d07b415c68511e1490586b618e9288a&#34;&gt;请教一个根据时间平均划分请求的计算方法&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://segmentfault.com/q/1010000000730167&#34;&gt;问题&lt;/a&gt; by &lt;a href=&#34;http://segmentfault.com/u/liwei_161273&#34;&gt;李惟&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;问题很简单：&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;一个小时有3600秒，就以这个为单位，按照每秒来的方式发起请求&lt;/li&gt;
-&lt;li&gt;如果在这个期间有36次请求，那么就是1次/100秒，如果有360次请求，就是1次/10秒&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;这个不难，那如果说：&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;3600秒有19次请求，那么就是189.47次，那肯定不可能是1次/189.47秒，因为是按照秒来发起请求的，但是如果按照1次/190秒来算，那在3600秒里面肯定是完不成19次请求的，如果按照1次/188秒来算，就分配的不是特别均匀（后面还空出28秒），也就是说如何尽可能的将19均分在3600上，然后面空出的数字越少越好&lt;/li&gt;
-&lt;li&gt;如果说3600秒请求7520次请求，如何能算出每秒需发起多少次请求才能平均且合理呢？&lt;/li&gt;
-&lt;li&gt;如果说3600秒请求31次请求，如何能算出多少秒发起一次请求比较平均且合理呢？&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;hr /&gt;
-
-&lt;h2 id=&#34;我的看法-2:2d07b415c68511e1490586b618e9288a&#34;&gt;我的看法&lt;/h2&gt;
-
-&lt;p&gt;把累积的小数误差体现在后面的计算中即可消灭最后的累积误差。&lt;/p&gt;
-
-&lt;p&gt;也就是说每次使用“剩余时间”和“剩余次数”而非“总时间”和“总次数”来计算，这样每次向下取整，剩余时间就会变多一些，后面就更倾向于向上取整一些，反之亦然。误差会在不超过正负1的区间内摇摆而不会累积&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-py&#34;&gt;
-def scheduleRequest(reqCount, time = 3600):
-    result = []
-
-    remainTime = time
-
-    for i in xrange(0, reqCount):
-        t = round(remainTime / (reqCount - i))
-
-        if(len(result) &amp;gt; 0):
-            result.append(result[-1] + t)
-        else:
-            result.append(t)
-
-        remainTime -= t
-
-    return result
-
-print(scheduleRequest(11))
-print(scheduleRequest(12))
-print(scheduleRequest(13))
-print(scheduleRequest(73, 36))
-
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;结果（最后那个请求次数超过时间两倍的例子，为了展示方便缩减为36秒）&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;[327.0, 654.0, 981.0, 1308.0, 1635.0, 1963.0, 2290.0, 2618.0, 2945.0, 3273.0, 3600.0]&lt;br /&gt;
-[300.0, 600.0, 900.0, 1200.0, 1500.0, 1800.0, 2100.0, 2400.0, 2700.0, 3000.0, 3300.0, 3600.0]&lt;br /&gt;
-[276.0, 553.0, 830.0, 1107.0, 1384.0, 1661.0, 1938.0, 2215.0, 2492.0, 2769.0, 3046.0, 3323.0, 3600.0]&lt;br /&gt;
-[0.0, 1.0, 1.0, 2.0, 2.0, 3.0, 3.0, 4.0, 4.0, 5.0, 5.0, 6.0, 6.0, 7.0, 7.0, 8.0, 8.0, 9.0, 9.0, 10.0, 10.0, 11.0, 11.0, 12.0, 12.0, 13.0, 13.0, 14.0, 14.0, 15.0, 15.0, 16.0, 16.0, 17.0, 17.0, 18.0, 18.0, 19.0, 19.0, 20.0, 20.0, 21.0, 21.0, 22.0, 22.0, 23.0, 23.0, 24.0, 24.0, 25.0, 25.0, 26.0, 26.0, 27.0, 27.0, 28.0, 28.0, 29.0, 29.0, 30.0, 30.0, 31.0, 31.0, 32.0, 32.0, 33.0, 33.0, 34.0, 34.0, 35.0, 35.0, 36.0, 36.0]&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;这是我在 &lt;a href=&#34;http://segmentfault.com/&#34;&gt;SegmentFault&lt;/a&gt; 上的问题回答选编，遵循&lt;a href=&#34;http://creativecommons.org/licenses/by-sa/3.0/cn/&#34;&gt;CC BY-SA 3.0 CN&lt;/a&gt; 分享&lt;/p&gt;
-
-&lt;p&gt;题图：万智【精研时序】&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://inside.mcfog.wang/img/2015-q1/avr81.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-</description>
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -219,163 +69,15 @@ print(scheduleRequest(73, 36))
       <pubDate>Mon, 16 Mar 2015 16:17:26 +0800</pubDate>
       
       <guid>https://inside.mcfog.wang/2015/03/ichizon-b/</guid>
-      <description>
+      <description>&lt;!--================================!--&gt;
 
-&lt;!--================================!--&gt;
-
-&lt;h2 id=&#34;有哪些知名的网站是通过建站程序或建站程序二次开发搭建的:15dcb96101bf5c27445d964f18e9cd9e&#34;&gt;有哪些知名的网站是通过建站程序或建站程序二次开发搭建的？&lt;/h2&gt;
+&lt;h2 id=&#34;有哪些知名的网站是通过建站程序或建站程序二次开发搭建的&#34;&gt;有哪些知名的网站是通过建站程序或建站程序二次开发搭建的？&lt;/h2&gt;
 
 &lt;p&gt;&lt;a href=&#34;http://segmentfault.com/q/1010000002503122&#34;&gt;问题&lt;/a&gt; by &lt;a href=&#34;http://segmentfault.com/u/llq&#34;&gt;路西llq&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;我想建一个兴趣站，类似创业邦，时光网，铁血网这样的网站能通过建站程序做到吗？我目前有学过建站，仍感觉无从下手，想知道建站程序能不能胜任，或者又只能等团队组建好了再开始做？&lt;/p&gt;
 
-&lt;hr /&gt;
-
-&lt;h2 id=&#34;我的看法:15dcb96101bf5c27445d964f18e9cd9e&#34;&gt;我的看法&lt;/h2&gt;
-
-&lt;p&gt;题主已经问过多次此类问题了&lt;/p&gt;
-
-&lt;p&gt;我想说无论你问多久，问什么，你的站都不会突然就建起来了&lt;/p&gt;
-
-&lt;p&gt;如果你打算自己搞定技术方面，那么就赶紧去学技术&lt;br /&gt;
-如果你打算找人搞定技术方面，那么就赶紧去找技术合伙人&lt;/p&gt;
-
-&lt;p&gt;如果你拿不定主意，我建议找人搞定。&lt;/p&gt;
-
-&lt;p&gt;至于到底用开源合适还是自己写合适，这完全看你的预算和规划，虽然可能95%的情况都是开源合适&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;!--================================!--&gt;
-
-&lt;h2 id=&#34;js中如何继承实现array的子类:15dcb96101bf5c27445d964f18e9cd9e&#34;&gt;js中如何继承实现Array的子类&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://segmentfault.com/q/1010000002557358&#34;&gt;问题&lt;/a&gt; by &lt;a href=&#34;http://segmentfault.com/u/chinesedfan&#34;&gt;chinesedfan&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;试想需要实现一个数组的子类ZeroArray，其构造函数接收一个长度参数n，自动初始化数组元素都为0。&lt;/p&gt;
-
-&lt;p&gt;我试图继承原生的Array类型，成员变量通过apply()方法窃取，成员方法则通过原型链引用。代码如下：&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;function ZeroArray(n) {
-    // 构造函数窃取
-    Array.apply(this);
-
-    // 自动塞入0元素
-    for (var i = 0; i &amp;lt; n; i++) {
-        this.push(0);
-    }
-}
-
-// 利用空函数作为过渡，ZeroArray原型的原型指向Array.prototype
-// 既建立原型链，又不影响Array.prototype本身，而且防止Array构造函数重复调用两次
-var F = function() {};
-F.prototype = Array.prototype;
-ZeroArray.prototype = new F();
-ZeroArray.prototype.constructor = ZeroArray;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;那么问题来了：&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;Object.getOwnPropertyDescriptor(new Array(), &amp;quot;length&amp;quot;)
-// 输出：Object {value: 0, writable: true, enumerable: false, configurable: false}
-Object.getOwnPropertyDescriptor(new ZeroArray(3), &amp;quot;length&amp;quot;)
-// 输出：Object {value: 3, writable: true, enumerable: true, configurable: true}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;为什么两者的length属性enumerable/configurable会不同？是不是因为Array本质上并不是Object？&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;h2 id=&#34;我的看法-1:15dcb96101bf5c27445d964f18e9cd9e&#34;&gt;我的看法&lt;/h2&gt;
-
-&lt;p&gt;单纯的解决方案只要脚痛医脚就好 &lt;code&gt;Object.defineProperty(this, &#39;length&#39;, {enumerable: false, configurable: false, writable: true});&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;具体原因我观察了一下Array的行为&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;&amp;gt; Array.call({})
-[]
-&amp;gt; Array.call(undefined)
-[]
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;瞧，this是啥完全不影响Array工作，Array这个constructor应该是类似&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;function Array() {
-  var array = [Native Code];
-  return array;
-}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;的形式（并非修饰this的风格），所以代码里的&lt;code&gt;Array.apply&lt;/code&gt;完全没有起到效果。&lt;/p&gt;
-
-&lt;p&gt;祭出翻ECMA大法，很快就能找到标准里对应的行为&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.ecma-international.org/ecma-262/5.1/#sec-15.4.1&#34;&gt;15.4.1 The Array Constructor Called as a Function&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;length的行为也有&lt;a href=&#34;http://www.ecma-international.org/ecma-262/5.1/#sec-15.4.5.2&#34;&gt;描述&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;关于Array究竟是不是Object，答案毫无疑问是肯定的，JS中除了原始值(null/undefined/数字/布尔/字符串)之外一切皆对象&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;在我看来，题主掉到“以其他OO语言经验看JS”的大坑里了，有大量的材料会把人往这个坑里带，他们标题往往叫“JS OOP指南／入门／精通”，“JS实现继承的X种方法”等等&lt;/p&gt;
-
-&lt;p&gt;实际上，如果需求只是“接收一个长度参数n，自动初始化数组元素都为0”的话，更好的实现可能是&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;function makeZeroArray(n) {
-  var arr = [];
-  while(n-- &amp;gt; 0) {
-    arr[arr.length] = 0;
-  }
-
-  return arr;
-}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;继承在JS中并非一等居民，而是普通的一个模式而已，合适用就用，不合适没必要硬套&lt;/p&gt;
-
-&lt;p&gt;补充一下，JS中没有类的概念，JS中没有类的概念，JS中没有类的概念。
-JS里，对象才是一等居民，我们写的是方便地创建某种对象的构造器，而不是类&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;!--================================!--&gt;
-
-&lt;h2 id=&#34;登录系统怎么样才是最安全的:15dcb96101bf5c27445d964f18e9cd9e&#34;&gt;登录系统怎么样才是最安全的&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://segmentfault.com/q/1010000000575911&#34;&gt;问题&lt;/a&gt; by &lt;a href=&#34;http://segmentfault.com/u/woshicixide&#34;&gt;woshicixide&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;现在很多公司关于网站登录上都是怎么设计的，怎么样才能确保万无一失&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;h2 id=&#34;我的看法-2:15dcb96101bf5c27445d964f18e9cd9e&#34;&gt;我的看法&lt;/h2&gt;
-
-&lt;p&gt;没有万无一失，只有见招拆招&lt;/p&gt;
-
-&lt;p&gt;安全是从操作系统开始到开发人员，管理人员个人素养全方位的命题&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;操作系统：关注业界新闻，及时打补丁。正确配置，权限最小化，强密码定期更换&lt;/li&gt;
-&lt;li&gt;数据库/web server：及时打补丁。正确配置，权限最小化，强密码定期更换&lt;/li&gt;
-&lt;li&gt;应用逻辑：科学的hash，收拢的鉴权服务，最小知识原则，XSS和各种协议劫持的防止，频率限制，恶意行为和异常流量监测&lt;/li&gt;
-&lt;li&gt;传输协议：https、证书等&lt;/li&gt;
-&lt;li&gt;开发人员：不要把密码存在文件里，更不要上传到github（别笑），不要记住密码，不要统一密码，不要把密码写在邮件里，不要把密码写在笔记服务里&lt;/li&gt;
-&lt;li&gt;开发人员/管理人员：个人信息安全，不要被乱点文件，不要乱装软件。社工知识，不要相信同事在邮件和IM上和你说让你传一些敏感信息给他，或者他传东西让你点开（不用windows是个更好的选择）。如果和360没有合作关系就不要装360。&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;还有如果公司用WIFI，不要广播SSID。不要用带着办公VPN、邮箱、IM等任何工作有关的账户的电脑连接其他免费WIFI，星巴克WIFI等WIFI热点&lt;/p&gt;
-
-&lt;p&gt;好累，简直列不完，就先告一段落吧&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;这是我在 &lt;a href=&#34;http://segmentfault.com/&#34;&gt;SegmentFault&lt;/a&gt; 上的问题回答选编，遵循&lt;a href=&#34;http://creativecommons.org/licenses/by-sa/3.0/cn/&#34;&gt;CC BY-SA 3.0 CN&lt;/a&gt; 分享&lt;/p&gt;
-
-&lt;p&gt;题图：万智【拒斥恶行】&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://inside.mcfog.wang/img/2015-q1/plc12.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-</description>
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -384,83 +86,15 @@ JS里，对象才是一等居民，我们写的是方便地创建某种对象的
       <pubDate>Mon, 09 Mar 2015 12:04:02 +0800</pubDate>
       
       <guid>https://inside.mcfog.wang/2015/03/ichizon-a/</guid>
-      <description>
+      <description>&lt;!--================================!--&gt;
 
-&lt;!--================================!--&gt;
-
-&lt;h2 id=&#34;类似淘宝用php做前端-java做后端的架构是怎样的:156241fca14a6dbd9a801918f99835b7&#34;&gt;类似淘宝用php做前端，java做后端的架构是怎样的？&lt;/h2&gt;
+&lt;h2 id=&#34;类似淘宝用php做前端-java做后端的架构是怎样的&#34;&gt;类似淘宝用php做前端，java做后端的架构是怎样的？&lt;/h2&gt;
 
 &lt;p&gt;&lt;a href=&#34;http://segmentfault.com/q/1010000002581056&#34;&gt;问题&lt;/a&gt; by &lt;a href=&#34;http://segmentfault.com/u/ziav&#34;&gt;Ziav&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;RT&amp;hellip;..顺便问一下，像类似淘宝这样的大型网站，为什么会使用php来做前端呢？php本身不是偏后端的语言吗？而且对于前端而言，不是可以用js来处理后端的数据吗？&lt;/p&gt;
 
-&lt;hr /&gt;
-
-&lt;h2 id=&#34;我的看法:156241fca14a6dbd9a801918f99835b7&#34;&gt;我的看法&lt;/h2&gt;
-
-&lt;p&gt;本质上前端后端的区分是以“到用户的距离”划分的&lt;/p&gt;
-
-&lt;p&gt;比较通行的划分是在浏览器/客户端到服务器之间，以用户的http请求为准划线，js css dom flash ios android这些算前，后端负责业务和数据存储。因为通行的开源方案，rdbms配合缓存，队列，开源搜索引擎等等足以支持，于是这个直接的划分比较有效。客户端有十种，服务器也就不到百台，大家的责任任务比较平衡。&lt;/p&gt;
-
-&lt;p&gt;当厂子的量级大到一定程度，简单的开源方案很难盖的住大量的用户，水平扩容，立体的灾备等等问题。这时客户端还是10种，可服务器却一下子百台千台，一个机房一个机房来算了。此时，上述的普通划分就没有意义了。此时划分线便自然向后移动到业务和存储/支持之间，有了题主描述的“java后，php+js前”或是“cpp后，php+js前”之类的划分。
-并不是php的角色变化了，而是原来insert into就写完的下单变得需要大量开发负责各种server运维告警负载均衡读写分离等等等等事情。
-换种说法，10个开发的业务可能5个写jscss，5个写php，但100个开发的业务，可能就是10个jscss，10个安卓ios，35个写php，30个写c/java给php调用，还要有10个运维，5个组长&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;!--================================!--&gt;
-
-&lt;h2 id=&#34;将html转为markdown格式的难点在哪-有什么解决思路:156241fca14a6dbd9a801918f99835b7&#34;&gt;将html转为markdown格式的难点在哪，有什么解决思路？&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://segmentfault.com/q/1010000002541921&#34;&gt;问题&lt;/a&gt; by &lt;a href=&#34;http://segmentfault.com/u/wtser&#34;&gt;王铁手&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;试过 github 上的很多开源项目，结果都很类似。对简单的 DOM 结构转的还能接受，但是页面稍稍复杂，嵌套了其他标签如 &lt;code&gt;&amp;lt;span&amp;gt;&lt;/code&gt; &lt;code&gt;&amp;lt;table&amp;gt;&lt;/code&gt; 这种，就很难转换好，不知道有什么方法或转换策略能缓解这种情况。&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;h2 id=&#34;我的看法-1:156241fca14a6dbd9a801918f99835b7&#34;&gt;我的看法&lt;/h2&gt;
-
-&lt;p&gt;span和table没有对应的markdown语法（table有变种markdown语法）&lt;/p&gt;
-
-&lt;p&gt;包括html的属性 class等等也没有markdown对应&lt;/p&gt;
-
-&lt;p&gt;所以转换的时候通常只能舍弃或者直接保留html（因为markdown支持直接内嵌html）&lt;/p&gt;
-
-&lt;p&gt;作为通用解决方案，我觉得很难找到更好的方法了，但聚焦到独立的场景，打比方说希望&lt;code&gt;&amp;lt;span class=&amp;quot;strong&amp;gt;word&amp;lt;/span&amp;gt;&lt;/code&gt; =&amp;gt; &lt;code&gt;**word**&lt;/code&gt; 的话还是很容易实施的，可以用&lt;code&gt;cheerio&lt;/code&gt;之类的dom工具预处理，抓&lt;code&gt;span.class&lt;/code&gt;先转换成&lt;code&gt;strong&lt;/code&gt;标签然后再送到开源的通用html2md实现里即可&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;!--================================!--&gt;
-
-&lt;h2 id=&#34;有哪些知名的网站是通过建站程序或建站程序二次开发搭建的:156241fca14a6dbd9a801918f99835b7&#34;&gt;有哪些知名的网站是通过建站程序或建站程序二次开发搭建的？&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://segmentfault.com/q/1010000002503122&#34;&gt;问题&lt;/a&gt; by &lt;a href=&#34;http://segmentfault.com/u/llq&#34;&gt;路西llq&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;我想建一个兴趣站，类似创业邦，时光网，铁血网这样的网站能通过建站程序做到吗？我目前有学过建站，仍感觉无从下手，想知道建站程序能不能胜任，或者又只能等团队组建好了再开始做？&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;h2 id=&#34;我的看法-2:156241fca14a6dbd9a801918f99835b7&#34;&gt;我的看法&lt;/h2&gt;
-
-&lt;p&gt;题主已经问过多次此类问题了&lt;/p&gt;
-
-&lt;p&gt;我想说无论你问多久，问什么，你的站都不会突然就建起来了&lt;/p&gt;
-
-&lt;p&gt;如果你打算自己搞定技术方面，那么就赶紧去学技术
-如果你打算找人搞定技术方面，那么就赶紧去找技术合伙人&lt;/p&gt;
-
-&lt;p&gt;如果你拿不定主意，我建议找人搞定。&lt;/p&gt;
-
-&lt;p&gt;至于到底用开源合适还是自己写合适，这完全看你的预算和规划，虽然可能95%的情况都是开源合适&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;这是我在 &lt;a href=&#34;http://segmentfault.com/&#34;&gt;SegmentFault&lt;/a&gt; 上的问题回答选编，遵循&lt;a href=&#34;http://creativecommons.org/licenses/by-sa/3.0/cn/&#34;&gt;CC BY-SA 3.0 CN&lt;/a&gt; 分享&lt;/p&gt;
-
-&lt;p&gt;题图：万智【召集战团】&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://inside.mcfog.wang/img/2015-q1/gtc142.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-</description>
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -469,109 +103,15 @@ JS里，对象才是一等居民，我们写的是方便地创建某种对象的
       <pubDate>Mon, 02 Mar 2015 11:35:42 +0800</pubDate>
       
       <guid>https://inside.mcfog.wang/2015/03/ichizon-9/</guid>
-      <description>
+      <description>&lt;!--================================!--&gt;
 
-&lt;!--================================!--&gt;
-
-&lt;h2 id=&#34;學習好一門編程語言要關注哪些地方:a16965cf5369f3d2be6b8e3f99ac42f6&#34;&gt;學習好一門編程語言要關注哪些地方？&lt;/h2&gt;
+&lt;h2 id=&#34;學習好一門編程語言要關注哪些地方&#34;&gt;學習好一門編程語言要關注哪些地方？&lt;/h2&gt;
 
 &lt;p&gt;&lt;a href=&#34;http://segmentfault.com/q/1010000002427856&#34;&gt;问题&lt;/a&gt; by &lt;a href=&#34;http://segmentfault.com/u/mexiqq&#34;&gt;MexiQQ&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;如題所示，咋樣才算是學習好了一門編程語言？就比如拿 swift 來說吧&lt;/p&gt;
 
-&lt;hr /&gt;
-
-&lt;h2 id=&#34;我的看法:a16965cf5369f3d2be6b8e3f99ac42f6&#34;&gt;我的看法&lt;/h2&gt;
-
-&lt;p&gt;标题和内容是两个问题啊喂……&lt;/p&gt;
-
-&lt;p&gt;掌握（实用的）编程语言往往分为两大块，语言本身和周边类库／框架，这两块相辅相成缺一不可&lt;/p&gt;
-
-&lt;p&gt;就语言本身来说，最重要的是理解这门语言的抽象机制／编程范式：早期的语言可能相对单纯，纯过程式，纯面向对象，而多数现代通用语言往往是多范式的，往往即支持面向对象又支持面向过程，还有或多或少的函数式，这种混合的比例和风格决定了整门语言的风格。有的语言会有一些“核心概念”，拿掉以后会直接洞穿整个根基的重要概念／机制（比如JS的原型，Java的接口，C的指针），那么抓住这些核心概念突破是个好主意；而另一些语言可能没有这样明显的核心，这类语言往往混合多种其他语言的特色，那么可以通过他借鉴了哪些特性，做了哪些调整，又没有借鉴哪些特性来入手。重要的是“味道”，写Java就要有Java味道（而不是试图用Java实现一个动态语言的子集），写JS就要有JS的味道（而不是试图搞接口，封装之类）。而有一些味道是所有语言共通追求的比如可读可维护（恕我排除了brainfuck……），这也可以成为突破口（比如这门语言的哪些特性增强了可读性？）&lt;/p&gt;
-
-&lt;p&gt;另外一块就是周边类库包括工具集了，我经常用学英文打比方，前面那块可能对应语法，而类库就相当于词汇了，这门语言的主要应用场景在哪里，在这些场景下有哪些内置或开源的类库可以用，不同类库之间的优缺点如何，怎么选择合适的类库，怎么让几个不同的类库在一起融洽地工作。什么样的代码适合抽离成类库，自己写类库的时候要注意什么。这门语言有哪些常见的辅助工具。&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;我觉得学好一门语言的主要标志就是它从你的思考中消失了，你发现你考虑如何写代码的时候的思维过程和这门具体的语言没有关系，“怎么用XX实现YY”之类的问题从来没有出现，更没有打断你的思路&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;!--================================!--&gt;
-
-&lt;h2 id=&#34;如何将bootstrap的默认字体改为微软雅黑:a16965cf5369f3d2be6b8e3f99ac42f6&#34;&gt;如何将bootstrap的默认字体改为微软雅黑？&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://segmentfault.com/q/1010000002422024&#34;&gt;问题&lt;/a&gt; by &lt;a href=&#34;http://segmentfault.com/u/zengdamo&#34;&gt;zengdamo&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;如题，我正在用joomla搭建网站，引用了bootstrap作为css样式。
-但是目前默认的字体是宋体，这是不能忍受的。
-我在网上找到了如下的解决办法 ：&lt;a href=&#34;http://www.imooc.com/wenda/detail/214057&#34;&gt;http://www.imooc.com/wenda/detail/214057&lt;/a&gt; 或者 &lt;a href=&#34;http://www.igooda.cn/jzjl/20130914360.html&#34;&gt;http://www.igooda.cn/jzjl/20130914360.html&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;但是照做之后没有改变，网站的字体还是宋体。
-请问有什么办法能将默认字体改为微软雅黑吗？&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;h2 id=&#34;我的看法-1:a16965cf5369f3d2be6b8e3f99ac42f6&#34;&gt;我的看法&lt;/h2&gt;
-
-&lt;p&gt;直接改就行 &lt;a href=&#34;https://github.com/twbs/bootstrap/blob/v3.3.1/less/variables.less#L45&#34;&gt;https://github.com/twbs/bootstrap/blob/v3.3.1/less/variables.less#L45&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;有时候我真觉得bootstrap最大的败笔就是直接提供css下载&lt;/em&gt;&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;!--================================!--&gt;
-
-&lt;h2 id=&#34;phper-进阶困惑:a16965cf5369f3d2be6b8e3f99ac42f6&#34;&gt;phper  进阶困惑&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://segmentfault.com/q/1010000000461429&#34;&gt;问题&lt;/a&gt; by &lt;a href=&#34;http://segmentfault.com/u/ptao&#34;&gt;葡了个萄&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;经朋友推荐来到SF 感觉很不错&amp;hellip;
-回到正题,作为一名phper快一年的时间,这是指开发时间不包括自学时间..
-但是慢慢的发现自己处于一个瓶颈中无法走出,提高很慢&amp;hellip;
-自己目前也能独立使用各种框架进行项目的开发,但这些好像都是属于PHP初级知识范围内的吧??(自己划分的).对于其他的知识 譬如 PHP的cli模式  线程问题.还有一些其他的PHP知识想去深入的了解自己也gg过很多资料,但是还无从下手的感觉,希望SF的大大能够给予解惑 万分感谢&lt;br /&gt;
-PS 本人非计算机专业 PHP是大学偶然中接触之后有兴趣开始学习的..求各位大大给予建议和帮助.&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;h2 id=&#34;我的看法-2:a16965cf5369f3d2be6b8e3f99ac42f6&#34;&gt;我的看法&lt;/h2&gt;
-
-&lt;p&gt;我觉得这是典型的舒适区问题……你能很好的满足工作需求了，更牛逼的cli，线程，zend之类的工作上项目上用不到（多数项目确实用不到），没有需求/老板之类的外界来push你，于是你感觉很难提高&lt;/p&gt;
-
-&lt;p&gt;我的建议有三条，我都各自用过这些方法来冲出舒适区，仅供参考&lt;/p&gt;
-
-&lt;h3 id=&#34;nightjob:a16965cf5369f3d2be6b8e3f99ac42f6&#34;&gt;NightJob&lt;/h3&gt;
-
-&lt;p&gt;不知道你有没读过《黑客与画家》，这里说的NightJob就是你在工作之余，下班，周末来作的项目。无需考虑盈利，只需要做你最想做的事情，你自己是产品经理负责规划，自己是老板负责挤出工作之余的时间，自己是开发负责找最cool的技术来实现。&lt;/p&gt;
-
-&lt;p&gt;我个人的NightJob有很多很多，绝大多数最后都是0用户，自己写不下去了，但每一次从发现灵感，尝试去做，最后做了个半成品，渐渐遇到困难，克服了一些困难的过程都对自己的成长有很大帮助。每次反思“啊那个项目怎么最后就做不下去了”也都很有收获。&lt;/p&gt;
-
-&lt;h3 id=&#34;overjob:a16965cf5369f3d2be6b8e3f99ac42f6&#34;&gt;OverJob&lt;/h3&gt;
-
-&lt;p&gt;顺势给第二条建议起了个这么个名字，就是工作之余，想想有啥可以额外做的小工具，mini项目，做出来可以略微提高一点工作效率的。比如我做的事情是&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;我司内部有一个MySQL缓存中间件，负责在web机器和DB之间做cache，一直没有图形界面的，我花了一些时间（嗯，包括一次周五额外加班通宵），日了一个网页版的图形界面出来，开发的时候不需要搞那些命令，直接开网页，就像PMA那样就可以控制里面的内容了&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;这样的事情和老板说，他肯定不会批时间给你做，但实际上做出来以后确实是对开发效率有一定提升的。和NightJob一样，因为是你主动自发做的，所以你可以尽情发挥，用擦上边的各种你想熟悉的技术。比起NightJob来说虽然可能选题范围稍微窄一些，事情本身的有趣程度也略逊，但好在做出来以后可以shock到你的老板，可以让你的同事对你刮目相看。&lt;/p&gt;
-
-&lt;h3 id=&#34;成为水泥:a16965cf5369f3d2be6b8e3f99ac42f6&#34;&gt;成为水泥&lt;/h3&gt;
-
-&lt;p&gt;最后，这条建议就是完全关于正经工作的。既然你现在感觉有余力，可以比较好的完成你的份内工作，可以把你的眼光投向四周：你的同事有什么工作是摆不平的，或者做的不够好的？如果这件事你能做的很好，那么找机会花时间去教他，提高他的水平。如果这件事你也不那么擅长，那就去学，变得擅长，可以考虑和他聊聊然后和你的老板聊聊，告诉他们：这事儿我比较能干，把这份事情搞过来自己做，把自己做惯的“简单”一些的任务丢掉一部分（以夯实你学习的成果）&lt;/p&gt;
-
-&lt;p&gt;水泥的意思就是首先能填充到缝隙之中，还能慢慢变硬，让大楼让整个团队坚硬无比，也让自己能适应任何需求。&lt;/p&gt;
-
-&lt;p&gt;后者对自己的提升比较明显：你丢掉了一些做惯的不有趣的事儿，拿到了新的有挑战的事儿，学到了新的技能，但其实我更喜欢前者，也就是提高同事的水平的机会。这不仅能收获他的好感度，老板的好感度，还能让你自己的基础更扎实（别人学习过程中提出的问题很多时候能正中自己的软肋），一石二鸟，一般人我不告诉他的。&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;这是我在 &lt;a href=&#34;http://segmentfault.com/&#34;&gt;SegmentFault&lt;/a&gt; 上的问题回答选编，遵循&lt;a href=&#34;http://creativecommons.org/licenses/by-sa/3.0/cn/&#34;&gt;CC BY-SA 3.0 CN&lt;/a&gt; 分享&lt;/p&gt;
-
-&lt;p&gt;题图：万智【丰足成长】&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://inside.mcfog.wang/img/2015-q1/avr167.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-</description>
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -580,11 +120,9 @@ PS 本人非计算机专业 PHP是大学偶然中接触之后有兴趣开始学�
       <pubDate>Mon, 23 Feb 2015 00:09:31 +0800</pubDate>
       
       <guid>https://inside.mcfog.wang/2015/02/ichizon-8/</guid>
-      <description>
+      <description>&lt;!--================================!--&gt;
 
-&lt;!--================================!--&gt;
-
-&lt;h2 id=&#34;编写js效果的时候-大家一般是怎么去构思的:eb3d3d6a1b4a553765c54016019577a4&#34;&gt;编写js效果的时候, 大家一般是怎么去构思的?&lt;/h2&gt;
+&lt;h2 id=&#34;编写js效果的时候-大家一般是怎么去构思的&#34;&gt;编写js效果的时候, 大家一般是怎么去构思的?&lt;/h2&gt;
 
 &lt;p&gt;&lt;a href=&#34;http://segmentfault.com/q/1010000002555492&#34;&gt;问题&lt;/a&gt; by &lt;a href=&#34;http://segmentfault.com/u/doudoudragon&#34;&gt;douDouDragon&lt;/a&gt;&lt;/p&gt;
 
@@ -592,85 +130,7 @@ PS 本人非计算机专业 PHP是大学偶然中接触之后有兴趣开始学�
 
 &lt;p&gt;一般是直接抄上键盘开干, 还是有什么更好的思考构造方法? 更成熟的工作习惯呢?&lt;/p&gt;
 
-&lt;hr /&gt;
-
-&lt;h2 id=&#34;我的看法:eb3d3d6a1b4a553765c54016019577a4&#34;&gt;我的看法&lt;/h2&gt;
-
-&lt;p&gt;轮播这种普遍的效果一般不会生造轮子……&lt;/p&gt;
-
-&lt;p&gt;真要自己撸的话，我&lt;strong&gt;一开始基本不会考虑复用&lt;/strong&gt;，因为真的自己撸一定是“找不到合适的轮子”，那基本上代表了业务场景很难复用。而且，真的发现可以复用的时候，再重构代码来提公用部分反而比较高效。因为为了业务写的代码，基本没有时间仔细梳理文档，当初留的扩展性过了三个月很容易就变成坑了。“没有思路的时候不谈复用，只求最简实现”&lt;/p&gt;
-
-&lt;p&gt;但是，假设我做了N遍轮播，找了M个轮子都觉得不顺手，同时业务又不紧或者下班有时间的时候，我就会以冲动开始造轮子了，这时候我会参考M个轮子各自的优缺点，决定自己的这个轮子究竟如何在扩展性和易用性上取到平衡点，到这时你一定对M个轮子各种吐槽，集合你N遍轮播碰到的各种情况，顺势而为，呼啦啦一个晚上就能轻松撸出自己的轮子，然后哼着歌套到项目里试试，效果好，你学到了，效果不好，你也学到了。如果你还能试着拉你的小伙伴一起来用，听听他的评价，那你能学到更多。慢慢的，你碰到没做几次的效果甚至第一次做的效果，心里也还是有数，嗯，这里留个配置，哪里暴露个接口，以后会爽。&lt;/p&gt;
-
-&lt;p&gt;当然，你可能会从地上的坑里飞出来，掉到天上的坑里去：你开始_过度设计_，做什么都插件，模块，复用，然后你发现你花了很多时间写的这些插件，模块，复用让其他同事无法理解你的代码，让你的代码和小伙伴的代码格格不入，当初留的扩展性很少用上，更糟糕的是小伙伴来写的时候他根本不理解你预留的扩展性，他会再自己写一套他的……&lt;/p&gt;
-
-&lt;p&gt;最后，你看到一个需求，低头掐指一算时间多充裕，小伙伴多信你，外面的轮子靠谱不，自己造轮子能达到好效果不，不造轮子直接强撸又怎样，双眼猛地一亮抄起键盘啪啪啪&lt;/p&gt;
-
-&lt;p&gt;到此神功大成，可喜可贺&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;!--================================!--&gt;
-
-&lt;h2 id=&#34;如何追踪页面前端特效是由哪个js执行的:eb3d3d6a1b4a553765c54016019577a4&#34;&gt;如何追踪页面前端特效是由哪个JS执行的？&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://segmentfault.com/q/1010000002505622&#34;&gt;问题&lt;/a&gt; by &lt;a href=&#34;http://segmentfault.com/u/mysic&#34;&gt;Mysic&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;一个页面中一般会引入很多独立的JS文件。如何去定位某个特效是由哪个JS执行的呢？谢谢&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;h2 id=&#34;我的看法-1:eb3d3d6a1b4a553765c54016019577a4&#34;&gt;我的看法&lt;/h2&gt;
-
-&lt;p&gt;chrome可以针对元素被改变打断断点&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://sfault-image.b0.upaiyun.com/148/870/1488709004-54c0b3da4f2f8_articlex&#34; alt=&#34;图片描述&#34; /&gt;&lt;/p&gt;
-
-&lt;!--================================!--&gt;
-
-&lt;h2 id=&#34;如何阻止-rm-rf:eb3d3d6a1b4a553765c54016019577a4&#34;&gt;如何阻止&amp;rdquo;rm -rf /&amp;rdquo;&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://segmentfault.com/q/1010000002457343&#34;&gt;问题&lt;/a&gt; by &lt;a href=&#34;http://segmentfault.com/u/liangyi&#34;&gt;两仪&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;前天  敲命令的时候  敲的玩我  一部小心敲了 sudo rm -rf / 并且按了回车  过了几秒才反映过来  不过已经玩了   mac上一些运用已经被删除了   没做备份   只好花了一天时间重新安装。&lt;/p&gt;
-
-&lt;p&gt;那么问题来了，如何禁止执行 上面的命令  或者给个提示也行&lt;/p&gt;
-
-&lt;p&gt;然后在问个问题，TimeMachine做备份  是不是要整个移动硬盘 做备份。我运行它的时候  老报没有Airport找不到   。&lt;/p&gt;
-
-&lt;p&gt;各位看管 有什么经验？&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;h2 id=&#34;我的看法-2:eb3d3d6a1b4a553765c54016019577a4&#34;&gt;我的看法&lt;/h2&gt;
-
-&lt;p&gt;1、 不要用rm，mac的话&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;brew install rmtrash&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;然后用rmtrash替代rm（移动到废纸篓）&lt;/p&gt;
-
-&lt;p&gt;少数必须要用rm的情况，再三检查你的命令&lt;/p&gt;
-
-&lt;p&gt;2、 不要用sudo或root用户，必须要用的时候，再三检查你的命令&lt;/p&gt;
-
-&lt;p&gt;3、 sudo而且rm的时候，打完命令，检查完以后，去上个厕所回来再检查一遍再执行&lt;/p&gt;
-
-&lt;p&gt;4、 千万不要用alias或任何手段来改变rm命令的行为，&lt;strong&gt;千万不要用alias或任何手段来改变rm命令的行为&lt;/strong&gt;。这很重要，因为用命令行就是为了习惯和了解服务器维护的知识经验，服务器上是不会有同样的alias的。养成慎用rm 慎用sudo 检查命令的好习惯才是正道。否则剧本就是你先&lt;code&gt;rm rf /&lt;/code&gt;了自己，苦恼了半小时找了个alias或别的脚本之类的，几个月以后，登到生产环境欢乐地&lt;code&gt;rm rf /&lt;/code&gt;了服务器，或者是&lt;code&gt;rm rf /usr /local/xxx&lt;/code&gt;
-日常使用的话参考前面，用rmtrash之类的替代命令就好&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;最后关于TimeMachine，我用的是老台式机的整块旧硬盘，不方便的话，给硬盘单独一个分区也可以，自己google怎么做&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;这是我在 &lt;a href=&#34;http://segmentfault.com/&#34;&gt;SegmentFault&lt;/a&gt; 上的问题回答选编，遵循&lt;a href=&#34;http://creativecommons.org/licenses/by-sa/3.0/cn/&#34;&gt;CC BY-SA 3.0 CN&lt;/a&gt; 分享&lt;/p&gt;
-
-&lt;p&gt;题图：万智【净化时空】 rm -rf&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://inside.mcfog.wang/img/2015-q1/m14-29.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-</description>
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -679,77 +139,13 @@ PS 本人非计算机专业 PHP是大学偶然中接触之后有兴趣开始学�
       <pubDate>Mon, 16 Feb 2015 17:25:58 +0800</pubDate>
       
       <guid>https://inside.mcfog.wang/2015/02/ichizon-7/</guid>
-      <description>
+      <description>&lt;!--================================!--&gt;
 
-&lt;!--================================!--&gt;
-
-&lt;h2 id=&#34;怎么衡量前端达到了什么水平:94a8d8527069a9a003de252a1634ec91&#34;&gt;怎么衡量前端达到了什么水平&lt;/h2&gt;
+&lt;h2 id=&#34;怎么衡量前端达到了什么水平&#34;&gt;怎么衡量前端达到了什么水平&lt;/h2&gt;
 
 &lt;p&gt;&lt;a href=&#34;http://segmentfault.com/q/1010000002556431&#34;&gt;问题&lt;/a&gt; by &lt;a href=&#34;http://segmentfault.com/u/futureplayer&#34;&gt;futurePlayer&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;　　刚刚步入前端届，属于新人，对自身的评判和衡量都还处于一个很初级的阶段，现在也是面临自己的一个分水岭，不知道自己现在到底是个什么样的水平，就拿自己最近做的一个网站给前辈们看看吧，&lt;a href=&#34;http://www.vrone.me/&#34;&gt;http://www.vrone.me/&lt;/a&gt;，网站只做了PC端的样式，功能很简单，移动端还是想自己做样式，不想依赖于bootstrap之内的东西，所以如果在移动端有视觉塌陷就难为大家了，而且网站有时候会有点慢，当然网站也是经过部分的优化，没有采用云加速等的优势（目前还不想用在用在网站中，就拿百度来说吧，新版经常出现一些问题，不过速度会提升很多这毋庸置疑），服务器端的带宽也是问题，可以ping一下就知道了，所以这也是程序和服务两方面的事情。&lt;/p&gt;
-
-&lt;p&gt;　　简要说一下自己吧，做前端没多久，对html,css,js原生比较熟，h5,css3就欠缺一些了，能够熟练运用jquery，研究过其过源码，也针对一些问题写过部分插件，比如选择器，事件队列，js设置样式等兼容问题（如隐藏元素及可视元素样式的获取和设定等等），具体github上有，对MVC和MVVM等框架有过认识，如angular、react、ember，用nodejs开发过网站（上面链接网站就是express开发的），也写过一些小玩意，如留言板，聊天室，能用grunt等自动化工具来构建网站，网站优化懂一些（如打包合并，减少http请求，DNS预加载，缓存等），并能用到项目中去，liunx命令一般，后台php还是大二的时候写过，现在都没碰，比较生疏了，数据库可以用mysql进行一般项目的开发。想问问这样能定位到什么水平，能找到什么样的工作？&lt;/p&gt;
-
-&lt;p&gt;　　大概就是这样，能提的或者没提到的综合起来也差不多了，希望前辈能从自己的经验出发，分享一些自己的看法，可以黑，但是要基于事实的前提，如果有什么意见和建议都是我很宝贵的财富，前端路上希望能够走的更远。&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;h2 id=&#34;我的看法:94a8d8527069a9a003de252a1634ec91&#34;&gt;我的看法&lt;/h2&gt;
-
-&lt;p&gt;站本身没啥致命的槽点，但说“工程师的能力”很多时候也是一个这样的站体现不出来的，如果题主是应届或工作一两年的话，能力本身没有任何问题。我就谈谈我觉得对我的成长最重要的几点吧&lt;/p&gt;
-
-&lt;h3 id=&#34;匠心:94a8d8527069a9a003de252a1634ec91&#34;&gt;匠心&lt;/h3&gt;
-
-&lt;p&gt;匠心分成几点，首先是作为一个&lt;strong&gt;手艺人&lt;/strong&gt;，要爱自己的手艺，爱自己的作品。看到漂亮的作品要两眼发光扑上去研究，看到烂代码(不管是谁写的)要认真反思(其实看走眼的情况也意外地多)。对自己的作品要自豪，不要马虎眼。有时业务紧压力大时，我们会被逼用一些dirty way来做事，要清楚那是dirty way，保持愧疚感。&lt;/p&gt;
-
-&lt;p&gt;其次，能工巧匠必有其&lt;strong&gt;利器&lt;/strong&gt;，玩转你手边的工具，经常更新你的工具箱，永远寻找更趁手的另一种工具，适时自己操刀搞一些工具。编码是我们&lt;strong&gt;最不重要&lt;/strong&gt;的工作，思考，归纳，演绎才是我辈本职。写代码的时候大脑在“写代码”进程分配CPU越少，花在“思考”进程分配CPU越多，效率越高。emmet coding一个tab可能确实只能省一两秒时间，但这少打断的一两秒很多时候就是决定性的差距。看看心流(flow)理论，你的工具箱越顺手，工作时就越能集中思考，心流状态就越频繁越长。&lt;/p&gt;
-
-&lt;p&gt;最后，要有“独具匠心”的&lt;strong&gt;创新精神&lt;/strong&gt;和&lt;strong&gt;思考能力&lt;/strong&gt;，完成任务只是原地踏步，唯有反思和自我批判能改进你的缺点，唯有创新和不断试错能增加你的优点。&lt;/p&gt;
-
-&lt;h3 id=&#34;教学相长:94a8d8527069a9a003de252a1634ec91&#34;&gt;教学相长&lt;/h3&gt;
-
-&lt;p&gt;在鹅厂，T3.x的晋升的一个指标就是要授课，但我在还只有的T1的时候就已经第一次做团队内部技术分享了，做完以后我突然发现，技术分享对我的帮助比对小伙伴的帮助还大。这固然是因为我水平不够，没达到传道解惑的境界，但更是因为教学相长。你有个很酷的主意，实现它对工程师来说经常没太大难度，但要讲清前因后果，理清脉络，整理成技术分享的过程，比你想象中要难很多，一旦整理出来以后你会发现自己的理解一下达到一个新的高度。然后做技术分享的过程中，不仅锻炼你自己的自信，还能从小伙伴的反应，疑惑，问题中再学到很多。是谓教学相长也。&lt;/p&gt;
-
-&lt;p&gt;类似的还有作教程，写文章等等。这里我特别想谈谈“文章”和“笔记”的区别，前者是你表达一个观点，描述一种思想的，“一身功力的结晶”，而后者只是某些知识点的整理记录。从学生时代起，我就从不做笔记，对笔记抱有个人偏见。我见过太多程序员的博客充满了笔记，乏味而无趣，没有新东西，没有营养。程序员写博客确实是好事，但博客本应是写文章的地方，不是笔记小抄，我不反对做笔记，但那应该在自己的evernote里，而不是写在博客里。好学生以记笔记的过程熟悉知识，复习的时候以笔记为媒介回忆当时的思考和理解，看别人的笔记则没有什么实际帮助，更糟糕的是如果无脑照抄别人的笔记，失去了自己的思考，丢了匠心，实在得不偿失。在博客里记笔记，远远达不到写文章的“教学相长”效果，只记录google结果，考试答案，没有自己的独立思考。
-所以我独立出技术博客快两年了才刚刚翻页，不是不爱写，实在是水平不够，写不出那么多的文章。&lt;/p&gt;
-
-&lt;h3 id=&#34;the-pragmatic-programmer:94a8d8527069a9a003de252a1634ec91&#34;&gt;《The Pragmatic Programmer》&lt;/h3&gt;
-
-&lt;p&gt;译名《程序员修炼之道》。这本书每个工程师都应该看，每个工程师每年都应该重新看至少一次。我最近买了原版收藏。这本书我看了大概有5年了，常看常新，每次看都有收获都有感悟。&lt;/p&gt;
-
-&lt;p&gt;这样说吧，可以说差不多每次你写代码的时候觉得“被坑”了，这本书里基本都有对应的谆谆教导。&lt;/p&gt;
-
-&lt;p&gt;我心里把这本书称为《乌托邦里的程序员》，描述了乌托邦里永远不被坑的程序员是如何工作的。&lt;/p&gt;
-
-&lt;h3 id=&#34;沟通和情商:94a8d8527069a9a003de252a1634ec91&#34;&gt;沟通和情商&lt;/h3&gt;
-
-&lt;p&gt;无论你是否希望成为管理者，沟通能力和情商都是非常重要的。&lt;/p&gt;
-
-&lt;p&gt;有点写不动了，这也是我不怎么行的一点，没啥能吹的，我在&lt;a href=&#34;http://segmentfault.com/q/1010000002536565&#34;&gt;《一个优秀工程师的衡量标准是什么？》&lt;/a&gt;的回答里有一些简单的point可以参考参考。&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;和前端相关的一些建议&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;掌握一门css预处理语言&lt;/li&gt;
-&lt;li&gt;看看bootstrap源代码(less)&lt;/li&gt;
-&lt;li&gt;自适应，移动端&lt;/li&gt;
-&lt;li&gt;javascript异步，promise，异步并发／串行，异步递归等&lt;/li&gt;
-&lt;li&gt;模块化，amd cmd 稍早的requirejs/seajs，现代的webpack/browserify（均推荐前者）。另一条路线是包管理／依赖管理，有bower component duo等等&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;这是我在 &lt;a href=&#34;http://segmentfault.com/&#34;&gt;SegmentFault&lt;/a&gt; 上的问题回答选编，遵循&lt;a href=&#34;http://creativecommons.org/licenses/by-sa/3.0/cn/&#34;&gt;CC BY-SA 3.0 CN&lt;/a&gt; 分享&lt;/p&gt;
-
-&lt;p&gt;今天这个歪题的回答鸡精浓度过高，于是只放这一篇了&lt;/p&gt;
-
-&lt;p&gt;题图：万智【变巨术】&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://inside.mcfog.wang/img/2015-q1/m14-174.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-</description>
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -758,171 +154,11 @@ PS 本人非计算机专业 PHP是大学偶然中接触之后有兴趣开始学�
       <pubDate>Mon, 09 Feb 2015 18:28:43 +0800</pubDate>
       
       <guid>https://inside.mcfog.wang/2015/02/ichizon-6/</guid>
-      <description>
+      <description>&lt;!--================================!--&gt;
 
-&lt;!--================================!--&gt;
+&lt;h2 id=&#34;perl-字符串匹配-如何正确匹配出-aaaa-中的3个-aa-模式&#34;&gt;【Perl】字符串匹配：如何正确匹配出’aaaa&amp;rsquo;中的3个‘aa&amp;rsquo;模式？&lt;/h2&gt;
 
-&lt;h2 id=&#34;perl-字符串匹配-如何正确匹配出-aaaa-中的3个-aa-模式:fbe1ee63af3d8a8b8191c8c2d7f925ed&#34;&gt;【Perl】字符串匹配：如何正确匹配出’aaaa&amp;rsquo;中的3个‘aa&amp;rsquo;模式？&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://segmentfault.com/q/1010000002541924&#34;&gt;问题&lt;/a&gt; by &lt;a href=&#34;http://segmentfault.com/u/zair&#34;&gt;Zair&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;一段Perl的代码，输出结果为2。然而显然在字符串&amp;rsquo;aaaa&amp;rsquo;中含有3个&amp;rsquo;aa&amp;rsquo;模式。请问如何做到3次匹配？&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;#!/usr/bin/perl
-$a = &#39;aaaa&#39;;
-$i ++ while $a =~ /aa/g;
-print $i;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;hr /&gt;
-
-&lt;h2 id=&#34;我的看法:fbe1ee63af3d8a8b8191c8c2d7f925ed&#34;&gt;我的看法&lt;/h2&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-perl&#34;&gt;#!/usr/bin/perl
-$a = &#39;aaaa&#39;;
-$i ++ while $a =~ /a(?=a)/g;
-print $i;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;正则本质是状态机一个个consume字符扭转状态，捕获成功第一个aa以后相当于前两个字符都被consume掉从第三个a开始匹配了，所以原来的结果是2，这里用&lt;strong&gt;零宽断言&lt;/strong&gt;让正则去look ahead匹配模式里第二个a而不将其consume掉，从而得到3&lt;/p&gt;
-
-&lt;p&gt;编译原理学得不好，解释得有点乱……&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;图形的力量，感觉比字清楚多了&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://segmentfault.com/img/bVkPsx&#34; alt=&#34;图片描述&#34; /&gt;&lt;/p&gt;
-
-&lt;!--================================!--&gt;
-
-&lt;h2 id=&#34;软件工程中的耦合性和解耦合性是什么意思:fbe1ee63af3d8a8b8191c8c2d7f925ed&#34;&gt;软件工程中的耦合性和解耦合性是什么意思?&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://segmentfault.com/q/1010000002421856&#34;&gt;问题&lt;/a&gt; by &lt;a href=&#34;http://segmentfault.com/u/iamzhoug37&#34;&gt;iamzhoug37&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;看《thinking in java》和《head first 设计模式》中，两本书好多次提到了“耦合性”和“解耦合性”这两个词。一直以来都是模棱两可的，搜了一下，维基百科中的解释太专业化了，我没有看懂，通俗的讲这两个词是什么意思？&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;谢谢大家的回答. 通过大家的回答, 我对于这两个概念有了初步的了解, 但是估计是我的层次不够吧, 看这两本书还是有难度,而且在实际自己编写代码的时候还是不能很好的运用设计模式的精髓, 不过我会努力的,谢谢大家&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;h2 id=&#34;我的看法-1:fbe1ee63af3d8a8b8191c8c2d7f925ed&#34;&gt;我的看法&lt;/h2&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;你正乘坐直升机游览科罗拉多大峡谷，驾驶员——他显然犯了一个错误，在吃鱼，他的午餐——突然呻吟起来，晕了过去。幸运的是，他把你留在了离地面100英尺的地方。你推断，升降杆控制总升力，所以轻轻将其压低可以让直升机平缓降向地面。然而，当你这样做时，却发现生活并非那么简单。直升机的鼻子向下，开始向左盘旋下降。突然间你发现，你驾驶的这个系统，所有的控制输入都有次级效应。压低左手的操作杆，你需要补偿性地向后移动右手柄，并踩右踏板。但这些改变中的每一项都会再次影响所有其他的控制。突然间，你在用一个让人难以置信的复杂系统玩杂耍，其中每一项改变都会影响所有其他的输入。你的工作负担异常巨大：你的手脚在不停地移动，试图平衡所有交互影响的力量。&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;——《程序员的修炼之道》 我认为所有程序员都应该看，而且每年都应该重新看一遍的书&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;!--================================!--&gt;
-
-&lt;h2 id=&#34;php两种封装类的优缺点:fbe1ee63af3d8a8b8191c8c2d7f925ed&#34;&gt;php两种封装类的优缺点？&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://segmentfault.com/q/1010000002544103&#34;&gt;问题&lt;/a&gt; by &lt;a href=&#34;http://segmentfault.com/u/tiyee&#34;&gt;tiyee&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;php很多内置的类或扩展类比较粗糙，需要人为的封装一遍，于是有了两种封装方式，
-1直接继承
-2内部实例化&lt;/p&gt;
-
-&lt;p&gt;如redis类，
-可以&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;namespace lib
-class redis extends \Redis {}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;也可以&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;namespace lib
-class redis {
-    private $_redis = null;
-    public function __construct() {
-        $this-&amp;gt;_redis = new \Redis()
-    }
-}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;第一种方法的优点是方便，无须把所有的方法重写一遍，但是不太好统一捕捉异常，
-第二种就是麻烦些，需要重写一遍所有的方法，（虽然可以用魔术方法），捕捉异常方便些。
-大家用的哪种？为什么呢？&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;h2 id=&#34;我的看法-2:fbe1ee63af3d8a8b8191c8c2d7f925ed&#34;&gt;我的看法&lt;/h2&gt;
-
-&lt;h3 id=&#34;继承:fbe1ee63af3d8a8b8191c8c2d7f925ed&#34;&gt;继承&lt;/h3&gt;
-
-&lt;p&gt;继承的特点有&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;✔实现成本低&lt;/li&gt;
-&lt;li&gt;✔调用者可以沿用原有的接口使用，学习成本低&lt;/li&gt;
-&lt;li&gt;✔原有的功能无需任何代码如常工作&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;✘无法隐藏或改变原有的功能&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;其实你_可以_这么做，就好像你确实_可以_用铁丝去捅插座眼一样&lt;/li&gt;
-&lt;li&gt;改变输入、改变输出、改变行为都属于改变功能，比如原来抛的异常现在不抛了，原来return false现在变异常了，原来输入的是青椒现在变牛肉了等等&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;✘正交性弱，没有做到屏蔽父类的依赖，需要更换父类的时候显得脆弱&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;常见的合适的应用有&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;增加日志记录等不影响原有逻辑的“旁路逻辑”&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;增加一些方法，比如原有的某一些方法a()b()c()总是连续一起调用，增加一个doABC()方法&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;仅限简单的少量的方法，如果要加复杂的功能或者大量的方法，还是建议用组合&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;增加一些静态／工厂方法，比如&lt;code&gt;new Redis(ip, port)&lt;/code&gt; =&amp;gt; &lt;code&gt;OurRedis::getInstance()&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;一句话说就是原有行为不变，&lt;strong&gt;is-a&lt;/strong&gt;的场景用继承。&lt;/p&gt;
-
-&lt;h3 id=&#34;组合:fbe1ee63af3d8a8b8191c8c2d7f925ed&#34;&gt;组合&lt;/h3&gt;
-
-&lt;p&gt;组合的特点有&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;✘实现成本略高，创建对象的过程可能会变复杂&lt;/li&gt;
-&lt;li&gt;✘调用者需要理解新的接口&lt;/li&gt;
-&lt;li&gt;✘需要转发才能让原有的功能工作&lt;/li&gt;
-&lt;li&gt;✔很容易隐藏／屏蔽原有的部分功能&lt;/li&gt;
-&lt;li&gt;✔正交性强，可以通过更换内部的对象适配不同的情况而保持外部接口不变&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;常见的合适的应用有&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;一切涉及改变行为的需求&lt;/li&gt;
-&lt;li&gt;未来依赖会变的场景，比如redis会变成memcache，或者mysql会变mariadb之类&lt;/li&gt;
-&lt;li&gt;需要屏蔽细节的场景，比如Session Cache等需求确实用到redis，但对外肯定要屏蔽“这是个redis实现的session”。否则恐龙会出现在你背后把你脑袋咬掉&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;一句话就是某个功能依赖另一个功能，&lt;strong&gt;use-a&lt;/strong&gt;或&lt;strong&gt;has-a&lt;/strong&gt;的场景用组合&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;偏题，predis用起来还不错，可以一试&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;这是我在 &lt;a href=&#34;http://segmentfault.com/&#34;&gt;SegmentFault&lt;/a&gt; 上的问题回答选编，遵循&lt;a href=&#34;http://creativecommons.org/licenses/by-sa/3.0/cn/&#34;&gt;CC BY-SA 3.0 CN&lt;/a&gt; 分享&lt;/p&gt;
-
-&lt;p&gt;题图：万智【接踵而至】&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://inside.mcfog.wang/img/2015-q1/rav51.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-</description>
+&lt;p&gt;&lt;a href=&#34;http://segmentfault.com/q/1010000002541924&#34;&gt;问题&lt;/a&gt; by &lt;a href=&#34;http://segmentfault.com/u/zair&#34;&gt;Zair&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -931,11 +167,9 @@ class redis {
       <pubDate>Mon, 02 Feb 2015 10:50:02 +0800</pubDate>
       
       <guid>https://inside.mcfog.wang/2015/02/ichizon-5/</guid>
-      <description>
+      <description>&lt;!--================================!--&gt;
 
-&lt;!--================================!--&gt;
-
-&lt;h2 id=&#34;学习php该走什么样的路线:8a9b66dd0d98af6f3fa5d4fe14029894&#34;&gt;学习PHP该走什么样的路线&lt;/h2&gt;
+&lt;h2 id=&#34;学习php该走什么样的路线&#34;&gt;学习PHP该走什么样的路线&lt;/h2&gt;
 
 &lt;p&gt;&lt;a href=&#34;http://segmentfault.com/q/1010000000484344&#34;&gt;问题&lt;/a&gt; by &lt;a href=&#34;http://segmentfault.com/u/ixiqin_com&#34;&gt;西秦公子&lt;/a&gt;&lt;/p&gt;
 
@@ -943,117 +177,7 @@ class redis {
 &lt;li&gt;&lt;p&gt;是应该看传统代码还是应该看MVC框架代码？&lt;/p&gt;&lt;/li&gt;
 
 &lt;li&gt;&lt;p&gt;是应该先看手册还是应该看成品项目？&lt;/p&gt;&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;本人情况:
-了解PHP的基本语法，研究过typecho的主题，了解过MVC构架。
-希望可以有大神帮忙量身定制一条路线。&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;h2 id=&#34;我的看法:8a9b66dd0d98af6f3fa5d4fe14029894&#34;&gt;我的看法&lt;/h2&gt;
-
-&lt;ol&gt;
-&lt;li&gt;不管什么风格都要看，而且别停留在看上，动手hack一下试试模仿/修改一些功能。不知道非架构代码是啥样的情况下是不容易用好/设计好架构的&lt;/li&gt;
-&lt;li&gt;你学英文(这个人又来拿英文比喻了)的时候是先看字典还是先看课文？无论怎样我觉得都不可能是&lt;strong&gt;我看完了一大本课文没翻字典查单词&lt;/strong&gt;，或者是&lt;strong&gt;我看完了牛津字典但没看半篇文章&lt;/strong&gt;。看起来好像后者还合理一点，套到编程上来也是一样的。&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;对字典(文档)，可以先按照常用三千词的程度简单翻一遍(还存在你没经验不知道什么是常用的问题)，但主要还是靠一边看成品项目一边翻文档，最好还能一边请项目作者请教，大致讲解一下。（等价于一边看课文一边查字典，然后同时老师讲解） 开源项目的话，找不到作者可以找各种博客文章&lt;/p&gt;
-
-&lt;p&gt;技能树方面其实不管什么语言应该都是一样的：&lt;/p&gt;
-
-&lt;p&gt;LV0 只会语法&lt;br /&gt;
-LV1 明白怎么运作，能查Bug(不太复杂的)&lt;br /&gt;
-LV2 有一些思路，能添加简单功能&lt;br /&gt;
-LV3 能发现问题，优化局部的结构/性能，能搞定较复杂问题&lt;br /&gt;
-LV4a 对架构有心得，把握宏观架构，把握整个项目的技术体系&lt;br /&gt;
-LV4b 对指挥有心得，能指挥LV2 LV3的人，合理分配任务，规避技术风险&lt;br /&gt;
-LV4c 对资源有心得，能从公司内/外争取LV2 LV3的人需要的各种资源&lt;br /&gt;
-LV4d 对外交有心得，能搞定其他部门的人一起合作&lt;br /&gt;
-LV4e 对教学有心得，能指引各种人升级加点&lt;br /&gt;
-LV5 掌握若干LV4技能的基础上，知道怎么招聘和摆平其他LV4的能人&lt;/p&gt;
-
-&lt;p&gt;看出来了吧，我就是来点LV4e这个技能的熟练度的哈哈&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;!--================================!--&gt;
-
-&lt;h2 id=&#34;如何理解ioc-inversion-of-control:8a9b66dd0d98af6f3fa5d4fe14029894&#34;&gt;如何理解IoC（Inversion of Control）？&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://segmentfault.com/q/1010000000755828&#34;&gt;问题&lt;/a&gt; by &lt;a href=&#34;http://segmentfault.com/u/wangshuo&#34;&gt;WS&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;RT，如何理解IoC（Inversion of Control）？如果能写个demo解释最好了。&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;h2 id=&#34;我的看法-1:8a9b66dd0d98af6f3fa5d4fe14029894&#34;&gt;我的看法&lt;/h2&gt;
-
-&lt;p&gt;我试着搜了一下，中文资料基本都把IoC（控制翻转）和DI（依赖注入）混为一谈，就连&lt;a href=&#34;http://stackoverflow.com/questions/3058/what-is-inversion-of-control&#34;&gt;StackOverflow上的第一位答案&lt;/a&gt;也犯了同样的问题（幸好下面有高票的反对评论，否则我的世界观都快坏掉了）&lt;/p&gt;
-
-&lt;p&gt;控制翻转是代码复用的一种模式（注意不是设计模式）&lt;/p&gt;
-
-&lt;p&gt;一般（非IoC）的复用，通常是用户代码调用组件（任意形式的被复用的代码，本答案中统称为组件）。也就是用户代码解决“Why it works, What to do”，组件解决“How to do”，逻辑的入口是用户代码，&lt;/p&gt;
-
-&lt;p&gt;而控制翻转则是组件来调用用户代码，也就是组件解决“Why it works, When to do”，用户代码解决“What to do”，逻辑的入口是组件&lt;/p&gt;
-
-&lt;p&gt;下面是除了DI之外的控制翻转的例子&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;接口／虚函数  组件调用接口／虚函数，具体由用户代码实现&lt;/li&gt;
-&lt;li&gt;发布订阅（事件）模式  组件触发事件，用户代码订阅事件&lt;/li&gt;
-&lt;li&gt;回调  用户代码写回调，组件来调用&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;几乎所有能被称之为框架的东西&lt;/strong&gt;  用户代码在规定的地方实现具体业务逻辑，剩下的框架负责&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;hr /&gt;
-
-&lt;!--================================!--&gt;
-
-&lt;h2 id=&#34;能简单解释一下mvc吗-越简单越好:8a9b66dd0d98af6f3fa5d4fe14029894&#34;&gt;能简单解释一下MVC吗？越简单越好&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://segmentfault.com/q/1010000002456846&#34;&gt;问题&lt;/a&gt; by &lt;a href=&#34;http://segmentfault.com/u/dwqs&#34;&gt;不写代码的码农&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;最近打算学习PHP框架，才发现我以前对MVC的认识很肤浅。但是看Laravel的文档，对MVC又是云里雾里的&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;h2 id=&#34;我的看法-2:8a9b66dd0d98af6f3fa5d4fe14029894&#34;&gt;我的看法&lt;/h2&gt;
-
-&lt;p&gt;概念大家都说了，其实MVC的涵义一直在潜移默化地变化，原本CS软件的MVC和如今php ruby python讲的MVC已经有不小的区别了。甚至很可能概念早就变成MVP，只是大家习惯了MVC，指鹿为马了&lt;/p&gt;
-
-&lt;p&gt;我觉得已实际项目来说，作3个思想实验就能大致理解MVC的本质和目标，具体三层怎么分，是三层还是四层还是两层，其实都是为了达成灵活性和可维护性的手段而已&lt;/p&gt;
-
-&lt;h3 id=&#34;更换数据库选择:8a9b66dd0d98af6f3fa5d4fe14029894&#34;&gt;更换数据库选择&lt;/h3&gt;
-
-&lt;p&gt;数据结构不变，把数据库从mysql迁移到pgsql乃至mongodb，你的项目需要多大的变化？
-理想的MVC架构应该无需修改任何业务代码(包括Model)，只需要修改配置文件，最多写个新的DBAL driver
-实际情况下不同DB的能力有微妙的区别，那也应该微调Model就能解决。&lt;/p&gt;
-
-&lt;p&gt;如果你的答案是两眼一黑：和重写一遍差不多，那么你的M层还不够独立，该写在Model的代码分散到别处了&lt;/p&gt;
-
-&lt;h3 id=&#34;手机html5版本:8a9b66dd0d98af6f3fa5d4fe14029894&#34;&gt;手机HTML5版本&lt;/h3&gt;
-
-&lt;p&gt;假设保持所有功能不变（都有合理自然的移动版交互），给你的站点增加手机版，你的项目需要多大的变化？
-答案应该是重写一套View，然后Controller改一行&lt;code&gt;if(isMobile) use(MobileView);&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;如果你发现Controller要改大量逻辑，甚至Model都被牵连，那你的V层不够独立&lt;/p&gt;
-
-&lt;h3 id=&#34;增加api:8a9b66dd0d98af6f3fa5d4fe14029894&#34;&gt;增加API&lt;/h3&gt;
-
-&lt;p&gt;假设所有功能不变，给你的站点增加开放API（给第三方或移动应用使用），你的项目需要多大的变化？
-答案应该是一套新的Controller 包含新的授权、和数据格式以及校验等逻辑，和一个简单的View（只输出json或xml）&lt;/p&gt;
-
-&lt;p&gt;如果你发现Model要改，原来View里的一些东西要挪动，或者是原来写在老的Controller里的部分代码要copy一遍，那么你的C层不够独立&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;这是我在 &lt;a href=&#34;http://segmentfault.com/&#34;&gt;SegmentFault&lt;/a&gt; 上的问题回答选编，遵循&lt;a href=&#34;http://creativecommons.org/licenses/by-sa/3.0/cn/&#34;&gt;CC BY-SA 3.0 CN&lt;/a&gt; 分享&lt;/p&gt;
-
-&lt;p&gt;题图：万智【精研战技】&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://inside.mcfog.wang/img/2015-q1/m15-4.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-</description>
+&lt;/ol&gt;</description>
     </item>
     
     <item>
@@ -1062,212 +186,20 @@ LV5 掌握若干LV4技能的基础上，知道怎么招聘和摆平其他LV4的�
       <pubDate>Sun, 25 Jan 2015 22:01:29 +0800</pubDate>
       
       <guid>https://inside.mcfog.wang/2015/01/ichizon-4/</guid>
-      <description>
+      <description>&lt;!--================================!--&gt;
 
-&lt;!--================================!--&gt;
-
-&lt;h2 id=&#34;一个优秀的前端工程师应该具备什么样的技能:c9e1538cd17d736bacb3a48e74a02413&#34;&gt;一个优秀的前端工程师应该具备什么样的技能？&lt;/h2&gt;
+&lt;h2 id=&#34;一个优秀的前端工程师应该具备什么样的技能&#34;&gt;一个优秀的前端工程师应该具备什么样的技能？&lt;/h2&gt;
 
 &lt;p&gt;&lt;a href=&#34;http://segmentfault.com/q/1010000002504410?_ea=121396&#34;&gt;问题&lt;/a&gt; by &lt;a href=&#34;http://segmentfault.com/u/houxiaoqiang&#34;&gt;侯志强&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;一个优秀的前端工程师应该具备什么样的技能，应该从哪些方面来提高自己的专业技能还有软实力？&lt;/p&gt;
 
-&lt;hr /&gt;
+&lt;h2 id=&#34;hugomore42&#34;&gt;&lt;/h2&gt;
 
-&lt;h2 id=&#34;我的看法:c9e1538cd17d736bacb3a48e74a02413&#34;&gt;我的看法&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;学力&lt;/p&gt;
+&lt;h2 id=&#34;我的看法&#34;&gt;我的看法&lt;/h2&gt;
 
 &lt;ul&gt;
-&lt;li&gt;迅速了解新技术，判断适用场景&lt;/li&gt;
-&lt;li&gt;在合适的时机把玩新技术，迅速熟悉&lt;/li&gt;
-&lt;li&gt;在合适的时机引入新技术，提高生产效率&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;解决问题&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;google&lt;/li&gt;
-&lt;li&gt;寻找和选择合适的解决方案&lt;/li&gt;
-&lt;li&gt;判断解决方案靠谱程度&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;沟通&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;说服队友放弃不靠谱方案&lt;/li&gt;
-&lt;li&gt;对产品暴击&lt;/li&gt;
-&lt;li&gt;对设计协商&lt;/li&gt;
-&lt;li&gt;对后台撒娇&lt;/li&gt;
-&lt;li&gt;带小朋友提高&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;个人效率&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;效率工具的发现与精通&lt;/li&gt;
-&lt;li&gt;自己实现小工具小脚本&lt;/li&gt;
-&lt;li&gt;时间管理&lt;/li&gt;
-&lt;li&gt;个人知识管理&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;说穿了任何技术岗位不都一样么！&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;!--================================!--&gt;
-
-&lt;h2 id=&#34;高效的js-jquery语句写法:c9e1538cd17d736bacb3a48e74a02413&#34;&gt;高效的js，jquery语句写法&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://segmentfault.com/q/1010000000633373&#34;&gt;问题&lt;/a&gt; by &lt;a href=&#34;http://segmentfault.com/u/zzzddd&#34;&gt;zzzddd&lt;/a&gt;&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;$(&amp;quot;#check_order&amp;quot;).on(&amp;quot;click&amp;quot;, function() {
-    $(&amp;quot;.merchant_page&amp;quot;).hide();
-    $(&amp;quot;.cart_page&amp;quot;).show();
-});
-
-$(&amp;quot;.continue&amp;quot;).on(&amp;quot;click&amp;quot;, function() {
-    $(&amp;quot;.merchant_page&amp;quot;).show();
-    $(&amp;quot;.cart_page&amp;quot;).hide();
-});
-
-$(&amp;quot;.close&amp;quot;).on(&amp;quot;click&amp;quot;, function() {
-    $(&amp;quot;#shade&amp;quot;).hide();
-});
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;我现在的代码像这样一坨大便一样。。。&lt;/p&gt;
-
-&lt;p&gt;请问各位如何写成比如像jquery插件那样的一些写法，比如像这样的 &lt;code&gt;function(id){$(&amp;quot;#&amp;quot;+id).on(&amp;quot;click&amp;quot;,function(){.....})}&lt;/code&gt; 等等，有什么教程或者有什么书关于这种的嘛？&lt;/p&gt;
-
-&lt;p&gt;谢谢各位了&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;h2 id=&#34;我的看法-1:c9e1538cd17d736bacb3a48e74a02413&#34;&gt;我的看法&lt;/h2&gt;
-
-&lt;p&gt;美刀是个很重的函数，尽量其缓存结果&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;var $merchantPage = $(&amp;quot;.merchant_page&amp;quot;);
-var $cartPage = $(&amp;quot;.cart_page&amp;quot;);
-var $shade = $(&amp;quot;#shade&amp;quot;);
-$(&amp;quot;#check_order&amp;quot;).on(&amp;quot;click&amp;quot;, function() {
-    $merchantPage.hide();
-    $cartPage.show();
-});
-
-$(&amp;quot;.continue&amp;quot;).on(&amp;quot;click&amp;quot;, function() {
-    $merchantPage.show();
-    $cartPage.hide();
-});
-
-$(&amp;quot;.close&amp;quot;).on(&amp;quot;click&amp;quot;, function() {
-    $shade.hide();
-});
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;代码要有语义，比如很明显例子里有类似切换页面的逻辑，有个名字会让代码可读性提高很多&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;var $merchantPage = $(&amp;quot;.merchant_page&amp;quot;);
-var $cartPage = $(&amp;quot;.cart_page&amp;quot;);
-var $shade = $(&amp;quot;#shade&amp;quot;);
-$(&amp;quot;#check_order&amp;quot;).on(&amp;quot;click&amp;quot;, showCart);
-
-$(&amp;quot;.continue&amp;quot;).on(&amp;quot;click&amp;quot;, showMerchant);
-
-$(&amp;quot;.close&amp;quot;).on(&amp;quot;click&amp;quot;, closePage);
-
-function closePage() {
-    $shade.hide();
-}
-function showCart() {
-    $merchantPage.hide();
-    $cartPage.show();
-}
-function showMerchant() {
-    $merchantPage.show();
-    $cartPage.hide();
-}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;最后dom有个范围，有个闭包，有个chain，再加一行点睛的注释，代码就非常漂亮，主次分明了&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;//商品购买模块
-(function($view) {
-	var $merchantPage = $view.find(&amp;quot;.merchant_page&amp;quot;);
-	var $cartPage = $view.find(&amp;quot;.cart_page&amp;quot;);
-	var $shade = $view.find(&amp;quot;#shade&amp;quot;);
-
-	$view
-		.on(&amp;quot;click&amp;quot;, &amp;quot;#check_order&amp;quot;, showCart)
-		.on(&amp;quot;click&amp;quot;, &amp;quot;.continue&amp;quot;, showMerchant)
-		.on(&amp;quot;click&amp;quot;, &amp;quot;.close&amp;quot;, closePage)
-	;
-
-	function closePage() {
-	    $shade.hide();
-	}
-
-	function showCart() {
-	    $merchantPage.hide();
-	    $cartPage.show();
-	}
-
-	function showMerchant() {
-	    $merchantPage.show();
-	    $cartPage.hide();
-	}
-
-})($(document.body))
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;!--================================!--&gt;
-
-&lt;h2 id=&#34;javascript是否需要私有变量:c9e1538cd17d736bacb3a48e74a02413&#34;&gt;Javascript是否需要私有变量？&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://segmentfault.com/q/1010000000525835&#34;&gt;问题&lt;/a&gt; by &lt;a href=&#34;http://segmentfault.com/u/jerryzou&#34;&gt;JerryZou&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;总所周知的是，&lt;code&gt;js&lt;/code&gt;在目前流行的标准中还不支持私有变量。我在阅读一篇讲&lt;strong&gt;&lt;code&gt;js&lt;/code&gt;模块化&lt;/strong&gt;很不错的文章《&lt;a href=&#34;http://www.adequatelygood.com/JavaScript-Module-Pattern-In-Depth.html&#34;&gt;JavaScript Module Pattern: In-Depth&lt;/a&gt;》时，看到一则谴责作者所说的模块化以及大量运用私有变量违反&lt;code&gt;js&lt;/code&gt;设计初衷的留言，留言如下：&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;Comment by &lt;strong&gt;steida&lt;/strong&gt; — March 15, 2010
-Module pattern is useless JavaScript mannerism junk. It’s simple product of &lt;strong&gt;misunderstanding of JavaScript&lt;/strong&gt;. Hiding properties and methods in anonymous function does not make sense, except two reasons:&lt;br /&gt;
-1). I need another variable, and no scope pollution. It’s useful for jQuery- (function($) {})(jQuery), for instance.&lt;br /&gt;
-2). micro optimization, rarely useful, and only just because Internet Explorer.&lt;br /&gt;
-Anybody who thinks “private in JavaScript is nice” suffer from &lt;strong&gt;false illusion of “safe code”&lt;/strong&gt;. There is no such thing in dynamic language which JavaScript really is.&lt;br /&gt;
-If you want method or property as “private”, just mark it in documentation, or use underscore prefix (google closure uses it even as suffix). It’s enough to tell our code readers: “Do not call or use this, and do not except that this “private” property will work forever.&lt;br /&gt;
-From: &lt;a href=&#34;http://ajaxian.com/archives/a-deep-dive-and-analysis-of-the-javascript-module-pattern&#34;&gt;http://ajaxian.com&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;其实我目前的想法跟这位评论者&lt;strong&gt;steida&lt;/strong&gt;有些相似，因为我觉得&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;那些可能对安全性有要求的操作就不应该放在前端做。&lt;/li&gt;
-&lt;li&gt;私有变量的确可以提供有效的抽象层次，像&lt;code&gt;js&lt;/code&gt;中一直有私有成员用的变量名用下划线开头。我认为这样足够了，而不需要用闭包来专门做出真的私有变量。&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;各位对&lt;code&gt;js&lt;/code&gt;在中实现私有变量有什么看法？&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;h2 id=&#34;我的看法-2:c9e1538cd17d736bacb3a48e74a02413&#34;&gt;我的看法&lt;/h2&gt;
-
-&lt;p&gt;我是下划线／POJO党。闭包私有变量不仅如题主所说无法提供所谓的安全，在断点调试的时候更是噩梦。&lt;/p&gt;
-
-&lt;p&gt;很多编程pattern的问题是：先假设别的程序员都是傻子或者恶棍，然后试图写出针对性的防御性代码。这是病，得治。防御性代码应当是“如果事情变糟糕了，那么就崩溃”，而不是“禁止你买菜刀，防止你砍人”&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;这是我在 &lt;a href=&#34;http://segmentfault.com/&#34;&gt;SegmentFault&lt;/a&gt; 上的问题回答选编，遵循&lt;a href=&#34;http://creativecommons.org/licenses/by-sa/3.0/cn/&#34;&gt;CC BY-SA 3.0 CN&lt;/a&gt; 分享&lt;/p&gt;
-
-&lt;p&gt;题图：万智【洁斯凯学僧】&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://inside.mcfog.wang/img/2015-q1/ktk14.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-</description>
+&lt;li&gt;&lt;p&gt;学力&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -1276,141 +208,11 @@ From: &lt;a href=&#34;http://ajaxian.com/archives/a-deep-dive-and-analysis-of-th
       <pubDate>Mon, 19 Jan 2015 12:37:15 +0800</pubDate>
       
       <guid>https://inside.mcfog.wang/2015/01/ichizon-3/</guid>
-      <description>
+      <description>&lt;!--================================!--&gt;
 
-&lt;!--================================!--&gt;
+&lt;h2 id=&#34;大家写代码的时候-是不是大部分时间都费在了各种神奇的问题上&#34;&gt;大家写代码的时候，是不是大部分时间都费在了各种神奇的问题上&lt;/h2&gt;
 
-&lt;h2 id=&#34;大家写代码的时候-是不是大部分时间都费在了各种神奇的问题上:44fbd926ad20773f3e2d3f69a87eb130&#34;&gt;大家写代码的时候，是不是大部分时间都费在了各种神奇的问题上&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://segmentfault.com/q/1010000001664019&#34;&gt;问题&lt;/a&gt; by &lt;a href=&#34;http://segmentfault.com/u/zhimengren&#34;&gt;xxx织梦者&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;各种突然&lt;br /&gt;
-各种抽风&lt;br /&gt;
-各种莫名其妙&lt;br /&gt;
-各种小错误&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;h2 id=&#34;我的看法:44fbd926ad20773f3e2d3f69a87eb130&#34;&gt;我的看法&lt;/h2&gt;
-
-&lt;p&gt;刚入门的时候非常正常，但如果已经在某个领域做了一段时间还一直维持这种状态那就有问题了。这很可能是&lt;a href=&#34;http://coolshell.cn/articles/2058.html&#34;&gt;所谓的撞大运／散弹枪编程&lt;/a&gt;的兆头。每次摆平某种抽风以后，务必总结问题和教训，做到下次从根本上防止再出现，能把你的代码写到让同事碰不到同样的问题更好（抽象、断言式编程／早崩溃、lint等等各种手段）&lt;/p&gt;
-
-&lt;p&gt;反正我现在更多时间都花在吐槽同事的代码上，有机会面对全新领域的时候才有机会遇到所谓的抽风，莫名其妙，遇到的时候我也只有兴奋，没有无奈&lt;/p&gt;
-
-&lt;!--================================!--&gt;
-
-&lt;h2 id=&#34;做服务器端开发需要具备什么样的基础知识:44fbd926ad20773f3e2d3f69a87eb130&#34;&gt;做服务器端开发需要具备什么样的基础知识？&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://segmentfault.com/q/1010000001589389&#34;&gt;问题&lt;/a&gt; by &lt;a href=&#34;http://segmentfault.com/u/ken_1&#34;&gt;ken&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;最近转服务端开发了，但是对知识的补充还是有些茫然，我个人列出一些需要补充和学习的知识，如下：&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;基本的网络知识（TCP/IP , UDP , Socket等等）&lt;/li&gt;
-&lt;li&gt;网络操作系统 Linux，有时候需要配置运行环境&lt;/li&gt;
-&lt;li&gt;开发技术：php , python , 破儿（perl）, java（公司需要）, nodejs&lt;/li&gt;
-&lt;li&gt;相关技术的积累：memcache , redis , mongodb&lt;/li&gt;
-&lt;li&gt;数据库..&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;我列举的可能有的是多余的，也有遗漏的，请问各位有何看法？
-还有网络的基础知识是否需要更佳深入的学习，比如七层模型，子网掩码的分配计算等等&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;h2 id=&#34;我的看法-1:44fbd926ad20773f3e2d3f69a87eb130&#34;&gt;我的看法&lt;/h2&gt;
-
-&lt;p&gt;我觉得软件开发这个行当是&lt;strong&gt;工程性&lt;/strong&gt;很强的一个行当，这类行当的学习路径和&lt;strong&gt;学术研究性&lt;/strong&gt;的几乎相反：不是先学了一堆“基础知识” “背景知识” 之类的东西再深入研究，而是先从最高级最方便的quick&amp;amp;dirty way开始，向底层细化。&lt;/p&gt;
-
-&lt;p&gt;按我说就先挑一门语言，然后选这门语言的前三流行的框架或开源应用中任意一款，先撸个hello world，再撸个博客出来，博客做完发布做评论，做完评论做用户，做完用户再看看你以前写的代码删光从头写起。当然把博客换成其他需求也行，只要自己需要用的都行&lt;/p&gt;
-
-&lt;p&gt;至于需要的知识，压力大了自然要缓存，模块复杂了自然要解耦，上线次数多了自然要部署要自动化，一切知识都是以解决问题为导向的。没遇到问题就空学所谓基础知识，在我看来事倍功半。就好比题主提的“服务端开发”，其中也有很多细分，做业务逻辑的，高并发的，事务的，更别说做数挖的dba的devop的等等，又或是小业务的一条龙包干，都是相当不同的技能要求。&lt;/p&gt;
-
-&lt;!--================================!--&gt;
-
-&lt;h2 id=&#34;backbone-model设计:44fbd926ad20773f3e2d3f69a87eb130&#34;&gt;Backbone model设计&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://segmentfault.com/q/1010000002492467&#34;&gt;问题&lt;/a&gt; by &lt;a href=&#34;http://segmentfault.com/u/gitbug&#34;&gt;gitbug&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;正在做一个对model增删改查的简单demo以学习backbone，现在的问题是model的表单不固定，需要根据model的类型动态变化。&lt;/p&gt;
-
-&lt;p&gt;比如，添加一个人员，普通属性如 名称 邮箱 地址 都是通用的，但是当用户选择了行业（医疗、教育）等，表单需要根据这个类型进行调整。&lt;/p&gt;
-
-&lt;p&gt;这种情况最简单的办法创建一个Person Model，把所有类型涉及到的attributes都塞到这里面，一个PersonFormView，绑定这个model，但select（行业）选择变化的时候，更新这个PersonFormView，这样的问题是：&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;Person放了太多不该放东西&lt;/li&gt;
-&lt;li&gt;view的render方法需要大量的if else逻辑用来判断类型&lt;/li&gt;
-&lt;li&gt;如果行业选择增多比如10个以上就egg pain了&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;按照普通的设计思路，普通用户Person应该作为基类，医疗用户，教育用户作为子类继承Person，View也类似，不同的子类负责不同的渲染。&lt;/p&gt;
-
-&lt;p&gt;但是感觉这样子渲染的时候没思路，怎么破？&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;h2 id=&#34;我的看法-2:44fbd926ad20773f3e2d3f69a87eb130&#34;&gt;我的看法&lt;/h2&gt;
-
-&lt;p&gt;首先整理问题，其实有两个问题：Model复杂（乃至嵌套）和View复杂（乃至嵌套）&lt;/p&gt;
-
-&lt;p&gt;分开探讨&lt;/p&gt;
-
-&lt;h3 id=&#34;model问题:44fbd926ad20773f3e2d3f69a87eb130&#34;&gt;Model问题&lt;/h3&gt;
-
-&lt;p&gt;“对象部分字段结构随某个类型字段变化而变化”是个常见的需求，这种情况下，问题很可能已经超出backbone的范围，需要和后端程序、以及DB存储结构共通考虑。通常同步后端的设计思路设计Model是比较安全简便的方法。&lt;/p&gt;
-
-&lt;p&gt;一般而言常见的解决方案有&lt;/p&gt;
-
-&lt;h5 id=&#34;a-单表-字段包涵每个类型可能的全部所需字段-当类型不需要某个字段时该字段留空值:44fbd926ad20773f3e2d3f69a87eb130&#34;&gt;A. 单表，字段包涵每个类型可能的全部所需字段，当类型不需要某个字段时该字段留空值&lt;/h5&gt;
-
-&lt;p&gt;这是最快最简单的方法，风险题主也提到了，类型增多，又或者是差异变大时比较痛苦，另外“不同类型的不同字段验证逻辑不同”也会造成痛苦&lt;/p&gt;
-
-&lt;p&gt;如果类型不多，类型间字段差异不大时，可以选择这种方案，此时Backbone这层的Model不需要额外技术，照做即可&lt;/p&gt;
-
-&lt;h5 id=&#34;b-拆表-主表含共通字段和类型-类型相关的字段放在子表-扩展表中-每个类型一张不同的扩展表:44fbd926ad20773f3e2d3f69a87eb130&#34;&gt;B. 拆表，主表含共通字段和类型，类型相关的字段放在子表／扩展表中，每个类型一张不同的扩展表&lt;/h5&gt;
-
-&lt;p&gt;这是扩展性最强的方法，和前一个方法恰好相反，类型少，差异不大的时候比较痛苦，而做类似“不同类型字段验证逻辑不通”之类的事情水到渠成。&lt;/p&gt;
-
-&lt;p&gt;此时最应该有所谓的sub-model机制来对应后台的数据结构，在&lt;code&gt;parse&lt;/code&gt;或者&lt;code&gt;initialize&lt;/code&gt;的时候动手脚都应该可以实现，我没有具体实践过，建议搜索 &lt;code&gt;backbone nested model&lt;/code&gt;看看别人的做法&lt;/p&gt;
-
-&lt;h5 id=&#34;c-单表-一个-扩展字段-用类似json字符串的形式摆放所有的类型相关的数据-又或者是mongodb类的文档数据库-直接一个字段搞定:44fbd926ad20773f3e2d3f69a87eb130&#34;&gt;C. 单表，一个“扩展字段”用类似JSON字符串的形式摆放所有的类型相关的数据，又或者是MongoDB类的文档数据库，直接一个字段搞定&lt;/h5&gt;
-
-&lt;p&gt;这是前面两者的中间方案，也是最安全最不容易出大问题的，也是“罪孽”最深重的——复合字段，扩展字段是魔鬼！随着项目的迭代，它们理论上应该渐渐被修改为前两种方案，而实际上往往成了垃圾场，所有人都把东西往这儿一扔，更糟糕的是你还经常需要里面的东西，甚至对里面的内容筛选搜索&lt;/p&gt;
-
-&lt;p&gt;但如果上述糟糕的事情没有发生，那么扩展字段是最有弹力的做法，此时backbone的model里面可以同样使扩展字段是复合值，复刻后台的数据结构，也可以用sub-model来描述扩展字段，加强结构性&lt;/p&gt;
-
-&lt;h3 id=&#34;view的问题:44fbd926ad20773f3e2d3f69a87eb130&#34;&gt;View的问题&lt;/h3&gt;
-
-&lt;p&gt;实现的方式大致还是划分成拆不拆子View&lt;/p&gt;
-
-&lt;h5 id=&#34;a-拆子view-注意不是继承:44fbd926ad20773f3e2d3f69a87eb130&#34;&gt;A. 拆子View（注意不是继承）&lt;/h5&gt;
-
-&lt;p&gt;子View的实现有很多 backbone.layoutmanager基本专门做这个，其他几乎所有基于Backbone的框架都会涉及这一块，本质就是父View管理子View的创建、销毁，子View通过某种形式和父View通信（建议向上用事件冒泡，向下用方法调用）&lt;/p&gt;
-
-&lt;p&gt;此时，每个类型特殊的字段对应一个子View，父View根据不同类型创建不同的子View插入合适位置，在类型变换的时候销毁原有的子View重新创建&lt;/p&gt;
-
-&lt;h5 id=&#34;b-不拆子view:44fbd926ad20773f3e2d3f69a87eb130&#34;&gt;B. 不拆子View&lt;/h5&gt;
-
-&lt;p&gt;不拆子View的最大问题就是渲染复杂，其次是数据收集复杂，这里建议用模版渲染来解决这个问题，关于这个方案建议参考我之前写的&lt;a href=&#34;http://press.mcfog.wang/2013/06/dsl-style-javascript/&#34;&gt;组织大表单应用中javascript代码的一种方法&lt;/a&gt; 后半部分，这里贴一下示意图&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://segmentfault.com/img/bVkCLx&#34; alt=&#34;templated-field.jpg&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;无论如何，大量if确实是需要避免的，核心思路就是根据不同类型选择不同的｛子View，子模版｝&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;最后，不建议选择类型作为子类继承父类，详细请搜索“组合优于继承”，这里不同行业的人从领域模型的角度来说或许是“医生” is-a &amp;ldquo;人&amp;rdquo;，但实现的时候用继承会很糟糕，比如再来个需要根据不同户口类型填不同的信息之类，直接傻眼。
-更合适的拆分是“人” has-a “行业信息”，“医疗行业信息” is-a “行业信息”&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;这是我在 &lt;a href=&#34;http://segmentfault.com/&#34;&gt;SegmentFault&lt;/a&gt; 上的问题回答选编，遵循&lt;a href=&#34;http://creativecommons.org/licenses/by-sa/3.0/cn/&#34;&gt;CC BY-SA 3.0 CN&lt;/a&gt; 分享&lt;/p&gt;
-
-&lt;p&gt;题图：万智【霰散弹】&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://inside.mcfog.wang/img/2015-q1/ts160.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-</description>
+&lt;p&gt;&lt;a href=&#34;http://segmentfault.com/q/1010000001664019&#34;&gt;问题&lt;/a&gt; by &lt;a href=&#34;http://segmentfault.com/u/zhimengren&#34;&gt;xxx织梦者&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -1419,11 +221,9 @@ From: &lt;a href=&#34;http://ajaxian.com/archives/a-deep-dive-and-analysis-of-th
       <pubDate>Sun, 11 Jan 2015 14:05:12 +0800</pubDate>
       
       <guid>https://inside.mcfog.wang/2015/01/ichizon-2/</guid>
-      <description>
+      <description>&lt;!--================================!--&gt;
 
-&lt;!--================================!--&gt;
-
-&lt;h2 id=&#34;问英语在编程当中的重要程度:7af8a26edf3bd98dbaeef05c62b75364&#34;&gt;问英语在编程当中的重要程度&lt;/h2&gt;
+&lt;h2 id=&#34;问英语在编程当中的重要程度&#34;&gt;问英语在编程当中的重要程度&lt;/h2&gt;
 
 &lt;p&gt;&lt;a href=&#34;http://segmentfault.com/q/1010000000698980&#34;&gt;问题&lt;/a&gt; by &lt;a href=&#34;http://segmentfault.com/u/gtg&#34;&gt;光头哥&lt;/a&gt;&lt;/p&gt;
 
@@ -1434,177 +234,7 @@ From: &lt;a href=&#34;http://ajaxian.com/archives/a-deep-dive-and-analysis-of-th
 
 &lt;p&gt;不对  - -&lt;/p&gt;
 
-&lt;p&gt;是学习英语在IT行业和编程当中分别到底有多重要，你们会经常逛国外的技术网站之类的吗&lt;/p&gt;
-
-&lt;p&gt;能举例说明最好&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;h2 id=&#34;我的看法:7af8a26edf3bd98dbaeef05c62b75364&#34;&gt;我的看法&lt;/h2&gt;
-
-&lt;p&gt;差不多的意思我就不重复了，我想说的是两点&lt;/p&gt;
-
-&lt;h3 id=&#34;关于口语:7af8a26edf3bd98dbaeef05c62b75364&#34;&gt;关于口语&lt;/h3&gt;
-
-&lt;p&gt;口语也非常重要！或者说，对自己的口语水平或者至少提升口语水平的决心有信心非常重要&lt;/p&gt;
-
-&lt;p&gt;工作三年多来，我发现不少同事的共同特点就是英文口语不好或对自己的口语不好没有信心，在他们工作生活里的场景大概是这样的&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;XXX，那个计算&lt;del&gt;挖掘机技术哪家强&lt;/del&gt;的方法在哪里定义的？ &lt;code&gt;@＃＊&amp;amp;&lt;/code&gt;  （？咦？听不懂）啥？&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;那个@＃&amp;amp;¥＊方法的参数应该传什么?&lt;/code&gt; 哪个方法？ &lt;code&gt;就是@＃＊&amp;amp;¥类的@＃&amp;amp;¥＊方法啊&lt;/code&gt;  嗯？&lt;/li&gt;
-&lt;li&gt;慢慢的这种交流不畅开始反馈到他们的代码中，牛头不对马嘴的命名、拼音命名、abcxyz命名开始出现……&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;其实这都赶不上“英语口语”的程度，不过就是念方法名变量名和几个术语的发音标准而已罢了，但我觉得这非常影响到程序员能力的提升： &lt;strong&gt;如切如磋，如琢如磨&lt;/strong&gt;&lt;/p&gt;
-
-&lt;h3 id=&#34;关于中文文档:7af8a26edf3bd98dbaeef05c62b75364&#34;&gt;关于中文文档&lt;/h3&gt;
-
-&lt;p&gt;我个人的体会是：越是中文资料多的技术领域，英文，或者说坚定地找英文资料越重要。总结下来中文文{档，章}的问题有&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;准确程度成疑问，翻译不是万能的，甚至有时一些暧昧的表达可能都无法翻译（关于架构、编程思想的文章中可能多一些）&lt;/li&gt;
-&lt;li&gt;及时性成疑问，在迭代快速的iOS、Android、NodeJS、Ruby等领域，中文译者根本跟不上技术发展的速度&lt;/li&gt;
-&lt;li&gt;数量被碾轧，还难以搜索。中文的特点是表达方式多样，对搜索引擎的挑战很大，很多时候一件事情有多种非常不同的表达方式，搜索引擎无法很好的处理这些场景。&lt;/li&gt;
-&lt;li&gt;中文天生逻辑性或者说和代码的相似性远远不及英文，英文的解决方案基本上缩写一下可能就是伪代码，整理一下就是实际代码，而中文描述到代码之间差距巨大&lt;/li&gt;
-&lt;li&gt;英文这种不需要编译解释，不会报语法错误或是segmentation fault的语言你都掌握不了，那你凭什么能掌握好别的编程语言呢？ treat english as another programming language&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;口碑好一些的翻译技术书籍可能还好，平时上网搜索问题或者查文档什么的&lt;strong&gt;千万不要看中文的东西&lt;/strong&gt;，多花在英文学习、理解上的每一秒，都会对你的技术成长带来莫大的好处；偷懒看中文资料的每一次，都会在将来默默地坑你一百遍啊一百遍&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;!--================================!--&gt;
-
-&lt;h2 id=&#34;编程基础-迭代和遍历各是什么概念-二者区别和联系是什么:7af8a26edf3bd98dbaeef05c62b75364&#34;&gt;编程基础_迭代和遍历各是什么概念？二者区别和联系是什么？&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://segmentfault.com/q/1010000002434267&#34;&gt;问题&lt;/a&gt; by &lt;a href=&#34;http://segmentfault.com/u/yanwushu&#34;&gt;yanwushu&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;笔者编程水平还处于初级阶段，平时使用列表的时候经常用到遍历
-比如：&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;    //java
-    for(int i = 0 ; i &amp;lt; 100 ; i ++){
-        System.out.println(i);
-    }
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;也用到过迭代
-比如：&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;    //java
-    List&amp;lt;String&amp;gt; list = new List&amp;lt;String&amp;gt;(){&amp;quot;a&amp;quot; , &amp;quot;b&amp;quot;, &amp;quot;c&amp;quot;};
-    for(String str : list){
-        System.out.println(str);
-    }
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;但是一直对迭代和遍历这两个概念理解很模糊，没有一个明确的概念。
-烦请了解此问题的同志们&lt;/p&gt;
-
-&lt;p&gt;1.对迭代和遍历下一个比较明确的定义，定义中应该包含他们各自的特性。
-2.比较下他们的关系、区别（当然，如果定义足够明确，二者的差异也就自己出来了）。&lt;/p&gt;
-
-&lt;p&gt;感激不尽&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;h2 id=&#34;我的看法-1:7af8a26edf3bd98dbaeef05c62b75364&#34;&gt;我的看法&lt;/h2&gt;
-
-&lt;p&gt;抠字眼的时候请多用英文&lt;/p&gt;
-
-&lt;p&gt;遍历 ~ Traverse 访问一个集合(广义)的每个元素
-迭代 ~ Iterate 反复调用同一个过程最终达成目的，这个过程如果是一个函数，那就是递归，如果是一个循环体，那就是狭义上的迭代。递归和迭代之间的关系、转换、优化等等又是另一个故事了。&lt;/p&gt;
-
-&lt;p&gt;总之遍历是&lt;strong&gt;目的&lt;/strong&gt;，迭代是&lt;strong&gt;手段&lt;/strong&gt;&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;!--================================!--&gt;
-
-&lt;h2 id=&#34;谈谈你对各种编程语言的看法:7af8a26edf3bd98dbaeef05c62b75364&#34;&gt;谈谈你对各种编程语言的看法&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://segmentfault.com/q/1010000000727790&#34;&gt;问题&lt;/a&gt; by &lt;a href=&#34;http://segmentfault.com/u/yanwushu&#34;&gt;yanwushu&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;笔者只用过java和C#，js只是看了点皮毛。对于ruby，python，go，lisp等网络上常见的语言一窍不通。并且，限制于个人能力，对java和C#的认识也并没有很深刻。&lt;/p&gt;
-
-&lt;p&gt;想请对编程比较有功底的同志说说自己对各种语言的理解，包括他们的优劣。发表观点时，请尽量具体。&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;h2 id=&#34;我的看法-2:7af8a26edf3bd98dbaeef05c62b75364&#34;&gt;我的看法&lt;/h2&gt;
-
-&lt;h3 id=&#34;lisp-系:7af8a26edf3bd98dbaeef05c62b75364&#34;&gt;Lisp（系）&lt;/h3&gt;
-
-&lt;p&gt;各种思想的老祖宗。据说越像lisp的语言越牛逼（误）
-学术价值宇宙第一，实用价值较低，不明觉厉&lt;/p&gt;
-
-&lt;h3 id=&#34;c:7af8a26edf3bd98dbaeef05c62b75364&#34;&gt;C&lt;/h3&gt;
-
-&lt;p&gt;可以做任何用处，但最大的用处还是写写操作系统和编译器之类的，一般人用起来只能添乱。重剑无锋，大巧不工&lt;/p&gt;
-
-&lt;p&gt;工程性0，lisp度0，底层亲和型100%&lt;/p&gt;
-
-&lt;p&gt;宇宙主流语言中年纪最大的语言&lt;/p&gt;
-
-&lt;h3 id=&#34;c-1:7af8a26edf3bd98dbaeef05c62b75364&#34;&gt;C++&lt;/h3&gt;
-
-&lt;p&gt;为了让一般人也有饭吃，从C衍生的变种。写C需要一群高手，但C++只要一个高手把架子搭稳，一般市民也能写代码啦。写代码能谈得上是“工程”了
-问题是搭架子的人如果水平不够，或者一般市民不听那个人的，那也是一场灾难。&lt;/p&gt;
-
-&lt;p&gt;宇宙中特性最多的语言&lt;/p&gt;
-
-&lt;h3 id=&#34;java:7af8a26edf3bd98dbaeef05c62b75364&#34;&gt;Java&lt;/h3&gt;
-
-&lt;p&gt;为了让半瓶水也能搭出能用的架子，工程性点到满还有些溢出，派生出了邪教“设计模式真理教”“OO拯救世界教”“全家都是接口党”等
-由于邪教干扰，老东家不利索，新东家坑爹等等天灾人祸，原本应当更伟大的全领域语言在桌面GUI方面只有IDE方面所向披靡，服务端方面只有企业应用半壁江山。所幸天无绝人之路，老乡的谷哥把认他为义子，放进了安卓中，顿时前景又光明了起来&lt;/p&gt;
-
-&lt;p&gt;宇宙中最适合煮咖啡的语言&lt;/p&gt;
-
-&lt;h3 id=&#34;objc:7af8a26edf3bd98dbaeef05c62b75364&#34;&gt;ObjC&lt;/h3&gt;
-
-&lt;p&gt;不怎么了解，展示了肾教淫威的语言
-但从语言角度来说，完全躺在一个干爹怀里是很不好的征兆&lt;/p&gt;
-
-&lt;p&gt;宇宙中开发环境最贵的语言&lt;/p&gt;
-
-&lt;h3 id=&#34;python:7af8a26edf3bd98dbaeef05c62b75364&#34;&gt;Python&lt;/h3&gt;
-
-&lt;p&gt;大法好。独树一帜的语法，巧妙的设计，文武双全。小可以随手作脚本，大可以承载大型工程。漂亮的数据结构和模块系统。
-可惜版本分裂得厉害，进入3以后就没有以后了&lt;/p&gt;
-
-&lt;p&gt;宇宙中最关心空格的语言&lt;/p&gt;
-
-&lt;h3 id=&#34;ruby:7af8a26edf3bd98dbaeef05c62b75364&#34;&gt;Ruby&lt;/h3&gt;
-
-&lt;p&gt;小清新。独树另一帜的语法，另一种巧妙的设计。据说实现需求速度飞快。
-magic就是那种看上去无比优雅风骚性感，实际工业开发的时候发现千人千面，难以查错难以维护的风格，ruby以此为荣，所以我觉得始终摆脱不了玩具语言
-不得不提到的是gem体系引领了第一波github的狂欢&lt;/p&gt;
-
-&lt;p&gt;宇宙中名字最高贵的语言&lt;/p&gt;
-
-&lt;h3 id=&#34;javascript:7af8a26edf3bd98dbaeef05c62b75364&#34;&gt;Javascript&lt;/h3&gt;
-
-&lt;p&gt;平淡无奇的语法中蕴含了不亚于ruby的“Lisp度”或者说元编程能力，但没人能想到真正使Javascript爆发的是原因来自于他non-block的天性。这个为异步而生的语言被Node选中，成为了完美的异步服务端脚本语言。
-没有namespace的JS通过“每个库把自己的依赖库重复装在自己目录里”的方式，暴力解决了依赖冲突的千古问题。然后又恰逢HTML5迎面而来，于是天时地利人和，顺势成为社区最火的语言，github trending保持占领一半位置
-不过没逃过“灵活”的语言的通病：难以调试、维护、查错。需要lead programmer严格把控整体风格。&lt;/p&gt;
-
-&lt;p&gt;宇宙中“我会JS”涵义最丰富的语言&lt;/p&gt;
-
-&lt;h3 id=&#34;php:7af8a26edf3bd98dbaeef05c62b75364&#34;&gt;PHP&lt;/h3&gt;
-
-&lt;p&gt;&lt;strong&gt;全宇宙最好的语言&lt;/strong&gt;
-主流语言中唯一主动聚焦于单个场景的语言。“克制”是PHP语言设计的不二法门，早年主要参照C和Perl，有限地借鉴perl的特性，没有让整个语言都“动态掉”，5.0后开始注重工程性，大致借鉴Java，也是一步一个脚印，慢慢地借鉴，抄一行，停下来改自己三行，融会贯通以后再继续抄。
-于是现在的PHP恰好站在一个非常平衡的位置，同时兼具一定的动态能力和较高的工程性，动如Laravel让人感叹RoR再世，静如Symfony、ZF让人以为回到了Java的世界。&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;这是我在 &lt;a href=&#34;http://segmentfault.com/&#34;&gt;SegmentFault&lt;/a&gt; 上的问题回答选编，遵循&lt;a href=&#34;http://creativecommons.org/licenses/by-sa/3.0/cn/&#34;&gt;CC BY-SA 3.0 CN&lt;/a&gt; 分享&lt;/p&gt;
-
-&lt;p&gt;题图：万智【封口】&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://inside.mcfog.wang/img/2015-q1/m14-35.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-</description>
+&lt;p&gt;是学习英语在IT行业和编程当中分别到底有多重要，你们会经常逛国外的技术网站之类的吗&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -1613,11 +243,9 @@ magic就是那种看上去无比优雅风骚性感，实际工业开发的时候
       <pubDate>Fri, 02 Jan 2015 16:18:14 +0800</pubDate>
       
       <guid>https://inside.mcfog.wang/2015/01/ichizon-1/</guid>
-      <description>
+      <description>&lt;!--================================!--&gt;
 
-&lt;!--================================!--&gt;
-
-&lt;h2 id=&#34;该不该从事更多项目:e18bb08b79cf025026b9eab6fd4195fa&#34;&gt;&lt;strong&gt;该不该从事更多项目？&lt;/strong&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;该不该从事更多项目&#34;&gt;&lt;strong&gt;该不该从事更多项目？&lt;/strong&gt;&lt;/h2&gt;
 
 &lt;p&gt;&lt;a href=&#34;http://segmentfault.com/q/1010000002439221/a-1020000002439395&#34;&gt;问题&lt;/a&gt; by &lt;a href=&#34;http://segmentfault.com/u/guotong1988&#34;&gt;郭同jet&lt;/a&gt;&lt;/p&gt;
 
@@ -1635,82 +263,9 @@ magic就是那种看上去无比优雅风骚性感，实际工业开发的时候
 
 &lt;hr /&gt;
 
-&lt;h2 id=&#34;我的看法:e18bb08b79cf025026b9eab6fd4195fa&#34;&gt;我的看法&lt;/h2&gt;
+&lt;h2 id=&#34;我的看法&#34;&gt;我的看法&lt;/h2&gt;
 
-&lt;h3 id=&#34;a:e18bb08b79cf025026b9eab6fd4195fa&#34;&gt;A.&lt;/h3&gt;
-
-&lt;p&gt;无聊项目变有趣的方法可以是流程自动化 文档化 或者重构。这些同时还为你能抽身创造客观条件&lt;/p&gt;
-
-&lt;h3 id=&#34;b:e18bb08b79cf025026b9eab6fd4195fa&#34;&gt;B.&lt;/h3&gt;
-
-&lt;p&gt;你不可能没有时间搞B，没有时间100%只是借口，在我看来可能的原因有 你懒／老板不让你搞／或者是你本职的A没搞好等等，A没搞好的话参见上一条，创造你能抽身的条件；懒的话自己想办法解决；老板不让你搞的话，在解决了其他问题以后，找老板谈，告诉他你已经把A项目撸圆，不需要很多精力维护，B项目你已经了解了觉得很有趣，你对B项目的看法规划等等&lt;/p&gt;
-
-&lt;h3 id=&#34;c:e18bb08b79cf025026b9eab6fd4195fa&#34;&gt;C.&lt;/h3&gt;
-
-&lt;p&gt;C能学到东西，A.B学不到是假象。C如果和公司无关，那么就只能在把AB搞漂亮之外的时间来搞，这是基本职业素养，时间自己找。 千万不要觉得只有C才能学到东西就好。我的建议是公司如果压力大的话不妨先抛开C，投入精力在改善AB两个项目，优化架构，或者是和老板沟通增加AB的资源（放慢研发周期或者加人），略微卸掉压力以后再找时间来玩C&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;!--================================!--&gt;
-
-&lt;h2 id=&#34;为什么国内有不少php程序员不喜欢thinkphp-甚至鄙视thinkphp:e18bb08b79cf025026b9eab6fd4195fa&#34;&gt;&lt;strong&gt;为什么国内有不少PHP程序员不喜欢THINKPHP，甚至鄙视THINKPHP？&lt;/strong&gt;&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://segmentfault.com/q/1010000002443290&#34;&gt;问题&lt;/a&gt; by &lt;a href=&#34;http://segmentfault.com/u/xiaohuaer&#34;&gt;123456&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;为什么国内有不少PHP程序员不喜欢THINKPHP，甚至鄙视THINKPHP？&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;h2 id=&#34;我的看法-1:e18bb08b79cf025026b9eab6fd4195fa&#34;&gt;我的看法&lt;/h2&gt;
-
-&lt;p&gt;自古文人相轻，程序员更甚，所谓的鄙视不是简单的链条或循环，而是密密麻麻的有向图，什么技术都有人鄙视&lt;/p&gt;
-
-&lt;p&gt;我的看法是技术是有&lt;strong&gt;适用场景&lt;/strong&gt;的，什么样的业务，什么样的硬件，包括公司已有什么样的开发人员，什么样的开发人员市场上容易招聘等等各种因素都会影响到技术选择&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;就比如说“世界上最好的语言”，其古怪程度确实罄竹难书，有篇知名博文用两头都是起子的锤子来描述并不为过，但只需要“人好召，环境好配，运维简便，性能过硬” 两头都是起子的锤子也至少能在市场占有方面完爆很多竞争对手。市场是不会说谎的，用的人多的技术一定有它的优点&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;作为负责技术选型的lead programmer，必须综合考虑所有的因素来选择对公司最合适的技术，而非争个人喜好或是仅靠单纯的某个方面做出选择&lt;/p&gt;
-
-&lt;p&gt;而一旦某个项目技术选型确定，或者是你加入的是已经成熟的项目，那么吐槽已定的技术栈就没什么建设性了。这时候适应已有的思维带着镣铐跳舞才是正道，当然如果能够融合其他技术栈的思想来弥补现有技术栈的一些缺陷就更好了。&lt;/p&gt;
-
-&lt;p&gt;说回thinkphp的话，我最近否决thinkPHP的理由和否决Laravel的大致理由是一样的：我不需要全功能的框架&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;!--================================!--&gt;
-
-&lt;h2 id=&#34;如何看待敏捷开发:e18bb08b79cf025026b9eab6fd4195fa&#34;&gt;&lt;strong&gt;如何看待敏捷开发？&lt;/strong&gt;&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://segmentfault.com/q/1010000000487553&#34;&gt;问题&lt;/a&gt; by &lt;a href=&#34;http://segmentfault.com/u/edagarli&#34;&gt;edagarli&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;能否根据你用敏捷开发的经验简要的说下敏捷开发。&lt;/p&gt;
-
-&lt;p&gt;谈谈你自己的理解即可。几句话，几段话，都可。&lt;/p&gt;
-
-&lt;p&gt;我知道这不是编程语言，我只是想了解大家在项目中用到敏捷开发时候，对其的理解。&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;h2 id=&#34;我的看法-2:e18bb08b79cf025026b9eab6fd4195fa&#34;&gt;我的看法&lt;/h2&gt;
-
-&lt;p&gt;有人说这是某种思想，有人说这是某名字和古董OS一样的实践，又有人说这是另一些实践&lt;/p&gt;
-
-&lt;p&gt;我讨厌这种暧昧不清的词&lt;/p&gt;
-
-&lt;p&gt;我只认为并相信&lt;br /&gt;
-a)高效的团队开发有必要遵循某种方法/流程&lt;br /&gt;
-b)方法/流程是随时都可以优化而且应该不断优化的&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;这是我在 &lt;a href=&#34;http://segmentfault.com/&#34;&gt;SegmentFault&lt;/a&gt; 上的问题回答选编，遵循&lt;a href=&#34;http://creativecommons.org/licenses/by-sa/3.0/cn/&#34;&gt;CC BY-SA 3.0 CN&lt;/a&gt; 分享&lt;/p&gt;
-
-&lt;p&gt;题图：万智【鄙视】&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://inside.mcfog.wang/img/2015-q1/ktk69.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-</description>
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
   </channel>

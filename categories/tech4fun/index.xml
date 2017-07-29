@@ -5,8 +5,11 @@
     <link>https://inside.mcfog.wang/categories/tech4fun/</link>
     <description>Recent content in Tech4fun on mc-inside</description>
     <generator>Hugo -- gohugo.io</generator>
+    <copyright>©mcfog All rights reserved.</copyright>
     <lastBuildDate>Mon, 02 Nov 2015 01:33:03 +0800</lastBuildDate>
-    <atom:link href="https://inside.mcfog.wang/categories/tech4fun/index.xml" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="https://inside.mcfog.wang/categories/tech4fun/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>自用alfred workflow：双向时间戳转换</title>
@@ -24,10 +27,7 @@
 
 &lt;p&gt;&lt;img src=&#34;https://inside.mcfog.wang/img/2015-q4/workflow-timestamp-2.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&#34;http://7xnyyw.dl1.z0.glb.clouddn.com/timestamp-helper.alfredworkflow&#34;&gt;下载链接&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;就酱。&lt;/p&gt;
-</description>
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -40,16 +40,7 @@
 
 &lt;p&gt;移动端的兴起和原生JS，DOM能力的改善促使一大批微型js库出现，它们的体积（min+gzip）不足5KB，但在各自的领域内都有非常好的表现。今天介绍的又一个直达网站便是索引了这些微型的js库，更赞的是维护了友好的关键字，所以如图“I need xxx” 答案就出来啦&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://inside.mcfog.wang/img/2015-q1/microjs.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://microjs.com/&#34;&gt;http://microjs.com/&lt;/a&gt;&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;题图：万智 【缩小】&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://inside.mcfog.wang/img/2015-q1/m11-52.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-</description>
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -60,18 +51,7 @@
       <guid>https://inside.mcfog.wang/2015/02/tech4fun-7/</guid>
       <description>&lt;p&gt;随着IE6，IE7的远去，移动端webkit一统江湖，web开发的好日子总算是慢慢到来了。但主浏览器的数量其实并没有减少，用一些比较新的特性的时候还是需要检查一下兼容性，考虑一下是否需要polyfill或degradation。 MDN，MSDN等固然权威，但有时我们只是要查兼容性而已。&lt;/p&gt;
 
-&lt;p&gt;于是这里推荐的是这个神站 &lt;a href=&#34;http://caniuse.com/&#34;&gt;http://caniuse.com/&lt;/a&gt;。直接输入特性名字，兼容性，已知问题等等一览无余。就是这样。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://inside.mcfog.wang/img/2015-q1/caniuse.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;PS: 无需访问首页，可以直接加上搜索关键词&lt;code&gt;caniuse.com/svg&lt;/code&gt;，直达目标。 类似的站还有&lt;code&gt;php.net/strtotime&lt;/code&gt;和&lt;code&gt;api.jquery.com/val&lt;/code&gt;等等，很多地方都是支持的。&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;题图：万智 【壮绝实验】&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://inside.mcfog.wang/img/2015-q1/rtr159.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-</description>
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -89,26 +69,7 @@
 
 &lt;p&gt;两块，我不需要网址导航，应用市场，小游戏合集等等“功能”，而只想要一个浏览器。&lt;/p&gt;
 
-&lt;p&gt;近来从Opera国际版切换到Yandex，感觉良好，特此推荐。Yandex是俄罗斯本土第一搜索引擎，号称俄罗斯谷歌。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://inside.mcfog.wang/img/2015-q1/yandex1.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;新标签页／快速拨号页，Yandex浏览器的特色之一是会自动分析网站的“主色调”，配合网站favicon，即耐看又一目了然。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://inside.mcfog.wang/img/2015-q1/yandex2.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;标签切换页，主色调起到了非常棒的区分效果。流畅度，动画，手势等各方面也均属上乘。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://inside.mcfog.wang/img/2015-q1/yandex3.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;置底的导航栏。另外Yandex虽然默认具备来自Opera的涡轮加速能力，还自动检测网络情况确定是否开启，却非常克制地仅仅在进度条颜色上体现（网络较差时进度条为蓝色表示启用涡轮加速）&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://inside.mcfog.wang/img/2015-q1/yandex4.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;非活跃情况下导航栏收起成最矮的一行。保证常驻屏幕（以方便操作和展示网页标题）的同时，将内容区域的面积最大化。&lt;/p&gt;
-
-&lt;p&gt;安卓IOS各大市场均有下载。&lt;/p&gt;
-</description>
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -121,16 +82,7 @@
 
 &lt;p&gt;&lt;a href=&#34;http://alternativeto.net/&#34;&gt;http://alternativeto.net/&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;alternative to XXX 正如其名的这个网站，基于用户推荐整理各种软件的替代关系，支持按平台按收费与否等等各种条件过滤，妈妈再也不担心我找不到顺手的软件啦&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://inside.mcfog.wang/img/2015-q1/alternativeto.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;题图：万智 【琐物法师】&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://inside.mcfog.wang/img/2015-q1/som48.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-</description>
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -143,22 +95,7 @@
 
 &lt;p&gt;拯救了这样的我的一款开发神器就是&lt;a href=&#34;http://alloyteam.github.io/AlloyDesigner/&#34;&gt;AlloyDesigner&lt;/a&gt;的洋葱皮功能。&lt;/p&gt;
 
-&lt;p&gt;洋葱皮是当年flash的一个经典功能，可以让你看穿时间轴，看到前后几桢的半透明的样子。AlloyDesigner可以将重构稿导入之后，半透明覆盖在当前网页上，调整位置锁定之后，便可以愉快地进行重构了，嗯，配合chrome的开发工具，焦点在css属性上的时候可以上下直接调整数值，妈妈再也不担心我调整位置尺寸耗时费力了！&lt;/p&gt;
-
-&lt;p&gt;AlloyDesigner有脚本部署版本，书签版本和chrome扩展版本。扩展使用方便，但会发送GA统计，敏感人群可以选用火狐扩展&lt;a href=&#34;https://addons.mozilla.org/en-US/firefox/addon/pixel-perfect/&#34;&gt;PixelPerfect&lt;/a&gt;，似乎也有chrome移植版。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://inside.mcfog.wang/img/2015-q1/pxperfect.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;从此mc过上了幸福的撞大运重构生活，完。&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;开始这个博客至今正好一个月，4周，12篇文章。很多事真的是只要想做就能做到呢&lt;/p&gt;
-
-&lt;p&gt;题图：万智 【实相光闪】&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://inside.mcfog.wang/img/2015-q1/fut-43.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-</description>
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -169,37 +106,7 @@
       <guid>https://inside.mcfog.wang/2015/01/tech4fun-3/</guid>
       <description>&lt;p&gt;在统一密码的方便但不设防和每个站独立密码的麻烦之中，各种密码管理解决方案出现了。关于这个小众需求，我个人无法接受这个密码生成方案是有“中心”的，无论这个中心是商业公司还是某个加密的数据文件。前者我要信赖他的生存能力，国外的不被墙能力和国内的哔—能力；而后者我要小心保护这个数据文件，用一个强密码乃至多层加密来保护它的同时，还要把它同步在不同的电脑和手机之间，这依然是方便和安全之间的悖论。&lt;/p&gt;
 
-&lt;p&gt;今天我要推荐的&lt;a href=&#34;http://passwordmaker.org/&#34;&gt;PasswordMaker.org&lt;/a&gt;基于这样一个并不新但有效的点子：把网站名字和自己记住的一个主密码混合起来用哈希算法计算得到真正的密码。&lt;/p&gt;
-
-&lt;p&gt;passwordmaker的密码生成流程大致如下：&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;配置你的profile，包括密码长度，密码字符集(英文数字还是包括符号等)，哈希算法，l33t混淆等级等。如果需要在多个设备上使用，统一配置即可&lt;/li&gt;
-&lt;li&gt;访问目标网站，调用passwordmaker，它会将一级域名作为生成密码的另一个要素&lt;/li&gt;
-&lt;li&gt;输入你的主密码，得到生成后的密码&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;过程中不涉及中心服务器或者数据库文件，所以无需担心服务器宕机，数据文件丢失，也没有引入额外的风险 —— 除了你自己的脑子之外，没有别的地方集中记录了你究竟在哪些网站有什么账号&lt;/p&gt;
-
-&lt;p&gt;可能的麻烦和解决对策&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;一站多号：passwordmaker支持额外在密码的盐中混入用户名，更简单的方法是直接把用户名打在主密码里面即可&lt;/li&gt;
-&lt;li&gt;同一个站点在不同的域名下有登录界面：固定最常用的那个域名，或者手工输入域名&lt;/li&gt;
-&lt;li&gt;应用的密码没有对应域名：手动输入官网地址，或者干脆就输应用名字也行&lt;/li&gt;
-&lt;li&gt;希望定时修改密码： 这可能是去中心唯一的缺点……但我真没见过能坚持定时修改各种小网站密码的人，反正我没这个需求。真的必须的话，可以定时更换主密码&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;国内的替身有花密，但既然都开源无中心了，也就没必要考虑国内了吧&lt;/p&gt;
-
-&lt;p&gt;最后，&lt;strong&gt;不要用任何此类方法管理你的邮箱／网银／支付密码&lt;/strong&gt;。&lt;strong&gt;不要用任何此类方法管理你的邮箱／网银／支付密码&lt;/strong&gt;。&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;题图：万智 【心灵操控】&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://inside.mcfog.wang/img/2015-q1/m12-67.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-</description>
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -214,29 +121,7 @@
 
 &lt;p&gt;五年过去了，RequireJS战胜了同级生LabJS，带起了中国小伙伴SeaJS。他完美地引领了前端模块化的革命，但今天看来，它有些过时了：它重浏览器端，轻打包编译，没有及时跟进包管理体系，almond没有成为标配而只是周边，配置晦涩……诞生太早的RequireJS，虽然一度成为了前端模块化的某种程度上的事实标准，但难掩其缺点。&lt;/p&gt;
 
-&lt;hr /&gt;
-
-&lt;p&gt;五年间，NodeJS成为了服务端以及脚本工具的一代翘楚，NPM的成功让大家意识到一个集中式的依赖／包管理体系的重要性，Bower应运而生，还有试图将CMD和NPM包带到前端领域，统一前后端包格式的Browserify等等，大量的前端工具爆发式地出现，WebPack是其中的(又)一款模块打包工具。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://inside.mcfog.wang/img/2015-q1/webpack.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;webpack的优势一言难尽，相比其他竞争者，他的好处有&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;模块来源广泛，支持包括npm/bower等等的各种主流模块安装／依赖解决方案&lt;/li&gt;
-&lt;li&gt;模块规范支持全面，amd/cmd以及shimming等一应具全&lt;/li&gt;
-&lt;li&gt;浏览器端足迹小，移动端友好，却对热加载乃至热替换有很好的支持&lt;/li&gt;
-&lt;li&gt;插件机制完善，实现本身实现同样模块化，容易扩展&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;但其最大的特点是“用着舒服，不折腾”，这是一款工具最难能可贵的优点。&lt;/p&gt;
-
-&lt;p&gt;webpack官网&lt;br /&gt;
-&lt;a href=&#34;http://webpack.github.io/&#34;&gt;http://webpack.github.io/&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;我的前端技术栈scaffold （bower+webpack+less+gulp）&lt;br /&gt;
-&lt;a href=&#34;https://github.com/mcfog/glimmervoid&#34;&gt;https://github.com/mcfog/glimmervoid&lt;/a&gt;&lt;/p&gt;
-</description>
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -245,141 +130,13 @@
       <pubDate>Fri, 09 Jan 2015 13:26:52 +0800</pubDate>
       
       <guid>https://inside.mcfog.wang/2015/01/tech4fun-1/</guid>
-      <description>
-
-&lt;p&gt;随着诸如github pages的静态托管服务，静态站点生成器在近年有了极大的发展，静态生成+托管对托管环境要求低、维护简单、可配合版本控制，但又灵活多变，在程序员和geek群体中大有超越WordPress等动态博客程序的势头&lt;/p&gt;
+      <description>&lt;p&gt;随着诸如github pages的静态托管服务，静态站点生成器在近年有了极大的发展，静态生成+托管对托管环境要求低、维护简单、可配合版本控制，但又灵活多变，在程序员和geek群体中大有超越WordPress等动态博客程序的势头&lt;/p&gt;
 
 &lt;p&gt;近年来个人也好项目也好，我也经常要用到静态生成器，这里把我玩过的静态生成器挨个做个简评&lt;/p&gt;
 
 &lt;p&gt;&lt;em&gt;才、才不是什么玩博客程序的时间超过了写博客的时间呢&lt;/em&gt;&lt;/p&gt;
 
-&lt;h3 id=&#34;jekyll-octopress:cdcb03233dea0f57dbd4745987b26ff4&#34;&gt;Jekyll / OctoPress&lt;/h3&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://jekyllrb.com/&#34;&gt;Jekyll&lt;/a&gt;和&lt;a href=&#34;http://octopress.org/&#34;&gt;OctoPress&lt;/a&gt;是最流行的静态博客系统。OctoPress是基于Jekyll的扩展，进一步方便了写作。&lt;/p&gt;
-
-&lt;p&gt;在主题、插件数量上和wordpress一样对竞争对手有压倒性优势。上手简单，周边工具丰富。&lt;/p&gt;
-
-&lt;p&gt;推荐给想更多把时间花在写字而不是折腾博客的人。&lt;/p&gt;
-
-&lt;p&gt;缺点主要是文章量大的时候生成速度慢。&lt;/p&gt;
-
-&lt;h3 id=&#34;hexo:cdcb03233dea0f57dbd4745987b26ff4&#34;&gt;Hexo&lt;/h3&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://hexo.io/&#34;&gt;Hexo&lt;/a&gt;是NodeJS编写的静态博客系统，其生成速度快，主题数量相对也比较丰富。是OctoPress的优秀替代者。&lt;/p&gt;
-
-&lt;p&gt;另外由于Node社区丰富的“方言”，写主题时天然有Jade/Stylus/Less等各种方言支持。&lt;/p&gt;
-
-&lt;p&gt;推荐给希望生成速度快，主要写博客的人&lt;/p&gt;
-
-&lt;p&gt;我用Hexo来写我的技术博客 &lt;a href=&#34;http://press.mcfog.wang/&#34;&gt;http://press.mcfog.wang/&lt;/a&gt;&lt;/p&gt;
-
-&lt;h3 id=&#34;sculpin:cdcb03233dea0f57dbd4745987b26ff4&#34;&gt;Sculpin&lt;/h3&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://sculpin.io/&#34;&gt;Sculpin&lt;/a&gt;是PHP的静态站点系统。Hexo和Octopress专注于博客，而有时候我们的需求不仅仅是博客，而是有类似CMS的页面生成需求。Sculpin是一个泛用途的静态站点生成系统，在支持博客常见的分页、分类tag等同时，也能较好地支持非博客的一般页面生成。
-但Sculpin没有主题功能，没有严格分离内容和模版，第三方提供的现成模版也很少。&lt;/p&gt;
-
-&lt;p&gt;推荐给没有主题需求，希望自己写页面，且需要博客之外的页面内容的人&lt;/p&gt;
-
-&lt;p&gt;缺点是生成速度一般，第三方扩展少&lt;/p&gt;
-
-&lt;h3 id=&#34;hugo:cdcb03233dea0f57dbd4745987b26ff4&#34;&gt;Hugo&lt;/h3&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://gohugo.io/&#34;&gt;Hugo&lt;/a&gt;是GO语言编写的静态站点系统。其生成速度快，且在较好支持博客和非博客内容的同时提供了比较完备的主题系统。无论是自己写主题还是套用别人的主题都比较顺手。&lt;/p&gt;
-
-&lt;p&gt;推荐给重视生成速度且希望具备一定的灵活性的人&lt;/p&gt;
-
-&lt;p&gt;缺点是至今分页功能还没官方发布（还在下个release，有非官方的方案）&lt;/p&gt;
-
-&lt;p&gt;这是本站&lt;a href=&#34;http://inside.mcfog.wang/&#34;&gt;http://inside.mcfog.wang/&lt;/a&gt;的生成器&lt;/p&gt;
-
-&lt;h2 id=&#34;总结:cdcb03233dea0f57dbd4745987b26ff4&#34;&gt;总结&lt;/h2&gt;
-
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;&lt;/th&gt;
-&lt;th&gt;语言&lt;/th&gt;
-&lt;th&gt;活跃度&lt;/th&gt;
-&lt;th&gt;开箱即用&lt;/th&gt;
-&lt;th&gt;主题数量&lt;/th&gt;
-&lt;th&gt;主题系统&lt;/th&gt;
-&lt;th&gt;生成速度&lt;/th&gt;
-&lt;th&gt;博客适应性&lt;/th&gt;
-&lt;th&gt;非博客适应性&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;Jekyll&lt;/td&gt;
-&lt;td&gt;Ruby&lt;/td&gt;
-&lt;td&gt;S&lt;/td&gt;
-&lt;td&gt;B&lt;/td&gt;
-&lt;td&gt;A&lt;/td&gt;
-&lt;td&gt;A&lt;/td&gt;
-&lt;td&gt;C&lt;/td&gt;
-&lt;td&gt;A&lt;/td&gt;
-&lt;td&gt;C&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;OctoPress&lt;/td&gt;
-&lt;td&gt;Ruby&lt;/td&gt;
-&lt;td&gt;C&lt;/td&gt;
-&lt;td&gt;A&lt;/td&gt;
-&lt;td&gt;S&lt;/td&gt;
-&lt;td&gt;A&lt;/td&gt;
-&lt;td&gt;C&lt;/td&gt;
-&lt;td&gt;A&lt;/td&gt;
-&lt;td&gt;C&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;Hexo&lt;/td&gt;
-&lt;td&gt;NodeJS&lt;/td&gt;
-&lt;td&gt;B&lt;/td&gt;
-&lt;td&gt;A&lt;/td&gt;
-&lt;td&gt;A&lt;/td&gt;
-&lt;td&gt;B&lt;/td&gt;
-&lt;td&gt;A&lt;/td&gt;
-&lt;td&gt;A&lt;/td&gt;
-&lt;td&gt;B&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;Sculpin&lt;/td&gt;
-&lt;td&gt;PHP&lt;/td&gt;
-&lt;td&gt;C&lt;/td&gt;
-&lt;td&gt;B&lt;/td&gt;
-&lt;td&gt;C&lt;/td&gt;
-&lt;td&gt;C&lt;/td&gt;
-&lt;td&gt;B&lt;/td&gt;
-&lt;td&gt;B&lt;/td&gt;
-&lt;td&gt;A&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;Hugo&lt;/td&gt;
-&lt;td&gt;GO&lt;/td&gt;
-&lt;td&gt;B&lt;/td&gt;
-&lt;td&gt;B&lt;/td&gt;
-&lt;td&gt;B&lt;/td&gt;
-&lt;td&gt;A&lt;/td&gt;
-&lt;td&gt;S&lt;/td&gt;
-&lt;td&gt;B&lt;/td&gt;
-&lt;td&gt;A&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;p&gt;最后推荐一个静态站点生成器的统计列表 &lt;a href=&#34;https://staticsitegenerators.net&#34;&gt;https://staticsitegenerators.net&lt;/a&gt;，有机会准备玩玩&lt;a href=&#34;http://metalsmith.io&#34;&gt;http://metalsmith.io&lt;/a&gt;&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;题图：万智《Generator Servant》电机仆役&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://inside.mcfog.wang/img/2015-q1/m15-143.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-</description>
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
   </channel>

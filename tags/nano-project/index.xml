@@ -5,8 +5,11 @@
     <link>https://inside.mcfog.wang/tags/nano-project/</link>
     <description>Recent content in Nano Project on mc-inside</description>
     <generator>Hugo -- gohugo.io</generator>
+    <copyright>©mcfog All rights reserved.</copyright>
     <lastBuildDate>Mon, 02 Nov 2015 01:33:03 +0800</lastBuildDate>
-    <atom:link href="https://inside.mcfog.wang/tags/nano-project/index.xml" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="https://inside.mcfog.wang/tags/nano-project/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>自用alfred workflow：双向时间戳转换</title>
@@ -24,10 +27,7 @@
 
 &lt;p&gt;&lt;img src=&#34;https://inside.mcfog.wang/img/2015-q4/workflow-timestamp-2.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&#34;http://7xnyyw.dl1.z0.glb.clouddn.com/timestamp-helper.alfredworkflow&#34;&gt;下载链接&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;就酱。&lt;/p&gt;
-</description>
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
   </channel>

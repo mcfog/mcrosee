@@ -5,8 +5,11 @@
     <link>https://inside.mcfog.wang/categories/echoing-truth/</link>
     <description>Recent content in Echoing Truth on mc-inside</description>
     <generator>Hugo -- gohugo.io</generator>
+    <copyright>©mcfog All rights reserved.</copyright>
     <lastBuildDate>Fri, 27 Mar 2015 21:50:44 +0800</lastBuildDate>
-    <atom:link href="https://inside.mcfog.wang/categories/echoing-truth/index.xml" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="https://inside.mcfog.wang/categories/echoing-truth/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>[真相回响]学代码怎么这么难！</title>
@@ -22,16 +25,7 @@
 
 &lt;p&gt;&lt;a href=&#34;http://www.vikingcodeschool.com/posts/why-learning-to-code-is-so-damn-hard&#34;&gt;http://www.vikingcodeschool.com/posts/why-learning-to-code-is-so-damn-hard&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;另外由于是长文多图外国博客，我准备了容易手打一些的跳转链接&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://inside.mcfog.wang/goto/et/c&#34;&gt;http://inside.mcfog.wang/goto/et/c&lt;/a&gt;&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;题图：万智【艰苦旅程】&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://inside.mcfog.wang/img/2015-q1/dka67.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-</description>
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -42,16 +36,7 @@
       <guid>https://inside.mcfog.wang/2015/03/echoing-truth-a/</guid>
       <description>&lt;p&gt;上周五不小心翘掉了说好的文章，痛定思痛，我决定新开这个更(neng)有(tou)意(lan)义的分类，来介绍看到的一些值得反复品味好文章。&lt;/p&gt;
 
-&lt;p&gt;今天这篇《What Color is Your Function?》以一种独特的视角描述了编程中常见的某种分裂问题X。这种分裂感其实在编程过程中的各个方面都会出现，而不仅仅限于文章中提到的那个范畴X。我一直觉得能把问题清晰地扯到哲学范畴（胡搅蛮缠可不算）基本上就算满级通关了。这便是一篇通向满级的攻略。&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://journal.stuffwithstuff.com/2015/02/01/what-color-is-your-function/&#34;&gt;http://journal.stuffwithstuff.com/2015/02/01/what-color-is-your-function/&lt;/a&gt;&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;题图：万智【真相回响】&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://inside.mcfog.wang/img/2015-q1/mma40.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-</description>
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
   </channel>

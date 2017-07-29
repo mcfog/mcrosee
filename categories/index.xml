@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories on mc-inside</title>
+    <link>https://inside.mcfog.wang/categories/</link>
+    <description>Recent content in Categories on mc-inside</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>©mcfog All rights reserved.</copyright>
+    
+	<atom:link href="https://inside.mcfog.wang/categories/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Default</title>
+      <link>https://inside.mcfog.wang/categories/default/</link>
+      <pubDate>Sat, 29 Mar 2014 04:50:00 +0800</pubDate>
+      
+      <guid>https://inside.mcfog.wang/categories/default/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Echoing Truth</title>
+      <link>https://inside.mcfog.wang/categories/echoing-truth/</link>
+      <pubDate>Fri, 27 Mar 2015 21:50:44 +0800</pubDate>
+      
+      <guid>https://inside.mcfog.wang/categories/echoing-truth/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Ichizon</title>
+      <link>https://inside.mcfog.wang/categories/ichizon/</link>
+      <pubDate>Fri, 25 Sep 2015 19:09:33 +0800</pubDate>
+      
+      <guid>https://inside.mcfog.wang/categories/ichizon/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Tatarot</title>
+      <link>https://inside.mcfog.wang/categories/tatarot/</link>
+      <pubDate>Wed, 25 Mar 2015 16:49:15 +0800</pubDate>
+      
+      <guid>https://inside.mcfog.wang/categories/tatarot/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Tech4fun</title>
+      <link>https://inside.mcfog.wang/categories/tech4fun/</link>
+      <pubDate>Mon, 02 Nov 2015 01:33:03 +0800</pubDate>
+      
+      <guid>https://inside.mcfog.wang/categories/tech4fun/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

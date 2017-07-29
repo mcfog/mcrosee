@@ -5,8 +5,11 @@
     <link>https://inside.mcfog.wang/post/</link>
     <description>Recent content in Posts on mc-inside</description>
     <generator>Hugo -- gohugo.io</generator>
+    <copyright>©mcfog All rights reserved.</copyright>
     <lastBuildDate>Mon, 02 Nov 2015 01:33:03 +0800</lastBuildDate>
-    <atom:link href="https://inside.mcfog.wang/post/index.xml" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="https://inside.mcfog.wang/post/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>自用alfred workflow：双向时间戳转换</title>
@@ -24,10 +27,7 @@
 
 &lt;p&gt;&lt;img src=&#34;https://inside.mcfog.wang/img/2015-q4/workflow-timestamp-2.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&#34;http://7xnyyw.dl1.z0.glb.clouddn.com/timestamp-helper.alfredworkflow&#34;&gt;下载链接&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;就酱。&lt;/p&gt;
-</description>
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -36,9 +36,7 @@
       <pubDate>Fri, 25 Sep 2015 19:09:33 +0800</pubDate>
       
       <guid>https://inside.mcfog.wang/2015/09/ichizon-d/</guid>
-      <description>
-
-&lt;h2 id=&#34;如何挑选php框架:c487f4db3cef43481c7ce6af0b03aee9&#34;&gt;如何挑选PHP框架？&lt;/h2&gt;
+      <description>&lt;h2 id=&#34;如何挑选php框架&#34;&gt;如何挑选PHP框架？&lt;/h2&gt;
 
 &lt;p&gt;这个问题是我面试的常用起手问题，所以在SF看到&lt;a href=&#34;http://segmentfault.com/q/1010000003465862&#34;&gt;这个提问&lt;/a&gt;的时候，就抽时间回答了一下。这里做一些整理和补充。&lt;/p&gt;
 
@@ -50,60 +48,11 @@
 &lt;li&gt;框架本身&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&#34;团队成员情况-未来团队成员情况-所在地职业市场情况:c487f4db3cef43481c7ce6af0b03aee9&#34;&gt;团队成员情况 &amp;amp; 未来团队成员情况 &amp;amp; 所在地职业市场情况&lt;/h3&gt;
+&lt;h3 id=&#34;团队成员情况-未来团队成员情况-所在地职业市场情况&#34;&gt;团队成员情况 &amp;amp; 未来团队成员情况 &amp;amp; 所在地职业市场情况&lt;/h3&gt;
 
 &lt;p&gt;如果团队现在和未来都只有你一个人（比如自己的toy project），那选自己最想用的就好。但只要不是这个情况，你最好先得了解市面上常见的各种框架，然后忘记自己的个人偏好。&lt;/p&gt;
 
-&lt;p&gt;了解你的团队成员的现在情况，考虑你的团队未来的发展速度，未来可能加入的团队成员的情况，以及你所在地职业市场情况。打比方说，Laravel经常是个不错的选择，但如果你在产业不发达的小城市，团队又必须高速发展大量招人，选择Laravel可能很快会让你陷进“composer和现代PHP技能培训班”的窘境，而一些更“接地气”的框架则能让你的团队迅速扩张，快速满足业务发展的需求&lt;/p&gt;
-
-&lt;h3 id=&#34;项目生命周期-未来演变方向:c487f4db3cef43481c7ce6af0b03aee9&#34;&gt;项目生命周期 &amp;amp; 未来演变方向&lt;/h3&gt;
-
-&lt;p&gt;有的项目，作为贵司的主营业务是需要长期维护，持续迭代的。而另一些项目可能作为一些边角、过渡的项目，可能做完以后不会再有什么后续的需求。最后还有一些外包／类外包的项目，交付以后就没有需求／后续需求可以当另一个项目。&lt;/p&gt;
-
-&lt;p&gt;再大的项目，需求再多，如果是第三种，无需考虑未来演变的，那么框架的扩展性就能够被牺牲（从而换取开发速度或其他好处），打比方说基于一些成品二次开发的选择就可以被考虑。再小的项目，如果是贵司的主营业务，持续迭代的，那么就算工作量再小，也必须慎重考虑框架的扩展性。&lt;/p&gt;
-
-&lt;p&gt;那么，什么是框架的扩展性呢？ CI是扩展性很好的框架吗？ZendFramework1/2是扩展性很好的框架吗？&lt;/p&gt;
-
-&lt;p&gt;答案是，看未来演变方向。有的项目未来的压力在访问流量大，有的压力在数据量大检索频繁，也有项目压力在需求迭代快，变动频繁而周期短。项目面临的问题越是普遍，那么预设各种解决方案的框架可能越能减少重复造轮子，反之项目面临的问题越是极端，那么轻量化的那些框架可能更适合让你的团队自己研究解决方案对接到框架中。另外，项目维护的时间越长，变动越难预测，采用预设各种解决方案的框架的风险就会越大（那些预设的解决方案恰好能解决你的每个问题的概率越来越小）&lt;/p&gt;
-
-&lt;h3 id=&#34;框架本身的基本素质:c487f4db3cef43481c7ce6af0b03aee9&#34;&gt;框架本身的基本素质&lt;/h3&gt;
-
-&lt;p&gt;性能和跑分。除了phalcon和Yaf两个C实现的框架，其他框架请认为一样快。另外除非你在主持类似新浪微博更换PHP框架这样的事，或者说除非你管理的项目web机器超过100台，请忽略PHP框架的性能因素&lt;/p&gt;
-
-&lt;p&gt;psr和composer亲和性。这是双刃剑，前面已经聊过怎么看待这个特质了。&lt;/p&gt;
-
-&lt;p&gt;安全性。某些框架甚至本身自己有安全漏洞不多说。另外如果框架层面提供了一些安全方面的东西，建议还是要简单看一遍代码，有时那可能反而不如自己写。&lt;/p&gt;
-
-&lt;p&gt;功能性。也就是预设的解决方案的数量和质量，前面有提过。&lt;/p&gt;
-
-&lt;p&gt;模块化程度。框架内的各个部分是否能够自定义，自定义的代价多高。另一个角度是框架的各个部分是否能脱离框架运行。&lt;/p&gt;
-
-&lt;p&gt;表达能力（业务功能需要多少代码量来实现），这三个特性（表达能力、功能性、模块化程度）互相冲突，无法达到三者兼得。功能丰富，模块化程度又高可以随意定制、替换的框架，往往普通的业务代码也要写一堆。一句话能写出一大堆功能的框架，往往模块化程度不理想，不容易自定义。 模块化程度高，而业务代码不啰嗦的框架，则往往没有丰富的预设功能。&lt;/p&gt;
-
-&lt;p&gt;周边生态和活跃程度以及兼容性。活跃的框架就还有成长和改进的空间，但相应过于活跃有时会导致应用无法兼容。另一个指标是周边的生态，有没有其他人基于这个框架开发一些周边的模块／插件之类的东西，以及文档的丰富程度、出问题后能是否容易找到的解决方案等。&lt;/p&gt;
-
-&lt;h2 id=&#34;无招胜有招:c487f4db3cef43481c7ce6af0b03aee9&#34;&gt;“无招胜有招”&lt;/h2&gt;
-
-&lt;h4 id=&#34;谈composer和psr-7和我心目中未来十年的php框架:c487f4db3cef43481c7ce6af0b03aee9&#34;&gt;&amp;ndash; 谈composer和psr-7和我心目中未来十年的PHP框架&lt;/h4&gt;
-
-&lt;p&gt;（本节内容仅仅是我个人的判断，另外基于中国国情，这个未来可能也还是老外先享受到）&lt;/p&gt;
-
-&lt;p&gt;PHP是个相对古老的语言，PHP框架也是个相当古老的概念了。我认为隔壁的NodeJS社区很好的为我们示范了真正“web框架”应有的形态。以依赖解决方案npm为核心，&lt;code&gt;connect&lt;/code&gt;到&lt;code&gt;express&lt;/code&gt;为代表的中间件架构为骨架，周围围绕着星罗密布的数不胜数的中间件。中间件架构设定了web请求和响应的标准接口，周围的其他项目以这些接口为基础开发各种功能。工程师要做的就是找到合适的中间件安插到项目中，或者自己写合适自己情况的中间件（当然最好是开源出来回报社区咯）。于是你会发现相当于“PHP框架”概念的那些项目基本行不通（sails已经是做的最好的了？）&lt;/p&gt;
-
-&lt;p&gt;这也是我对未来PHP框架的判断。大而全的“PHP框架”时代已经过去了。不用composer的，或者假装自己用composer的那些框架没有未来。基于composer的，模块化组件化的项目，未来在强势的输入输出标准统一下，会爆发出惊人的生产力。&lt;code&gt;symfony/http-foundation&lt;/code&gt;本来是个不错的选择，社区也有对应的&lt;a href=&#34;http://stackphp.com/&#34;&gt;中间件化的努力&lt;/a&gt;。但目前看来，怀胎已久的&lt;a href=&#34;http://www.php-fig.org/psr/psr-7/&#34;&gt;PSR-7&lt;/a&gt;更可能成为未来的赢家。有强力的标准和解构化的中间件生态，社区才有充分的竞争，开发者才有充分的选择权，A2框架 视图层巨烂但路由很漂亮，B2框架 路由好用但视图糟糕？下一代A3和B3都一样支持PSR-7，拿回家自己拼接就好！&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;广告时间： 基于这样的判断，&lt;a href=&#34;https://github.com/zendframework/zend-stratigility&#34;&gt;connect的PHP移植&lt;/a&gt;又没有很多star的情况下，我花了一些时间撸了自己的中间件架构&lt;a href=&#34;https://github.com/mcfog/nimo&#34;&gt;mcfog/nimo&lt;/a&gt;，欢迎围观和star&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;这是我在 &lt;a href=&#34;http://segmentfault.com/&#34;&gt;SegmentFault&lt;/a&gt; 上的问题回答选编，遵循&lt;a href=&#34;http://creativecommons.org/licenses/by-sa/3.0/cn/&#34;&gt;CC BY-SA 3.0 CN&lt;/a&gt; 分享&lt;/p&gt;
-
-&lt;p&gt;题图：万智【结构坍塌】&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://inside.mcfog.wang/img/2015-q3/gtc107.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-</description>
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -120,16 +69,7 @@
 
 &lt;p&gt;&lt;a href=&#34;http://www.vikingcodeschool.com/posts/why-learning-to-code-is-so-damn-hard&#34;&gt;http://www.vikingcodeschool.com/posts/why-learning-to-code-is-so-damn-hard&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;另外由于是长文多图外国博客，我准备了容易手打一些的跳转链接&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://inside.mcfog.wang/goto/et/c&#34;&gt;http://inside.mcfog.wang/goto/et/c&lt;/a&gt;&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;题图：万智【艰苦旅程】&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://inside.mcfog.wang/img/2015-q1/dka67.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-</description>
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -138,179 +78,9 @@
       <pubDate>Wed, 25 Mar 2015 16:49:15 +0800</pubDate>
       
       <guid>https://inside.mcfog.wang/2015/03/tarot-c/</guid>
-      <description>
+      <description>&lt;p&gt;多数时候，你是因为面临某个问题或挑战而想要咨询塔罗牌。你生活中的一些事情让你费心，你希望理解为什么它会发生，希望知道你能够做些什么。最适合这种情况的塔罗解读就是问题解读。你写下一个问题，你通过解读卡片来接受你的答案。问题帮助你将你收到的指引和你的情况联系起来。在这一课中，我会介绍当你为自己进行解读的时候，如何编写问题。&lt;/p&gt;
 
-&lt;p&gt;多数时候，你是因为面临某个问题或挑战而想要咨询塔罗牌。你生活中的一些事情让你费心，你希望理解为什么它会发生，希望知道你能够做些什么。最适合这种情况的塔罗解读就是问题解读。你写下一个问题，你通过解读卡片来接受你的答案。问题帮助你将你收到的指引和你的情况联系起来。在这一课中，我会介绍当你为自己进行解读的时候，如何编写问题。&lt;/p&gt;
-
-&lt;p&gt;第一步是彻底地审视你所处的情况，考虑所有直接或间接关系到的人，考虑你未来的选项。让你的思绪自由地游荡。你需要排除事先的成见或有意的过滤，重新审视你遇到的麻烦。你可以随手记下想到的主意，但不要过有于条理，你应当使用你的直觉，而非逻辑分析。&lt;/p&gt;
-
-&lt;p&gt;当你完成你的审视，你可以编写你的问题，下面是一些建议：&lt;/p&gt;
-
-&lt;h3 id=&#34;接受责任:a920a1451a91e8c81de16f04091614ea&#34;&gt;接受责任&lt;/h3&gt;
-
-&lt;p&gt;编写问题的时候体现出你的责任所在，比如下面的两个问题&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;我应该把我的父亲送到养老院还是留在家中自己照顾？&lt;/li&gt;
-&lt;li&gt;为了决定如何安排父亲的生活最好，我需要知道什么？&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;前者提问人将他做决定的责任抛开，希望塔罗牌_指示_他做什么。而后者，他只是希望卡牌能提示他一些信息，他理解做决定的人是自己。&lt;/p&gt;
-
-&lt;p&gt;编写类似第一个问题的想法总是很诱人的，我们总是希望确认我们正做出最好的选择，但塔罗牌无法为我们做出选择。避免这样的逃避责任的问题，比如&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;用“是”和“否”来回答的问题&lt;/strong&gt;
-
-&lt;ul&gt;
-&lt;li&gt;我是否能得到这家广告公司的工作机会？&lt;/li&gt;
-&lt;li&gt;本月我能否坚持节食？&lt;/li&gt;
-&lt;li&gt;我是否为退休做好了准备？&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;“应不应该”问题&lt;/strong&gt;
-
-&lt;ul&gt;
-&lt;li&gt;我应不应该把女儿留在家生活？&lt;/li&gt;
-&lt;li&gt;我应不应该和Jose出去玩？&lt;/li&gt;
-&lt;li&gt;我应不应该额外申请几家大学？&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;单纯询问具体时间的问题&lt;/strong&gt;
-
-&lt;ul&gt;
-&lt;li&gt;George什么时候会向我求婚？&lt;/li&gt;
-&lt;li&gt;找到一两新车要多少时间？&lt;/li&gt;
-&lt;li&gt;我什么时候能升职？&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;作为替代，你应该用类似下面的句式组织你的问题&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;请助我洞悉……&lt;/li&gt;
-&lt;li&gt;关于……我应该要理解什么？&lt;/li&gt;
-&lt;li&gt;……的意义是什么？&lt;/li&gt;
-&lt;li&gt;我该从……中学到什么？&lt;/li&gt;
-&lt;li&gt;在……之下的根本情况是什么？&lt;/li&gt;
-&lt;li&gt;我如何增加我……的机会？&lt;/li&gt;
-&lt;li&gt;我该如何……？&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;保持观点开放:a920a1451a91e8c81de16f04091614ea&#34;&gt;保持观点开放&lt;/h3&gt;
-
-&lt;p&gt;在编写问题的时候保持观点开放，例如&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;我如何促使我的岳母搬走？&lt;/li&gt;
-&lt;li&gt;为了和岳母更好相处，我应该知道什么？&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;在第一个问题中，提问人并没有保持开放，他已经决定了解决方案 —— 让岳母搬走。第二个问题更加开放。&lt;/p&gt;
-
-&lt;p&gt;只要不预设答案，缩小问题的范围是可以的，下面的两个问题都足够开放，但后者更具体一些。&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;转职销售会怎样影响我的职业生涯？&lt;/li&gt;
-&lt;li&gt;转到Purdue保险的销售职位会怎样影响我的职业生涯？&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;把握细节的最佳尺度:a920a1451a91e8c81de16f04091614ea&#34;&gt;把握细节的最佳尺度&lt;/h3&gt;
-
-&lt;p&gt;在过于模糊和过于详细之间找到平衡，这里是关于同一个话题的三个问题&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;我如何改善我的工作场合？&lt;/li&gt;
-&lt;li&gt;我如何整理我的桌子才能让Tom能找到我的文件？&lt;/li&gt;
-&lt;li&gt;我如何改善我和Tom之间的工作流程？&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;第一个问题没有聚焦，它没有指定一个范围。而第二个问题过于详细，只关注了问题的一个次要方面。第三个问题相对最好，它找到了平衡，提供了澄清你究竟希望知道什么的必要细节。&lt;/p&gt;
-
-&lt;h3 id=&#34;聚焦自己:a920a1451a91e8c81de16f04091614ea&#34;&gt;聚焦自己&lt;/h3&gt;
-
-&lt;p&gt;当你为自己解读的时候，你永远是中心人物。你的问题必须聚焦于你自己。有时关于别人的问题也不错，但不是在你为自己解读的时候。&lt;/p&gt;
-
-&lt;p&gt;有时你可能没有意识到这点，比如&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;Arthur的饮酒问题的背后是什么？&lt;/li&gt;
-&lt;li&gt;我如何协助Arthur应对他的饮酒问题？&lt;/li&gt;
-&lt;li&gt;在Arthur的饮酒问题中，我该扮演什么角色？&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;第一个问题完全关于Arthur和他的麻烦，第二个问题中，提问者被包含在内，但关注点仍然是Arthur。第三个问题则站在了提问者的角度来看待问题。&lt;/p&gt;
-
-&lt;h3 id=&#34;保持中立:a920a1451a91e8c81de16f04091614ea&#34;&gt;保持中立&lt;/h3&gt;
-
-&lt;p&gt;在编写问题的时候应当尽可能保持中立。假设自己是正确的并以此为基础进行解读总是轻松的，但如果你真的希望接受到指引，你就必须对其他观点保持开放，比如下面的这些问题&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;为什么总是我一个人做家务？&lt;/li&gt;
-&lt;li&gt;关于做家务，我如何培养合作精神？&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;!----&gt;
-
-&lt;ol&gt;
-&lt;li&gt;我怎么才能让别人听我说话？&lt;/li&gt;
-&lt;li&gt;在我尝试交流却觉得别人不在听的时候，究竟发生了什么？&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;!----&gt;
-
-&lt;ol&gt;
-&lt;li&gt;我该如何阻止老板要求我加班？&lt;/li&gt;
-&lt;li&gt;为何我最近总要加班？&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;在前一个问题之中，提问者认为他是正确的，而其他人有问题，而第二个问题则更中立更开放。&lt;/p&gt;
-
-&lt;h3 id=&#34;积极乐观:a920a1451a91e8c81de16f04091614ea&#34;&gt;积极乐观&lt;/h3&gt;
-
-&lt;p&gt;编写问题的时候保持积极乐观&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;为什么我的研究成果总是无法发表？&lt;/li&gt;
-&lt;li&gt;我如何找到一个合适的论坛来发布我的研究成果？&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;!----&gt;
-
-&lt;ol&gt;
-&lt;li&gt;为何我无法克服我对演讲的恐惧&lt;/li&gt;
-&lt;li&gt;我如何有效地增强我的演讲能力&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;!----&gt;
-
-&lt;ol&gt;
-&lt;li&gt;我该如何理解为何我总在锦标赛的最后一轮崩溃？&lt;/li&gt;
-&lt;li&gt;我该如何找到锦标赛保持胜利的方式？&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;前一个问题充满了挫败感，而后一个问题则更加自信，提问者相信在有效的建议之下，他有能力获得成功。&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;你可能疑惑为何关于编写问题我会如此追究细节。这个过程是一个集中训练，为你的解读做好准备。编写一个问题通常指用两三分钟，但在这短短的时间内，你将得以更好地理解你的现状，更有洞察地进行塔罗解读。&lt;/p&gt;
-
-&lt;h2 id=&#34;练习七:a920a1451a91e8c81de16f04091614ea&#34;&gt;练习七&lt;/h2&gt;
-
-&lt;h3 id=&#34;7-1-编写一个问题:a920a1451a91e8c81de16f04091614ea&#34;&gt;7.1 编写一个问题&lt;/h3&gt;
-
-&lt;p&gt;现在编写你的第一个塔罗问题。思考你的生活，选择一个你遇到某些困难的领域(大家总有一些这样的领域！)。避免诸如“寻找人生伴侣”这样的普遍问题。挑选一个明确的，正在困扰你的生活或工作的日常麻烦。选择一个直接影响你，而且你个人比较在意的话题。根据第七课的建议来编写一个更有效的问题。简单做一些记录。我们会在下一课中用到你的问题和笔记。&lt;/p&gt;
-
-&lt;h3 id=&#34;7-2-练习编写问题:a920a1451a91e8c81de16f04091614ea&#34;&gt;7.2 练习编写问题&lt;/h3&gt;
-
-&lt;p&gt;生活总给你很多练习编写问题的机会。每当你遇到困难的时候，不妨花一些时间来编写一个问题。你可以在例行活动诸如做家务或上下班的过程中进行这个练习。&lt;/p&gt;
-
-&lt;p&gt;编写这样的实际问题帮助你更快地分析个人问题，辨别你在各种场景下的需求。同时，如果你希望进行塔罗解读的时候，你依然有了合适的问题。&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;题图：万智【静默凝思】&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://inside.mcfog.wang/img/2015-q1/ts52.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-</description>
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -319,11 +89,9 @@
       <pubDate>Mon, 23 Mar 2015 12:19:23 +0800</pubDate>
       
       <guid>https://inside.mcfog.wang/2015/03/ichizon-c/</guid>
-      <description>
+      <description>&lt;!--================================!--&gt;
 
-&lt;!--================================!--&gt;
-
-&lt;h2 id=&#34;如何从代码规范上避免-python-模块循环引用:2d07b415c68511e1490586b618e9288a&#34;&gt;如何从代码规范上避免 python 模块循环引用？&lt;/h2&gt;
+&lt;h2 id=&#34;如何从代码规范上避免-python-模块循环引用&#34;&gt;如何从代码规范上避免 python 模块循环引用？&lt;/h2&gt;
 
 &lt;p&gt;&lt;a href=&#34;http://segmentfault.com/q/1010000002518251&#34;&gt;问题&lt;/a&gt; by &lt;a href=&#34;http://segmentfault.com/u/v7&#34;&gt;v7&lt;/a&gt;&lt;/p&gt;
 
@@ -339,107 +107,7 @@
 
 &lt;p&gt;抛砖引玉一下，希望引出除了技巧上还有经验上的知识。&lt;/p&gt;
 
-&lt;hr /&gt;
-
-&lt;h2 id=&#34;我的看法:2d07b415c68511e1490586b618e9288a&#34;&gt;我的看法&lt;/h2&gt;
-
-&lt;p&gt;怎么说呢，如果老是觉得碰到循环引用，很可能是模块的分界线划错地方了。可能是把应该在一起的东西硬拆开了，可能是某些职责放错地方了，可能是应该抽象的东西没抽象&lt;/p&gt;
-
-&lt;p&gt;总之微观代码规范可能并不能帮到太多，重要的是更宏观的划分模块的经验技巧，推荐uml，脑图，白板等等图形化的工具先梳理清楚整个系统的总体结构和职责分工&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;!--================================!--&gt;
-
-&lt;h2 id=&#34;有哪些值得一读的优秀开源-js-代码:2d07b415c68511e1490586b618e9288a&#34;&gt;有哪些值得一读的优秀开源 JS 代码&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://segmentfault.com/q/1010000002396706&#34;&gt;问题&lt;/a&gt; by &lt;a href=&#34;http://segmentfault.com/u/bumfod&#34;&gt;bumfod&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;由这个问题启发：&lt;a href=&#34;http://segmentfault.com/q/1010000002396186&#34;&gt;如何阅读源代码？你有读过哪些源代码？晒晒你读源代码的经历……&lt;/a&gt;&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;h2 id=&#34;我的看法-1:2d07b415c68511e1490586b618e9288a&#34;&gt;我的看法&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://backbonejs.org/docs/backbone.html&#34;&gt;Backbone&lt;/a&gt;或者它的轻量版&lt;a href=&#34;https://github.com/paulmillr/exoskeleton/tree/master/lib&#34;&gt;Exoskeleton&lt;/a&gt; 它教你怎么写框架，怎么组织业务逻辑
-jQ读不动的话可以考虑读读&lt;a href=&#34;https://github.com/madrobby/zepto/tree/master/src&#34;&gt;Zepto&lt;/a&gt; 它教你怎么搞定DOM，附赠Ajax
-楼上有人提过的Underscore不错，但未来似乎是属于&lt;a href=&#34;https://github.com/lodash/lodash/blob/master/lodash.js&#34;&gt;lodash&lt;/a&gt;的  它教你怎么摆平复杂数据结构&lt;/p&gt;
-
-&lt;p&gt;最后，虽然不是一个具体的项目，但&lt;a href=&#34;https://github.com/trending?l=javascript&amp;amp;since=weekly&#34;&gt;Github Trending&lt;/a&gt;值得你关注，它告诉你最新最酷的项目是什么&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;!--================================!--&gt;
-
-&lt;h2 id=&#34;请教一个根据时间平均划分请求的计算方法:2d07b415c68511e1490586b618e9288a&#34;&gt;请教一个根据时间平均划分请求的计算方法&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://segmentfault.com/q/1010000000730167&#34;&gt;问题&lt;/a&gt; by &lt;a href=&#34;http://segmentfault.com/u/liwei_161273&#34;&gt;李惟&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;问题很简单：&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;一个小时有3600秒，就以这个为单位，按照每秒来的方式发起请求&lt;/li&gt;
-&lt;li&gt;如果在这个期间有36次请求，那么就是1次/100秒，如果有360次请求，就是1次/10秒&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;这个不难，那如果说：&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;3600秒有19次请求，那么就是189.47次，那肯定不可能是1次/189.47秒，因为是按照秒来发起请求的，但是如果按照1次/190秒来算，那在3600秒里面肯定是完不成19次请求的，如果按照1次/188秒来算，就分配的不是特别均匀（后面还空出28秒），也就是说如何尽可能的将19均分在3600上，然后面空出的数字越少越好&lt;/li&gt;
-&lt;li&gt;如果说3600秒请求7520次请求，如何能算出每秒需发起多少次请求才能平均且合理呢？&lt;/li&gt;
-&lt;li&gt;如果说3600秒请求31次请求，如何能算出多少秒发起一次请求比较平均且合理呢？&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;hr /&gt;
-
-&lt;h2 id=&#34;我的看法-2:2d07b415c68511e1490586b618e9288a&#34;&gt;我的看法&lt;/h2&gt;
-
-&lt;p&gt;把累积的小数误差体现在后面的计算中即可消灭最后的累积误差。&lt;/p&gt;
-
-&lt;p&gt;也就是说每次使用“剩余时间”和“剩余次数”而非“总时间”和“总次数”来计算，这样每次向下取整，剩余时间就会变多一些，后面就更倾向于向上取整一些，反之亦然。误差会在不超过正负1的区间内摇摆而不会累积&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-py&#34;&gt;
-def scheduleRequest(reqCount, time = 3600):
-    result = []
-
-    remainTime = time
-
-    for i in xrange(0, reqCount):
-        t = round(remainTime / (reqCount - i))
-
-        if(len(result) &amp;gt; 0):
-            result.append(result[-1] + t)
-        else:
-            result.append(t)
-
-        remainTime -= t
-
-    return result
-
-print(scheduleRequest(11))
-print(scheduleRequest(12))
-print(scheduleRequest(13))
-print(scheduleRequest(73, 36))
-
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;结果（最后那个请求次数超过时间两倍的例子，为了展示方便缩减为36秒）&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;[327.0, 654.0, 981.0, 1308.0, 1635.0, 1963.0, 2290.0, 2618.0, 2945.0, 3273.0, 3600.0]&lt;br /&gt;
-[300.0, 600.0, 900.0, 1200.0, 1500.0, 1800.0, 2100.0, 2400.0, 2700.0, 3000.0, 3300.0, 3600.0]&lt;br /&gt;
-[276.0, 553.0, 830.0, 1107.0, 1384.0, 1661.0, 1938.0, 2215.0, 2492.0, 2769.0, 3046.0, 3323.0, 3600.0]&lt;br /&gt;
-[0.0, 1.0, 1.0, 2.0, 2.0, 3.0, 3.0, 4.0, 4.0, 5.0, 5.0, 6.0, 6.0, 7.0, 7.0, 8.0, 8.0, 9.0, 9.0, 10.0, 10.0, 11.0, 11.0, 12.0, 12.0, 13.0, 13.0, 14.0, 14.0, 15.0, 15.0, 16.0, 16.0, 17.0, 17.0, 18.0, 18.0, 19.0, 19.0, 20.0, 20.0, 21.0, 21.0, 22.0, 22.0, 23.0, 23.0, 24.0, 24.0, 25.0, 25.0, 26.0, 26.0, 27.0, 27.0, 28.0, 28.0, 29.0, 29.0, 30.0, 30.0, 31.0, 31.0, 32.0, 32.0, 33.0, 33.0, 34.0, 34.0, 35.0, 35.0, 36.0, 36.0]&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;这是我在 &lt;a href=&#34;http://segmentfault.com/&#34;&gt;SegmentFault&lt;/a&gt; 上的问题回答选编，遵循&lt;a href=&#34;http://creativecommons.org/licenses/by-sa/3.0/cn/&#34;&gt;CC BY-SA 3.0 CN&lt;/a&gt; 分享&lt;/p&gt;
-
-&lt;p&gt;题图：万智【精研时序】&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://inside.mcfog.wang/img/2015-q1/avr81.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-</description>
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -448,9 +116,7 @@ print(scheduleRequest(73, 36))
       <pubDate>Wed, 18 Mar 2015 12:21:45 +0800</pubDate>
       
       <guid>https://inside.mcfog.wang/2015/03/tarot-b/</guid>
-      <description>
-
-&lt;p&gt;塔罗解读的环境涉及物理环境和你自身的内部状态。下面五个内部特质对解读有帮助，它们是：&lt;/p&gt;
+      <description>&lt;p&gt;塔罗解读的环境涉及物理环境和你自身的内部状态。下面五个内部特质对解读有帮助，它们是：&lt;/p&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;保持开放&lt;/strong&gt;&lt;/li&gt;
@@ -458,64 +124,7 @@ print(scheduleRequest(73, 36))
 
 &lt;p&gt;保持开放，乐于接受，这是一种“允许”的态度 —— 愿意接纳而不是否认或拒绝。保持开放让你有机会接收到你需要知道的东西。&lt;/p&gt;
 
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;保持宁静&lt;/strong&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;在混乱的情况下，想要听到你内心向导的低语是非常困难的。塔罗牌带来的消息通常以柔和的暗示和意识的形式显现，非常容易淹没在躁动的思绪之中。你保持宁静的时候，你就好像一片宁静的大海，任何一丝细小的洞察的波纹都能被察觉。&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;保持专注&lt;/strong&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;对于塔罗解读来说，专注非常重要。我发现当我强烈地感到一个问题的时候，我总能接受到直接而强烈的消息。而当我迷惑而散漫的时候，卡牌就倾向于一样混乱。你最具洞察的解读会来自你欲望最强烈的地方。&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;保持警醒&lt;/strong&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;当你保持警醒的时候，你的全部感官都是有意识并活动着的。一只猫在观察一只老鼠或飞虫的时候是警醒的，当然你不必像猫那样随时猛地扑到卡牌上面去，但如果你感到疲倦或无聊，不保持警醒，你会发现卡牌变得难以解读。&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;保持尊敬&lt;/strong&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;这里尊敬是指你应当想对待任何有价值的工具那样善待卡牌。你理解塔罗牌在帮助你更好理解自己方面的用途。你应当对你选择学习塔罗牌的决定感到荣幸，并以此态度对待卡牌。&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;这五种特质都是重要的，但却并非缺一不可。即使缺了它们，你一样能够做出有意义的解读，只是会更加困难而已。决定某个时间是否适合解读的最好方式是扪心自问。如果你觉得有什么不对，那么延后解读活动。而如果你的内心觉得可以开始，那么一切都好。&lt;/p&gt;
-
-&lt;p&gt;除了内心的环境，解读所在物理环境也需要考量。理想的场所是能够引发安静、祥和乃至敬意的地方。你可以在拥挤的机场做一场解读，但吵闹和打扰会阻碍内心达到调和。由于你很可能在家进行多数的解读，我们探讨一下如何在家中创建一个良好的环境。&lt;/p&gt;
-
-&lt;p&gt;在家中设置一块地方进行塔罗解读，通过反复使用同一个地方来解读，你会在那个地方聚集起增幅你的实践的能量。如果你同时还有冥想或祈祷的习惯，你可以和塔罗解读公用同一个地点，它们在精神和意图方面和塔罗是和谐一致的。&lt;/p&gt;
-
-&lt;p&gt;尝试在你的地点周围创造出隔离的感觉，当你使用塔罗牌的时候，你会需要无视日常的世界，进入一个远离时间和正常活动的洪流的空间。一个独立的房间是最理想的，用屏风，窗帘，枕头或其他任何东西隔开的角落也不错。&lt;/p&gt;
-
-&lt;p&gt;尝试创造出一种美丽而有意义的氛围，你可以在周围放一些对你来说有些特别的东西。来自自然的物件诸如贝壳、奇石、水晶或植物总是合适的。护身符，人像或其他宗教雕塑可以帮助你将注意力从世俗转移到精神层面。照片或绘画，尤其是你自己的也很好。吸引你的感官的物件也可以考虑，比如花朵、香薰、蜡烛、某些纹理材质以及安静、引人深思的音乐等。&lt;/p&gt;
-
-&lt;p&gt;以上的各种准备都很好，但实际上你唯一必要的东西是一个足以你展开你的卡牌的空间，你可以使用桌子或地板。地板让你觉得脚踏实地，但如果你感到不舒服，桌子更好。选择桌子的话，尽可能选择自然材质的桌子，比如木头或石头桌子。&lt;/p&gt;
-
-&lt;p&gt;如果你喜欢，你可以在桌子或地板上铺上一层布来创建一个均匀的区域，材质同样推荐自然的，比如丝绸、棉、羊毛或亚麻。颜色有它们独特的能量，注意选择布料的颜色。黑色、深蓝和紫色都是不错的选择。布面上应当没有或尽可能少出现图案或花纹，这样卡牌上的图像才能从背景之中突出出来。&lt;/p&gt;
-
-&lt;p&gt;在一个固定的容器之中存放你的卡牌来保护它们并容纳它们的能量。任何自然的材质都可以，比如木头、石头、贝壳或自然的布料。我认识一位女士自己缝制了一个丝绸的袋子，刺绣上了星星、月亮和其他装饰。推荐使用丝绸包裹你的卡牌，丝绸有一种奢侈的感觉，这会提醒你你对卡牌的价值认同。&lt;/p&gt;
-
-&lt;p&gt;塔罗牌依存于使用者的能量和特性而存在，因此如果可行，保留一副只为你个人而用的塔罗牌组。这幅牌组会成为你与你的内心向导交流沟通的私人工具。你希望与它建立更为紧密的纽带。&lt;/p&gt;
-
-&lt;p&gt;当你在一个自己建立的环境之中进行塔罗解读，你的体验会更加强力，但额外的过多的准备从来不是必须的。重要的是你要使用你的卡牌。&lt;/p&gt;
-
-&lt;h2 id=&#34;练习六:bed602f878c629888ed5844ab2d4ce57&#34;&gt;练习六&lt;/h2&gt;
-
-&lt;h3 id=&#34;6-1-创建一个空间用来进行塔罗解读:bed602f878c629888ed5844ab2d4ce57&#34;&gt;6.1 创建一个空间用来进行塔罗解读&lt;/h3&gt;
-
-&lt;p&gt;花一点时间考虑你会在哪儿进行塔罗解读，参考课程六中的一些建议，或用你自己的主意。不要觉得你在建立一个舞台。看看为了建立一个愉悦而舒适的环境你能做些什么。&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;题图：万智【静默凝思】&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://inside.mcfog.wang/img/2015-q1/ktk50.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-</description>
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -524,163 +133,15 @@ print(scheduleRequest(73, 36))
       <pubDate>Mon, 16 Mar 2015 16:17:26 +0800</pubDate>
       
       <guid>https://inside.mcfog.wang/2015/03/ichizon-b/</guid>
-      <description>
+      <description>&lt;!--================================!--&gt;
 
-&lt;!--================================!--&gt;
-
-&lt;h2 id=&#34;有哪些知名的网站是通过建站程序或建站程序二次开发搭建的:15dcb96101bf5c27445d964f18e9cd9e&#34;&gt;有哪些知名的网站是通过建站程序或建站程序二次开发搭建的？&lt;/h2&gt;
+&lt;h2 id=&#34;有哪些知名的网站是通过建站程序或建站程序二次开发搭建的&#34;&gt;有哪些知名的网站是通过建站程序或建站程序二次开发搭建的？&lt;/h2&gt;
 
 &lt;p&gt;&lt;a href=&#34;http://segmentfault.com/q/1010000002503122&#34;&gt;问题&lt;/a&gt; by &lt;a href=&#34;http://segmentfault.com/u/llq&#34;&gt;路西llq&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;我想建一个兴趣站，类似创业邦，时光网，铁血网这样的网站能通过建站程序做到吗？我目前有学过建站，仍感觉无从下手，想知道建站程序能不能胜任，或者又只能等团队组建好了再开始做？&lt;/p&gt;
 
-&lt;hr /&gt;
-
-&lt;h2 id=&#34;我的看法:15dcb96101bf5c27445d964f18e9cd9e&#34;&gt;我的看法&lt;/h2&gt;
-
-&lt;p&gt;题主已经问过多次此类问题了&lt;/p&gt;
-
-&lt;p&gt;我想说无论你问多久，问什么，你的站都不会突然就建起来了&lt;/p&gt;
-
-&lt;p&gt;如果你打算自己搞定技术方面，那么就赶紧去学技术&lt;br /&gt;
-如果你打算找人搞定技术方面，那么就赶紧去找技术合伙人&lt;/p&gt;
-
-&lt;p&gt;如果你拿不定主意，我建议找人搞定。&lt;/p&gt;
-
-&lt;p&gt;至于到底用开源合适还是自己写合适，这完全看你的预算和规划，虽然可能95%的情况都是开源合适&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;!--================================!--&gt;
-
-&lt;h2 id=&#34;js中如何继承实现array的子类:15dcb96101bf5c27445d964f18e9cd9e&#34;&gt;js中如何继承实现Array的子类&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://segmentfault.com/q/1010000002557358&#34;&gt;问题&lt;/a&gt; by &lt;a href=&#34;http://segmentfault.com/u/chinesedfan&#34;&gt;chinesedfan&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;试想需要实现一个数组的子类ZeroArray，其构造函数接收一个长度参数n，自动初始化数组元素都为0。&lt;/p&gt;
-
-&lt;p&gt;我试图继承原生的Array类型，成员变量通过apply()方法窃取，成员方法则通过原型链引用。代码如下：&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;function ZeroArray(n) {
-    // 构造函数窃取
-    Array.apply(this);
-
-    // 自动塞入0元素
-    for (var i = 0; i &amp;lt; n; i++) {
-        this.push(0);
-    }
-}
-
-// 利用空函数作为过渡，ZeroArray原型的原型指向Array.prototype
-// 既建立原型链，又不影响Array.prototype本身，而且防止Array构造函数重复调用两次
-var F = function() {};
-F.prototype = Array.prototype;
-ZeroArray.prototype = new F();
-ZeroArray.prototype.constructor = ZeroArray;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;那么问题来了：&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;Object.getOwnPropertyDescriptor(new Array(), &amp;quot;length&amp;quot;)
-// 输出：Object {value: 0, writable: true, enumerable: false, configurable: false}
-Object.getOwnPropertyDescriptor(new ZeroArray(3), &amp;quot;length&amp;quot;)
-// 输出：Object {value: 3, writable: true, enumerable: true, configurable: true}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;为什么两者的length属性enumerable/configurable会不同？是不是因为Array本质上并不是Object？&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;h2 id=&#34;我的看法-1:15dcb96101bf5c27445d964f18e9cd9e&#34;&gt;我的看法&lt;/h2&gt;
-
-&lt;p&gt;单纯的解决方案只要脚痛医脚就好 &lt;code&gt;Object.defineProperty(this, &#39;length&#39;, {enumerable: false, configurable: false, writable: true});&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;具体原因我观察了一下Array的行为&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;&amp;gt; Array.call({})
-[]
-&amp;gt; Array.call(undefined)
-[]
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;瞧，this是啥完全不影响Array工作，Array这个constructor应该是类似&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;function Array() {
-  var array = [Native Code];
-  return array;
-}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;的形式（并非修饰this的风格），所以代码里的&lt;code&gt;Array.apply&lt;/code&gt;完全没有起到效果。&lt;/p&gt;
-
-&lt;p&gt;祭出翻ECMA大法，很快就能找到标准里对应的行为&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.ecma-international.org/ecma-262/5.1/#sec-15.4.1&#34;&gt;15.4.1 The Array Constructor Called as a Function&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;length的行为也有&lt;a href=&#34;http://www.ecma-international.org/ecma-262/5.1/#sec-15.4.5.2&#34;&gt;描述&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;关于Array究竟是不是Object，答案毫无疑问是肯定的，JS中除了原始值(null/undefined/数字/布尔/字符串)之外一切皆对象&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;在我看来，题主掉到“以其他OO语言经验看JS”的大坑里了，有大量的材料会把人往这个坑里带，他们标题往往叫“JS OOP指南／入门／精通”，“JS实现继承的X种方法”等等&lt;/p&gt;
-
-&lt;p&gt;实际上，如果需求只是“接收一个长度参数n，自动初始化数组元素都为0”的话，更好的实现可能是&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;function makeZeroArray(n) {
-  var arr = [];
-  while(n-- &amp;gt; 0) {
-    arr[arr.length] = 0;
-  }
-
-  return arr;
-}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;继承在JS中并非一等居民，而是普通的一个模式而已，合适用就用，不合适没必要硬套&lt;/p&gt;
-
-&lt;p&gt;补充一下，JS中没有类的概念，JS中没有类的概念，JS中没有类的概念。
-JS里，对象才是一等居民，我们写的是方便地创建某种对象的构造器，而不是类&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;!--================================!--&gt;
-
-&lt;h2 id=&#34;登录系统怎么样才是最安全的:15dcb96101bf5c27445d964f18e9cd9e&#34;&gt;登录系统怎么样才是最安全的&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://segmentfault.com/q/1010000000575911&#34;&gt;问题&lt;/a&gt; by &lt;a href=&#34;http://segmentfault.com/u/woshicixide&#34;&gt;woshicixide&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;现在很多公司关于网站登录上都是怎么设计的，怎么样才能确保万无一失&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;h2 id=&#34;我的看法-2:15dcb96101bf5c27445d964f18e9cd9e&#34;&gt;我的看法&lt;/h2&gt;
-
-&lt;p&gt;没有万无一失，只有见招拆招&lt;/p&gt;
-
-&lt;p&gt;安全是从操作系统开始到开发人员，管理人员个人素养全方位的命题&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;操作系统：关注业界新闻，及时打补丁。正确配置，权限最小化，强密码定期更换&lt;/li&gt;
-&lt;li&gt;数据库/web server：及时打补丁。正确配置，权限最小化，强密码定期更换&lt;/li&gt;
-&lt;li&gt;应用逻辑：科学的hash，收拢的鉴权服务，最小知识原则，XSS和各种协议劫持的防止，频率限制，恶意行为和异常流量监测&lt;/li&gt;
-&lt;li&gt;传输协议：https、证书等&lt;/li&gt;
-&lt;li&gt;开发人员：不要把密码存在文件里，更不要上传到github（别笑），不要记住密码，不要统一密码，不要把密码写在邮件里，不要把密码写在笔记服务里&lt;/li&gt;
-&lt;li&gt;开发人员/管理人员：个人信息安全，不要被乱点文件，不要乱装软件。社工知识，不要相信同事在邮件和IM上和你说让你传一些敏感信息给他，或者他传东西让你点开（不用windows是个更好的选择）。如果和360没有合作关系就不要装360。&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;还有如果公司用WIFI，不要广播SSID。不要用带着办公VPN、邮箱、IM等任何工作有关的账户的电脑连接其他免费WIFI，星巴克WIFI等WIFI热点&lt;/p&gt;
-
-&lt;p&gt;好累，简直列不完，就先告一段落吧&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;这是我在 &lt;a href=&#34;http://segmentfault.com/&#34;&gt;SegmentFault&lt;/a&gt; 上的问题回答选编，遵循&lt;a href=&#34;http://creativecommons.org/licenses/by-sa/3.0/cn/&#34;&gt;CC BY-SA 3.0 CN&lt;/a&gt; 分享&lt;/p&gt;
-
-&lt;p&gt;题图：万智【拒斥恶行】&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://inside.mcfog.wang/img/2015-q1/plc12.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-</description>
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -691,16 +152,7 @@ JS里，对象才是一等居民，我们写的是方便地创建某种对象的
       <guid>https://inside.mcfog.wang/2015/03/echoing-truth-a/</guid>
       <description>&lt;p&gt;上周五不小心翘掉了说好的文章，痛定思痛，我决定新开这个更(neng)有(tou)意(lan)义的分类，来介绍看到的一些值得反复品味好文章。&lt;/p&gt;
 
-&lt;p&gt;今天这篇《What Color is Your Function?》以一种独特的视角描述了编程中常见的某种分裂问题X。这种分裂感其实在编程过程中的各个方面都会出现，而不仅仅限于文章中提到的那个范畴X。我一直觉得能把问题清晰地扯到哲学范畴（胡搅蛮缠可不算）基本上就算满级通关了。这便是一篇通向满级的攻略。&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://journal.stuffwithstuff.com/2015/02/01/what-color-is-your-function/&#34;&gt;http://journal.stuffwithstuff.com/2015/02/01/what-color-is-your-function/&lt;/a&gt;&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;题图：万智【真相回响】&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://inside.mcfog.wang/img/2015-q1/mma40.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-</description>
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -709,77 +161,9 @@ JS里，对象才是一等居民，我们写的是方便地创建某种对象的
       <pubDate>Tue, 10 Mar 2015 18:24:03 +0800</pubDate>
       
       <guid>https://inside.mcfog.wang/2015/03/tarot-a/</guid>
-      <description>
+      <description>&lt;p&gt;现在你有充足的准备试试将你的塔罗知识投入使用了。第五课描述每日解读，在这种解读中，你选择一张牌作为你一天的主题，其目的是在24小时的时间段内，提高你对特定生活方式的认知。它同时帮助你以没有压力又不单调乏味的方式来进一步熟悉塔罗牌。&lt;/p&gt;
 
-&lt;p&gt;现在你有充足的准备试试将你的塔罗知识投入使用了。第五课描述每日解读，在这种解读中，你选择一张牌作为你一天的主题，其目的是在24小时的时间段内，提高你对特定生活方式的认知。它同时帮助你以没有压力又不单调乏味的方式来进一步熟悉塔罗牌。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://inside.mcfog.wang/img/2015-q1/c2s.gif&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;比如你在每日解读之中抽到了这张&lt;strong&gt;Two of Cups &amp;ldquo;圣杯二&amp;rdquo;&lt;/strong&gt;。在当天，你需要观察表现出这张牌的独特能量的标志。圣杯二的关键词是联系、停战和吸引。早晨，你注意到一个曾对你抱有敌意的同时走进你的办公室谈话，你感到了“停战”，很好地利用了这一点。下午，当你处理一个问题的时候，你寻找两种方案之间的“联系”，寻找到你自己的解决方案。后来在一个聚会中，你向一个“吸引”着你的人打招呼。在每个场景中，你d都感受到来自圣杯二的能量、并让它引导你的选择。&lt;/p&gt;
-
-&lt;p&gt;最开始，你可以有意挑选你的每日卡牌来避免重复，从而更快地熟悉整套卡牌(参见练习5.1)。你也可以避免有意选择卡牌(参见练习5.2)。下面是具体流程：&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;洗混牌堆一到两次&lt;/li&gt;
-&lt;li&gt;面朝下握住套牌，用你的另一只手覆盖在上面&lt;/li&gt;
-&lt;li&gt;暂停一小会儿，镇静下来并集中注意力&lt;/li&gt;
-&lt;li&gt;请求你的内心向导，让它给你当天你需要的指引&lt;/li&gt;
-&lt;li&gt;将套牌面朝下放在你面前&lt;/li&gt;
-&lt;li&gt;向左切牌，并重新放成一堆&lt;/li&gt;
-&lt;li&gt;翻开第一张牌作为你的每日卡牌&lt;/li&gt;
-&lt;li&gt;将这张牌放回牌堆，洗牌一到两次&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;这个流程对于每天进行来说足够简单，而它给你一个定期和你的内心向导联系的机会。选择一个对你舒适的时间段。早上挑选一张卡作为接下来一天的主题是很好的选择，晚上睡觉之前挑选，醒来之后开始也可以。没有必要拘泥于一个固定的时间，你可以变更你的时间表。要让每日解读成为你日常的一部分，让你的塔罗学习每天都有所进展。&lt;/p&gt;
-
-&lt;p&gt;把你每天选择的牌记录下来，稍后你会发现追踪其中的规律非常有趣。我开始认真研究塔罗的时候，我正抚养我的两个不到5岁的儿子。有一天我计算了我每日卡片的分布：&lt;/p&gt;
-
-&lt;p&gt;权杖 － 24&lt;br /&gt;
-圣杯 － 44&lt;br /&gt;
-宝剑 － 41&lt;br /&gt;
-钱币 － 57&lt;br /&gt;
-主牌 － 56&lt;/p&gt;
-
-&lt;p&gt;这个结果清晰地描述了我当时的生活状态 － 主要聚焦于真实世界（钱币）和基础力量（主牌）而相对少关注个人创造（权杖）&lt;/p&gt;
-
-&lt;p&gt;在你的日记中，简单记下一些当天的高光部分，这帮助你将你的情绪和活动和卡片联系起来。但保持简单，否则你可能很快感到疲倦。&lt;/p&gt;
-
-&lt;p&gt;我用5种不同颜色的笔记录不同类别的卡牌的日记：&lt;/p&gt;
-
-&lt;p&gt;权杖 ＝ 红色（火焰、激情）&lt;br /&gt;
-圣杯 ＝ 蓝色（水、情绪、感情）&lt;br /&gt;
-宝剑 ＝ 黄色（空气、知性）&lt;br /&gt;
-钱币 ＝ 绿色（大地、成长、植物、自然、金钱）&lt;br /&gt;
-主牌 ＝ 紫色（精神、崇高目标）&lt;/p&gt;
-
-&lt;p&gt;颜色帮助我一眼分辨出一周或一月的塔罗模式。&lt;/p&gt;
-
-&lt;p&gt;你可能会惊讶地发现你总是反复抽到特定的一些牌。在我之前提到的57张钱币之中，我各抽到了11次Ace和皇后！在家陪伴的我的孩子的时光，很多的日子都反映了这两张牌的主题：&lt;strong&gt;Queen of Pentacles &amp;ldquo;钱币皇后&amp;rdquo;&lt;/strong&gt; 代表哺育、培养的母性，而 &lt;strong&gt;Ace of Pentacles &amp;ldquo;钱币Ace&amp;rdquo;&lt;/strong&gt; 提供了享受生活中物质（布料）的一面的机会。没有比换尿布更接近布料的活动了！&lt;/p&gt;
-
-&lt;p&gt;我实在太经常抽到这两张牌，导致我变得有些怀疑，我仔细检查这两张牌，看看是不是我弄坏了它们而使得它们更容易被抽到。但它们和其他牌完全没有任何区别，我总是抽到它们确实是因为它们反应了我在那段时间的状况和关注。同样，总是被你选到的卡牌，也会告诉你你的关注在哪儿。&lt;/p&gt;
-
-&lt;p&gt;学习塔罗牌中最重要的一点就是要定时经常把牌拿出来。因此每日解读是一个理想的方案。如果你每天做一次，你会轻松但快速的熟悉每张牌的特点。&lt;/p&gt;
-
-&lt;h2 id=&#34;练习五:6a69cd20dd0544df8a929cd280b744a8&#34;&gt;练习五&lt;/h2&gt;
-
-&lt;h3 id=&#34;5-1-一张张熟悉塔罗牌:6a69cd20dd0544df8a929cd280b744a8&#34;&gt;5.1 一张张熟悉塔罗牌&lt;/h3&gt;
-
-&lt;p&gt;每天集中于一张牌可以让你更熟悉塔罗牌。这个联系最少需要78天，这需要不小的努力，但如果你坚持下来，完成之后，你会非常熟悉整副牌。&lt;/p&gt;
-
-&lt;p&gt;现在决定如何挑选每日卡牌，你可以有条理地（比如从权杖开始，到圣杯……）或者随意选择。你可以选看上眼的一张牌，或是看上去会符合当天的活动的一张。一张牌花一天时间已经足够，但如果你愿意，你可以用更长的时间。&lt;/p&gt;
-
-&lt;p&gt;当你选好一张牌，阅读它的说明页面，写下关键词，尝试记住它们。它们会帮助你快速记住那张卡牌的意义。别忘了仔细观察牌上的图案。你可以带上说明页面的副本，而我不建议随身携带那张牌本身，因为那可能造成损坏或遗失。如果你愿意，开始写日记。&lt;/p&gt;
-
-&lt;h3 id=&#34;5-2-实施每日解读:6a69cd20dd0544df8a929cd280b744a8&#34;&gt;5.2 实施每日解读&lt;/h3&gt;
-
-&lt;p&gt;当你学习每张塔罗牌至少一次过后，开始按照课程5中提到的步骤，在无意识地情况下抽选你的每日卡牌。如果有日记的话，继续你的日记。一段时间过后，看看不同属性牌组以及主牌的分布情况。你是否发现卡牌的模式和你的情况之间的关联？某些卡牌是否更经常出现？想想为什么。&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;题图：万智【卜卦】&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://inside.mcfog.wang/img/2015-q1/m14-52.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-</description>
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -788,83 +172,15 @@ JS里，对象才是一等居民，我们写的是方便地创建某种对象的
       <pubDate>Mon, 09 Mar 2015 12:04:02 +0800</pubDate>
       
       <guid>https://inside.mcfog.wang/2015/03/ichizon-a/</guid>
-      <description>
+      <description>&lt;!--================================!--&gt;
 
-&lt;!--================================!--&gt;
-
-&lt;h2 id=&#34;类似淘宝用php做前端-java做后端的架构是怎样的:156241fca14a6dbd9a801918f99835b7&#34;&gt;类似淘宝用php做前端，java做后端的架构是怎样的？&lt;/h2&gt;
+&lt;h2 id=&#34;类似淘宝用php做前端-java做后端的架构是怎样的&#34;&gt;类似淘宝用php做前端，java做后端的架构是怎样的？&lt;/h2&gt;
 
 &lt;p&gt;&lt;a href=&#34;http://segmentfault.com/q/1010000002581056&#34;&gt;问题&lt;/a&gt; by &lt;a href=&#34;http://segmentfault.com/u/ziav&#34;&gt;Ziav&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;RT&amp;hellip;..顺便问一下，像类似淘宝这样的大型网站，为什么会使用php来做前端呢？php本身不是偏后端的语言吗？而且对于前端而言，不是可以用js来处理后端的数据吗？&lt;/p&gt;
 
-&lt;hr /&gt;
-
-&lt;h2 id=&#34;我的看法:156241fca14a6dbd9a801918f99835b7&#34;&gt;我的看法&lt;/h2&gt;
-
-&lt;p&gt;本质上前端后端的区分是以“到用户的距离”划分的&lt;/p&gt;
-
-&lt;p&gt;比较通行的划分是在浏览器/客户端到服务器之间，以用户的http请求为准划线，js css dom flash ios android这些算前，后端负责业务和数据存储。因为通行的开源方案，rdbms配合缓存，队列，开源搜索引擎等等足以支持，于是这个直接的划分比较有效。客户端有十种，服务器也就不到百台，大家的责任任务比较平衡。&lt;/p&gt;
-
-&lt;p&gt;当厂子的量级大到一定程度，简单的开源方案很难盖的住大量的用户，水平扩容，立体的灾备等等问题。这时客户端还是10种，可服务器却一下子百台千台，一个机房一个机房来算了。此时，上述的普通划分就没有意义了。此时划分线便自然向后移动到业务和存储/支持之间，有了题主描述的“java后，php+js前”或是“cpp后，php+js前”之类的划分。
-并不是php的角色变化了，而是原来insert into就写完的下单变得需要大量开发负责各种server运维告警负载均衡读写分离等等等等事情。
-换种说法，10个开发的业务可能5个写jscss，5个写php，但100个开发的业务，可能就是10个jscss，10个安卓ios，35个写php，30个写c/java给php调用，还要有10个运维，5个组长&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;!--================================!--&gt;
-
-&lt;h2 id=&#34;将html转为markdown格式的难点在哪-有什么解决思路:156241fca14a6dbd9a801918f99835b7&#34;&gt;将html转为markdown格式的难点在哪，有什么解决思路？&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://segmentfault.com/q/1010000002541921&#34;&gt;问题&lt;/a&gt; by &lt;a href=&#34;http://segmentfault.com/u/wtser&#34;&gt;王铁手&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;试过 github 上的很多开源项目，结果都很类似。对简单的 DOM 结构转的还能接受，但是页面稍稍复杂，嵌套了其他标签如 &lt;code&gt;&amp;lt;span&amp;gt;&lt;/code&gt; &lt;code&gt;&amp;lt;table&amp;gt;&lt;/code&gt; 这种，就很难转换好，不知道有什么方法或转换策略能缓解这种情况。&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;h2 id=&#34;我的看法-1:156241fca14a6dbd9a801918f99835b7&#34;&gt;我的看法&lt;/h2&gt;
-
-&lt;p&gt;span和table没有对应的markdown语法（table有变种markdown语法）&lt;/p&gt;
-
-&lt;p&gt;包括html的属性 class等等也没有markdown对应&lt;/p&gt;
-
-&lt;p&gt;所以转换的时候通常只能舍弃或者直接保留html（因为markdown支持直接内嵌html）&lt;/p&gt;
-
-&lt;p&gt;作为通用解决方案，我觉得很难找到更好的方法了，但聚焦到独立的场景，打比方说希望&lt;code&gt;&amp;lt;span class=&amp;quot;strong&amp;gt;word&amp;lt;/span&amp;gt;&lt;/code&gt; =&amp;gt; &lt;code&gt;**word**&lt;/code&gt; 的话还是很容易实施的，可以用&lt;code&gt;cheerio&lt;/code&gt;之类的dom工具预处理，抓&lt;code&gt;span.class&lt;/code&gt;先转换成&lt;code&gt;strong&lt;/code&gt;标签然后再送到开源的通用html2md实现里即可&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;!--================================!--&gt;
-
-&lt;h2 id=&#34;有哪些知名的网站是通过建站程序或建站程序二次开发搭建的:156241fca14a6dbd9a801918f99835b7&#34;&gt;有哪些知名的网站是通过建站程序或建站程序二次开发搭建的？&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://segmentfault.com/q/1010000002503122&#34;&gt;问题&lt;/a&gt; by &lt;a href=&#34;http://segmentfault.com/u/llq&#34;&gt;路西llq&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;我想建一个兴趣站，类似创业邦，时光网，铁血网这样的网站能通过建站程序做到吗？我目前有学过建站，仍感觉无从下手，想知道建站程序能不能胜任，或者又只能等团队组建好了再开始做？&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;h2 id=&#34;我的看法-2:156241fca14a6dbd9a801918f99835b7&#34;&gt;我的看法&lt;/h2&gt;
-
-&lt;p&gt;题主已经问过多次此类问题了&lt;/p&gt;
-
-&lt;p&gt;我想说无论你问多久，问什么，你的站都不会突然就建起来了&lt;/p&gt;
-
-&lt;p&gt;如果你打算自己搞定技术方面，那么就赶紧去学技术
-如果你打算找人搞定技术方面，那么就赶紧去找技术合伙人&lt;/p&gt;
-
-&lt;p&gt;如果你拿不定主意，我建议找人搞定。&lt;/p&gt;
-
-&lt;p&gt;至于到底用开源合适还是自己写合适，这完全看你的预算和规划，虽然可能95%的情况都是开源合适&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;这是我在 &lt;a href=&#34;http://segmentfault.com/&#34;&gt;SegmentFault&lt;/a&gt; 上的问题回答选编，遵循&lt;a href=&#34;http://creativecommons.org/licenses/by-sa/3.0/cn/&#34;&gt;CC BY-SA 3.0 CN&lt;/a&gt; 分享&lt;/p&gt;
-
-&lt;p&gt;题图：万智【召集战团】&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://inside.mcfog.wang/img/2015-q1/gtc142.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-</description>
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -873,55 +189,9 @@ JS里，对象才是一等居民，我们写的是方便地创建某种对象的
       <pubDate>Wed, 04 Mar 2015 11:45:53 +0800</pubDate>
       
       <guid>https://inside.mcfog.wang/2015/03/tarot-9/</guid>
-      <description>
+      <description>&lt;p&gt;牌阵是放置塔罗牌的预设模式。它定义了总共使用多少牌，每张放在什么位置，及其各自的含义。作为塔罗牌的排布模版，牌阵针对某个给定的主题，让塔罗牌得以发挥其力量。正因为在牌阵的模版之中，才使塔罗牌的含义能够漂亮地组合起来，照亮我们的内心。&lt;/p&gt;
 
-&lt;p&gt;牌阵是放置塔罗牌的预设模式。它定义了总共使用多少牌，每张放在什么位置，及其各自的含义。作为塔罗牌的排布模版，牌阵针对某个给定的主题，让塔罗牌得以发挥其力量。正因为在牌阵的模版之中，才使塔罗牌的含义能够漂亮地组合起来，照亮我们的内心。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://inside.mcfog.wang/img/2015-q1/p4s.gif&#34; alt=&#34;Four of Pentacles&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;牌阵的最重要的特性在于每个位置都有独立的含义，为解读放在这个位置上的任何一张牌渲染独特的色彩。比如&lt;strong&gt;Four of Pentacles &amp;ldquo;钱币四&amp;rdquo;&lt;/strong&gt;代表占有、控制和阻止变化。如果这张牌出现在凯尔特十字阵的4号位置（“过去”），你需要考虑这样的品质如何远离你的生活；而如果出现在6号位置（“未来”），你就需要把这些品质视为即将走进你的生活 —— 明显这将导致截然不同的解读。&lt;/p&gt;
-
-&lt;p&gt;塔罗牌阵可以是任意规模或模式。罗德轮盘包含了全部78张牌，描绘了一个人一生的广阔画面。而牌阵也可以只有一张牌。第五课中我会展示在日常解读中，如何使用单卡牌阵。&lt;br /&gt;
-多数牌阵则由6到15张牌组成，这样的范围小到可控，而又大到足够覆盖某个话题到某个深度。牌阵的形状往往组成反应其名字的某种设计。比如天宫图牌阵的形状便是对应一个人的本命盘的传统圆形。牌阵中的十二张牌分别对应占星术的十二宫。&lt;/p&gt;
-
-&lt;p&gt;当塔罗牌在牌阵中互相关联时，又一层全新的含义便产生了。组合、对照出现，故事线与个性、情节、主题也得以发展。从牌阵中的卡牌编织故事是塔罗牌解读中最惊动人心又富有创意的环节。这是一门艺术，有很多指导原则可以追随。我会在后续课程中讨论这个话题，并给出实际的例子。&lt;/p&gt;
-
-&lt;p&gt;在这里的课程中，我会聚焦于凯尔特十字阵。我觉得初学者首先坚持使用一个牌阵能更好地专注于发展直觉。而当你开始了解塔罗牌，并对解读感到轻松时，可以扩展开，探索其他布局。在继续课程之前，了解凯尔特十字阵（参考练习4.1），我们会在接下来的全部课程中使用这个牌阵。&lt;/p&gt;
-
-&lt;h2 id=&#34;练习四:de2efbba23f3e2cbbd8d038c3efe0d94&#34;&gt;练习四&lt;/h2&gt;
-
-&lt;h3 id=&#34;4-1-凯尔特十字阵:de2efbba23f3e2cbbd8d038c3efe0d94&#34;&gt;4.1 凯尔特十字阵&lt;/h3&gt;
-
-&lt;p&gt;花一些时间阅读&lt;a href=&#34;http://www.learntarot.com/ccross.htm&#34;&gt;凯尔特十字阵的说明&lt;/a&gt;，理解如何建立它。不必记忆任何东西，只需要单纯地适应这些信息即可。&lt;/p&gt;
-
-&lt;p&gt;现在随意挑选十张牌摆放出凯尔特十字阵，按照顺序阅读关于各个位置的说明。考虑这张卡牌出现在这个位置的含义，稍后的课程会有更多的介绍，现在只需猜测就好。&lt;/p&gt;
-
-&lt;h3 id=&#34;4-2-设计一个牌阵:de2efbba23f3e2cbbd8d038c3efe0d94&#34;&gt;4.2 设计一个牌阵&lt;/h3&gt;
-
-&lt;p&gt;你可以为自己的需要来设计牌阵。设计一个三张牌的牌阵&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;画出卡牌的布局，每张牌应当放在何处&lt;/li&gt;
-&lt;li&gt;为每个位置添加一个编号&lt;/li&gt;
-&lt;li&gt;为每个位置写下一些简短的短语来说明这个位置的含义&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://inside.mcfog.wang/img/2015-q1/exer41.gif&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;这是一个基本的关注时间的牌阵。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://inside.mcfog.wang/img/2015-q1/exer42.gif&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;这是一个当你属于一个三人团队的时候，试图了解每个成员包括自己的期望的时候可能使用的牌阵。这个倒置的Y字图案暗示思想的交汇。&lt;/p&gt;
-
-&lt;p&gt;设计你的布局，让它反映出每个位置的含义。你可以用四张五张或更多牌来扩展这个练习。&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;题图：万智【探险地图】&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://inside.mcfog.wang/img/2015-q1/zen201.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-</description>
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -930,109 +200,15 @@ JS里，对象才是一等居民，我们写的是方便地创建某种对象的
       <pubDate>Mon, 02 Mar 2015 11:35:42 +0800</pubDate>
       
       <guid>https://inside.mcfog.wang/2015/03/ichizon-9/</guid>
-      <description>
+      <description>&lt;!--================================!--&gt;
 
-&lt;!--================================!--&gt;
-
-&lt;h2 id=&#34;學習好一門編程語言要關注哪些地方:a16965cf5369f3d2be6b8e3f99ac42f6&#34;&gt;學習好一門編程語言要關注哪些地方？&lt;/h2&gt;
+&lt;h2 id=&#34;學習好一門編程語言要關注哪些地方&#34;&gt;學習好一門編程語言要關注哪些地方？&lt;/h2&gt;
 
 &lt;p&gt;&lt;a href=&#34;http://segmentfault.com/q/1010000002427856&#34;&gt;问题&lt;/a&gt; by &lt;a href=&#34;http://segmentfault.com/u/mexiqq&#34;&gt;MexiQQ&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;如題所示，咋樣才算是學習好了一門編程語言？就比如拿 swift 來說吧&lt;/p&gt;
 
-&lt;hr /&gt;
-
-&lt;h2 id=&#34;我的看法:a16965cf5369f3d2be6b8e3f99ac42f6&#34;&gt;我的看法&lt;/h2&gt;
-
-&lt;p&gt;标题和内容是两个问题啊喂……&lt;/p&gt;
-
-&lt;p&gt;掌握（实用的）编程语言往往分为两大块，语言本身和周边类库／框架，这两块相辅相成缺一不可&lt;/p&gt;
-
-&lt;p&gt;就语言本身来说，最重要的是理解这门语言的抽象机制／编程范式：早期的语言可能相对单纯，纯过程式，纯面向对象，而多数现代通用语言往往是多范式的，往往即支持面向对象又支持面向过程，还有或多或少的函数式，这种混合的比例和风格决定了整门语言的风格。有的语言会有一些“核心概念”，拿掉以后会直接洞穿整个根基的重要概念／机制（比如JS的原型，Java的接口，C的指针），那么抓住这些核心概念突破是个好主意；而另一些语言可能没有这样明显的核心，这类语言往往混合多种其他语言的特色，那么可以通过他借鉴了哪些特性，做了哪些调整，又没有借鉴哪些特性来入手。重要的是“味道”，写Java就要有Java味道（而不是试图用Java实现一个动态语言的子集），写JS就要有JS的味道（而不是试图搞接口，封装之类）。而有一些味道是所有语言共通追求的比如可读可维护（恕我排除了brainfuck……），这也可以成为突破口（比如这门语言的哪些特性增强了可读性？）&lt;/p&gt;
-
-&lt;p&gt;另外一块就是周边类库包括工具集了，我经常用学英文打比方，前面那块可能对应语法，而类库就相当于词汇了，这门语言的主要应用场景在哪里，在这些场景下有哪些内置或开源的类库可以用，不同类库之间的优缺点如何，怎么选择合适的类库，怎么让几个不同的类库在一起融洽地工作。什么样的代码适合抽离成类库，自己写类库的时候要注意什么。这门语言有哪些常见的辅助工具。&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;我觉得学好一门语言的主要标志就是它从你的思考中消失了，你发现你考虑如何写代码的时候的思维过程和这门具体的语言没有关系，“怎么用XX实现YY”之类的问题从来没有出现，更没有打断你的思路&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;!--================================!--&gt;
-
-&lt;h2 id=&#34;如何将bootstrap的默认字体改为微软雅黑:a16965cf5369f3d2be6b8e3f99ac42f6&#34;&gt;如何将bootstrap的默认字体改为微软雅黑？&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://segmentfault.com/q/1010000002422024&#34;&gt;问题&lt;/a&gt; by &lt;a href=&#34;http://segmentfault.com/u/zengdamo&#34;&gt;zengdamo&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;如题，我正在用joomla搭建网站，引用了bootstrap作为css样式。
-但是目前默认的字体是宋体，这是不能忍受的。
-我在网上找到了如下的解决办法 ：&lt;a href=&#34;http://www.imooc.com/wenda/detail/214057&#34;&gt;http://www.imooc.com/wenda/detail/214057&lt;/a&gt; 或者 &lt;a href=&#34;http://www.igooda.cn/jzjl/20130914360.html&#34;&gt;http://www.igooda.cn/jzjl/20130914360.html&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;但是照做之后没有改变，网站的字体还是宋体。
-请问有什么办法能将默认字体改为微软雅黑吗？&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;h2 id=&#34;我的看法-1:a16965cf5369f3d2be6b8e3f99ac42f6&#34;&gt;我的看法&lt;/h2&gt;
-
-&lt;p&gt;直接改就行 &lt;a href=&#34;https://github.com/twbs/bootstrap/blob/v3.3.1/less/variables.less#L45&#34;&gt;https://github.com/twbs/bootstrap/blob/v3.3.1/less/variables.less#L45&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;有时候我真觉得bootstrap最大的败笔就是直接提供css下载&lt;/em&gt;&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;!--================================!--&gt;
-
-&lt;h2 id=&#34;phper-进阶困惑:a16965cf5369f3d2be6b8e3f99ac42f6&#34;&gt;phper  进阶困惑&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://segmentfault.com/q/1010000000461429&#34;&gt;问题&lt;/a&gt; by &lt;a href=&#34;http://segmentfault.com/u/ptao&#34;&gt;葡了个萄&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;经朋友推荐来到SF 感觉很不错&amp;hellip;
-回到正题,作为一名phper快一年的时间,这是指开发时间不包括自学时间..
-但是慢慢的发现自己处于一个瓶颈中无法走出,提高很慢&amp;hellip;
-自己目前也能独立使用各种框架进行项目的开发,但这些好像都是属于PHP初级知识范围内的吧??(自己划分的).对于其他的知识 譬如 PHP的cli模式  线程问题.还有一些其他的PHP知识想去深入的了解自己也gg过很多资料,但是还无从下手的感觉,希望SF的大大能够给予解惑 万分感谢&lt;br /&gt;
-PS 本人非计算机专业 PHP是大学偶然中接触之后有兴趣开始学习的..求各位大大给予建议和帮助.&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;h2 id=&#34;我的看法-2:a16965cf5369f3d2be6b8e3f99ac42f6&#34;&gt;我的看法&lt;/h2&gt;
-
-&lt;p&gt;我觉得这是典型的舒适区问题……你能很好的满足工作需求了，更牛逼的cli，线程，zend之类的工作上项目上用不到（多数项目确实用不到），没有需求/老板之类的外界来push你，于是你感觉很难提高&lt;/p&gt;
-
-&lt;p&gt;我的建议有三条，我都各自用过这些方法来冲出舒适区，仅供参考&lt;/p&gt;
-
-&lt;h3 id=&#34;nightjob:a16965cf5369f3d2be6b8e3f99ac42f6&#34;&gt;NightJob&lt;/h3&gt;
-
-&lt;p&gt;不知道你有没读过《黑客与画家》，这里说的NightJob就是你在工作之余，下班，周末来作的项目。无需考虑盈利，只需要做你最想做的事情，你自己是产品经理负责规划，自己是老板负责挤出工作之余的时间，自己是开发负责找最cool的技术来实现。&lt;/p&gt;
-
-&lt;p&gt;我个人的NightJob有很多很多，绝大多数最后都是0用户，自己写不下去了，但每一次从发现灵感，尝试去做，最后做了个半成品，渐渐遇到困难，克服了一些困难的过程都对自己的成长有很大帮助。每次反思“啊那个项目怎么最后就做不下去了”也都很有收获。&lt;/p&gt;
-
-&lt;h3 id=&#34;overjob:a16965cf5369f3d2be6b8e3f99ac42f6&#34;&gt;OverJob&lt;/h3&gt;
-
-&lt;p&gt;顺势给第二条建议起了个这么个名字，就是工作之余，想想有啥可以额外做的小工具，mini项目，做出来可以略微提高一点工作效率的。比如我做的事情是&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;我司内部有一个MySQL缓存中间件，负责在web机器和DB之间做cache，一直没有图形界面的，我花了一些时间（嗯，包括一次周五额外加班通宵），日了一个网页版的图形界面出来，开发的时候不需要搞那些命令，直接开网页，就像PMA那样就可以控制里面的内容了&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;这样的事情和老板说，他肯定不会批时间给你做，但实际上做出来以后确实是对开发效率有一定提升的。和NightJob一样，因为是你主动自发做的，所以你可以尽情发挥，用擦上边的各种你想熟悉的技术。比起NightJob来说虽然可能选题范围稍微窄一些，事情本身的有趣程度也略逊，但好在做出来以后可以shock到你的老板，可以让你的同事对你刮目相看。&lt;/p&gt;
-
-&lt;h3 id=&#34;成为水泥:a16965cf5369f3d2be6b8e3f99ac42f6&#34;&gt;成为水泥&lt;/h3&gt;
-
-&lt;p&gt;最后，这条建议就是完全关于正经工作的。既然你现在感觉有余力，可以比较好的完成你的份内工作，可以把你的眼光投向四周：你的同事有什么工作是摆不平的，或者做的不够好的？如果这件事你能做的很好，那么找机会花时间去教他，提高他的水平。如果这件事你也不那么擅长，那就去学，变得擅长，可以考虑和他聊聊然后和你的老板聊聊，告诉他们：这事儿我比较能干，把这份事情搞过来自己做，把自己做惯的“简单”一些的任务丢掉一部分（以夯实你学习的成果）&lt;/p&gt;
-
-&lt;p&gt;水泥的意思就是首先能填充到缝隙之中，还能慢慢变硬，让大楼让整个团队坚硬无比，也让自己能适应任何需求。&lt;/p&gt;
-
-&lt;p&gt;后者对自己的提升比较明显：你丢掉了一些做惯的不有趣的事儿，拿到了新的有挑战的事儿，学到了新的技能，但其实我更喜欢前者，也就是提高同事的水平的机会。这不仅能收获他的好感度，老板的好感度，还能让你自己的基础更扎实（别人学习过程中提出的问题很多时候能正中自己的软肋），一石二鸟，一般人我不告诉他的。&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;这是我在 &lt;a href=&#34;http://segmentfault.com/&#34;&gt;SegmentFault&lt;/a&gt; 上的问题回答选编，遵循&lt;a href=&#34;http://creativecommons.org/licenses/by-sa/3.0/cn/&#34;&gt;CC BY-SA 3.0 CN&lt;/a&gt; 分享&lt;/p&gt;
-
-&lt;p&gt;题图：万智【丰足成长】&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://inside.mcfog.wang/img/2015-q1/avr167.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-</description>
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -1045,16 +221,7 @@ PS 本人非计算机专业 PHP是大学偶然中接触之后有兴趣开始学�
 
 &lt;p&gt;移动端的兴起和原生JS，DOM能力的改善促使一大批微型js库出现，它们的体积（min+gzip）不足5KB，但在各自的领域内都有非常好的表现。今天介绍的又一个直达网站便是索引了这些微型的js库，更赞的是维护了友好的关键字，所以如图“I need xxx” 答案就出来啦&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://inside.mcfog.wang/img/2015-q1/microjs.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://microjs.com/&#34;&gt;http://microjs.com/&lt;/a&gt;&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;题图：万智 【缩小】&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://inside.mcfog.wang/img/2015-q1/m11-52.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-</description>
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -1063,105 +230,13 @@ PS 本人非计算机专业 PHP是大学偶然中接触之后有兴趣开始学�
       <pubDate>Wed, 25 Feb 2015 13:22:34 +0800</pubDate>
       
       <guid>https://inside.mcfog.wang/2015/02/tarot-8/</guid>
-      <description>
-
-&lt;h2 id=&#34;练习三:2be4c0c4f78aa255ac4225a4c98bb614&#34;&gt;练习三&lt;/h2&gt;
+      <description>&lt;h2 id=&#34;练习三&#34;&gt;练习三&lt;/h2&gt;
 
 &lt;p&gt;&lt;a href=&#34;http://inside.mcfog.wang/2015/02/tarot-7/&#34;&gt;副牌&lt;/a&gt;&lt;/p&gt;
 
-&lt;h3 id=&#34;3-1-熟悉属性特质:2be4c0c4f78aa255ac4225a4c98bb614&#34;&gt;3.1 熟悉属性特质&lt;/h3&gt;
+&lt;h3 id=&#34;3-1-熟悉属性特质&#34;&gt;3.1 熟悉属性特质&lt;/h3&gt;
 
-&lt;p&gt;看看&lt;a href=&#34;http://www.learntarot.com/lists.htm&#34;&gt;属性特质列表&lt;/a&gt;。它们描述了每个属性牌组的一些正面和负面的表述。不必试图背诵这些，它们只是设计用来给每个属性牌组的独特能量一个第一印象。当你觉得可以以后，检查下面的词语列表。为其中的每一项设定一个你认为合适的属性和表述的正负。例如“可靠、细致”你可以说它是“钱币 － 正面”。如果你愿意，可以看看&lt;a href=&#34;https://inside.mcfog.wang/tarot/exercise/suggest3/&#34;&gt;我的建议&lt;/a&gt;，如果你的选择和我的有所不同，想想为什么。通过这个练习，你将开始对每个属性提炼出自己的理解。也可以让你的朋友随意选择新的词汇组合来做小测试。&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;阴沉、懒惰&lt;/li&gt;
-&lt;li&gt;严肃、无趣&lt;/li&gt;
-&lt;li&gt;风趣、博识&lt;/li&gt;
-&lt;li&gt;判断、掌控&lt;/li&gt;
-&lt;li&gt;愉快、大胆&lt;/li&gt;
-&lt;li&gt;缜密、使用&lt;/li&gt;
-&lt;li&gt;冷静、同情&lt;/li&gt;
-&lt;li&gt;逻辑清晰、直言不讳&lt;/li&gt;
-&lt;li&gt;不负责任、狂妄自大&lt;/li&gt;
-&lt;li&gt;忠诚、扎实&lt;/li&gt;
-&lt;li&gt;批判、傲慢&lt;/li&gt;
-&lt;li&gt;全心全意、热情&lt;/li&gt;
-&lt;li&gt;喜怒无常、闷闷不乐&lt;/li&gt;
-&lt;li&gt;善解人意、爱&lt;/li&gt;
-&lt;li&gt;鲁莽、冲动&lt;/li&gt;
-&lt;li&gt;郁郁寡欢、精神脆弱&lt;/li&gt;
-&lt;li&gt;固执、沮丧&lt;/li&gt;
-&lt;li&gt;诚实、客观&lt;/li&gt;
-&lt;li&gt;持续、坚定&lt;/li&gt;
-&lt;li&gt;冷漠、专横&lt;/li&gt;
-&lt;li&gt;心灵、直觉&lt;/li&gt;
-&lt;li&gt;匆忙、无准备&lt;/li&gt;
-&lt;li&gt;创造性、探险性&lt;/li&gt;
-&lt;li&gt;缩手缩脚、呆板&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h3 id=&#34;3-2-辨析属性特质:2be4c0c4f78aa255ac4225a4c98bb614&#34;&gt;3.2 辨析属性特质&lt;/h3&gt;
-
-&lt;p&gt;很多日常生活的方面具体反映了某一个属性牌组，对下面的每个场景，选择一个你认为最合适的属性和对应的正负，列出一些你认为支持你的选择的特质。比如去特技跳伞也许是“权杖－正面”因为你必须“勇敢、精力充沛、充满自信”（也可能是权杖－负面：鲁莽，乱来！）如果你愿意，可以看看&lt;a href=&#34;https://inside.mcfog.wang/tarot/exercise/suggest3/&#34;&gt;我的建议&lt;/a&gt;。&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;总把每件事做到正好的程度&lt;/li&gt;
-&lt;li&gt;在一次重要的考试的前一晚喝醉酒&lt;/li&gt;
-&lt;li&gt;总在约好的时间准时到达&lt;/li&gt;
-&lt;li&gt;解决一个数学问题&lt;/li&gt;
-&lt;li&gt;使用塔罗牌&lt;/li&gt;
-&lt;li&gt;和你的团队一起欢呼胜利&lt;/li&gt;
-&lt;li&gt;倾听一位朋友讲述她的烦恼&lt;/li&gt;
-&lt;li&gt;作出讽刺、刻度的评论&lt;/li&gt;
-&lt;li&gt;在犯错后拒绝致歉&lt;/li&gt;
-&lt;li&gt;鄙夷地对待“不如”你的人&lt;/li&gt;
-&lt;li&gt;从头到尾考虑一个项目&lt;/li&gt;
-&lt;li&gt;对一个细小的发现忧虑不已&lt;/li&gt;
-&lt;li&gt;志愿参与一个危险但重要的任务&lt;/li&gt;
-&lt;li&gt;一怒之下辞去工作&lt;/li&gt;
-&lt;li&gt;对一场争议做出裁决&lt;/li&gt;
-&lt;li&gt;反感脏活累活&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h3 id=&#34;3-3-综合属性特质:2be4c0c4f78aa255ac4225a4c98bb614&#34;&gt;3.3 综合属性特质&lt;/h3&gt;
-
-&lt;p&gt;在更多的事件中，4种属性交织在一起共同作用，对下面的每个场景，列举每个属性的两个优点和两个缺点，例如：&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;&lt;strong&gt;保持恋爱关系需要&lt;/strong&gt;&lt;br /&gt;
-+ 权杖：激切而热情，但不要急躁、性急&lt;br /&gt;
-+ 圣杯：浪漫而爱恋，但不要忧郁、过敏&lt;br /&gt;
-+ 宝剑：诚实而正直，但不要冷漠、苛刻&lt;br /&gt;
-+ 钱币：忠诚而可靠，但不要单调、呆板&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;ol&gt;
-&lt;li&gt;做成一个项目&lt;/li&gt;
-&lt;li&gt;创造一个作品&lt;/li&gt;
-&lt;li&gt;抚养一个小孩&lt;/li&gt;
-&lt;li&gt;达成一笔交易&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h3 id=&#34;3-4-自己的属性特质:2be4c0c4f78aa255ac4225a4c98bb614&#34;&gt;3.4 自己的属性特质&lt;/h3&gt;
-
-&lt;p&gt;人的个性同样由4种属性组合而成。对照这些属性检查自己，回答下面的问题：&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;是否有某个属性占主导地位？&lt;/li&gt;
-&lt;li&gt;是否有某个属性很少体现？&lt;/li&gt;
-&lt;li&gt;我分别在什么样的情况下体现各种属性？&lt;/li&gt;
-&lt;li&gt;我展示出了它们的正面还是负面？&lt;/li&gt;
-&lt;li&gt;我能吸引同类的人还是不同类的人？&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;你可以以另一个人作为主题重复这个练习&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;题图：万智【塔萨的试炼】&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://inside.mcfog.wang/img/2015-q1/ths58.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-</description>
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -1170,11 +245,9 @@ PS 本人非计算机专业 PHP是大学偶然中接触之后有兴趣开始学�
       <pubDate>Mon, 23 Feb 2015 00:09:31 +0800</pubDate>
       
       <guid>https://inside.mcfog.wang/2015/02/ichizon-8/</guid>
-      <description>
+      <description>&lt;!--================================!--&gt;
 
-&lt;!--================================!--&gt;
-
-&lt;h2 id=&#34;编写js效果的时候-大家一般是怎么去构思的:eb3d3d6a1b4a553765c54016019577a4&#34;&gt;编写js效果的时候, 大家一般是怎么去构思的?&lt;/h2&gt;
+&lt;h2 id=&#34;编写js效果的时候-大家一般是怎么去构思的&#34;&gt;编写js效果的时候, 大家一般是怎么去构思的?&lt;/h2&gt;
 
 &lt;p&gt;&lt;a href=&#34;http://segmentfault.com/q/1010000002555492&#34;&gt;问题&lt;/a&gt; by &lt;a href=&#34;http://segmentfault.com/u/doudoudragon&#34;&gt;douDouDragon&lt;/a&gt;&lt;/p&gt;
 
@@ -1182,85 +255,351 @@ PS 本人非计算机专业 PHP是大学偶然中接触之后有兴趣开始学�
 
 &lt;p&gt;一般是直接抄上键盘开干, 还是有什么更好的思考构造方法? 更成熟的工作习惯呢?&lt;/p&gt;
 
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>浏览器特性速查 － caniuse</title>
+      <link>https://inside.mcfog.wang/2015/02/tech4fun-7/</link>
+      <pubDate>Fri, 20 Feb 2015 13:14:36 +0800</pubDate>
+      
+      <guid>https://inside.mcfog.wang/2015/02/tech4fun-7/</guid>
+      <description>&lt;p&gt;随着IE6，IE7的远去，移动端webkit一统江湖，web开发的好日子总算是慢慢到来了。但主浏览器的数量其实并没有减少，用一些比较新的特性的时候还是需要检查一下兼容性，考虑一下是否需要polyfill或degradation。 MDN，MSDN等固然权威，但有时我们只是要查兼容性而已。&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>[乱弹塔罗][翻译]第三课 副牌</title>
+      <link>https://inside.mcfog.wang/2015/02/tarot-7/</link>
+      <pubDate>Wed, 18 Feb 2015 10:39:08 +0800</pubDate>
+      
+      <guid>https://inside.mcfog.wang/2015/02/tarot-7/</guid>
+      <description>&lt;p&gt;不同于主牌表现了普适的各种主题，副牌将这些主题带入实际的范围内展示它们在日常生活中的运转情况。副牌代表了充斥于我们日常生活中的关注、活动、情感。副牌共有56张，被分为4个属性牌组：权杖、圣杯、宝剑和钱币，每个属性都代表一种特定的生活态度。&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>mcfog的一己之见 VII</title>
+      <link>https://inside.mcfog.wang/2015/02/ichizon-7/</link>
+      <pubDate>Mon, 16 Feb 2015 17:25:58 +0800</pubDate>
+      
+      <guid>https://inside.mcfog.wang/2015/02/ichizon-7/</guid>
+      <description>&lt;!--================================!--&gt;
+
+&lt;h2 id=&#34;怎么衡量前端达到了什么水平&#34;&gt;怎么衡量前端达到了什么水平&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://segmentfault.com/q/1010000002556431&#34;&gt;问题&lt;/a&gt; by &lt;a href=&#34;http://segmentfault.com/u/futureplayer&#34;&gt;futurePlayer&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>推荐个手机浏览器Yandex</title>
+      <link>https://inside.mcfog.wang/2015/02/tech4fun-6/</link>
+      <pubDate>Fri, 13 Feb 2015 13:04:32 +0800</pubDate>
+      
+      <guid>https://inside.mcfog.wang/2015/02/tech4fun-6/</guid>
+      <description>&lt;p&gt;我对手机浏览器的应用主要是&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;一些APP的外置webview，比如微信“在浏览器中打开”之类&lt;/li&gt;
+&lt;li&gt;刷一些内容站点打发时间&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;两块，我不需要网址导航，应用市场，小游戏合集等等“功能”，而只想要一个浏览器。&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>[乱弹塔罗][翻译]第二课 主牌</title>
+      <link>https://inside.mcfog.wang/2015/02/tarot-6/</link>
+      <pubDate>Tue, 10 Feb 2015 11:18:13 +0800</pubDate>
+      
+      <guid>https://inside.mcfog.wang/2015/02/tarot-6/</guid>
+      <description>&lt;p&gt;标准的塔罗牌组由78张分为两部分的牌组成，主牌／副牌（又称大／小密仪；大／小阿尔克那等）单词_arcana_是_arcanum_的复数形式，意思是“深奥的秘密”。对中世纪的炼金术士来说，阿尔克那是自然的奥秘，塔罗牌是由这些构成并能解释世间万物的秘密组成的。&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>mcfog的一己之见 VI</title>
+      <link>https://inside.mcfog.wang/2015/02/ichizon-6/</link>
+      <pubDate>Mon, 09 Feb 2015 18:28:43 +0800</pubDate>
+      
+      <guid>https://inside.mcfog.wang/2015/02/ichizon-6/</guid>
+      <description>&lt;!--================================!--&gt;
+
+&lt;h2 id=&#34;perl-字符串匹配-如何正确匹配出-aaaa-中的3个-aa-模式&#34;&gt;【Perl】字符串匹配：如何正确匹配出’aaaa&amp;rsquo;中的3个‘aa&amp;rsquo;模式？&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://segmentfault.com/q/1010000002541924&#34;&gt;问题&lt;/a&gt; by &lt;a href=&#34;http://segmentfault.com/u/zair&#34;&gt;Zair&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>[新姿势]授人以渔：如何迅速找到靠谱的工具软件</title>
+      <link>https://inside.mcfog.wang/2015/02/tech4fun-5/</link>
+      <pubDate>Thu, 05 Feb 2015 17:39:37 +0800</pubDate>
+      
+      <guid>https://inside.mcfog.wang/2015/02/tech4fun-5/</guid>
+      <description>&lt;p&gt;eclipse又慢又笨？用惯WinSCP换了Mac不知所措？被Dash惯坏了想要Windows下的替代品？&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://alternativeto.net/&#34;&gt;http://alternativeto.net/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>[乱弹塔罗]愚者的旅程（下）</title>
+      <link>https://inside.mcfog.wang/2015/02/tarot-5/</link>
+      <pubDate>Wed, 04 Feb 2015 12:20:06 +0800</pubDate>
+      
+      <guid>https://inside.mcfog.wang/2015/02/tarot-5/</guid>
+      <description>&lt;h3 id=&#34;justice-正义&#34;&gt;&lt;strong&gt;Justice &amp;ldquo;正义&amp;rdquo;&lt;/strong&gt;&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://inside.mcfog.wang/img/tarot/s/maj11s.gif&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;愚者必须现在必须决定这样的视野对他个人的意义。他回顾自己的人生，梳理将他带到此时此刻的&lt;strong&gt;因果&lt;/strong&gt;关系。他肩负起过往行为的&lt;strong&gt;责任&lt;/strong&gt;，从而加以改进，正大光明地迎接未来。这种&lt;strong&gt;正义&lt;/strong&gt;(11)的呼唤必须被满足，才能将往事一笔勾销。&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>mcfog的一己之见 第五期</title>
+      <link>https://inside.mcfog.wang/2015/02/ichizon-5/</link>
+      <pubDate>Mon, 02 Feb 2015 10:50:02 +0800</pubDate>
+      
+      <guid>https://inside.mcfog.wang/2015/02/ichizon-5/</guid>
+      <description>&lt;!--================================!--&gt;
+
+&lt;h2 id=&#34;学习php该走什么样的路线&#34;&gt;学习PHP该走什么样的路线&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://segmentfault.com/q/1010000000484344&#34;&gt;问题&lt;/a&gt; by &lt;a href=&#34;http://segmentfault.com/u/ixiqin_com&#34;&gt;西秦公子&lt;/a&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;是应该看传统代码还是应该看MVC框架代码？&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;是应该先看手册还是应该看成品项目？&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;</description>
+    </item>
+    
+    <item>
+      <title>[新姿势]重构癞皮狗之洋葱皮重构法</title>
+      <link>https://inside.mcfog.wang/2015/01/tech4fun-4/</link>
+      <pubDate>Thu, 29 Jan 2015 19:33:28 +0800</pubDate>
+      
+      <guid>https://inside.mcfog.wang/2015/01/tech4fun-4/</guid>
+      <description>&lt;p&gt;作为一只伪前端开发癞皮狗重构的mc，向来写CSS都是用“穷举法”写的。嗯，就是『标题太靠左？老板来10px margin』这样的感觉。&lt;/p&gt;
+
+&lt;p&gt;拯救了这样的我的一款开发神器就是&lt;a href=&#34;http://alloyteam.github.io/AlloyDesigner/&#34;&gt;AlloyDesigner&lt;/a&gt;的洋葱皮功能。&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>[乱弹塔罗]愚者的旅程（上）</title>
+      <link>https://inside.mcfog.wang/2015/01/tatarot-4/</link>
+      <pubDate>Wed, 28 Jan 2015 12:35:45 +0800</pubDate>
+      
+      <guid>https://inside.mcfog.wang/2015/01/tatarot-4/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;愚者的旅程是对人生旅程的某种隐喻。每张主牌代表了旅程中的某个阶段，也就是一个人在达成圆满的过程中必须接纳的体验。这22个描述都是基于每张主牌的关键词，关键词以加粗格式展示，对应卡牌的数字则在括号中。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>mcfog的一己之见4th</title>
+      <link>https://inside.mcfog.wang/2015/01/ichizon-4/</link>
+      <pubDate>Sun, 25 Jan 2015 22:01:29 +0800</pubDate>
+      
+      <guid>https://inside.mcfog.wang/2015/01/ichizon-4/</guid>
+      <description>&lt;!--================================!--&gt;
+
+&lt;h2 id=&#34;一个优秀的前端工程师应该具备什么样的技能&#34;&gt;一个优秀的前端工程师应该具备什么样的技能？&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://segmentfault.com/q/1010000002504410?_ea=121396&#34;&gt;问题&lt;/a&gt; by &lt;a href=&#34;http://segmentfault.com/u/houxiaoqiang&#34;&gt;侯志强&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;一个优秀的前端工程师应该具备什么样的技能，应该从哪些方面来提高自己的专业技能还有软实力？&lt;/p&gt;
+
+&lt;h2 id=&#34;hugomore42&#34;&gt;&lt;/h2&gt;
+
+&lt;h2 id=&#34;我的看法&#34;&gt;我的看法&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;学力&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>[新姿势]开源去中心密码生成器PasswordMaker</title>
+      <link>https://inside.mcfog.wang/2015/01/tech4fun-3/</link>
+      <pubDate>Thu, 22 Jan 2015 14:38:32 +0800</pubDate>
+      
+      <guid>https://inside.mcfog.wang/2015/01/tech4fun-3/</guid>
+      <description>&lt;p&gt;在统一密码的方便但不设防和每个站独立密码的麻烦之中，各种密码管理解决方案出现了。关于这个小众需求，我个人无法接受这个密码生成方案是有“中心”的，无论这个中心是商业公司还是某个加密的数据文件。前者我要信赖他的生存能力，国外的不被墙能力和国内的哔—能力；而后者我要小心保护这个数据文件，用一个强密码乃至多层加密来保护它的同时，还要把它同步在不同的电脑和手机之间，这依然是方便和安全之间的悖论。&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>[乱弹塔罗][翻译]练习一 塔罗牌介绍</title>
+      <link>https://inside.mcfog.wang/2015/01/tatarot-3/</link>
+      <pubDate>Mon, 19 Jan 2015 13:25:59 +0800</pubDate>
+      
+      <guid>https://inside.mcfog.wang/2015/01/tatarot-3/</guid>
+      <description>&lt;h2 id=&#34;练习一&#34;&gt;练习一&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://inside.mcfog.wang/2015/01/tatarot-2/&#34;&gt;塔罗牌介绍&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;1-1-我信么&#34;&gt;1.1 我信么？&lt;/h3&gt;
+
+&lt;p&gt;回想第一课中呈现的理念，简短地记下现在你有多信塔罗牌，用百分比大致如下&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;0% = 我对塔罗牌的任何严肃用途都持怀疑态度，塔罗牌只是有趣而已&lt;/li&gt;
+&lt;li&gt;100% = 我坚信塔罗牌能够带给我明确而个性化的指引&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>一己之见第三季 - 神奇的代码问题及其他</title>
+      <link>https://inside.mcfog.wang/2015/01/ichizon-3/</link>
+      <pubDate>Mon, 19 Jan 2015 12:37:15 +0800</pubDate>
+      
+      <guid>https://inside.mcfog.wang/2015/01/ichizon-3/</guid>
+      <description>&lt;!--================================!--&gt;
+
+&lt;h2 id=&#34;大家写代码的时候-是不是大部分时间都费在了各种神奇的问题上&#34;&gt;大家写代码的时候，是不是大部分时间都费在了各种神奇的问题上&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://segmentfault.com/q/1010000001664019&#34;&gt;问题&lt;/a&gt; by &lt;a href=&#34;http://segmentfault.com/u/zhimengren&#34;&gt;xxx织梦者&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>[新姿势]前端革命，革了再革：WebPack</title>
+      <link>https://inside.mcfog.wang/2015/01/tech4fun-2/</link>
+      <pubDate>Fri, 16 Jan 2015 11:30:42 +0800</pubDate>
+      
+      <guid>https://inside.mcfog.wang/2015/01/tech4fun-2/</guid>
+      <description>&lt;p&gt;时光回溯到2009年，CommonJS规范和NodeJS都还在襁褓之中，离Bower诞生还有三年时间，Ruby还统治着github，CoffeeScript在年末提交了第一个commit……&lt;/p&gt;
+
+&lt;p&gt;备受加载顺序，依赖关系折磨的前端开发，开始站起来试图解决日益复杂的前端开发的种种问题，RequireJS降临了。如果说NodeJS吹响了JS全栈革命的号角，那么同时发生的前端模块化革命便是RequireJS的历史使命。&lt;/p&gt;
+
+&lt;p&gt;五年过去了，RequireJS战胜了同级生LabJS，带起了中国小伙伴SeaJS。他完美地引领了前端模块化的革命，但今天看来，它有些过时了：它重浏览器端，轻打包编译，没有及时跟进包管理体系，almond没有成为标配而只是周边，配置晦涩……诞生太早的RequireJS，虽然一度成为了前端模块化的某种程度上的事实标准，但难掩其缺点。&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>[乱弹塔罗][翻译]第一课 塔罗牌介绍</title>
+      <link>https://inside.mcfog.wang/2015/01/tatarot-2/</link>
+      <pubDate>Wed, 14 Jan 2015 11:30:00 +0800</pubDate>
+      
+      <guid>https://inside.mcfog.wang/2015/01/tatarot-2/</guid>
+      <description>&lt;p&gt;多年前，我告诉我兄弟我在研究塔罗牌，他说“一副纸牌怎么可能告诉你哪怕任何一点有用的东西?” 我笑了，他的回复代表了大众对塔罗牌的看法。而我也同样对塔罗牌抱着怀疑，但后来我发现它确实可以以一种不同的角度帮你察觉、理解和面对人生中的挑战。在这篇介绍中，我会尝试解释其中原因。&lt;/p&gt;
+
+&lt;p&gt;塔罗牌的起源是个谜。在十五世纪，塔罗牌作为一种纸牌游戏在意大利流行。富人们钟情于漂亮的纸牌，其中有一些得以存续至今。1450年代前后的&lt;a href=&#34;http://en.wikipedia.org/wiki/Visconti-Sforza_tarot_deck&#34;&gt;Visconti-Sforza塔罗牌&lt;/a&gt;就是其中最早最完整的塔罗牌组之一。&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>mcfog的一己之见2</title>
+      <link>https://inside.mcfog.wang/2015/01/ichizon-2/</link>
+      <pubDate>Sun, 11 Jan 2015 14:05:12 +0800</pubDate>
+      
+      <guid>https://inside.mcfog.wang/2015/01/ichizon-2/</guid>
+      <description>&lt;!--================================!--&gt;
+
+&lt;h2 id=&#34;问英语在编程当中的重要程度&#34;&gt;问英语在编程当中的重要程度&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://segmentfault.com/q/1010000000698980&#34;&gt;问题&lt;/a&gt; by &lt;a href=&#34;http://segmentfault.com/u/gtg&#34;&gt;光头哥&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;在与同事群友交流当中发现英文讲不出几个，但是却经常逛英文的社区，分享国外的博客和资讯。
+但是我英文不会几个 好像感觉问题也不大。。。&lt;/p&gt;
+
+&lt;p&gt;所以我不禁想问了，挖掘机技术。。。。。&lt;/p&gt;
+
+&lt;p&gt;不对  - -&lt;/p&gt;
+
+&lt;p&gt;是学习英语在IT行业和编程当中分别到底有多重要，你们会经常逛国外的技术网站之类的吗&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>[新姿势]我用过的静态站点生成器们</title>
+      <link>https://inside.mcfog.wang/2015/01/tech4fun-1/</link>
+      <pubDate>Fri, 09 Jan 2015 13:26:52 +0800</pubDate>
+      
+      <guid>https://inside.mcfog.wang/2015/01/tech4fun-1/</guid>
+      <description>&lt;p&gt;随着诸如github pages的静态托管服务，静态站点生成器在近年有了极大的发展，静态生成+托管对托管环境要求低、维护简单、可配合版本控制，但又灵活多变，在程序员和geek群体中大有超越WordPress等动态博客程序的势头&lt;/p&gt;
+
+&lt;p&gt;近年来个人也好项目也好，我也经常要用到静态生成器，这里把我玩过的静态生成器挨个做个简评&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;才、才不是什么玩博客程序的时间超过了写博客的时间呢&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>[乱谈塔罗]牌阵解读:坚持写博客</title>
+      <link>https://inside.mcfog.wang/2015/01/tatarot-1/</link>
+      <pubDate>Mon, 05 Jan 2015 12:30:58 +0800</pubDate>
+      
+      <guid>https://inside.mcfog.wang/2015/01/tatarot-1/</guid>
+      <description>&lt;p&gt;嗯，计划中的每周三会有一篇关于塔罗的文章，那么来一发关于“坚持写博客”这事儿本身的牌阵自然是个好的开始&lt;/p&gt;
+
+&lt;p&gt;牌阵方面选择了一个缩减到5张的简略版celtic cross&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://inside.mcfog.wang/img/2015-q1/spread1.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>mcfog的一己之见 新年第一期</title>
+      <link>https://inside.mcfog.wang/2015/01/ichizon-1/</link>
+      <pubDate>Fri, 02 Jan 2015 16:18:14 +0800</pubDate>
+      
+      <guid>https://inside.mcfog.wang/2015/01/ichizon-1/</guid>
+      <description>&lt;!--================================!--&gt;
+
+&lt;h2 id=&#34;该不该从事更多项目&#34;&gt;&lt;strong&gt;该不该从事更多项目？&lt;/strong&gt;&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://segmentfault.com/q/1010000002439221/a-1020000002439395&#34;&gt;问题&lt;/a&gt; by &lt;a href=&#34;http://segmentfault.com/u/guotong1988&#34;&gt;郭同jet&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;公司有公司的项目，虽然主要分配给我的工作A比较无聊，但也偷偷接触了一些公司的核心项目B，
+没有时间搞B，这时候又有github上的项目C诱惑，&lt;/p&gt;
+
+&lt;p&gt;好好搞B的话，也许能提高收入，但C上能学到东西。&lt;/p&gt;
+
+&lt;p&gt;又希望早日结束A，而公司目前缺人，不让俺全职搞B。
+有点想把C砍掉的意思。。C回报慢周期长&lt;/p&gt;
+
+&lt;p&gt;“andrew ng语重心长的说，每次专心做一件事情就好了，因为你做的最大的事情远远大于次大的，例如乔布斯的苹果和皮克斯。”&lt;/p&gt;
+
+&lt;p&gt;做一件事 one at a time，据说这句话最近很流行，纠结。&lt;/p&gt;
+
 &lt;hr /&gt;
 
-&lt;h2 id=&#34;我的看法:eb3d3d6a1b4a553765c54016019577a4&#34;&gt;我的看法&lt;/h2&gt;
+&lt;h2 id=&#34;我的看法&#34;&gt;我的看法&lt;/h2&gt;
 
-&lt;p&gt;轮播这种普遍的效果一般不会生造轮子……&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Zero</title>
+      <link>https://inside.mcfog.wang/2014/03/zero/</link>
+      <pubDate>Sat, 29 Mar 2014 04:50:00 +0800</pubDate>
+      
+      <guid>https://inside.mcfog.wang/2014/03/zero/</guid>
+      <description>&lt;p&gt;这是第一篇文章，我是mcfog，一个怀揣小小文艺梦想的技术宅。我的技术不是很好，技术博客有写一些，但说句大话，效果一般(-_-)。个人博客曾经有写过，但没个主题也没人关注，缺乏更新的动力。朋友圈偶尔骚一把，但篇幅受限，还混在日常吐槽之中，还没有缺乏历史积累。于是穷途末路之下突然想起还有公共帐号这么个神奇的似乎介于上述种种地方之间的地方，故而来这么尝试一把。&lt;/p&gt;
 
-&lt;p&gt;真要自己撸的话，我&lt;strong&gt;一开始基本不会考虑复用&lt;/strong&gt;，因为真的自己撸一定是“找不到合适的轮子”，那基本上代表了业务场景很难复用。而且，真的发现可以复用的时候，再重构代码来提公用部分反而比较高效。因为为了业务写的代码，基本没有时间仔细梳理文档，当初留的扩展性过了三个月很容易就变成坑了。“没有思路的时候不谈复用，只求最简实现”&lt;/p&gt;
+&lt;p&gt;据说程序员当中擅长写字的不多，我也是个语文不用几乎，就是不及格的差学生。但好歹有朋友给我“文艺”的评价，于是我觉得可以花一些时间来为赋新词强说愁一把。这里的定位呢大概算是科技人文，或者说程序员人文吧。我以为在茫茫程序员之中，我还属于幸福指数比较高的一半，也希望能将我小小的幸福分享给大家，提升一下大家的幸福指数。&lt;/p&gt;
 
-&lt;p&gt;但是，假设我做了N遍轮播，找了M个轮子都觉得不顺手，同时业务又不紧或者下班有时间的时候，我就会以冲动开始造轮子了，这时候我会参考M个轮子各自的优缺点，决定自己的这个轮子究竟如何在扩展性和易用性上取到平衡点，到这时你一定对M个轮子各种吐槽，集合你N遍轮播碰到的各种情况，顺势而为，呼啦啦一个晚上就能轻松撸出自己的轮子，然后哼着歌套到项目里试试，效果好，你学到了，效果不好，你也学到了。如果你还能试着拉你的小伙伴一起来用，听听他的评价，那你能学到更多。慢慢的，你碰到没做几次的效果甚至第一次做的效果，心里也还是有数，嗯，这里留个配置，哪里暴露个接口，以后会爽。&lt;/p&gt;
-
-&lt;p&gt;当然，你可能会从地上的坑里飞出来，掉到天上的坑里去：你开始_过度设计_，做什么都插件，模块，复用，然后你发现你花了很多时间写的这些插件，模块，复用让其他同事无法理解你的代码，让你的代码和小伙伴的代码格格不入，当初留的扩展性很少用上，更糟糕的是小伙伴来写的时候他根本不理解你预留的扩展性，他会再自己写一套他的……&lt;/p&gt;
-
-&lt;p&gt;最后，你看到一个需求，低头掐指一算时间多充裕，小伙伴多信你，外面的轮子靠谱不，自己造轮子能达到好效果不，不造轮子直接强撸又怎样，双眼猛地一亮抄起键盘啪啪啪&lt;/p&gt;
-
-&lt;p&gt;到此神功大成，可喜可贺&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;!--================================!--&gt;
-
-&lt;h2 id=&#34;如何追踪页面前端特效是由哪个js执行的:eb3d3d6a1b4a553765c54016019577a4&#34;&gt;如何追踪页面前端特效是由哪个JS执行的？&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://segmentfault.com/q/1010000002505622&#34;&gt;问题&lt;/a&gt; by &lt;a href=&#34;http://segmentfault.com/u/mysic&#34;&gt;Mysic&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;一个页面中一般会引入很多独立的JS文件。如何去定位某个特效是由哪个JS执行的呢？谢谢&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;h2 id=&#34;我的看法-1:eb3d3d6a1b4a553765c54016019577a4&#34;&gt;我的看法&lt;/h2&gt;
-
-&lt;p&gt;chrome可以针对元素被改变打断断点&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://sfault-image.b0.upaiyun.com/148/870/1488709004-54c0b3da4f2f8_articlex&#34; alt=&#34;图片描述&#34; /&gt;&lt;/p&gt;
-
-&lt;!--================================!--&gt;
-
-&lt;h2 id=&#34;如何阻止-rm-rf:eb3d3d6a1b4a553765c54016019577a4&#34;&gt;如何阻止&amp;rdquo;rm -rf /&amp;rdquo;&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://segmentfault.com/q/1010000002457343&#34;&gt;问题&lt;/a&gt; by &lt;a href=&#34;http://segmentfault.com/u/liangyi&#34;&gt;两仪&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;前天  敲命令的时候  敲的玩我  一部小心敲了 sudo rm -rf / 并且按了回车  过了几秒才反映过来  不过已经玩了   mac上一些运用已经被删除了   没做备份   只好花了一天时间重新安装。&lt;/p&gt;
-
-&lt;p&gt;那么问题来了，如何禁止执行 上面的命令  或者给个提示也行&lt;/p&gt;
-
-&lt;p&gt;然后在问个问题，TimeMachine做备份  是不是要整个移动硬盘 做备份。我运行它的时候  老报没有Airport找不到   。&lt;/p&gt;
-
-&lt;p&gt;各位看管 有什么经验？&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;h2 id=&#34;我的看法-2:eb3d3d6a1b4a553765c54016019577a4&#34;&gt;我的看法&lt;/h2&gt;
-
-&lt;p&gt;1、 不要用rm，mac的话&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;brew install rmtrash&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;然后用rmtrash替代rm（移动到废纸篓）&lt;/p&gt;
-
-&lt;p&gt;少数必须要用rm的情况，再三检查你的命令&lt;/p&gt;
-
-&lt;p&gt;2、 不要用sudo或root用户，必须要用的时候，再三检查你的命令&lt;/p&gt;
-
-&lt;p&gt;3、 sudo而且rm的时候，打完命令，检查完以后，去上个厕所回来再检查一遍再执行&lt;/p&gt;
-
-&lt;p&gt;4、 千万不要用alias或任何手段来改变rm命令的行为，&lt;strong&gt;千万不要用alias或任何手段来改变rm命令的行为&lt;/strong&gt;。这很重要，因为用命令行就是为了习惯和了解服务器维护的知识经验，服务器上是不会有同样的alias的。养成慎用rm 慎用sudo 检查命令的好习惯才是正道。否则剧本就是你先&lt;code&gt;rm rf /&lt;/code&gt;了自己，苦恼了半小时找了个alias或别的脚本之类的，几个月以后，登到生产环境欢乐地&lt;code&gt;rm rf /&lt;/code&gt;了服务器，或者是&lt;code&gt;rm rf /usr /local/xxx&lt;/code&gt;
-日常使用的话参考前面，用rmtrash之类的替代命令就好&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;最后关于TimeMachine，我用的是老台式机的整块旧硬盘，不方便的话，给硬盘单独一个分区也可以，自己google怎么做&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;这是我在 &lt;a href=&#34;http://segmentfault.com/&#34;&gt;SegmentFault&lt;/a&gt; 上的问题回答选编，遵循&lt;a href=&#34;http://creativecommons.org/licenses/by-sa/3.0/cn/&#34;&gt;CC BY-SA 3.0 CN&lt;/a&gt; 分享&lt;/p&gt;
-
-&lt;p&gt;题图：万智【净化时空】 rm -rf&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://inside.mcfog.wang/img/2015-q1/m14-29.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-</description>
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
   </channel>

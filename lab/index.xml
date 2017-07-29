@@ -5,8 +5,11 @@
     <link>https://inside.mcfog.wang/lab/</link>
     <description>Recent content in Labs on mc-inside</description>
     <generator>Hugo -- gohugo.io</generator>
+    <copyright>©mcfog All rights reserved.</copyright>
     <lastBuildDate>Fri, 23 Jan 2015 13:47:38 +0800</lastBuildDate>
-    <atom:link href="https://inside.mcfog.wang/lab/index.xml" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="https://inside.mcfog.wang/lab/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>kfc</title>
@@ -14,61 +17,7 @@
       <pubDate>Fri, 23 Jan 2015 13:47:38 +0800</pubDate>
       
       <guid>https://inside.mcfog.wang/lab/kfc/</guid>
-      <description>&lt;!--more--&gt;
-
-&lt;style&gt;
-  .coupon-list:empty:before {
-    content: &#39;Loading...&#39;;
-  }
-  .coupon {
-    float: left;
-    margin: 5px;
-    position: relative;
-    background: #F7F7F7;
-    font-size: 0;
-  }
-  .coupon img {
-    height: 112px;
-    width: 140px;
-    opacity: 0.9;
-  }
-  .coupon h4 {
-    position: absolute;
-    margin: 0;
-    font-size: 2rem;
-    left: 0;
-    bottom: -1px;
-    border-top-right-radius: 5px;
-    padding: 2px 5px;
-    display: block;
-    z-index: 100;
-    text-shadow: white 0px 0 10px,white 0 0 7px,white 0 0 5px,white 0 0 5px,white 0 0 5px,white 0 0 3px;
-  }
-
-  .coupon ul {
-    position: absolute;
-    font-size: 1rem;
-    z-index: 80;
-    text-shadow: white 0px 0 10px,white 0 0 7px,white 0 0 5px,white 0 0 5px,white 0 0 5px,white 0 0 3px;
-    padding: 0;
-  }
-  .coupon li {
-    list-style: none;
-    margin: 0;
-  }
-
-&lt;/style&gt;
-
-&lt;coupon-list class=&#34;coupon-list&#34;&gt;&lt;/coupon-list&gt;
-
-&lt;script src=&#34;https://inside.mcfog.wang/js/riot.min.js&#34;&gt;&lt;/script&gt;
-&lt;script src=&#34;https://inside.mcfog.wang/js/kfcoupon/all.js&#34;&gt;&lt;/script&gt;
-&lt;script&gt;
-  function main(data) {
-    riot.mount(&#39;*&#39;, data);
-  }
-&lt;/script&gt;
-&lt;script src=&#34;http://kfcoupon-mcfog.c9.io/coupon?callback=main&#34;&gt;&lt;/script&gt;</description>
+      <description>.coupon-list:empty:before { content: &#39;Loading...&#39;; } .coupon { float: left; margin: 5px; position: relative; background: #F7F7F7; font-size: 0; } .coupon img { height: 112px; width: 140px; opacity: 0.9; } .coupon h4 { position: absolute; margin: 0; font-size: 2rem; left: 0; bottom: -1px; border-top-right-radius: 5px; padding: 2px 5px; display: block; z-index: 100; text-shadow: white 0px 0 10px,white 0 0 7px,white 0 0 5px,white 0 0 5px,white 0 0 5px,white 0 0 3px; } .</description>
     </item>
     
     <item>
@@ -77,99 +26,29 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://inside.mcfog.wang/lab/markdown/</guid>
-      <description>
-
-&lt;h1 id=&#34;markdown入门:d59f7b4dfecd890f0583fb0bac5a436e&#34;&gt;markdown入门&lt;/h1&gt;
-
-&lt;h2 id=&#34;15分钟学会markdown:d59f7b4dfecd890f0583fb0bac5a436e&#34;&gt;15分钟学会markdown&lt;/h2&gt;
-
-&lt;h3 id=&#34;1-标题:d59f7b4dfecd890f0583fb0bac5a436e&#34;&gt;1. 标题&lt;/h3&gt;
-
-&lt;h1 id=&#34;h1:d59f7b4dfecd890f0583fb0bac5a436e&#34;&gt;H1&lt;/h1&gt;
-
-&lt;h2 id=&#34;h2:d59f7b4dfecd890f0583fb0bac5a436e&#34;&gt;H2&lt;/h2&gt;
-
-&lt;h3 id=&#34;h3:d59f7b4dfecd890f0583fb0bac5a436e&#34;&gt;H3&lt;/h3&gt;
-
-&lt;h4 id=&#34;h4:d59f7b4dfecd890f0583fb0bac5a436e&#34;&gt;H4&lt;/h4&gt;
-
-&lt;h5 id=&#34;h5:d59f7b4dfecd890f0583fb0bac5a436e&#34;&gt;H5&lt;/h5&gt;
-
-&lt;h6 id=&#34;h6:d59f7b4dfecd890f0583fb0bac5a436e&#34;&gt;H6&lt;/h6&gt;
-
-&lt;h3 id=&#34;2-段落:d59f7b4dfecd890f0583fb0bac5a436e&#34;&gt;2. 段落&lt;/h3&gt;
-
-&lt;p&gt;使用空行分割段落&lt;/p&gt;
-
-&lt;p&gt;这是第二段&lt;/p&gt;
-
-&lt;p&gt;在换行前加2个以上的空格分割行&lt;br /&gt;
-前面应该有&lt;code&gt;&amp;lt;br&amp;gt;&lt;/code&gt;&lt;/p&gt;
-
-&lt;h3 id=&#34;3-引用:d59f7b4dfecd890f0583fb0bac5a436e&#34;&gt;3. 引用&lt;/h3&gt;
-
-&lt;p&gt;使用大于号&lt;code&gt;&amp;gt;&lt;/code&gt;创建引用&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;我是引用&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;多行引用可以每行都加大于号，也可以不加&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;在换行前加2个以上的空格分割行&lt;br /&gt;
-前面应该有&lt;code&gt;&amp;lt;br&amp;gt;&lt;/code&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h3 id=&#34;4-粗体和斜体:d59f7b4dfecd890f0583fb0bac5a436e&#34;&gt;4. 粗体和斜体&lt;/h3&gt;
-
-&lt;p&gt;&lt;strong&gt;粗体&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;斜体&lt;/em&gt;&lt;/p&gt;
-
-&lt;h3 id=&#34;5-列表:d59f7b4dfecd890f0583fb0bac5a436e&#34;&gt;5. 列表&lt;/h3&gt;
-
-&lt;pre&gt;&lt;code&gt;+ 蔬菜
-+ 鸡蛋
-+ 豆腐
-
-- 列表内容较多的时候
-- 
-
-需要通过换行来生成p  
-**嵌套** 也是可以的
-
-- 子列表通过缩进实现
-    + 蔬菜
-    + 鸡蛋
-    + 豆腐
-
-
-1. `ol`通过数字点空格表示
-2. 因为生成的是html
-8. 所以前面的数字其实可以乱写
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h3 id=&#34;6-代码引用:d59f7b4dfecd890f0583fb0bac5a436e&#34;&gt;6. 代码引用&lt;/h3&gt;
-
-&lt;p&gt;行内通过返引号表示代码&lt;code&gt;$variable&lt;/code&gt;&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;代码块通过缩进表示
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;不方便缩进的时候，用三个返引号来包裹也可以&lt;code&gt;```&lt;/code&gt;&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-php&#34;&gt;代码块
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h3 id=&#34;7-链接和图片:d59f7b4dfecd890f0583fb0bac5a436e&#34;&gt;7. 链接和图片&lt;/h3&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://inside.mcfog.wang/&#34; title=&#34;title&#34;&gt;Inside McFog&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://inside.mcfog.wang/img/2014-q1/qrcode.jpg&#34; alt=&#34;关注&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://inside.mcfog.wang/&#34;&gt;也可以用footnote的形式&lt;/a&gt;&lt;/p&gt;
-</description>
+      <description>markdown入门 15分钟学会markdown 1. 标题 H1 H2 H3 H4 H5 H6 2. 段落 使用空行分割段落
+这是第二段
+在换行前加2个以上的空格分割行
+前面应该有&amp;lt;br&amp;gt;
+3. 引用 使用大于号&amp;gt;创建引用
+ 我是引用
+ 多行引用可以每行都加大于号，也可以不加
+ 在换行前加2个以上的空格分割行
+前面应该有&amp;lt;br&amp;gt;
+ 4. 粗体和斜体 粗体
+斜体
+5. 列表 + 蔬菜 + 鸡蛋 + 豆腐 - 列表内容较多的时候 - 需要通过换行来生成p **嵌套** 也是可以的 - 子列表通过缩进实现 + 蔬菜 + 鸡蛋 + 豆腐 1. `ol`通过数字点空格表示 2. 因为生成的是html 8. 所以前面的数字其实可以乱写  6. 代码引用 行内通过返引号表示代码$variable
+代码块通过缩进表示  不方便缩进的时候，用三个返引号来包裹也可以```
+代码块  7. 链接和图片 Inside McFog</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://inside.mcfog.wang/lab/sgs-rule/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://inside.mcfog.wang/lab/sgs-rule/</guid>
+      <description>双将三国杀 双将基础规则  选将：每人发6张武将（身份场主公+1张），选择2个武将 血量：两张武将的血量总和/2 向下取整 性别／势力：玩家同时具备两个将的属性，比如任意一边是男将即受貂蝉离间；暗将规则下，不翻将则不具备属性 技能：玩家具备两个将的所有技能，暗将规则下，不翻则无技能 技能联动限制：  “同一次事件”(比如使用一张杀到杀结算完毕；使用某个技能到该技能结算完毕)过程中，每当某玩家使用／结算某个武将的技能，且他的另一个武将技能也已经影响本次事件，该回合该玩家联动次数+1（将要影响不重复计数，如双卖血将一次卖血如果同时使用两个将的卖血，联动次数+1，而非+2） 联动次数达到2次后，单次事件结算过程中，一旦发动／结算了一个将的技能，另一个将的非锁定技失效(即使是在本次结算过程中达到2次也一样失效，比如甄姬洛神＋张角改判，2次后，洛神仍然继续结算，但张角技能失效) 联动次数达到2次后，如果玩家具备补充手牌的锁定技(张春华)，则另一武将的消耗手牌的技能只有在不触发锁定技补充手牌的前提下才能发动(如咆哮、黩武) 联动次数每回合清零，不累计不透支   -</description>
     </item>
     
   </channel>

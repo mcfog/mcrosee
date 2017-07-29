@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://inside.mcfog.wang/</loc>
-    <lastmod>2015-11-02T01:33:03+08:00</lastmod>
-    <priority>0</priority>
+    <loc>https://inside.mcfog.wang/tarot/howto/shuffle/</loc>
+    <lastmod>2017-07-29T19:31:06+08:00</lastmod>
   </url>
   
   <url>
@@ -83,6 +83,11 @@
   </url>
   
   <url>
+    <loc>https://inside.mcfog.wang/tarot/exercise/e3/</loc>
+    <lastmod>2015-02-25T13:22:34+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://inside.mcfog.wang/2015/02/ichizon-8/</loc>
     <lastmod>2015-02-23T00:09:31+08:00</lastmod>
   </url>
@@ -98,6 +103,21 @@
   </url>
   
   <url>
+    <loc>https://inside.mcfog.wang/tarot/course/c3/</loc>
+    <lastmod>2015-02-18T10:39:08+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://inside.mcfog.wang/tarot/suit-qualities/wand/</loc>
+    <lastmod>2015-02-18T09:12:04+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://inside.mcfog.wang/tarot/suit-qualities/</loc>
+    <lastmod>2015-02-18T09:12:01+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://inside.mcfog.wang/2015/02/ichizon-7/</loc>
     <lastmod>2015-02-16T17:25:58+08:00</lastmod>
   </url>
@@ -109,6 +129,11 @@
   
   <url>
     <loc>https://inside.mcfog.wang/2015/02/tarot-6/</loc>
+    <lastmod>2015-02-10T11:18:13+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://inside.mcfog.wang/tarot/course/c2/</loc>
     <lastmod>2015-02-10T11:18:13+08:00</lastmod>
   </url>
   
@@ -153,7 +178,7 @@
   </url>
   
   <url>
-    <loc>https://inside.mcfog.wang/card/maj03/</loc>
+    <loc>https://inside.mcfog.wang/tarot/card/maj03/</loc>
     <lastmod>2015-01-23T15:43:42+08:00</lastmod>
   </url>
   
@@ -168,22 +193,32 @@
   </url>
   
   <url>
-    <loc>https://inside.mcfog.wang/card/maj02/</loc>
+    <loc>https://inside.mcfog.wang/tarot/card/maj02/</loc>
     <lastmod>2015-01-21T14:18:31+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://inside.mcfog.wang/card/maj01/</loc>
+    <loc>https://inside.mcfog.wang/tarot/card/maj01/</loc>
     <lastmod>2015-01-21T14:16:04+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://inside.mcfog.wang/card/maj00/</loc>
+    <loc>https://inside.mcfog.wang/tarot/card/maj00/</loc>
     <lastmod>2015-01-21T14:05:14+08:00</lastmod>
   </url>
   
   <url>
     <loc>https://inside.mcfog.wang/2015/01/tatarot-3/</loc>
+    <lastmod>2015-01-19T13:25:59+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://inside.mcfog.wang/tarot/course/e1/</loc>
+    <lastmod>2015-01-19T13:25:59+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://inside.mcfog.wang/tarot/exercise/e1/</loc>
     <lastmod>2015-01-19T13:25:59+08:00</lastmod>
   </url>
   
@@ -199,6 +234,11 @@
   
   <url>
     <loc>https://inside.mcfog.wang/2015/01/tatarot-2/</loc>
+    <lastmod>2015-01-14T11:30:00+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://inside.mcfog.wang/tarot/course/c1/</loc>
     <lastmod>2015-01-14T11:30:00+08:00</lastmod>
   </url>
   
@@ -232,7 +272,303 @@
   </url>
   
   <url>
+    <loc>https://inside.mcfog.wang/lab/sgs-rule/</loc>
+  </url>
+  
+  <url>
     <loc>https://inside.mcfog.wang/about/</loc>
+  </url>
+  
+  <url>
+    <loc>https://inside.mcfog.wang/tags/alfred-workflow/</loc>
+    <lastmod>2015-11-02T01:33:03+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://inside.mcfog.wang/categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://inside.mcfog.wang/categories/default/</loc>
+    <lastmod>2014-03-29T04:50:00+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://inside.mcfog.wang/categories/echoing-truth/</loc>
+    <lastmod>2015-03-27T21:50:44+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://inside.mcfog.wang/goto/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://inside.mcfog.wang/categories/ichizon/</loc>
+    <lastmod>2015-09-25T19:09:33+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://inside.mcfog.wang/lab/</loc>
+    <lastmod>2015-01-23T13:47:38+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://inside.mcfog.wang/tags/nano-project/</loc>
+    <lastmod>2015-11-02T01:33:03+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://inside.mcfog.wang/post/</loc>
+    <lastmod>2015-11-02T01:33:03+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://inside.mcfog.wang/tags/</loc>
+    <lastmod>2015-11-02T01:33:03+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://inside.mcfog.wang/tags/tarot_c04/</loc>
+    <lastmod>2015-03-10T18:24:03+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://inside.mcfog.wang/tags/tarot_card_desc/</loc>
+    <lastmod>2015-01-23T15:43:42+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://inside.mcfog.wang/tags/tarot_course/</loc>
+    <lastmod>2015-02-18T10:39:08+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://inside.mcfog.wang/tags/tarot_course_exercise/</loc>
+    <lastmod>2015-02-25T14:40:50+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://inside.mcfog.wang/tags/tarot_howto/</loc>
+    <lastmod>2017-07-29T19:31:06+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://inside.mcfog.wang/tags/tarot_m00/</loc>
+    <lastmod>2015-01-28T12:35:45+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://inside.mcfog.wang/tags/tarot_m01/</loc>
+    <lastmod>2015-01-28T12:35:45+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://inside.mcfog.wang/tags/tarot_m02/</loc>
+    <lastmod>2015-01-28T12:35:45+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://inside.mcfog.wang/tags/tarot_m03/</loc>
+    <lastmod>2015-01-28T12:35:45+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://inside.mcfog.wang/tags/tarot_m04/</loc>
+    <lastmod>2015-01-28T12:35:45+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://inside.mcfog.wang/tags/tarot_m05/</loc>
+    <lastmod>2015-01-28T12:35:45+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://inside.mcfog.wang/tags/tarot_m06/</loc>
+    <lastmod>2015-01-28T12:35:45+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://inside.mcfog.wang/tags/tarot_m07/</loc>
+    <lastmod>2015-01-28T12:35:45+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://inside.mcfog.wang/tags/tarot_m08/</loc>
+    <lastmod>2015-01-28T12:35:45+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://inside.mcfog.wang/tags/tarot_m09/</loc>
+    <lastmod>2015-01-28T12:35:45+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://inside.mcfog.wang/tags/tarot_m10/</loc>
+    <lastmod>2015-01-28T12:35:45+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://inside.mcfog.wang/tags/tarot_m11/</loc>
+    <lastmod>2015-02-04T12:20:06+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://inside.mcfog.wang/tags/tarot_m12/</loc>
+    <lastmod>2015-02-04T12:20:06+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://inside.mcfog.wang/tags/tarot_m13/</loc>
+    <lastmod>2015-02-04T12:20:06+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://inside.mcfog.wang/tags/tarot_m14/</loc>
+    <lastmod>2015-02-04T12:20:06+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://inside.mcfog.wang/tags/tarot_m15/</loc>
+    <lastmod>2015-02-04T12:20:06+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://inside.mcfog.wang/tags/tarot_m16/</loc>
+    <lastmod>2015-02-04T12:20:06+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://inside.mcfog.wang/tags/tarot_m17/</loc>
+    <lastmod>2015-02-04T12:20:06+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://inside.mcfog.wang/tags/tarot_m18/</loc>
+    <lastmod>2015-02-04T12:20:06+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://inside.mcfog.wang/tags/tarot_m19/</loc>
+    <lastmod>2015-02-04T12:20:06+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://inside.mcfog.wang/tags/tarot_m20/</loc>
+    <lastmod>2015-02-04T12:20:06+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://inside.mcfog.wang/tags/tarot_m21/</loc>
+    <lastmod>2015-02-10T11:18:13+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://inside.mcfog.wang/tags/tarot_p04/</loc>
+    <lastmod>2015-03-04T11:45:53+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://inside.mcfog.wang/tags/tarot_pa/</loc>
+    <lastmod>2015-03-10T18:24:03+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://inside.mcfog.wang/tags/tarot_pkn/</loc>
+    <lastmod>2015-01-05T12:30:58+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://inside.mcfog.wang/tags/tarot_pqn/</loc>
+    <lastmod>2015-03-10T18:24:03+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://inside.mcfog.wang/tags/tarot_s05/</loc>
+    <lastmod>2015-01-14T11:30:00+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://inside.mcfog.wang/tags/tarot_sheet/</loc>
+    <lastmod>2015-02-18T09:12:04+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://inside.mcfog.wang/tags/tarot_w06/</loc>
+    <lastmod>2015-01-05T12:30:58+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://inside.mcfog.wang/tags/tarot_wa/</loc>
+    <lastmod>2015-01-05T12:30:58+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://inside.mcfog.wang/tarot/</loc>
+    <lastmod>2017-07-29T19:31:06+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://inside.mcfog.wang/categories/tatarot/</loc>
+    <lastmod>2015-03-25T16:49:15+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://inside.mcfog.wang/categories/tech4fun/</loc>
+    <lastmod>2015-11-02T01:33:03+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://inside.mcfog.wang/</loc>
+    <lastmod>2017-07-29T19:31:06+08:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
@@ -241,6 +577,22 @@
   
   <url>
     <loc>https://inside.mcfog.wang/goto/et/c/</loc>
+  </url>
+  
+  <url>
+    <loc>https://inside.mcfog.wang/tarot/course/c7/</loc>
+  </url>
+  
+  <url>
+    <loc>https://inside.mcfog.wang/tarot/course/c5/</loc>
+  </url>
+  
+  <url>
+    <loc>https://inside.mcfog.wang/tarot/course/c6/</loc>
+  </url>
+  
+  <url>
+    <loc>https://inside.mcfog.wang/tarot/course/c4/</loc>
   </url>
   
 </urlset>

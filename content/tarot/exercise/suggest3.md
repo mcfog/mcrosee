@@ -1,6 +1,8 @@
 ---
 date: 2015-02-25T14:40:50+08:00
 title: "练习三 参考建议"
+tags: 
+- tarot_course_exercise
 ---
 
 ## 练习三 参考建议

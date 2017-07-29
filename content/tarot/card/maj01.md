@@ -6,9 +6,6 @@ tags:
 title: 'The Magician "魔术师"'
 ---
 
-
-## **The Magician "魔术师"**
-
 ![](/img/tarot/big/maj01.jpg)
 
 <!--more-->

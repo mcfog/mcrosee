@@ -4,6 +4,7 @@
             {{ .Title }}
         </a>
     </h3>
+{{ if eq .Section "post"}}
     <span class="meta">
         {{ range .Params.categories }}
         <a href="/categories/{{.}}">/{{.}}</a>
@@ -12,6 +13,7 @@
         {{ end }}
         at {{ .Date.Format "2006-01-02" }}
     </span>
+{{ end }}
 </div>
 
 <div class="content markdown-body">{{ .Summary }}</div>

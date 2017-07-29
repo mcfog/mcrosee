@@ -6,8 +6,6 @@ tags:
 title: 'The Fool "愚者"'
 ---
 
-## **The Fool "愚者"**
-
 ![](/img/tarot/big/maj00.jpg)
 
 <!--more-->

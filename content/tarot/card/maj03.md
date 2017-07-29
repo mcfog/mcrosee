@@ -6,8 +6,6 @@ tags:
 title: 'The Empress "皇后"'
 ---
 
-## **The Empress "皇后"**
-
 ![](/img/tarot/big/maj03.jpg)
 
 <!--more-->

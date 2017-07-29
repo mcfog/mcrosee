@@ -6,8 +6,6 @@ tags:
 title: 'The High Priestess "女祭司"'
 ---
 
-## **The High Priestess "女祭司"**
-
 ![](/img/tarot/big/maj02.jpg)
 
 <!--more-->
